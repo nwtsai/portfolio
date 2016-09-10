@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
     
-    
+<!-- Head -->
 <head>
-  <!-- Resources -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!-- Resources -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   
-  <title>Nathan Tsai</title>
+    <title>Nathan Tsai</title>
 
-  <!-- CSS -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   
-  <!-- Fonts and Styles -->
-  <style>
-      
-    /* Parallax Settings */
-    .parallax-window {
-        min-height: 500px;
-        background: transparent;
-    }
+    <!-- Fonts and Styles -->
+    <style>
+        /* Parallax Settings */
+        .parallax-window
+        {
+            min-height: 500px;
+            background: transparent;
+        }
   
-    /* TypeWriter Effect Settings */
-    .element {
-        font-size: 60px;
-        color: #ffffff;
-        position: absolute;
-        top: 100px;
-        left: 33px;
-    }
-  
-  </style>
+        /* TypeWriter Effect Settings */
+        .element
+        {
+            font-size: 60px;
+            color: #ffffff;
+            position: absolute;
+            top: 100px;
+            left: 33px;
+        }
+    </style>
 </head>
 
-
+<!-- Body -->
 <body>
     
     <!--  Scripts -->
@@ -71,111 +71,116 @@
     </div>
     </nav>
 
-<!--      <IMG class="responsive-img" SRC="Urban Expressways.jpg">-->
-<!--      <DIV STYLE="position:absolute; top:100px; left:33px; width:600px; height:200px"><CENTER><FONT SIZE="+4" COLOR="#ffffff"><b>Nathan Tsai</b></FONT></CENTER></DIV>-->
-      <span class = "element">
-      
-      <script>
-          $(function(){
-            $(".element").typed({
-                              stringsElement: $('#typed-strings'),
-                                typeSpeed: 100,
-                                // time before typing starts
-                                startDelay: 0,
-                                // backspacing speed
-                                backSpeed: 0,
-                                // shuffle the strings
-                                shuffle: false,
-                                // time before backspacing
-                                backDelay: 700,
-                                // loop
-                                loop: true,
-                                // false = infinite
-                                loopCount: false,
-                                // show cursor
-                                showCursor: false,
-                                // character for cursor
-                                cursorChar: "|",
-                                // attribute to type (null == text)
-                                attr: null,
-                                // either html or text
-                                contentType: 'html',
-                                // call when done callback function
-                                callback: function() {},
-                                // starting callback function before each string
-                                preStringTyped: function() {},
-                                //callback for every typed string
-                                onStringTyped: function() {},
-                                // callback for reset
-                                resetCallback: function() {}
-                              });
-            });
-      </script>
-      
-      <div id="typed-strings">
-          <p><strong>Nathan Tsai</strong></p>
-          <p><strong>Programmer</strong></p>
-          <p><strong>Volunteer</strong></p>
-          <p><strong>Shoutout to Mom</strong></p>
-      </div>
-      
-      </span>
+    <!-- TypeWriter Effect -->
+    <span class = "element">
+    <script>
+      $(function(){
+        $(".element").typed({
+                stringsElement: $('#typed-strings'),
+                typeSpeed: 100,
+                // time before typing starts
+                startDelay: 0,
+                // backspacing speed
+                backSpeed: 0,
+                // shuffle the strings
+                shuffle: false,
+                // time before backspacing
+                backDelay: 700,
+                // loop
+                loop: true,
+                // false = infinite
+                loopCount: false,
+                // show cursor
+                showCursor: false,
+                // character for cursor
+                cursorChar: "|",
+                // attribute to type (null == text)
+                attr: null,
+                // either html or text
+                contentType: 'html',
+                // call when done callback function
+                callback: function() {},
+                // starting callback function before each string
+                preStringTyped: function() {},
+                //callback for every typed string
+                onStringTyped: function() {},
+                // callback for reset
+                resetCallback: function() {}
+                });
+        });
+    </script>
+    
+    <!-- Strings to Display -->
+    <div id="typed-strings">
+        <p><strong>Nathan Tsai</strong></p>
+        <p><strong>Programmer</strong></p>
+        <p><strong>Volunteer</strong></p>
+        <p><strong>Shoutout to Mom</strong></p>
+    </div>
+    </span>
 
-<!--  </div>-->
-
-  <div class="parallax-window" data-parallax="scroll" data-image-src="Urban Expressways.jpg"></div>
-  
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="small material-icons">work</i></h2>
-
-<div class="row center">
-    <a class="light blue btn-large" href="Resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
-    <a class="light blue btn-large" href="https://www.github.com/nwtsai" target="_blank"><i class="fa fa-github"></i></a>
-    <a class="light blue btn-large" href="https://www.linkedin.com/in/nwtsai" target="_blank"><i class="fa fa-linkedin"></i></a>
-</div>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-              
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+    <!-- Parallax Effect -->
+    <div class="parallax-window" data-parallax="scroll" data-image-src="Urban Expressways.jpg"></div>
+    
+        <!-- Icons -->
+        <div class="container">
+        <div class="section">
+        <div class="row">
         
-        <p class = "center light-blue-text"><i class="tiny material-icons">phone</i>&#160 &#160 805.452.8162 &#160 &#160 &#160 | &#160 &#160 &#160 nwtsai@gmail.com &#160 &#160 <i class="tiny material-icons">email</i></p>
+            <!-- Briefcase Icon -->
+            <div class="col s12 m4">
+                <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="small material-icons">work</i></h2>
+
+                <!--Professional Buttons -->
+                <div class="row center">
+                <a class="light blue btn-large" href="Resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
+                <a class="light blue btn-large" href="https://www.github.com/nwtsai" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="light blue btn-large" href="https://www.linkedin.com/in/nwtsai" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
             
+                </div>
+            </div>
+
+            <!-- Phone Icon -->
+            <div class="col s12 m4">
+                <div class="icon-block">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+        
+                <!-- Phone and Email Text -->
+                <p class = "center light-blue-text"><i class="tiny material-icons">phone</i>&#160 &#160 805.452.8162 &#160 &#160 &#160 | &#160 &#160 &#160 nwtsai@gmail.com &#160 &#160 <i class="tiny material-icons">email</i></p>
+            
+                </div>
+            </div>
+
+            <!-- Social Media Icon -->
+            <div class="col s12 m4">
+                <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="small material-icons">group</i></h2>
+
+                <!-- Social Media Buttons -->
+                <div class="row center">
+                <a class="light blue btn-large" href="https://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="light blue btn-large" href="https://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="light blue btn-large" href="https://plus.google.com/109838269397873701810" target="_blank"><i class="fa fa-google"></i></a>
+                </div>
+            
+                </div>
+            </div>
+        
         </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="small material-icons">group</i></h2>
-
-<div class="row center">
-    <a class="light blue btn-large" href="https://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a class="light blue btn-large" href="https://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a class="light blue btn-large" href="https://plus.google.com/109838269397873701810" target="_blank"><i class="fa fa-google"></i></a>
-</div>
-          </div>
         </div>
-      </div>
-
+    
     </div>
-    </div>
-  </div>
 
-  </body>
+</body>
 </html>
