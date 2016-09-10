@@ -19,6 +19,13 @@
   background: transparent;
   }
   
+  .element {
+      font-size: 60px;
+      color: #ffffff;
+      position: absolute;
+      top: 100px;
+      left: 33px;
+  }
   </style>
   
 </head>
@@ -30,6 +37,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="parallax-1.4.2.js/parallax.js"></script>
+    <script src="typed.js-master/js/typed.js"></script>
 
     
   <nav class="blue darken-3" role="navigation">
@@ -48,36 +56,62 @@
     </div>
   </nav>
   
-  <div class="" id="index-banner">
-      
+<!--  <div class="" id="index-banner">-->
+
 <!--      <IMG class="responsive-img" SRC="Urban Expressways.jpg">-->
-      <DIV STYLE="position:absolute; top:100px; left:33px; width:600px; height:200px"><CENTER><FONT SIZE="+4" COLOR="#ffffff"><b>Nathan Tsai</b></FONT></CENTER></DIV>
+<!--      <DIV STYLE="position:absolute; top:100px; left:33px; width:600px; height:200px"><CENTER><FONT SIZE="+4" COLOR="#ffffff"><b>Nathan Tsai</b></FONT></CENTER></DIV>-->
+      <span class = "element">
+      
+      <script>
+          $(function(){
+            $(".element").typed({
+                              stringsElement: $('#typed-strings'),
+                                typeSpeed: 100,
+                                // time before typing starts
+                                startDelay: 0,
+                                // backspacing speed
+                                backSpeed: 0,
+                                // shuffle the strings
+                                shuffle: false,
+                                // time before backspacing
+                                backDelay: 700,
+                                // loop
+                                loop: true,
+                                // false = infinite
+                                loopCount: false,
+                                // show cursor
+                                showCursor: false,
+                                // character for cursor
+                                cursorChar: "|",
+                                // attribute to type (null == text)
+                                attr: null,
+                                // either html or text
+                                contentType: 'html',
+                                // call when done callback function
+                                callback: function() {},
+                                // starting callback function before each string
+                                preStringTyped: function() {},
+                                //callback for every typed string
+                                onStringTyped: function() {},
+                                // callback for reset
+                                resetCallback: function() {}
+                              });
+            });
+      </script>
+      
+      <div id="typed-strings">
+          <p><strong>Nathan Tsai</strong></p>
+          <p><strong>Programmer</strong></p>
+          <p><strong>Volunteer</strong></p>
+          <p><strong>Shoutout to Mom</strong></p>
+      </div>
+      
+      </span>
 
+<!--  </div>-->
 
-
-
-<!--      <div id = "main1">-->
-<!--      <p id="typing_text"></p>-->
-<!--      </div>-->
-<!--      -->
-<!--      <script src="jquery-3.1.0.js"></script>-->
-<!--      <script src="typed.js"></script>-->
-<!--      -->
-<!--      <script>-->
-<!--          $(function(){-->
-<!--            $("#typing_text").typed({-->
-<!--                                strings: ["Nathan Tsai", "Programmer"],-->
-<!--                                typeSpeed: 0-->
-<!--                                });-->
-<!--            });-->
-<!--          </script>-->
-
-<!--      <br><br>-->
-
-  </div>
-  
   <div class="parallax-window" data-parallax="scroll" data-image-src="Urban Expressways.jpg"></div>
-
+  
   <div class="container">
     <div class="section">
 
