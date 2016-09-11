@@ -312,9 +312,9 @@
 				// less than the stop number, keep going
 				if (curStrPos > self.stopNum) {
 					// subtract characters one by one
-					curStrPos--;
-					// loop the function
-					self.backspace(curString, curStrPos);
+                    curStrPos--;
+                                      
+                    self.backspace(curString, curStrPos);
 				}
 				// if the stop number has been reached, increase
 				// array position to next string
