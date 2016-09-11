@@ -73,6 +73,7 @@
     <script src="typed.js-master/js/typed.js"></script>
 
     <!-- Navigation Bar-->
+    <div class = "navbar-fixed">
     <nav class="blue darken-3" role="navigation">
     <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"></a>
       
@@ -95,6 +96,7 @@
       
     </div>
     </nav>
+    </div>
 
     <!-- TypeWriter Effect -->
     
@@ -112,9 +114,9 @@
                 // shuffle the strings
                 shuffle: false,
                 // time before backspacing
-                backDelay: 700,
+                backDelay: 0,
                 // loop
-                loop: true,
+                loop: false,
                 // false = infinite
                 loopCount: false,
                 // show cursor
@@ -140,10 +142,8 @@
     <!-- Strings to Display -->
     <div id="typed-strings">
         <p><strong>Nathan Tsai</strong></p>
-        <p><strong>Programmer</strong></p>
-        <p><strong>Volunteer</strong></p>
-        <p><strong>College Student</strong></p>
     </div>
+    
     </span>
     </div>
     
@@ -170,23 +170,10 @@
                 </div>
             </div>
 
-            <!-- Phone Icon -->
+            <!-- Empty Column -->
             <div class="col s12 m4">
                 <div class="icon-block">
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-        
-                <!-- Phone and Email Text -->
-                <p class = "center light-blue-text"><i class="tiny material-icons">phone</i>&#160 &#160 805.452.8162 &#160 &#160 &#160 | &#160 &#160 &#160 nwtsai@gmail.com &#160 &#160 <i class="tiny material-icons">email</i></p>
-            
+                
                 </div>
             </div>
 
@@ -207,6 +194,19 @@
         
         </div>
         </div>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class = "row center">
+            <div class = "container">
+                <!-- Phone and Email Text -->
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <pre><p class = "center light-blue-text"><i class="tiny material-icons">phone</i>  805.452.8162   |   nwtsai@gmail.com  <i class="tiny material-icons">email</i></p></pre>
+            </div>
         </div>
     
     </div>

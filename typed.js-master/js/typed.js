@@ -46,7 +46,7 @@
 		this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
 
 		// html or plain text
-		this.contentType = this.options.contentType;
+        this.contentType = this.options.contentType;
 
 		// typing speed
 		this.typeSpeed = this.options.typeSpeed;
@@ -75,7 +75,7 @@
 		// number to stop backspacing on.
 		// default 0, can change depending on how many chars
 		// you want to remove at the time
-		this.stopNum = 0;
+		this.stopNum = 14;
 
 		// Looping logic
 		this.loop = this.options.loop;
@@ -138,7 +138,8 @@
 		// pass current string state to each function, types 1 char per call
 		typewrite: function(curString, curStrPos) {
 			// exit when stopped
-			if (this.stop === true) {
+			if (this.stop === true)
+            {
 				return;
 			}
 
@@ -253,11 +254,15 @@
 
 		},
 
-		backspace: function(curString, curStrPos) {
+		backspace: function(curString, curStrPos)
+        {
 			// exit when stopped
-			if (this.stop === true) {
+			if (this.stop === true)
+            {
 				return;
 			}
+            
+            
 
 			// varying values for setTimeout during typing
 			// can't be global since number changes each time loop is executed
@@ -271,13 +276,13 @@
 				// on the first string, only delete one word
 				// the stopNum actually represents the amount of chars to
 				// keep in the current string. In my case it's 14.
-				// if (self.arrayPos == 1){
-				//  self.stopNum = 14;
-				// }
+				if (self.arrayPos == 0){
+				  self.stopNum = 1;
+				}
 				//every other time, delete the whole typed string
-				// else{
-				//  self.stopNum = 0;
-				// }
+				else{
+                    self.stopNum = 0;
+				}
 
 				if (self.contentType === 'html') {
 					// skip over html tags while backspacing
@@ -324,7 +329,7 @@
 					if (self.arrayPos === self.strings.length) {
 						self.arrayPos = 0;
 
-						// Shuffle sequence again
+                        // Shuffle sequence again
 						if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
 
 						self.init();
@@ -405,7 +410,7 @@
 		// typing speed
 		typeSpeed: 0,
 		// time before typing starts
-		startDelay: 0,
+		startDelay: 1000,
 		// backspacing speed
 		backSpeed: 0,
 		// shuffle the strings
