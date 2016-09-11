@@ -34,6 +34,36 @@
             top: 100px;
             left: 125px;
         }
+        .typed-cursor
+        {
+            font-size: 60px;
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+            position: absolute;
+            color: #ffffff;
+            top: 95px;
+            left: 115px;
+        }
+        @keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
     </style>
 </head>
 
@@ -91,7 +121,7 @@
                 // false = infinite
                 loopCount: false,
                 // show cursor
-                showCursor: false,
+                showCursor: true,
                 // character for cursor
                 cursorChar: "|",
                 // attribute to type (null == text)
