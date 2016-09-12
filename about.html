@@ -7,7 +7,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
             <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
                 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
-                    
+                <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+                
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
                     
@@ -37,14 +38,32 @@
                             min-height: 470px;
                             background: transparent;
                             position: absolute;
-                            top: 1000px;
+                            top: 1157px;
                         }
 
+                        .MyHeader
+                        {
+                            font-size: 60px;
+                            font-family: "Ubuntu";
+                            color: #1976d2;
+                        }
+                        
+                        .MyBody
+                        {
+                            font-size: 18px;
+                            font-family: "Open Sans";
+                            color: black;
+                        }
+
+                        
                         .section-white
                         {
                             position: absolute;
                             top: 534px;
+                            width: 100%;
+                            padding-top: 3px;
                         }
+                        
                         /* Typewriter Effect */
                         .element
                         {
@@ -97,7 +116,7 @@
                             color: #03a9f4;
                         }
                         
-                            </style>
+                        </style>
     </head>
     
     <!-- Body -->
@@ -184,30 +203,23 @@
         <!-- Personal Bio -->
         
         <div class="section-white">
-            <div class="row container">
-                    <h2 class="header">Hello, it's me</h2>
-                    <p class="grey-text text-darken-3 lighten-3">Hi My name is </p>
-                    <p class="grey-text text-darken-3 lighten-3">Hello There</p>
-                    <p class="grey-text text-darken-3 lighten-3">Hola</p>
-                    
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s4">
+                    <img style="width: 357px; position: absolute; top: 44px; left: 250px;"class = "me" src="images/Portrait Small.jpg" alt="HTML5 Icon">
+                </div>
+                <div class="col s7">
+                    <h2 class= "MyHeader" align = "left">Who Am I?</h2>
+
+                    <p class="MyBody" align = "left">My name is Nathan Tsai, and I am a motivated individual </p>
+                    <p class="MyBody" align = "left">Hello There</p>
+                    <p class="MyBody" align = "left">Hola</p>
+                </div>
             </div>
         </div>
        
-        <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
-        
-        <!-- Contact Information -->
-        <div class = "row center">
-            <!-- Phone and Email Text -->
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            
-            <pre><i class="tiny material-icons">phone</i>     805.452.8162    |    nwtsai@gmail.com     <i class="tiny material-icons">email</i></pre>
-        </div>
-        
+        <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="images/Golden Gate Bridge.jpg"></div>
+
         </div>
         
     </body>
