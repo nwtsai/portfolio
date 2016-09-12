@@ -16,24 +16,42 @@
                     <!-- CSS -->
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-                        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
                         
                         <!-- Fonts and Styles -->
                         <style>
                             
-                            /* Parallax Settings */
-                            .parallax-window
-                            {
-                                min-height: 470px;
-                                background: transparent;
-                            }
+                        /* Parallax Settings*/
+                        .parallax-window-top
+                        {
+                            width: 100%;
+                            min-height: 470px;
+                            background: transparent;
+                            position: absolute;
+                            top: 64px;
+                        }
                         
-                        /* TypeWriter Effect Settings */
+                        /* Parallax Settings*/
+                        .parallax-window-bottom
+                        {
+                            width: 100%;
+                            min-height: 470px;
+                            background: transparent;
+                            position: absolute;
+                            top: 1000px;
+                        }
+
+                        .section-white
+                        {
+                            position: absolute;
+                            top: 534px;
+                        }
+                        /* Typewriter Effect */
                         .element
                         {
                             font-size: 60px;
                             color: #ffffff;
                             font-family: "Ubuntu";
+                            background: transparent;
                         }
                         
                         /* Cursor Settings */
@@ -48,6 +66,7 @@
                             position: absolute;
                             top: 64px;
                             color: #ffffff;
+                            background: transparent;
                         }
                         @keyframes blink
                         {
@@ -68,7 +87,7 @@
                             100% { opacity:1; }
                         }
                         
-                        /* pre tag settings */
+                        /* <pre> tag settings */
                         pre
                         {
                             text-align: center;
@@ -84,10 +103,9 @@
     <!-- Body -->
     <body>
         
-        <!--  Scripts -->
+        <!--  Javascript Resources -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
         <script src="js/materialize.js"></script>
-        <script src="js/init.js"></script>
         <script src="parallax-1.4.2.js/parallax.js"></script>
         <script src="typed.js-master/js/typed.js"></script>
         
@@ -161,32 +179,21 @@
         </div>
         
         <!-- Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
+        <div class="parallax-window-top" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
         
         <!-- Personal Bio -->
         
-        <div class="parallax-container">
-            <div class="parallax"><img class="parallax-img" src="images/seattleDay.JPG"></div>
-        </div>
-        <div class="section white">
+        <div class="section-white">
             <div class="row container">
-                <img class="me" width="300" align="right" src="images/me.JPG">
                     <h2 class="header">Hello, it's me</h2>
-                    <p class="grey-text text-darken-3 lighten-3">My name is Andrew Arifin. Based in the Bay Area, I'm currently studying Computer Science at UCLA. I'm a proud member of the Upsilon Delta Chapter of Theta Tau. </p>
-                    <p class="grey-text text-darken-3 lighten-3">I have a passion for exploring and capturing memories with good music along the way. But give me a good book, and I'll be turning pages for the rest of the day. </p>
-                    <p class="grey-text text-darken-3 lighten-3">Explore, Dream, Inspire
+                    <p class="grey-text text-darken-3 lighten-3">Hi My name is </p>
+                    <p class="grey-text text-darken-3 lighten-3">Hello There</p>
+                    <p class="grey-text text-darken-3 lighten-3">Hola</p>
                     
-                    </div>
+            </div>
         </div>
-        <div class="parallax-container">
-            <div class="parallax"><img class="parallax-img" src="images/momPic.JPG"></div>
-        </div>
-        
-        <script type="text/javascript">
-            $(document).ready(function(){
-                              $('.parallax').parallax();
-                              });
-            </script>
+       
+        <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
         
         <!-- Contact Information -->
         <div class = "row center">
