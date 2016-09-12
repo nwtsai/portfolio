@@ -21,7 +21,7 @@
                     <!-- Fonts and Styles -->
                     <style>
                         
-                    /* Parallax Settings*/
+                    /* Parallax Top Settings*/
                     .parallax-window-top
                     {
                         width: 100%;
@@ -31,7 +31,7 @@
                         top: 64px;
                     }
                         
-                    /* Parallax Settings*/
+                    /* Parallax Bottom Settings*/
                     .parallax-window-bottom
                     {
                         width: 100%;
@@ -39,6 +39,7 @@
                         background: transparent;
                         position: absolute;
                         top: 988px;
+                        bottom: 0px;
                     }
                     
                     /* Custom Header Format */
@@ -52,7 +53,7 @@
                     /* Custom Body Format */
                     .MyBody
                     {
-                        font-size: 18px;
+                        font-size: 19px;
                         font-family: "Open Sans";
                         color: black;
                     }
@@ -201,12 +202,15 @@
         
         <!-- Top Parallax Effect -->
         <div class="parallax-window-top" data-parallax="scroll" data-image-src="images/GGB.jpg"></div>
+        <script>
+            jQuery(window).trigger('resize').trigger('scroll');
+        </script>
         
         <!-- Personal Bio -->
         <div class="section-white">
             <div class="row">
                 <!--<div class="col s6"></div>-->
-                <div class="col s5">
+                <div class="col s4">
                     <img style="position: relative; left: 250px; top: 39px; width: 250px;" class = "me" src="images/Portrait Small.jpg" alt="HTML5 Icon">
                 </div>
                 <div class="col s7">
@@ -216,10 +220,13 @@
                     <p class="MyBody" align = "left">Discovering passions is my passion. In order to do this, I constantly expose myself to
                     both the front end and back end aspects of programming. For example, as a result of constructing and designing this website,
                     I discovered a keen interest in web development.</p>
-                    <p class="MyBody" align = "left">Aside from programming, I enjoy dancing, volunteering, hiking, and playing the piano, as well
-                    actively getting involved in on-campus clubs and organizations. I became a part of Theta Tau, the nation's oldest and largest
+                    <p class="MyBody" align = "left">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well
+                    actively getting involved in on-campus clubs and organizations. I became a member of Theta Tau, the nation's oldest and largest
                     professional Engineering fraternity. I also expanded my horizons and joined Foundations Choreography, where I discovered
                     a passion for hip-hop dancing.</p>
+                </div>
+                <div class="col s1">
+                   
                 </div>
             </div>
         </div>
