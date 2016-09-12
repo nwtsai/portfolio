@@ -1,129 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <!-- Head -->
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <title>Nathan Tsai</title>
-        
-        <!-- CSS  -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-            <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <!-- Resources -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+            <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+                <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+                    
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+                    
+                    <title>Nathan Tsai</title>
+                    
+                    <!-- CSS -->
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+                        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+                        
+                        <!-- Fonts and Styles -->
+                        <style>
+                            
+                            /* Parallax Settings */
+                            .parallax-window
+                            {
+                                min-height: 470px;
+                                background: transparent;
+                            }
+                        
+                        /* TypeWriter Effect Settings */
+                        .element
+                        {
+                            font-size: 60px;
+                            color: #ffffff;
+                            font-family: "Ubuntu";
+                        }
+                        
+                        /* Cursor Settings */
+                        .typed-cursor
+                        {
+                            font-size: 60px;
+                            font-family: "Ubuntu";
+                            opacity: 1;
+                            -webkit-animation: blink infinite infinite;
+                            -moz-animation: blink infinite infinite;
+                            animation: blink infinite infinite;
+                            position: absolute;
+                            top: 64px;
+                            color: #ffffff;
+                        }
+                        @keyframes blink
+                        {
+                            0% { opacity:1; }
+                            50% { opacity:0; }
+                            100% { opacity:1; }
+                        }
+                        @-webkit-keyframes blink
+                        {
+                            0% { opacity:1; }
+                            50% { opacity:0; }
+                            100% { opacity:1; }
+                        }
+                        @-moz-keyframes blink
+                        {
+                            0% { opacity:1; }
+                            50% { opacity:0; }
+                            100% { opacity:1; }
+                        }
+                        
+                        /* pre tag settings */
+                        pre
+                        {
+                            text-align: center;
+                            font-size: 20px;
+                            font-family: "Ubuntu";
+                            font-style: thin;
+                            color: #03a9f4;
+                        }
+                        
+                            </style>
     </head>
+    
+    <!-- Body -->
     <body>
-        <nav class="blue darken-2" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">About Me</a>
-                
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-                
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">Navbar Link</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <br><br>
-                <h1 class="header center orange-text">Nathan Tsai</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">A modern man LOL</h5>
-                </div>
-                <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-                </div>
-                <br><br>
-                
-            </div>
-        </div>
         
-        
-        <div class="container">
-            <div class="section">
-                
-                <!--   Icon Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                            <h5 class="center">Speeds up development</h5>
-                            
-                            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                            <h5 class="center">User Experience Focused</h5>
-                            
-                            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                            <h5 class="center">Easy to work with</h5>
-                            
-                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <br><br>
-            
-            <div class="section">
-                
-            </div>
-        </div>
-        
-        <footer class="page-footer orange">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Company Bio</h5>
-                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-                        
-                        
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Settings</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                            <li><a class="white-text" href="#!">Link 2</a></li>
-                            <li><a class="white-text" href="#!">Link 3</a></li>
-                            <li><a class="white-text" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Connect</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                            <li><a class="white-text" href="#!">Link 2</a></li>
-                            <li><a class="white-text" href="#!">Link 3</a></li>
-                            <li><a class="white-text" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-                </div>
-            </div>
-        </footer>
-        
-        
-        <!--  Scripts-->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--  Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
+        <script src="parallax-1.4.2.js/parallax.js"></script>
+        <script src="typed.js-master/js/typed.js"></script>
+        
+        <!-- Navigation Bar-->
+        <div class = "navbar-fixed">
+            <nav class="blue darken-3" role="navigation">
+                <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"></a>
+                    
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    
+                    <!-- Navigation Buttons-->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html"><font face = "Ubuntu">Home</font></a></li>
+                        <li><a href="about.html"><font face = "Ubuntu">About Me</font></a></li>
+                        <li><a href="projects.html"><font face = "Ubuntu">Projects</font></a></li>
+                    </ul>
+                    
+                    <!-- Mobile Implementation-->
+                    <ul class="side-nav" id = "mobile-demo">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+        
+        <!-- TypeWriter Effect -->
+        
+        <div class = "container">
+            <span class = "element">
+                <script>
+                    $(function(){
+                      $(".element").typed({
+                                          strings: ["About &#160"],
+                                          typeSpeed: 125,
+                                          // time before typing starts
+                                          startDelay: 0,
+                                          // backspacing speed
+                                          backSpeed: 0,
+                                          // shuffle the strings
+                                          shuffle: false,
+                                          // time before backspacing
+                                          backDelay: 0,
+                                          // loop
+                                          loop: false,
+                                          // false = infinite
+                                          loopCount: false,
+                                          // show cursor
+                                          showCursor: true,
+                                          // character for cursor
+                                          cursorChar: "Me",
+                                          // attribute to type (null == text)
+                                          attr: null,
+                                          // either html or text
+                                          contentType: 'html',
+                                          // call when done callback function
+                                          callback: function() {},
+                                          // starting callback function before each string
+                                          preStringTyped: function() {},
+                                          //callback for every typed string
+                                          onStringTyped: function() {},
+                                          // callback for reset
+                                          resetCallback: function() {}
+                                          });
+                      });
+                    </script>
+                
+            </span>
+        </div>
+        
+        <!-- Parallax Effect -->
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
+        
+        <!-- Personal Bio -->
+        
+        <div class="parallax-container">
+            <div class="parallax"><img class="parallax-img" src="images/seattleDay.JPG"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <img class="me" width="300" align="right" src="images/me.JPG">
+                    <h2 class="header">Hello, it's me</h2>
+                    <p class="grey-text text-darken-3 lighten-3">My name is Andrew Arifin. Based in the Bay Area, I'm currently studying Computer Science at UCLA. I'm a proud member of the Upsilon Delta Chapter of Theta Tau. </p>
+                    <p class="grey-text text-darken-3 lighten-3">I have a passion for exploring and capturing memories with good music along the way. But give me a good book, and I'll be turning pages for the rest of the day. </p>
+                    <p class="grey-text text-darken-3 lighten-3">Explore, Dream, Inspire
+                    
+                    </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img class="parallax-img" src="images/momPic.JPG"></div>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                              $('.parallax').parallax();
+                              });
+            </script>
+        
+        <!-- Contact Information -->
+        <div class = "row center">
+            <!-- Phone and Email Text -->
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            
+            <pre><i class="tiny material-icons">phone</i>     805.452.8162    |    nwtsai@gmail.com     <i class="tiny material-icons">email</i></pre>
+        </div>
+        
+        </div>
         
     </body>
 </html>
