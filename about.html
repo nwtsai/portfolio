@@ -16,107 +16,109 @@
                     
                     <!-- CSS -->
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+                    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
                         
-                        <!-- Fonts and Styles -->
-                        <style>
-                            
-                        /* Parallax Settings*/
-                        .parallax-window-top
-                        {
-                            width: 100%;
-                            min-height: 470px;
-                            background: transparent;
-                            position: absolute;
-                            top: 64px;
-                        }
+                    <!-- Fonts and Styles -->
+                    <style>
                         
-                        /* Parallax Settings*/
-                        .parallax-window-bottom
-                        {
-                            width: 100%;
-                            min-height: 470px;
-                            background: transparent;
-                            position: absolute;
-                            top: 1157px;
-                        }
+                    /* Parallax Settings*/
+                    .parallax-window-top
+                    {
+                        width: 100%;
+                        min-height: 470px;
+                        background: transparent;
+                        position: absolute;
+                        top: 64px;
+                    }
+                        
+                    /* Parallax Settings*/
+                    .parallax-window-bottom
+                    {
+                        width: 100%;
+                        min-height: 470px;
+                        background: transparent;
+                        position: absolute;
+                        top: 1157px;
+                    }
+                    
+                    /* Custom Header Format */
+                    .MyHeader
+                    {
+                        font-size: 60px;
+                        font-family: "Ubuntu";
+                        color: #1976d2;
+                    }
+                    
+                    /* Custom Body Format */
+                    .MyBody
+                    {
+                        font-size: 18px;
+                        font-family: "Open Sans";
+                        color: black;
+                    }
+                    
+                    /* Custom White Space */
+                    .section-white
+                    {
+                        position: absolute;
+                        top: 534px;
+                        width: 100%;
+                        padding-top: 3px;
+                    }
+                    
+                    /* Typewriter Effect */
+                    .element
+                    {
+                        font-size: 60px;
+                        color: #ffffff;
+                        font-family: "Ubuntu";
+                        background: transparent;
+                    }
+                        
+                    /* Cursor Settings */
+                    .typed-cursor
+                    {
+                        font-size: 60px;
+                        font-family: "Ubuntu";
+                        opacity: 1;
+                        -webkit-animation: blink infinite infinite;
+                        -moz-animation: blink infinite infinite;
+                        animation: blink infinite infinite;
+                        position: absolute;
+                        top: 64px;
+                        color: #ffffff;
+                        background: transparent;
+                    }
+                    @keyframes blink
+                    {
+                        0% { opacity:1; }
+                        50% { opacity:0; }
+                        100% { opacity:1; }
+                    }
+                    @-webkit-keyframes blink
+                    {
+                        0% { opacity:1; }
+                        50% { opacity:0; }
+                        100% { opacity:1; }
+                    }
+                    @-moz-keyframes blink
+                    {
+                        0% { opacity:1; }
+                        50% { opacity:0; }
+                        100% { opacity:1; }
+                    }
+                        
+                    /* <pre> tag settings */
+                    pre
+                    {
+                        text-align: center;
+                        font-size: 20px;
+                        font-family: "Ubuntu";
+                        font-style: thin;
+                        color: #03a9f4;
+                    }
 
-                        .MyHeader
-                        {
-                            font-size: 60px;
-                            font-family: "Ubuntu";
-                            color: #1976d2;
-                        }
-                        
-                        .MyBody
-                        {
-                            font-size: 18px;
-                            font-family: "Open Sans";
-                            color: black;
-                        }
-
-                        
-                        .section-white
-                        {
-                            position: absolute;
-                            top: 534px;
-                            width: 100%;
-                            padding-top: 3px;
-                        }
-                        
-                        /* Typewriter Effect */
-                        .element
-                        {
-                            font-size: 60px;
-                            color: #ffffff;
-                            font-family: "Ubuntu";
-                            background: transparent;
-                        }
-                        
-                        /* Cursor Settings */
-                        .typed-cursor
-                        {
-                            font-size: 60px;
-                            font-family: "Ubuntu";
-                            opacity: 1;
-                            -webkit-animation: blink infinite infinite;
-                            -moz-animation: blink infinite infinite;
-                            animation: blink infinite infinite;
-                            position: absolute;
-                            top: 64px;
-                            color: #ffffff;
-                            background: transparent;
-                        }
-                        @keyframes blink
-                        {
-                            0% { opacity:1; }
-                            50% { opacity:0; }
-                            100% { opacity:1; }
-                        }
-                        @-webkit-keyframes blink
-                        {
-                            0% { opacity:1; }
-                            50% { opacity:0; }
-                            100% { opacity:1; }
-                        }
-                        @-moz-keyframes blink
-                        {
-                            0% { opacity:1; }
-                            50% { opacity:0; }
-                            100% { opacity:1; }
-                        }
-                        
-                        /* <pre> tag settings */
-                        pre
-                        {
-                            text-align: center;
-                            font-size: 20px;
-                            font-family: "Ubuntu";
-                            font-style: thin;
-                            color: #03a9f4;
-                        }
-                        
-                        </style>
+                    </style>
     </head>
     
     <!-- Body -->
@@ -160,48 +162,47 @@
                 <script>
                     $(function(){
                       $(".element").typed({
-                                          strings: ["About &#160"],
-                                          typeSpeed: 125,
-                                          // time before typing starts
-                                          startDelay: 0,
-                                          // backspacing speed
-                                          backSpeed: 0,
-                                          // shuffle the strings
-                                          shuffle: false,
-                                          // time before backspacing
-                                          backDelay: 0,
-                                          // loop
-                                          loop: false,
-                                          // false = infinite
-                                          loopCount: false,
-                                          // show cursor
-                                          showCursor: true,
-                                          // character for cursor
-                                          cursorChar: "Me",
-                                          // attribute to type (null == text)
-                                          attr: null,
-                                          // either html or text
-                                          contentType: 'html',
-                                          // call when done callback function
-                                          callback: function() {},
-                                          // starting callback function before each string
-                                          preStringTyped: function() {},
-                                          //callback for every typed string
-                                          onStringTyped: function() {},
-                                          // callback for reset
-                                          resetCallback: function() {}
-                                          });
+                            strings: ["Who Am I? ^700", "About Me"],
+                            typeSpeed: 80,
+                            // time before typing starts
+                            startDelay: 100,
+                            // backspacing speed
+                            backSpeed: 25,
+                            // shuffle the strings
+                            shuffle: false,
+                            // time before backspacing
+                            backDelay: 0,
+                            // loop
+                            loop: false,
+                            // false = infinite
+                            loopCount: false,
+                            // show cursor
+                            showCursor: false,
+                            // character for cursor
+                            cursorChar: "Me",
+                            // attribute to type (null == text)
+                            attr: null,
+                            // either html or text
+                            contentType: 'html',
+                            // call when done callback function
+                            callback: function() {},
+                            // starting callback function before each string
+                            preStringTyped: function() {},
+                            //callback for every typed string
+                            onStringTyped: function() {},
+                            // callback for reset
+                            resetCallback: function() {}
+                            });
                       });
                     </script>
                 
             </span>
         </div>
         
-        <!-- Parallax Effect -->
-        <div class="parallax-window-top" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
+        <!-- Top Parallax Effect -->
+        <div class="parallax-window-top" data-parallax="scroll" data-image-src="images/GGB.jpg"></div>
         
         <!-- Personal Bio -->
-        
         <div class="section-white">
             <div class="row">
                 <div class="col s1"></div>
@@ -218,7 +219,8 @@
             </div>
         </div>
        
-        <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="images/Golden Gate Bridge.jpg"></div>
+        <!-- Bottom Parallax Effect -->
+        <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="images/Urban Expressways Small.jpg"></div>
 
         </div>
         
