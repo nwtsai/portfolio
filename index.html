@@ -21,6 +21,7 @@
   
     <!-- Fonts and Styles -->
     <style>
+        
         /* Parallax Settings */
         .parallax-window
         {
@@ -33,15 +34,20 @@
         {
             font-size: 60px;
             color: #ffffff;
+            font-family: "Ubuntu";
         }
+    
+        /* Cursor Settings */
         .typed-cursor
         {
             font-size: 60px;
+            font-family: "Ubuntu";
             opacity: 1;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
+            -webkit-animation: blink infinite infinite;
+            -moz-animation: blink infinite infinite;
+            animation: blink infinite infinite;
             position: absolute;
+            top: 64px;
             color: #ffffff;
         }
         @keyframes blink
@@ -62,22 +68,17 @@
             50% { opacity:0; }
             100% { opacity:1; }
         }
-        .page-footer
-        {
-            background color: blue;
-        }
-        .footer-copyright
-        {
-            background color: blue;
-        }
+    
+        /* pre tag settings */
         pre
         {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             font-family: "Ubuntu";
             font-style: thin;
             color: #03a9f4;
         }
+    
     </style>
 </head>
 
@@ -125,8 +126,8 @@
     <script>
       $(function(){
         $(".element").typed({
-                stringsElement: $('#typed-strings'),
-                typeSpeed: 100,
+                strings: ["Nathan &nbsp"],
+                typeSpeed: 125,
                 // time before typing starts
                 startDelay: 0,
                 // backspacing speed
@@ -142,7 +143,7 @@
                 // show cursor
                 showCursor: true,
                 // character for cursor
-                cursorChar: "|",
+                cursorChar: "Tsai",
                 // attribute to type (null == text)
                 attr: null,
                 // either html or text
@@ -158,12 +159,7 @@
                 });
         });
     </script>
-    
-    <!-- Strings to Display -->
-    <div id="typed-strings">
-        <p><font face = "Ubuntu"><strong>Nathan Tsai</strong></font></p>
-    </div>
-    
+
     </span>
     </div>
     
@@ -224,11 +220,10 @@
                 <br></br>
                 <br></br>
             
-                <pre><i class="tiny material-icons">phone</i>   805.452.8162   |   nwtsai@gmail.com   <i class="tiny material-icons">email</i></pre>
+                <pre><i class="tiny material-icons">phone</i>     805.452.8162    |    nwtsai@gmail.com     <i class="tiny material-icons">email</i></pre>
         </div>
     
     </div>
 
 </body>
-
 </html>
