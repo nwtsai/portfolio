@@ -27,8 +27,7 @@
                         width: 100%;
                         min-height: 470px;
                         background: transparent;
-                        position: absolute;
-                        top: 64px;
+                        position: relative;
                     }
                         
                     /* Parallax Bottom Settings*/
@@ -38,10 +37,7 @@
                         width: 100%;
                         min-height: 470px;
                         background: transparent;
-                        position: absolute;
-                        top: 988px;
-                        bottom: 0px;
-                        //top: 90%;
+                        position: relative;
                     }
                     
                     /* Custom Header Format */
@@ -49,7 +45,8 @@
                     {
                         font-size: 60px;
                         font-family: "Ubuntu";
-                        color: #1976d2;
+                        /*color: #1976d2; Dark Blue*/
+                        color: #e53935;
                     }
                     
                     /* Custom Body Format */
@@ -60,13 +57,12 @@
                         color: black;
                     }
                     
-                    /* Custom White Space */
-                    .section-white
+                    /* Custom Frame Space */
+                    .frame
                     {
-                        position: absolute;
-                        top: 534px;
-                        width: 100%;
-                        padding-top: 0px;
+                        height: 100%; /*can be anything*/
+                        width: 100%; /*can be anything*/
+                        position: relative;
                     }
                     
                     /* Typewriter Effect */
@@ -209,10 +205,10 @@
         </script>
 
         <!-- Personal Bio -->
-        <div class="section-white">
+        <div class="frame">
             <div class="row">
                 <div class="col s4">
-                    <img style="position: relative; left: 35%; top: 39px; width: 250px;" class = "me" src="effects/images/Portrait Small.jpg" alt="HTML5 Icon">
+                <img style=" max-height: 357px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; left: 12%; right: 0; margin-top: 43px;" src="effects/images/Portrait Small.jpg"/>
                 </div>
                 <div class="col s7">
                     <h2 class= "MyHeader" style="position: relative; left: 5%;">Who Am I?</h2>
