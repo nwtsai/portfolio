@@ -5,125 +5,122 @@
     <head>
         <!-- Resources -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-            <link rel="stylesheet" href="effects/font awesome/css/font-awesome.min.css">
-                <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
-                    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="effects/font awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
                         
-                        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-                        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
                         
-                        <title>Nathan Tsai</title>
+        <title>Nathan Tsai</title>
                         
-                        <!-- CSS -->
-                        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                            <link href="effects/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-                            
-                            <!-- Fonts and Styles -->
-                            <style>
-                                
-                            /* Parallax Top Settings*/
-                            .parallax-window-top
-                            {
-                                width: 100%;
-                                min-height: 470px;
-                                background: transparent;
-                                position: absolute;
-                                top: 64px;
-                            }
-                            
-                            /* Parallax Bottom Settings*/
-                            .parallax-window-bottom
-                            {
-                                width: 100%;
-                                min-height: 470px;
-                                background: transparent;
-                                position: absolute;
-                                top: 988px;
-                                bottom: 0px;
-                            }
-                            
-                            /* Custom Header Format */
-                            .MyHeader
-                            {
-                                font-size: 60px;
-                                font-family: "Ubuntu";
-                                color: #1976d2;
-                            }
-                            
-                            /* Custom Body Format */
-                            .MyBody
-                            {
-                                font-size: 19px;
-                                font-family: "Open Sans";
-                                color: black;
-                            }
-                            
-                            /* Custom White Space */
-                            .section-white
-                            {
-                                position: absolute;
-                                top: 534px;
-                                width: 100%;
-                                padding-top: 0px;
-                            }
-                            
-                            /* Typewriter Effect */
-                            .element
-                            {
-                                font-size: 60px;
-                                color: #ffffff;
-                                font-family: "Ubuntu";
-                                background: transparent;
-                                position: absolute;
-                                left: 12%;
-                            }
-                            
-                            /* Cursor Settings */
-                            .typed-cursor
-                            {
-                                font-size: 60px;
-                                font-family: "Ubuntu";
-                                opacity: 1;
-                                -webkit-animation: blink infinite infinite;
-                                -moz-animation: blink infinite infinite;
-                                animation: blink infinite infinite;
-                                position: absolute;
-                                top: 64px;
-                                color: #ffffff;
-                                background: transparent;
-                            }
-                            /*
-                             @keyframes blink
-                             {
-                             0% { opacity:1; }
-                             50% { opacity:0; }
-                             100% { opacity:1; }
-                             }
-                             @-webkit-keyframes blink
-                             {
-                             0% { opacity:1; }
-                             50% { opacity:0; }
-                             100% { opacity:1; }
-                             }
-                             @-moz-keyframes blink
-                             {
-                             0% { opacity:1; }
-                             50% { opacity:0; }
-                             100% { opacity:1; }
-                             }*/
-                            
-                            /* <pre> tag settings */
-                            pre
-                            {
-                                text-align: center;
-                                font-size: 20px;
-                                font-family: "Ubuntu";
-                                font-style: thin;
-                                color: #03a9f4;
-                            }
-                            
-                                </style>
-                            </head>
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="effects/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        
+        <!-- Fonts and Styles -->
+        <style>
+            
+        /* Parallax Top Settings*/
+        .parallax-window-top
+        {
+            width: 100%;
+            min-height: 470px;
+            background: transparent;
+            position: relative;
+        }
+        
+        /* Parallax Bottom Settings*/
+        .parallax-window-bottom
+        {
+            width: 100%;
+            min-height: 470px;
+            background: transparent;
+            position: relative;
+        }
+        
+        /* Custom Header Format */
+        .MyHeader
+        {
+            font-size: 60px;
+            font-family: "Ubuntu";
+            /*color: #1976d2; Dark Blue*/
+            color: #e53935;
+        }
+        
+        /* Custom Body Format */
+        .MyBody
+        {
+            font-size: 19px;
+            font-family: "Open Sans";
+            color: black;
+        }
+        
+        /* Custom Frame Space */
+        .frame
+        {
+            height: 100%; /*can be anything*/
+            width: 100%; /*can be anything*/
+            position: relative;
+        }
+        
+        /* Typewriter Effect */
+        .element
+        {
+            font-size: 60px;
+            color: #ffffff;
+            font-family: "Ubuntu";
+            background: transparent;
+            position: absolute;
+            left: 12%;
+        }
+        
+        /* Cursor Settings */
+        .typed-cursor
+        {
+            font-size: 60px;
+            font-family: "Ubuntu";
+            opacity: 1;
+            -webkit-animation: blink infinite infinite;
+            -moz-animation: blink infinite infinite;
+            animation: blink infinite infinite;
+            position: absolute;
+            top: 64px;
+            color: #ffffff;
+            background: transparent;
+        }
+        /*
+         @keyframes blink
+         {
+         0% { opacity:1; }
+         50% { opacity:0; }
+         100% { opacity:1; }
+         }
+         @-webkit-keyframes blink
+         {
+         0% { opacity:1; }
+         50% { opacity:0; }
+         100% { opacity:1; }
+         }
+         @-moz-keyframes blink
+         {
+         0% { opacity:1; }
+         50% { opacity:0; }
+         100% { opacity:1; }
+         }*/
+        
+        /* <pre> tag settings */
+        pre
+        {
+            text-align: center;
+            font-size: 20px;
+            font-family: "Ubuntu";
+            font-style: thin;
+            color: #03a9f4;
+        }
+        
+        </style>
+    </head>
     
     <!-- Body -->
     <body>
@@ -161,66 +158,66 @@
         
         <!-- TypeWriter Effect -->
         
-        <div class = "container">
-            <span class = "element">
-                <script>
-                    $(function(){
-                      $(".element").typed({
-                                          strings: ["Frackman ^700", "Blackjack ^700", "This Website ^700", "Projects"],
-                                          typeSpeed: 80,
-                                          // time before typing starts
-                                          startDelay: 100,
-                                          // backspacing speed
-                                          backSpeed: 25,
-                                          // shuffle the strings
-                                          shuffle: false,
-                                          // time before backspacing
-                                          backDelay: 0,
-                                          // loop
-                                          loop: false,
-                                          // false = infinite
-                                          loopCount: false,
-                                          // show cursor
-                                          showCursor: false,
-                                          // character for cursor
-                                          cursorChar: "Me",
-                                          // attribute to type (null == text)
-                                          attr: null,
-                                          // either html or text
-                                          contentType: 'html',
-                                          // call when done callback function
-                                          callback: function() {},
-                                          // starting callback function before each string
-                                          preStringTyped: function() {},
-                                          //callback for every typed string
-                                          onStringTyped: function() {},
-                                          // callback for reset
-                                          resetCallback: function() {}
-                                          });
-                      });
-                    </script>
-                
-            </span>
-        </div>
+        <span class = "element">
+            <script>
+                $(function(){
+                    $(".element").typed({
+                        strings: ["Frackman ^700", "Blackjack ^700", "This Website ^700", "Projects"],
+                        typeSpeed: 80,
+                        // time before typing starts
+                        startDelay: 1500,
+                        // backspacing speed
+                        backSpeed: 25,
+                        // shuffle the strings
+                        shuffle: false,
+                        // time before backspacing
+                        backDelay: 0,
+                        // loop
+                        loop: false,
+                        // false = infinite
+                        loopCount: false,
+                        // show cursor
+                        showCursor: false,
+                        // character for cursor
+                        cursorChar: "Me",
+                        // attribute to type (null == text)
+                        attr: null,
+                        // either html or text
+                        contentType: 'html',
+                        // call when done callback function
+                        callback: function() {},
+                        // starting callback function before each string
+                        preStringTyped: function() {},
+                        //callback for every typed string
+                        onStringTyped: function() {},
+                        // callback for reset
+                        resetCallback: function() {}
+                        });
+                    });
+            </script>
+        </span>
         
         <!-- Top Parallax Effect -->
         <div class="parallax-window-top" data-parallax="scroll" data-image-src="effects/images/GGB.jpg"></div>
         <script>
             jQuery(window).trigger('resize').trigger('scroll');
-            </script>
+        </script>
         
         <!-- Personal Bio -->
-        <div class="section-white">
-            <div class="row container">
-                <!--<div class="col s6"></div>-->
+        <div class="frame">
+            <div class="row">
                 <div class="col s7">
-                    <h2 class= "MyHeader" align = "left">Frackman</h2>
-                    <p class="MyBody" align = "left">Line 1</p>
-                    <p class="MyBody" align = "left">Line 2</p>
-                    <p class="MyBody" align = "left">Line 3</p>
+                    <h2 class= "MyHeader" style="position: relative; left: 20%;">Frackman</h2>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 1</p>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 2</p>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 3</p>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 4</p>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 5</p>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 6</p>
+                    <p class="MyBody" style="position: relative; left: 20%;">Line 7</p>
                 </div>
                 <div class="col s4">
-                    <img style="position: relative; left: 250px; top: 39px; width: 250px;" class = "me" src="effects/images/Portrait Small.jpg" alt="HTML5 Icon">
+                    <img style=" max-height: 380px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 25%; margin-top: 43px;" src="effects/images/Portrait Small.jpg"/>
                 </div>
                 <div class="col s1"></div>
             </div>
