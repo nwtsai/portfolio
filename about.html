@@ -32,6 +32,7 @@
                     }
                         
                     /* Parallax Bottom Settings*/
+                    /* Try to get this to react to body of text when screen size changes */
                     .parallax-window-bottom
                     {
                         width: 100%;
@@ -40,6 +41,7 @@
                         position: absolute;
                         top: 988px;
                         bottom: 0px;
+                        //top: 90%;
                     }
                     
                     /* Custom Header Format */
@@ -74,6 +76,8 @@
                         color: #ffffff;
                         font-family: "Ubuntu";
                         background: transparent;
+                        position: absolute;
+                        left: 12%;
                     }
                         
                     /* Cursor Settings */
@@ -158,49 +162,46 @@
         </div>
         
         <!-- TypeWriter Effect -->
-        
-        <div class = "container">
-            <span class = "element">
-                <script>
-                    $(function(){
-                      $(".element").typed({
-                            strings: ["Who Am I? ^700", "About Me"],
-                            typeSpeed: 80,
-                            // time before typing starts
-                            startDelay: 100,
-                            // backspacing speed
-                            backSpeed: 25,
-                            // shuffle the strings
-                            shuffle: false,
-                            // time before backspacing
-                            backDelay: 0,
-                            // loop
-                            loop: false,
-                            // false = infinite
-                            loopCount: false,
-                            // show cursor
-                            showCursor: false,
-                            // character for cursor
-                            cursorChar: "Me",
-                            // attribute to type (null == text)
-                            attr: null,
-                            // either html or text
-                            contentType: 'html',
-                            // call when done callback function
-                            callback: function() {},
-                            // starting callback function before each string
-                            preStringTyped: function() {},
-                            //callback for every typed string
-                            onStringTyped: function() {},
-                            // callback for reset
-                            resetCallback: function() {}
-                            });
-                      });
-                    </script>
-                
+    
+        <span class = "element">
+            <script>
+                $(function(){
+                    $(".element").typed({
+                        strings: ["Who Am I? ^700", "About Me"],
+                        typeSpeed: 80,
+                        // time before typing starts
+                        startDelay: 100,
+                        // backspacing speed
+                        backSpeed: 25,
+                        // shuffle the strings
+                        shuffle: false,
+                        // time before backspacing
+                        backDelay: 0,
+                        // loop
+                        loop: false,
+                        // false = infinite
+                        loopCount: false,
+                        // show cursor
+                        showCursor: false,
+                        // character for cursor
+                        cursorChar: "Me",
+                        // attribute to type (null == text)
+                        attr: null,
+                        // either html or text
+                        contentType: 'html',
+                        // call when done callback function
+                        callback: function() {},
+                        // starting callback function before each string
+                        preStringTyped: function() {},
+                        //callback for every typed string
+                        onStringTyped: function() {},
+                        // callback for reset
+                        resetCallback: function() {}
+                        });
+                    });
+                </script>
             </span>
-        </div>
-        
+
         <!-- Top Parallax Effect -->
         <div class="parallax-window-top" data-parallax="scroll" data-image-src="effects/images/GGB.jpg"></div>
         <script>
@@ -210,24 +211,22 @@
         <!-- Personal Bio -->
         <div class="section-white">
             <div class="row">
-                <!--<div class="col s6"></div>-->
                 <div class="col s4">
-                    <img style="position: relative; left: 250px; top: 39px; width: 250px;" class = "me" src="effects/images/Portrait Small.jpg" alt="HTML5 Icon">
+                    <img style="position: relative; left: 35%; top: 39px; width: 250px;" class = "me" src="effects/images/Portrait Small.jpg" alt="HTML5 Icon">
                 </div>
                 <div class="col s7">
-                    <h2 class= "MyHeader" align = "left">Who Am I?</h2>
-                    <p class="MyBody" align = "left">My name is Nathan Tsai, and I am a motivated individual with a passion for programming.
+                    <h2 class= "MyHeader" style="position: relative; left: 5%;">Who Am I?</h2>
+                    <p class="MyBody" style="position: relative; left: 5%;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming.
                     I am currently a sophomore studying Computer Science and Engineering at UCLA. </p>
-                    <p class="MyBody" align = "left">Discovering passions is my passion. In order to do this, I constantly expose myself to
+                    <p class="MyBody" style="position: relative; left: 5%;">Discovering passions is my passion. In order to do this, I constantly expose myself to
                     both the front end and back end aspects of programming. For example, as a result of constructing and designing this website,
                     I discovered a keen interest in web development.</p>
-                    <p class="MyBody" align = "left">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well
+                    <p class="MyBody" style="position: relative; left: 5%;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well
                     actively getting involved in on-campus clubs and organizations. I became a member of Theta Tau, the nation's oldest and largest
                     professional Engineering fraternity. I also expanded my horizons and joined Foundations Choreography, where I discovered
                     a passion for hip-hop dancing.</p>
                 </div>
-                <div class="col s1">
-                </div>
+                <div class="col s1"></div>
             </div>
         </div>
        

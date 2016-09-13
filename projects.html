@@ -21,15 +21,51 @@
                             <!-- Fonts and Styles -->
                             <style>
                                 
-                                /* Parallax Settings*/
-                                .parallax-window
-                                {
-                                    width: 100%;
-                                    min-height: 470px;
-                                    background: transparent;
-                                    position: absolute;
-                                    top: 64px;
-                                }
+                            /* Parallax Top Settings*/
+                            .parallax-window-top
+                            {
+                                width: 100%;
+                                min-height: 470px;
+                                background: transparent;
+                                position: absolute;
+                                top: 64px;
+                            }
+                            
+                            /* Parallax Bottom Settings*/
+                            .parallax-window-bottom
+                            {
+                                width: 100%;
+                                min-height: 470px;
+                                background: transparent;
+                                position: absolute;
+                                top: 988px;
+                                bottom: 0px;
+                            }
+                            
+                            /* Custom Header Format */
+                            .MyHeader
+                            {
+                                font-size: 60px;
+                                font-family: "Ubuntu";
+                                color: #1976d2;
+                            }
+                            
+                            /* Custom Body Format */
+                            .MyBody
+                            {
+                                font-size: 19px;
+                                font-family: "Open Sans";
+                                color: black;
+                            }
+                            
+                            /* Custom White Space */
+                            .section-white
+                            {
+                                position: absolute;
+                                top: 534px;
+                                width: 100%;
+                                padding-top: 0px;
+                            }
                             
                             /* Typewriter Effect */
                             .element
@@ -54,37 +90,38 @@
                                 color: #ffffff;
                                 background: transparent;
                             }
-                            @keyframes blink
-                            {
-                                0% { opacity:1; }
-                                50% { opacity:0; }
-                                100% { opacity:1; }
-                            }
-                            @-webkit-keyframes blink
-                            {
-                                0% { opacity:1; }
-                                50% { opacity:0; }
-                                100% { opacity:1; }
-                            }
-                            @-moz-keyframes blink
-                            {
-                                0% { opacity:1; }
-                                50% { opacity:0; }
-                                100% { opacity:1; }
-                            }
+                            /*
+                             @keyframes blink
+                             {
+                             0% { opacity:1; }
+                             50% { opacity:0; }
+                             100% { opacity:1; }
+                             }
+                             @-webkit-keyframes blink
+                             {
+                             0% { opacity:1; }
+                             50% { opacity:0; }
+                             100% { opacity:1; }
+                             }
+                             @-moz-keyframes blink
+                             {
+                             0% { opacity:1; }
+                             50% { opacity:0; }
+                             100% { opacity:1; }
+                             }*/
                             
                             /* <pre> tag settings */
                             pre
                             {
                                 text-align: center;
-                                font-size: 18px;
-                                font-family: "Open Sans";
+                                font-size: 20px;
+                                font-family: "Ubuntu";
                                 font-style: thin;
                                 color: #03a9f4;
                             }
                             
                                 </style>
-    </head>
+                            </head>
     
     <!-- Body -->
     <body>
@@ -120,19 +157,19 @@
             </nav>
         </div>
         
-        <!-- Typewriter Effect -->
+        <!-- TypeWriter Effect -->
         
         <div class = "container">
             <span class = "element">
                 <script>
                     $(function(){
                       $(".element").typed({
-                                          strings: ["Projects", "Frackman", "Blackjack", "This Website", "Projects"],
-                                          typeSpeed: 125,
+                                          strings: ["Frackman ^700", "Blackjack ^700", "This Website ^700", "Projects"],
+                                          typeSpeed: 80,
                                           // time before typing starts
-                                          startDelay: 0,
+                                          startDelay: 100,
                                           // backspacing speed
-                                          backSpeed: 0,
+                                          backSpeed: 25,
                                           // shuffle the strings
                                           shuffle: false,
                                           // time before backspacing
@@ -144,7 +181,7 @@
                                           // show cursor
                                           showCursor: false,
                                           // character for cursor
-                                          cursorChar: "Tsai",
+                                          cursorChar: "Me",
                                           // attribute to type (null == text)
                                           attr: null,
                                           // either html or text
@@ -164,85 +201,33 @@
             </span>
         </div>
         
-        <!--     Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="effects/images/Urban Expressways Small.jpg"></div>
+        <!-- Top Parallax Effect -->
+        <div class="parallax-window-top" data-parallax="scroll" data-image-src="effects/images/GGB.jpg"></div>
         <script>
             jQuery(window).trigger('resize').trigger('scroll');
             </script>
         
-        <!-- Aesthetics -->
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        
-        <!-- Icons -->
-        <div class="container">
-            <div class="row">
-                
-                <!-- Professional Icon -->
-                <div class="col s1 m4 l4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="small material-icons">work</i></h2>
-                        
-                        <!--Professional Buttons -->
-                        <div class="row center">
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2" href="effects/images/Resume.pdf" target="#"><i class="fa fa-file-text-o"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2" href="https://www.github.com/nwtsai" target="_blank"><i class="fa fa-github"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2" href="https://www.linkedin.com/in/nwtsai" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                        
-                    </div>
+        <!-- Personal Bio -->
+        <div class="section-white">
+            <div class="row container">
+                <!--<div class="col s6"></div>-->
+                <div class="col s7">
+                    <h2 class= "MyHeader" align = "left">Frackman</h2>
+                    <p class="MyBody" align = "left">Line 1</p>
+                    <p class="MyBody" align = "left">Line 2</p>
+                    <p class="MyBody" align = "left">Line 3</p>
                 </div>
-                
-                <!-- Empty Column -->
-                <div class="col s1 m4 l4">
-                    <div class="icon-block">
-                        
-                    </div>
+                <div class="col s4">
+                    <img style="position: relative; left: 250px; top: 39px; width: 250px;" class = "me" src="effects/images/Portrait Small.jpg" alt="HTML5 Icon">
                 </div>
-                
-                <!-- Social Media Icon -->
-                <div class="col s1 m4 l4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="small material-icons">group</i></h2>
-                        
-                        <!-- Social Media Buttons -->
-                        <div class="row center">
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2" href="https://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2" href="https://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2" href="https://plus.google.com/109838269397873701810" target="_blank"><i class="fa fa-google"></i></a>
-                        </div>
-                        
-                    </div>
-                </div>
-                
+                <div class="col s1"></div>
             </div>
         </div>
         
-        <!-- Contact Information -->
-        <div class = "row center">
-            
-            <!-- Aesthetics -->
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            
-            <!-- Phone Number and Email -->
-            <pre><i class="tiny material-icons">phone</i>  (805)  452  8162     <bold>< ></bold>     <i class="tiny material-icons">email</i>  nwtsai@gmail.com</pre>
-        </div>
+        <!-- Bottom Parallax Effect -->
+        <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="effects/images/Japanese Garden.jpg"></div>
         
         </div>
         
     </body>
-    
 </html>
