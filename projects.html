@@ -50,7 +50,14 @@
         }
         
         /* Custom Frame Space */
-        .frame
+        .frame-1
+        {
+            height: 500px; /*can be anything*/
+            width: 100%; /*can be anything*/
+            position: relative;
+        }
+
+        .frame-2
         {
             height: 100%; /*can be anything*/
             width: 100%; /*can be anything*/
@@ -198,33 +205,37 @@
             </script>
         
             <!-- Frackman Frame -->
-            <div class="frame">
+            <div class="frame-1">
                 <div class="row">
                     <div class="col s7">
                         <div class="container">
                             <h2 class= "MyHeader" style="position: relative;">Frackman</h2>
 
                             <!-- Tab Section -->
+                            <br></br>
                             <div class="row">
                                 <div class="col s12">
                                   <ul class="tabs style="position: relative;">
-                                    <li class="tab col s3"><a class="active" href="#test1">Description</a></li>
-                                    <li class="tab col s3"><a href="#test2">Source Code</a></li>
-                                    <li class="tab col s3 disabled"><a href="#test3">Demo</a></li>
+                                    <li class="tab col s3"><a class="active" href="#Description">Description</a></li>
+                                    <li class="tab col s3"><a href="#Concepts">Concepts</a></li>
+                                    <li class="tab col s3"><a href="#Code">Code</a></li>
+                                    <li class="tab col s3 disabled"><a href="#Demo">Demo</a></li>
                                   </ul>
                                 </div>
 
-                                <div id="test1" class="col s12">
-                                    <p class="MyBody" style="position: relative;">Line 1</p>
-                                    <p class="MyBody" style="position: relative;">Line 2</p>
-                                    <p class="MyBody" style="position: relative;">Line 3</p>
+                                <div id="Description" class="col s12">
+                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find and collect all 'Oil Barrel' objects without getting caught by the AI, known as the 'Protesters.'</p>
+                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find and collect all 'Oil Barrel' objects without getting caught by the AI, known as the 'Protesters.'</p>
                                 </div>
-                                <div id="test2" class="col s12">
-                                    <p class="MyBody" style="position: relative;">Line 4</p>
-                                    <p class="MyBody" style="position: relative;">Line 5</p>
-                                    <p class="MyBody" style="position: relative;">Line 6</p>
+                                <div id="Code" class="col s12">
+                                    <p class="MyBody" style="position: relative;"><a class href="https://github.com/nwtsai/Frackman" target="_blank">Click here</a> to find the source code for this project.</p>
                                 </div>
-                                <div id="test3" class="col s12">Coming Soon</div>
+                                <div id="Concepts" class="col s12">
+                                    <p class="MyBody" style="position: relative;">‣ Based on the 1982 game Dig Dug, I implemented a game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                                    <p class="MyBody" style="position: relative;">‣ I designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
+                                    <p class="MyBody" style="position: relative;">‣ I devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
+                                </div>
+                                <div id="Demo" class="col s12">Coming Soon</div>
                             </div>
                             
                         </div>
@@ -241,17 +252,16 @@
         <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
         
             <!-- Blackjack Frame -->
-            <div class="frame">
+            <div class="frame-2">
                 <div class="row">
                     <div class="col s7">
-                        <h2 class= "MyHeader" style="position: relative; left: 20%;">Blackjack</h2>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 1</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 2</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 3</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 4</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 5</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 6</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 7</p>
+                        <div class="container">
+                            <h2 class= "MyHeader" style="position: relative;">Blackjack</h2>
+                            <p class="MyBody" style="position: relative;">Line 1</p>
+                            <p class="MyBody" style="position: relative;">Line 2</p>
+                            <p class="MyBody" style="position: relative;">Line 3</p>
+                            <p class="MyBody" style="position: relative;">Line 4</p>
+                        </div>
                     </div>
                     <div class="col s4">
                         <img style=" max-height: 380px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 17.75%; margin-top: 43px;" src="image library/cropped images/Portrait Small.jpg"/>
