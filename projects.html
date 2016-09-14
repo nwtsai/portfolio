@@ -65,7 +65,7 @@
             font-family: "Pontano Sans";
             background: transparent;
             position: absolute;
-            left: 12%;
+            left: 155px;
             top: 9%;
         }
         
@@ -201,15 +201,35 @@
             <div class="frame">
                 <div class="row">
                     <div class="col s7">
-                        <h2 class= "MyHeader" style="position: relative; left: 20%;">Frackman</h2>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 1</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 2</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 3</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 4</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 5</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 6</p>
-                        <p class="MyBody" style="position: relative; left: 20%;">Line 7</p>
+                        <div class="container">
+                            <h2 class= "MyHeader" style="position: relative;">Frackman</h2>
+
+                            <!-- Tab Section -->
+                            <div class="row">
+                                <div class="col s12">
+                                  <ul class="tabs style="position: relative;">
+                                    <li class="tab col s3"><a class="active" href="#test1">Description</a></li>
+                                    <li class="tab col s3"><a href="#test2">Source Code</a></li>
+                                    <li class="tab col s3 disabled"><a href="#test3">Demo</a></li>
+                                  </ul>
+                                </div>
+
+                                <div id="test1" class="col s12">
+                                    <p class="MyBody" style="position: relative;">Line 1</p>
+                                    <p class="MyBody" style="position: relative;">Line 2</p>
+                                    <p class="MyBody" style="position: relative;">Line 3</p>
+                                </div>
+                                <div id="test2" class="col s12">
+                                    <p class="MyBody" style="position: relative;">Line 4</p>
+                                    <p class="MyBody" style="position: relative;">Line 5</p>
+                                    <p class="MyBody" style="position: relative;">Line 6</p>
+                                </div>
+                                <div id="test3" class="col s12">Coming Soon</div>
+                            </div>
+                            
+                        </div>
                     </div>
+
                     <div class="col s4">
                         <img style=" max-height: 380px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 17.75%; margin-top: 43px;" src="image library/cropped images/Portrait Small.jpg"/>
                     </div>
