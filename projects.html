@@ -119,6 +119,35 @@
             font-style: thin;
             color: #03a9f4;
         }
+
+        .materialboxed
+        {
+            height: 465px;
+            position: absolute; 
+            right: 12%; 
+            margin-top: 43px;
+            max-height: 400;
+
+        }
+
+        /* Class for when element is above threshold */
+        .pin-top 
+        {
+            position: relative;
+        }
+
+        /* Class for when element is below threshold */
+        .pin-bottom 
+        {
+            position: relative;
+        }
+
+        /* Class for when element is pinned */
+        .pinned 
+        {
+            position: fixed !important;
+        }
+
         
         </style>
     </head>
@@ -199,78 +228,131 @@
         </span>
         
         <!-- First Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/Palm Highest.jpg"></div>
             <script>
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
-        
-            <!-- Frackman Frame -->
-            <div class="frame-1">
-                <div class="row">
-                    <div class="col s7">
-                        <div class="container">
-                            <h2 class= "MyHeader" style="position: relative;">Frackman</h2>
 
-                            <!-- Tab Section -->
-                            <br></br>
-                            <div class="row">
-                                <div class="col s12">
-                                  <ul class="tabs" style="position: relative;">
-                                    <li class="tab col s3"><a class="active" href="#Description">Description</a></li>
-                                    <li class="tab col s3"><a href="#Concepts">Concepts</a></li>
-                                    <li class="tab col s3"><a target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
-                                    <li class="tab col s3 disabled"><a href="#Demo">Demo</a></li>
-                                  </ul>
-                                </div>
+            <script>
+            //     $(document).ready(function()
+            //     {
+            //         $('.toc-wrapper').pushpin({top: 300, offset: 450});
+            //         $('.scrollspy').scrollSpy();
+            //     });
+            </script>
 
-                                <div id="Description" class="col s12">
-                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
-                                    <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
-                                    <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location and derive the shortest possible path towards you.</p>
-                                    <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Eventually, you lose a life. Once three lives are taken, you lose the game.</p>
-                                </div>
-                                <div id="Concepts" class="col s12">
-                                    <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                                    <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
-                                    <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
-                                </div>
-                                <div id="Demo" class="col s12">Coming Soon</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="col s4">
-                        <img style=" max-height: 380px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 17.75%; margin-top: 43px;" src="image library/cropped images/Portrait Small.jpg"/>
-                    </div>
-                    <div class="col s1"></div>
+            <!-- Scrollspy -->
+            <!-- <div class="col s1 offset-s10">
+                <div class="toc-wrapper">
+                    <ul class="section table-of-contents">
+                        <li><a href="#frackman">Frackman</a></li>
+                        <li><a href="#blackjack">Blackjack</a></li>
+                    </ul>
                 </div>
+            </div> -->
+
+            <!-- Frackman Frame -->
+            <div id="frackman" class="scrollspy">
+
+                <div class="frame-1">
+                    <div class="row">
+                        <div class="col s7">
+                            <div class="container">
+                                <h2 class= "MyHeader" style="position: relative;">Frackman</h2>
+
+                                <!-- Tab Section -->
+                                <br></br>
+                                <div class="row">
+                                    <div class="col s12">
+                                      <ul class="tabs" style="position: relative;">
+                                        <li class="tab col s3"><a class="active" href="#Description">Description</a></li>
+                                        <li class="tab col s3"><a href="#Concepts">Concepts</a></li>
+                                        <li class="tab col s3"><a target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
+                                        <li class="tab col s3 disabled"><a href="#Demo">Demo</a></li>
+                                      </ul>
+                                    </div>
+
+                                    <div id="Description" class="col s12">
+                                        <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
+                                        <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
+                                        <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location and derive the shortest possible path towards you.</p>
+                                        <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Eventually, you lose a life. Once three lives are taken, you lose the game.</p>
+                                    </div>
+                                    <div id="Concepts" class="col s12">
+                                        <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                                        <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
+                                        <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
+                                    </div>
+                                    <div id="Demo" class="col s12">Coming Soon</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col s4">
+                            <!-- <img style=" max-height: 465px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 12%; margin-top: 43px;" src="image library/full images/Frackman.jpg"/> -->
+                        <img class="materialboxed" src="image library/full images/Frackman.jpg" data-caption="About to find Oil, but Protester is closing in.">
+                        </div>
+                        <div class="col s1"></div>
+                    </div>
+                </div>
+
             </div>
         
         <!-- Second Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/Red Nature.jpg"></div>
+
+            <!-- <br></br><div class="divider"></div><br></br> -->
         
             <!-- Blackjack Frame -->
-            <div class="frame-2">
-                <div class="row">
-                    <div class="col s7">
-                        <div class="container">
-                            <h2 class= "MyHeader" style="position: relative;">Blackjack</h2>
-                            <p class="MyBody" style="position: relative;">Line 1</p>
-                            <p class="MyBody" style="position: relative;">Line 2</p>
-                            <p class="MyBody" style="position: relative;">Line 3</p>
-                            <p class="MyBody" style="position: relative;">Line 4</p>
+            <div id="blackjack" class="scrollspy">
+
+                <div class="frame-2">
+                    <div class="row">
+                        <div class="col s7">
+                            <div class="container">
+                                <h2 class= "MyHeader" style="position: relative;">Blackjack</h2>
+
+                                <!-- Tab Section -->
+                                <br></br>
+                                <div class="row">
+                                    <div class="col s12">
+                                      <ul class="tabs" style="position: relative;">
+                                        <li class="tab col s3"><a class="active" href="#BJDescription">Description</a></li>
+                                        <li class="tab col s3"><a href="#BJConcepts">Concepts</a></li>
+                                        <li class="tab col s3"><a target="_blank" href="http://www.github.com/nwtsai/Blackjack">Code</a></li>
+                                        <li class="tab col s3 disabled"><a href="#BJDemo">Demo</a></li>
+                                      </ul>
+                                    </div>
+
+                                    <div id="BJDescription" class="col s12">
+                                        <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
+                                        <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
+                                        <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location and derive the shortest possible path towards you.</p>
+                                        <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Eventually, you lose a life. Once three lives are taken, you lose the game.</p>
+                                    </div>
+                                    <div id="BJConcepts" class="col s12">
+                                        <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                                        <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
+                                        <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
+                                    </div>
+                                    <div id="BJDemo" class="col s12">Coming Soon</div>
+                                </div>
+                                
+                            </div>
                         </div>
+
+                        <div class="col s4">
+                            <img style=" max-height: 380px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 17.75%; margin-top: 43px;" src="image library/cropped images/Portrait Small.jpg"/>
+                        </div>
+                        <div class="col s1"></div>
                     </div>
-                    <div class="col s4">
-                        <img style=" max-height: 380px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 17.75%; margin-top: 43px;" src="image library/cropped images/Portrait Small.jpg"/>
-                    </div>
-                    <div class="col s1"></div>
                 </div>
+
             </div>
 
         <!-- Third Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/Japanese Garden.jpg"></div>
+        <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/Japanese Garden.jpg"></div> -->
 
     </body>
 </html>
