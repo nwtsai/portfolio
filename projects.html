@@ -52,7 +52,7 @@
         /* Custom Frame Space */
         .frame-1
         {
-            height: 500px; /*can be anything*/
+            height: 550px; /*can be anything*/
             width: 100%; /*can be anything*/
             position: relative;
         }
@@ -215,25 +215,24 @@
                             <br></br>
                             <div class="row">
                                 <div class="col s12">
-                                  <ul class="tabs style="position: relative;">
+                                  <ul class="tabs" style="position: relative;">
                                     <li class="tab col s3"><a class="active" href="#Description">Description</a></li>
                                     <li class="tab col s3"><a href="#Concepts">Concepts</a></li>
-                                    <li class="tab col s3"><a href="#Code">Code</a></li>
+                                    <li class="tab col s3"><a target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
                                     <li class="tab col s3 disabled"><a href="#Demo">Demo</a></li>
                                   </ul>
                                 </div>
 
                                 <div id="Description" class="col s12">
-                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find and collect all 'Oil Barrel' objects without getting caught by the AI, known as the 'Protesters.'</p>
-                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find and collect all 'Oil Barrel' objects without getting caught by the AI, known as the 'Protesters.'</p>
-                                </div>
-                                <div id="Code" class="col s12">
-                                    <p class="MyBody" style="position: relative;"><a class href="https://github.com/nwtsai/Frackman" target="_blank">Click here</a> to find the source code for this project.</p>
+                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
+                                    <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
+                                    <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location and derive the shortest possible path towards you.</p>
+                                    <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Eventually, you lose a life. Once three lives are taken, you lose the game.</p>
                                 </div>
                                 <div id="Concepts" class="col s12">
-                                    <p class="MyBody" style="position: relative;">‣ Based on the 1982 game Dig Dug, I implemented a game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                                    <p class="MyBody" style="position: relative;">‣ I designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
-                                    <p class="MyBody" style="position: relative;">‣ I devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
+                                    <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                                    <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
+                                    <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
                                 </div>
                                 <div id="Demo" class="col s12">Coming Soon</div>
                             </div>
