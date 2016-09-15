@@ -100,13 +100,13 @@
         /* Class for when element is above threshold */
         .pin-top
         {
-            position: fixed;
+            position: relative;
         }
 
         /* Class for when element is below threshold */
         .pin-bottom
         {
-            position: fixed;
+            position: relative;
         }
 
         /* Class for when element is pinned */
@@ -124,6 +124,11 @@
         {
             font-family: "Ubuntu";
             text-align: center;
+        }
+
+        .fixed-toc
+        {
+            position: fixed;
         }
 
         </style>
@@ -204,7 +209,7 @@
         </span>
 
         <!-- First Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/full images/Foggy Ocean.jpg"></div>
+        <div class="parallax-window section scrollspy" id="projects" data-parallax="scroll" data-image-src="image library/full images/Foggy Ocean.jpg"></div>
 
             <!-- Dynamic Parallax -->
             <script>
@@ -215,23 +220,10 @@
             <script>
                 $(document).ready(function()
                 {
-                    $('.toc-wrapper').pushpin({ offset: 566 });
-                    // $('.toc-wrapper').pushpin({offset: 566});
+                    $('.toc-wrapper').pushpin({offset: 545});
                     $('.scrollspy').scrollSpy();
                 });
             </script>
-
-            <!-- Scrollspy Table of Contents -->
-            <div class="row">
-                <div class="col s1 offset-s11">
-                    <div class="toc-wrapper">
-                        <ul class="section table-of-contents">
-                            <li><a href="#frackman">Frackman</a></li>
-                            <li><a href="#blackjack">Blackjack</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
             <!-- Frackman Frame -->
             <div class="frame-1">
@@ -240,7 +232,7 @@
                         <div class="container">
                             <h2 class= "MyHeader section scrollspy" id = "frackman" style="position: relative;">Frackman</h2>
 
-                            <!-- Tab Section -->
+                            <!-- Frackman Tab Section -->
                             <br></br>
                             <div class="row">
                                 <div class="col s12">
@@ -275,10 +267,22 @@
                         </div>
                     </div>
 
+                    <!-- Frackman Image -->
                     <div class="col s4">
                         <img class="materialboxed" src="image library/full images/Frackman.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 43px; right: 9.5%; max-height: 853px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
                     </div>
-                    <div class="col s1"></div>
+
+                    <!-- Table of Contents -->
+                    <div class="col s1">
+                      <div class="toc-wrapper">
+                          <ul class="section table-of-contents">
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#frackman">Frackman</a></li>
+                              <li><a href="#blackjack">Blackjack</a></li>
+                          </ul>
+                      </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -295,7 +299,7 @@
                         <div class="container">
                             <h2 class= "MyHeader section scrollspy" id="blackjack" style="position: relative;">Blackjack</h2>
 
-                            <!-- Tab Section -->
+                            <!-- Blackjack Tab Section -->
                             <br></br>
                             <div class="row">
                                 <div class="col s12">
@@ -334,14 +338,26 @@
                         </div>
                     </div>
 
+                    <!-- Blackjack Image -->
                     <div class="col s4">
                         <img class="materialboxed responsive-img" src="image library/full images/Blackjack.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 30px; max-height: 863px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
                     </div>
-                    <div class="col s1"></div>
+
+                    <!-- Table of Contents -->
+                    <div class="col s1">
+                      <div class="toc-wrapper">
+                          <ul class="section table-of-contents">
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#frackman">Frackman</a></li>
+                              <li><a href="#blackjack">Blackjack</a></li>
+                          </ul>
+                      </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Future Project Tab -->
+            <!-- Future Project Tabs Go Here -->
 
     </body>
 </html>
