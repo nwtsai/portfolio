@@ -93,19 +93,20 @@
         .materialboxed
         {
             height: 520px;
+            width: 520px;
             position: absolute;
         }
 
         /* Class for when element is above threshold */
         .pin-top
         {
-            position: relative;
+            position: fixed;
         }
 
         /* Class for when element is below threshold */
         .pin-bottom
         {
-            position: relative;
+            position: fixed;
         }
 
         /* Class for when element is pinned */
@@ -214,7 +215,8 @@
             <script>
                 $(document).ready(function()
                 {
-                    $('.toc-wrapper').pushpin({offset: 566});
+                    $('.toc-wrapper').pushpin({ offset: 566 });
+                    // $('.toc-wrapper').pushpin({offset: 566});
                     $('.scrollspy').scrollSpy();
                 });
             </script>
@@ -259,9 +261,9 @@
                                 </div>
                                 <div id="Design" class="col s12">
                                     <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                                    <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
+                                    <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
                                     <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
-                                    <p class="MyBody" style="position: relative;">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the field at once</p>
+                                    <p class="MyBody" style="position: relative;">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the field</p>
                                 </div>
                                 <div id="Code" class="col s12">
                                     <br></br>
@@ -274,7 +276,7 @@
                     </div>
 
                     <div class="col s4">
-                        <img class="materialboxed" src="image library/full images/Frackman.jpg" style="height: 520px; position: absolute; margin-top: 43px; right: 10%; max-height: 853px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
+                        <img class="materialboxed" src="image library/full images/Frackman.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 43px; right: 10%; max-height: 853px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
                     </div>
                     <div class="col s1"></div>
                 </div>
@@ -333,7 +335,7 @@
                     </div>
 
                     <div class="col s4">
-                        <img class="materialboxed" src="image library/full images/Blackjack.jpg" style="height: 520px; position: absolute; margin-top: 30px; max-height: 863px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
+                        <img class="materialboxed responsive-img" src="image library/full images/Blackjack.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 30px; max-height: 863px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
                     </div>
                     <div class="col s1"></div>
                 </div>
