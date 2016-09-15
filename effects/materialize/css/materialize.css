@@ -6800,7 +6800,7 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 18px;
-  border-left: 2px solid #ea4a4f;
+  border-left: 2px solid #03a9f4;
 }
 
 .side-nav {
