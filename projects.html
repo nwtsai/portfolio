@@ -40,7 +40,8 @@
             font-size: 60px;
             font-family: "Dosis";
             /*color: #1976d2; Dark Blue*/
-            color: #e53935;
+            /* color: #e53935; Red*/
+            color: #03a9f4;
         }
         
         /* Custom Body Format */
@@ -72,7 +73,7 @@
             font-size: 60px;
             color: #ffffff;
             font-family: "Oswald";
-            letter-spacing: 5px;
+            letter-spacing: 4px;
             background: transparent;
             position: absolute;
             left: 155px;
@@ -151,7 +152,11 @@
             position: fixed !important;
         }
 
-        
+        .tabs .indicator 
+        {
+            background-color: #03a9f4;
+        }  
+
         </style>
     </head>
     
@@ -268,14 +273,14 @@
                                 <div class="row">
                                     <div class="col s12">
                                       <ul class="tabs" style="position: relative;">
-                                        <li class="tab col s3"><a class="active" href="#Description">Description</a></li>
-                                        <li class="tab col s3"><a href="#Concepts">Concepts</a></li>
-                                        <li class="tab col s3"><a target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
-                                        <li class="tab col s3 disabled"><a href="#Demo">Demo</a></li>
+                                        <li class="tab col s3"><a class="active" style = "color: #03a9f4;" href="#Description">Description</a></li>
+                                        <li class="tab col s3"><a style = "color: #03a9f4;" href="#Concepts">Concepts</a></li>
+                                        <li class="tab col s3"><a style = "color: #03a9f4;" target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
+                                        <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li>
                                       </ul>
                                     </div>
 
-                                    <div id="Description" class="col s12">
+                                    <div id="Description" style="color: #03a9f4;" class="col s12">
                                         <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
                                         <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
                                         <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
@@ -321,15 +326,15 @@
                                 <div class="row">
                                     <div class="col s12">
                                       <ul class="tabs" style="position: relative;">
-                                        <li class="tab col s3"><a class="active" href="#BJDescription">Description</a></li>
-                                        <li class="tab col s3"><a href="#BJConcepts">Concepts</a></li>
-                                        <li class="tab col s3"><a target="_blank" href="http://www.github.com/nwtsai/Blackjack">Code</a></li>
-                                        <li class="tab col s3 disabled"><a href="#BJDemo">Demo</a></li>
+                                        <li class="tab col s3"><a style = "color: #03a9f4;" class="active" href="#BJDescription">Description</a></li>
+                                        <li class="tab col s3"><a style = "color: #03a9f4;" href="#BJConcepts">Concepts</a></li>
+                                        <li class="tab col s3"><a style = "color: #03a9f4;" target="_blank" href="http://www.github.com/nwtsai/Blackjack">Code</a></li>
+                                        <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li>
                                       </ul>
                                     </div>
 
                                     <div id="BJDescription" class="col s12">
-                                        <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
+                                        <p class="MyBody" style="position: relative;">‣ </p>
                                         <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
                                         <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location and derive the shortest possible path towards you.</p>
                                         <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Eventually, you lose a life. Once three lives are taken, you lose the game.</p>
