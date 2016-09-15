@@ -39,8 +39,6 @@
         {
             font-size: 60px;
             font-family: "Dosis";
-            /*color: #1976d2; Dark Blue*/
-            /* color: #e53935; Red*/
             color: #03a9f4;
         }
         
@@ -79,40 +77,6 @@
             left: 155px;
             top: 9%;
         }
-        
-        /* Cursor Settings */
-        .typed-cursor
-        {
-            font-size: 60px;
-            font-family: "Ubuntu";
-            opacity: 1;
-            -webkit-animation: blink infinite infinite;
-            -moz-animation: blink infinite infinite;
-            animation: blink infinite infinite;
-            position: absolute;
-            top: 64px;
-            color: #ffffff;
-            background: transparent;
-        }
-        /*
-         @keyframes blink
-         {
-         0% { opacity:1; }
-         50% { opacity:0; }
-         100% { opacity:1; }
-         }
-         @-webkit-keyframes blink
-         {
-         0% { opacity:1; }
-         50% { opacity:0; }
-         100% { opacity:1; }
-         }
-         @-moz-keyframes blink
-         {
-         0% { opacity:1; }
-         50% { opacity:0; }
-         100% { opacity:1; }
-         }*/
         
         /* <pre> tag settings */
         pre
@@ -191,7 +155,6 @@
         </div>
         
         <!-- TypeWriter Effect -->
-        
         <span class = "element">
             <script>
                 $(function(){
@@ -233,19 +196,22 @@
         
         <!-- First Parallax Effect -->
         <div class="parallax-window" data-parallax="scroll" data-image-src="image library/full images/Foggy Ocean.jpg"></div>
+
+            <!-- Dynamic Parallax -->
             <script>
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
 
+            <!-- Dynamic Scrollspy -->
             <script>
                 $(document).ready(function()
                 {
-                    $('.toc-wrapper').pushpin({offset: 550});
+                    $('.toc-wrapper').pushpin({offset: 566});
                     $('.scrollspy').scrollSpy();
                 });
             </script>
 
-            <!-- Scrollspy -->
+            <!-- Scrollspy Table of Contents -->
             <div class="row">
                 <div class="col s1 offset-s11">
                     <div class="toc-wrapper">
@@ -258,107 +224,97 @@
             </div>
 
             <!-- Frackman Frame -->
-            <div id="frackman" class="scrollspy">
+            <div class="frame-1">
+                <div class="row">
+                    <div class="col s7">
+                        <div class="container">
+                            <h2 class= "MyHeader section scrollspy" id = "frackman" style="position: relative;">Frackman</h2>
 
-                <div class="frame-1">
-                    <div class="row">
-                        <div class="col s7">
-                            <div class="container">
-                                <h2 class= "MyHeader" style="position: relative;">Frackman</h2>
-
-                                <!-- Tab Section -->
-                                <br></br>
-                                <div class="row">
-                                    <div class="col s12">
-                                      <ul class="tabs" style="position: relative;">
-                                        <li class="tab col s3"><a class="active" style = "color: #03a9f4;" href="#Description">Description</a></li>
-                                        <li class="tab col s3"><a style = "color: #03a9f4;" href="#Concepts">Algorithms</a></li>
-                                        <li class="tab col s3"><a style = "color: #03a9f4;" target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
-                                        <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li>
-                                      </ul>
-                                    </div>
-
-                                    <div id="Description" style="color: #03a9f4;" class="col s12">
-                                        <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
-                                        <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
-                                        <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
-                                        <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
-                                    </div>
-                                    <div id="Concepts" class="col s12">
-                                        <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                                        <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
-                                        <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
-                                    </div>
-                                    <div id="Demo" class="col s12">Coming Soon</div>
+                            <!-- Tab Section -->
+                            <br></br>
+                            <div class="row">
+                                <div class="col s12">
+                                  <ul class="tabs" style="position: relative;">
+                                    <li class="tab col s3"><a class="active" style = "color: #03a9f4;" href="#Description">Description</a></li>
+                                    <li class="tab col s3"><a style = "color: #03a9f4;" href="#Concepts">Algorithms</a></li>
+                                    <li class="tab col s3"><a style = "color: #03a9f4;" target="_blank" href="http://www.github.com/nwtsai/Frackman">Code</a></li>
+                                    <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li>
+                                  </ul>
                                 </div>
-                                
+
+                                <div id="Description" style="color: #03a9f4;" class="col s12">
+                                    <p class="MyBody" style="position: relative;">‣ The goal of the game is to find all Oil Barrel objects and proceed to the next level without getting caught by the AI, known as the Protesters.</p>
+                                    <p class="MyBody" style="position: relative;">‣ The Regular Protesters only follow the player when you, the Frackman, are in their line of sight.</p>
+                                    <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
+                                    <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
+                                </div>
+                                <div id="Concepts" class="col s12">
+                                    <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                                    <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
+                                    <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
+                                </div>
+                                <div id="Demo" class="col s12">Coming Soon</div>
                             </div>
+                            
                         </div>
-
-                        <div class="col s4">
-                            <!-- <img style=" max-height: 465px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; right: 12%; margin-top: 43px;" src="image library/full images/Frackman.jpg"/> -->
-                        <img class="materialboxed" src="image library/full images/Frackman.jpg" style="height: 520px; position: absolute; margin-top: 43px; right: 12%; max-height: 853px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
-                        </div>
-                        <div class="col s1"></div>
                     </div>
-                </div>
 
+                    <div class="col s4">
+                        <img class="materialboxed" src="image library/full images/Frackman.jpg" style="height: 520px; position: absolute; margin-top: 43px; right: 10%; max-height: 853px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
+                    </div>
+                    <div class="col s1"></div>
+                </div>
             </div>
         
-        <!-- Second Parallax Effect -->
-<!--         <div class="parallax-window" data-parallax="scroll" data-image-src="image library/full images/Other Foggy Ocean.jpg"></div> -->
-            <br></br><br></br><div class="divider"></div><br></br>
+            <!-- Divider -->
+            <br></br>
+            <br></br>
+            <div class="divider"></div>
+            <br></br>
         
             <!-- Blackjack Frame -->
-            <div id="blackjack" class="scrollspy">
+            <div class="frame-2">
+                <div class="row">
+                    <div class="col s7">
+                        <div class="container">
+                            <h2 class= "MyHeader section scrollspy" id="blackjack" style="position: relative;">Blackjack</h2>
 
-                <div class="frame-2">
-                    <div class="row">
-                        <div class="col s7">
-                            <div class="container">
-                                <h2 class= "MyHeader" style="position: relative;">Blackjack</h2>
-
-                                <!-- Tab Section -->
-                                <br></br>
-                                <div class="row">
-                                    <div class="col s12">
-                                      <ul class="tabs" style="position: relative;">
-                                        <li class="tab col s3"><a style = "color: #03a9f4;" class="active" href="#BJDescription">Description</a></li>
-                                        <li class="tab col s3"><a style = "color: #03a9f4;" href="#BJConcepts">Algorithms</a></li>
-                                        <li class="tab col s3"><a style = "color: #03a9f4;" target="_blank" href="http://www.github.com/nwtsai/Blackjack">Code</a></li>
-                                        <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li>
-                                      </ul>
-                                    </div>
-
-                                    <div id="BJDescription" class="col s12">
-                                        <p class="MyBody" style="position: relative;">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
-                                        <p class="MyBody" style="position: relative;">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is advantageous.</p>
-                                        <p class="MyBody" style="position: relative;">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
-                                        <p class="MyBody" style="position: relative;">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
-                                    </div>
-                                    <div id="BJConcepts" class="col s12">
-                                        <p class="MyBody" style="position: relative;">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
-                                        <p class="MyBody" style="position: relative;">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
-                                        <p class="MyBody" style="position: relative;">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
-                                        <p class="MyBody" style="position: relative;">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
-                                    </div>
-                                    <div id="BJDemo" class="col s12">Coming Soon</div>
+                            <!-- Tab Section -->
+                            <br></br>
+                            <div class="row">
+                                <div class="col s12">
+                                  <ul class="tabs" style="position: relative;">
+                                    <li class="tab col s3"><a style = "color: #03a9f4;" class="active" href="#BJDescription">Description</a></li>
+                                    <li class="tab col s3"><a style = "color: #03a9f4;" href="#BJConcepts">Algorithms</a></li>
+                                    <li class="tab col s3"><a style = "color: #03a9f4;" target="_blank" href="http://www.github.com/nwtsai/Blackjack">Code</a></li>
+                                    <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li>
+                                  </ul>
                                 </div>
-                                
+
+                                <div id="BJDescription" class="col s12">
+                                    <p class="MyBody" style="position: relative;">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
+                                    <p class="MyBody" style="position: relative;">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is advantageous.</p>
+                                    <p class="MyBody" style="position: relative;">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
+                                    <p class="MyBody" style="position: relative;">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
+                                </div>
+                                <div id="BJConcepts" class="col s12">
+                                    <p class="MyBody" style="position: relative;">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
+                                    <p class="MyBody" style="position: relative;">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
+                                    <p class="MyBody" style="position: relative;">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
+                                    <p class="MyBody" style="position: relative;">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
+                                </div>
+                                <div id="BJDemo" class="col s12">Coming Soon</div>
                             </div>
+                            
                         </div>
-
-                        <div class="col s4">
-                            <img class="materialboxed" src="image library/full images/Blackjack.jpg" style="height: 520px; position: absolute; margin-top: 30px; max-height: 863px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
-                        </div>
-                        <div class="col s1"></div>
                     </div>
+
+                    <div class="col s4">
+                        <img class="materialboxed" src="image library/full images/Blackjack.jpg" style="height: 520px; position: absolute; margin-top: 30px; max-height: 863px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
+                    </div>
+                    <div class="col s1"></div>
                 </div>
-
             </div>
-
-        <!-- Third Parallax Effect -->
-        <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/Japanese Garden.jpg"></div> -->
 
     </body>
 </html>

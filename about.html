@@ -14,7 +14,6 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pontano+Sans">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Antic">
         <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
-
             
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -51,7 +50,6 @@
         {
             font-size: 60px;
             font-family: "Dosis";
-            /*color: #1976d2; Dark Blue*/
             color: #e53935;
             font-weight: 100;
         }
@@ -84,40 +82,6 @@
             left: 12%;
             top: 9%;
         }
-                        
-        /* Cursor Settings */
-        .typed-cursor
-        {
-            font-size: 60px;
-            font-family: "Ubuntu";
-            opacity: 1;
-            -webkit-animation: blink infinite infinite;
-            -moz-animation: blink infinite infinite;
-            animation: blink infinite infinite;
-            position: absolute;
-            top: 64px;
-            color: #ffffff;
-            background: transparent;
-        }
-        /*
-        @keyframes blink
-        {
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-webkit-keyframes blink
-        {
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-moz-keyframes blink
-        {
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }*/
                         
         /* <pre> tag settings */
         pre
@@ -217,6 +181,8 @@
 
         <!-- Top Parallax Effect -->
         <div class="parallax-window-top" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
+
+            <!-- Dynamic Parallax -->
             <script>
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
@@ -225,8 +191,7 @@
             <div class="frame hoverable">
                 <div class="row">
                     <div class="col s4">
-                    <!-- <img style=" max-height: 357px; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; left: 12%; right: 0; margin-top: 43px;" src="image library/cropped images/Portrait Small.jpg"/> -->
-                    <img class="materialboxed" src="image library/cropped images/Portrait Small.jpg" data-caption="Taken at Royce Hall, UCLA. Courtesy of Anny Lin">
+                        <img class="materialboxed" src="image library/cropped images/Portrait Small.jpg" data-caption="Taken at Royce Hall, UCLA. Courtesy of Anny Lin">
                     </div>
                     <div class="col s7">
                         <h2 class= "MyHeader" style="position: relative; left: 5%;">Welcome</h2>
