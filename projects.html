@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <!-- Head -->
     <head>
         <!-- Resources -->
@@ -12,19 +12,21 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
         <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
 
-                        
+        <!-- Pinned Tab Image -->
+        <link rel='mask-icon' href='image library/Pinned Tab Image/PP.svg' color='blue'>
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-                        
+
         <title>Nathan Tsai</title>
-                        
+
         <!-- CSS -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="effects/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        
+
         <!-- Fonts and Styles -->
         <style>
-            
+
         /* Parallax Settings*/
         .parallax-window
         {
@@ -33,7 +35,7 @@
             background: transparent;
             position: relative;
         }
-        
+
         /* Custom Header Format */
         .MyHeader
         {
@@ -41,7 +43,7 @@
             font-family: "Dosis";
             color: #03a9f4;
         }
-        
+
         /* Custom Body Format */
         .MyBody
         {
@@ -49,7 +51,7 @@
             font-family: "Open Sans";
             color: black;
         }
-        
+
         /* Custom Frame Space */
         .frame-1
         {
@@ -64,7 +66,7 @@
             width: 100%; /*can be anything*/
             position: relative;
         }
-        
+
         /* Typewriter Effect */
         .element
         {
@@ -77,7 +79,7 @@
             left: 155px;
             top: 9%;
         }
-        
+
         /* <pre> tag settings */
         pre
         {
@@ -91,69 +93,69 @@
         .materialboxed
         {
             height: 520px;
-            position: absolute; 
+            position: absolute;
         }
 
         /* Class for when element is above threshold */
-        .pin-top 
+        .pin-top
         {
             position: relative;
         }
 
         /* Class for when element is below threshold */
-        .pin-bottom 
+        .pin-bottom
         {
             position: relative;
         }
 
         /* Class for when element is pinned */
-        .pinned 
+        .pinned
         {
             position: fixed !important;
         }
 
-        .tabs .indicator 
+        .tabs .indicator
         {
             background-color: #03a9f4;
-        }  
+        }
 
         </style>
     </head>
-    
+
     <!-- Body -->
     <body>
-        
+
         <!--  Javascript Resources -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
         <script src="effects/materialize/js/materialize.js"></script>
         <script src="effects/parallax.js/parallax.js"></script>
         <script src="effects/typewriter/js/typed.js"></script>
-        
+
         <!-- Navigation Bar-->
         <div class = "navbar-fixed">
             <nav class="blue darken-3" role="navigation">
                 <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"></a>
-                    
+
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    
+
                     <!-- Navigation Buttons-->
                     <ul class="right hide-on-med-and-down">
                         <li><a href="index.html"><font face = "Ubuntu">Home</font></a></li>
                         <li><a href="about.html"><font face = "Ubuntu">About Me</font></a></li>
                         <li class="active"><a href="projects.html"><font face = "Ubuntu">Projects</font></a></li>
                     </ul>
-                    
+
                     <!-- Mobile Implementation-->
                     <ul class="side-nav" id = "mobile-demo">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="projects.html">Projects</a></li>
                     </ul>
-                    
+
                 </div>
             </nav>
         </div>
-        
+
         <!-- TypeWriter Effect -->
         <span class = "element">
             <script>
@@ -193,7 +195,7 @@
                     });
             </script>
         </span>
-        
+
         <!-- First Parallax Effect -->
         <div class="parallax-window" data-parallax="scroll" data-image-src="image library/full images/Foggy Ocean.jpg"></div>
 
@@ -252,10 +254,11 @@
                                     <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
                                     <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a queue-based algorithm that performs a breadth-first search</p>
                                     <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to both distinguish the different objects and store them in a single array under a superclass to prevent code duplication</p>
+                                    <p class="MyBody" style="position: relative;">‣ </p>
                                 </div>
                                 <div id="Demo" class="col s12">Coming Soon</div>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -265,13 +268,13 @@
                     <div class="col s1"></div>
                 </div>
             </div>
-        
+
             <!-- Divider -->
             <br></br>
             <br></br>
             <div class="divider"></div>
             <br></br>
-        
+
             <!-- Blackjack Frame -->
             <div class="frame-2">
                 <div class="row">
@@ -305,7 +308,7 @@
                                 </div>
                                 <div id="BJDemo" class="col s12">Coming Soon</div>
                             </div>
-                            
+
                         </div>
                     </div>
 
