@@ -25,7 +25,7 @@
 
         <!-- CSS -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="effects/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="effects/materialize/css/ab_materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
         <!-- Fonts and Styles -->
         <style>
@@ -46,7 +46,6 @@
             font-size: 60px;
             font-family: "Dosis";
             color: #e53935;
-            font-weight: 100;
         }
 
         /* Custom Body Format */
@@ -112,6 +111,24 @@
         .container .row {margin:20px;text-align:center;}
         .container .row img {margin:0 20px;}
 
+        /* Class for when element is above threshold */
+        .pin-top
+        {
+            position: relative;
+        }
+
+        /* Class for when element is below threshold */
+        .pin-bottom
+        {
+            position: relative;
+        }
+
+        /* Class for when element is pinned */
+        .pinned
+        {
+            position: fixed !important;
+        }
+
         </style>
     </head>
 
@@ -150,7 +167,6 @@
         </div>
 
         <!-- TypeWriter Effect -->
-
         <span class = "element">
             <script>
                 $(function(){
@@ -191,17 +207,26 @@
         </span>
 
         <!-- Parallax Effect -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
+        <div class="parallax-window section scrollspy" id="welcome" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
 
             <!-- Dynamic Parallax -->
             <script>
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
 
+            <!-- Dynamic Scrollspy -->
+            <script>
+                $(document).ready(function()
+                {
+                    $('.toc-wrapper').pushpin({offset: 520});
+                    $('.scrollspy').scrollSpy();
+                });
+            </script>
+
             <!-- Portrait -->
             <br></br>
             <div class="portrait">
-                <img src="image library/cropped images/Portrait Circle.jpg" class="circle" style="height: 280px;" align = "middle">
+                <img src="image library/cropped images/Portrait Circle.jpg" class="circle" style="height: 260px;" align = "middle">
             </div>
             <br></br>
 
@@ -212,7 +237,10 @@
                 <a class="btn waves-effect waves-light red lighten-2 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Soundcloud" data-delay="100" href="http://www.soundcloud.com/nwtsai" target="_blank"><i class="fa fa-soundcloud"></i></a>
             </div>
 
+            <!-- Divider -->
             <br></br>
+            <br></br>
+            <div class="divider"></div>
 
             <!-- About Me Text -->
             <div class="row">
@@ -220,6 +248,7 @@
                 <div class="col s8">
                     <div style="text-align: center;">
                         <div style="display: inline-block; text-align: justify">
+                            <h2 class = "MyHeader section scrollspy" id="aboutme" style="position: relative;">About Me</h2>
                             <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
                             studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
                             <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
@@ -232,8 +261,98 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s2"></div>
+                <div class="col s1"></div>
+
+                <!-- Table of Contents -->
+                <div class="col s1">
+                  <div class="toc-wrapper">
+                      <ul class="section table-of-contents">
+                          <li><a href="#welcome">Welcome</a></li>
+                          <li><a href="#aboutme">About Me</a></li>
+                          <li><a href="#skills">Skills</a></li>
+                          <li><a href="#contactme">Contact Me</a></li>
+                      </ul>
+                  </div>
+                </div>
             </div>
+
+            <!-- Divider -->
+            <br></br>
+            <div class="divider"></div>
+
+            <!-- Skills Text -->
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <div style="text-align: center;">
+                        <div style="display: inline-block; text-align: justify">
+                            <h2 class = "MyHeader section scrollspy" id="skills" style="position: relative;">Skills</h2>
+                            <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
+                            studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                            <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
+                            end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website</a>,
+                            I discovered a keen interest in web development.</p>
+                            <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
+                            clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
+                            Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
+                            where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s1"></div>
+
+                <!-- Table of Contents -->
+                <div class="col s1">
+                  <div class="toc-wrapper">
+                      <ul class="section table-of-contents">
+                          <li><a href="#welcome">Welcome</a></li>
+                          <li><a href="#aboutme">About Me</a></li>
+                          <li><a href="#skills">Skills</a></li>
+                          <li><a href="#contactme">Contact Me</a></li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <br></br>
+            <div class="divider"></div>
+
+            <!-- Contact Me Text -->
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <div style="text-align: center;">
+                        <div style="display: inline-block; text-align: justify">
+                            <h2 class = "MyHeader section scrollspy" id="contactme" style="position: relative;">Contact Me</h2>
+                            <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
+                            studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                            <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
+                            end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website</a>,
+                            I discovered a keen interest in web development.</p>
+                            <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
+                            clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
+                            Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
+                            where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s1"></div>
+
+                <!-- Table of Contents -->
+                <div class="col s1">
+                  <div class="toc-wrapper">
+                      <ul class="section table-of-contents">
+                          <li><a href="#welcome">Welcome</a></li>
+                          <li><a href="#aboutme">About Me</a></li>
+                          <li><a href="#skills">Skills</a></li>
+                          <li><a href="#contactme">Contact Me</a></li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+
+            <br></br>
 
     </body>
 </html>
