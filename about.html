@@ -35,6 +35,7 @@
         {
             width: 100%;
             min-height: 470px;
+            //min-height: 235px;
             background: transparent;
             position: relative;
         }
@@ -63,6 +64,7 @@
             font-size: 19px;
             font-family: "Open Sans";
             color: black;
+            position: relative;
         }
 
         /* Custom Frame Space */
@@ -76,15 +78,20 @@
         /* Typewriter Effect */
         .element
         {
-            font-size: 53px;
-            font-weight: thin;
+            //font-size: 53px;
+            font-size: 60px;
+            //font-weight: thin;
             color: #ffffff;
+            font-weight: 100;
             font-family: "Oswald";
             letter-spacing: 5px;
             background: transparent;
             position: absolute;
-            left: 12%;
-            top: 9%;
+            //left: 12%;
+            text-align: center;
+            width: 100%;
+            //top: 9%;
+            top: 11%;
         }
 
         .materialboxed
@@ -105,6 +112,14 @@
             font-style: thin;
             color: #03a9f4;
         }
+
+        .portrait
+        {
+            text-align: center;
+        }
+
+        .container .row {margin:20px;text-align:center;}
+        .container .row img {margin:0 20px;}
 
         </style>
     </head>
@@ -149,7 +164,7 @@
             <script>
                 $(function(){
                     $(".element").typed({
-                        strings: ["About Me"],
+                        strings: ["Welcome"],
                         typeSpeed: 125,
                         // time before typing starts
                         startDelay: 1500,
@@ -192,8 +207,24 @@
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
 
+            <!-- Portrait -->
+            <br></br>
+            <div class="portrait">
+                <img src="image library/cropped images/Portrait circle.jpg" class="circle" style="height: 300px;" align = "middle">
+            </div>
+            <br></br>
+
+            <!-- Buttons -->
+            <div class="portrait">
+                <a class="btn waves-effect waves-light red lighten-1 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="(805) 452 8162" data-delay="100" href="image library/Resume.pdf" target="_blank"><i class="fa fa-facebook"></i></a> &nbsp
+                <a class="btn waves-effect waves-light red lighten-2 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="nwtsai@gmail.com" data-delay="100" href="image library/Resume.pdf" target="_blank"><i class="fa fa-instagram"></i></a> &nbsp
+                <a class="btn waves-effect waves-light red lighten-3 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Facebook" data-delay="100" href="image library/Resume.pdf" target="_blank"><i class="fa fa-soundcloud"></i></a> &nbsp
+            </div>
+
+            <br></br>
+
             <!-- Personal Bio -->
-            <div class="frame hoverable">
+            <!-- <div class="frame hoverable">
                 <div class="row">
                     <div class="col s4">
                         <img class="materialboxed" src="image library/cropped images/Portrait Small.jpg" data-caption="Taken at Royce Hall, UCLA. Courtesy of Anny Lin">
@@ -212,34 +243,26 @@
                     </div>
                     <div class="col s1"></div>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- Bottom Parallax Effect -->
-            <!-- <div class="parallax-window-bottom" data-parallax="scroll" data-image-src="image library/cropped images/Red Nature.jpg"></div> -->
-
-            <!-- Divider -->
-            <div class="divider"></div>
-
-            <!-- Contact Section -->
-            <div class="frame hoverable">
-                <div class="row">
-                    <div class="col s4">
-                        <img class="materialboxed" src="image library/cropped images/Portrait Small.jpg" data-caption="Taken at Royce Hall, UCLA. Courtesy of Anny Lin">
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <div style="text-align: center;">
+                        <div style="display: inline-block; text-align: justify">
+                            <p class="MyBody" style="position: relative; left: 5%;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
+                            studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                            <p class="MyBody" style="position: relative; left: 5%;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
+                            end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website</a>,
+                            I discovered a keen interest in web development.</p>
+                            <p class="MyBody" style="position: relative; left: 5%;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
+                            clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
+                            Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
+                            where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                        </div>
                     </div>
-                    <div class="col s7">
-                        <h2 class= "MyHeader" style="position: relative; left: 5%;">Contact Me</h2>
-                        <p class="MyBody" style="position: relative; left: 5%;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
-                        studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
-                        <p class="MyBody" style="position: relative; left: 5%;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
-                        end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website</a>,
-                        I discovered a keen interest in web development.</p>
-                        <p class="MyBody" style="position: relative; left: 5%;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
-                        clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
-                        Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
-                        where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
-                    </div>
-                    <div class="col s1"></div>
                 </div>
+                <div class="col s2"></div>
             </div>
 
     </body>
