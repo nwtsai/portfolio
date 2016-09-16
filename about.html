@@ -143,14 +143,14 @@
        /* label underline focus color */
        .input-field input[type=text]:focus 
        {
-         border-bottom: 1px solid #e53935;
-         box-shadow: 0 1px 0 0 #e53935;
+         border-bottom: 1px solid #ef9a9a;
+         box-shadow: 0 1px 0 0 #ef9a9a;
        }
        /* valid color */
        .input-field input[type=text].valid 
        {
-         border-bottom: 1px solid #e53935;
-         box-shadow: 0 1px 0 0 #e53935;
+         border-bottom: 1px solid #505050;
+         box-shadow: 0 1px 0 0 #505050;
        }
        /* invalid color */
        .input-field input[type=text].invalid 
@@ -161,7 +161,7 @@
        /* icon prefix focus color */
        .input-field .prefix.active 
        {
-         color: #e53935;
+         color: #ef9a9a;
        }
 
         </style>
@@ -249,7 +249,7 @@
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
 
-            <!-- Dynamic Scrollspy and Character Count-->
+            <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
             <script>
                 $(document).ready(function()
                 {
@@ -258,6 +258,9 @@
 
                     $('input#input_text, textarea#subject').characterCounter();
                     $('input#input_text, textarea#message').characterCounter();
+
+                    $('#textarea1').val('New Text');
+                    $('#textarea1').trigger('autoresize');
                 });
             </script>
 
@@ -398,7 +401,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">assignment</i>
-                      <textarea style="color: red;" id="subject" length="30" type="text" class="materialize-textarea"></textarea>
+                      <textarea id="subject" type="text" class="materialize-textarea"></textarea>
                       <label for="subject">Subject</label>
                     </div>
                   </div>
@@ -406,7 +409,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">chat</i>
-                      <textarea id="message" length="120" text="text" class="materialize-textarea"></textarea>
+                      <textarea id="message" text="text" class="materialize-textarea"></textarea>
                       <label for="message">Message</label>
                     </div>
                   </div>

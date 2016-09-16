@@ -5720,8 +5720,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #e53935;
-  box-shadow: 0 1px 0 0 #e53935;
+  border-bottom: 1px solid #ef9a9a;
+  box-shadow: 0 1px 0 0 #ef9a9a;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5825,8 +5825,8 @@ input[type=search].invalid,
 input[type=search]:focus.invalid,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea:focus.invalid {
-  border-bottom: 1px solid #F44336;
-  box-shadow: 0 1px 0 0 #F44336;
+  border-bottom: 1px solid #e53935;
+  box-shadow: 0 1px 0 0 #e53935;
 }
 
 input:not([type]).invalid + label:after,
@@ -5856,7 +5856,7 @@ input[type=search]:focus.invalid + label:after,
 textarea.materialize-textarea.invalid + label:after,
 textarea.materialize-textarea:focus.invalid + label:after {
   content: attr(data-error);
-  color: #F44336;
+  color: #e53935;
   opacity: 1;
 }
 
