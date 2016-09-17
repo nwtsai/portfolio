@@ -173,6 +173,7 @@
 
         <!--  Javascript Resources -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="effects/materialize/js/materialize.js"></script>
         <script src="effects/parallax.js/parallax.js"></script>
         <script src="effects/typewriter/js/typed.js"></script>
@@ -431,7 +432,8 @@
 
                   <div class="row">
                     <div class="col s2">
-                        <div id ="success" onclick="Materialize.toast('Your message has been sent.', 4000)" href ="mailto:nwtsai@gmail.com" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></div>
+                        <div id="success"></div>
+                        <div onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></div>
                     </div>
                     <div class="col s10"></div>
                   </div>
