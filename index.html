@@ -176,6 +176,11 @@
             <!-- Dynamic Parallax -->
             <script>
                 jQuery(window).trigger('resize').trigger('scroll');
+
+                // Show sideNav
+                $('.button-collapse').sideNav('show');
+                // Hide sideNav
+                $('.button-collapse').sideNav('hide');
             </script>
 
             <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
@@ -193,11 +198,7 @@
                     
                     $(".button-collapse").sideNav();
 
-                    // Show sideNav
-                    $('.button-collapse').sideNav('show');
-                    // Hide sideNav
-                    $('.button-collapse').sideNav('hide');
-                    });
+                });
             </script>
 
             <!-- Aesthetics -->
