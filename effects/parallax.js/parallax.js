@@ -91,27 +91,27 @@
       this.positionX + (isNaN(this.positionX)? '' : 'px') + ' ' +
       this.positionY + (isNaN(this.positionY)? '' : 'px');
 
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-      if (this.imageSrc && this.iosFix && !this.$element.is('img')) {
-        this.$element.css({
-          backgroundImage: 'url(' + this.imageSrc + ')',
-          backgroundSize: 'cover',
-          backgroundPosition: this.position
-        });
-      }
-      return this;
-    }
+    // if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+    //   if (this.imageSrc && this.iosFix && !this.$element.is('img')) {
+    //     this.$element.css({
+    //       backgroundImage: 'url(' + this.imageSrc + ')',
+    //       backgroundSize: 'cover',
+    //       backgroundPosition: this.position
+    //     });
+    //   }
+    //   return this;
+    // }
 
-    if (navigator.userAgent.match(/(Android)/)) {
-      if (this.imageSrc && this.androidFix && !this.$element.is('img')) {
-        this.$element.css({
-          backgroundImage: 'url(' + this.imageSrc + ')',
-          backgroundSize: 'cover',
-          backgroundPosition: this.position
-        });
-      }
-      return this;
-    }
+    // if (navigator.userAgent.match(/(Android)/)) {
+    //   if (this.imageSrc && this.androidFix && !this.$element.is('img')) {
+    //     this.$element.css({
+    //       backgroundImage: 'url(' + this.imageSrc + ')',
+    //       backgroundSize: 'cover',
+    //       backgroundPosition: this.position
+    //     });
+    //   }
+    //   return this;
+    // }
 
     this.$mirror = $('<div />').prependTo('body');
 
