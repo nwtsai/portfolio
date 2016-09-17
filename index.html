@@ -178,6 +178,26 @@
                 jQuery(window).trigger('resize').trigger('scroll');
             </script>
 
+            <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
+            <script>
+                $(document).ready(function()
+                {
+                    $('.toc-wrapper').pushpin({offset: 520});
+                    $('.scrollspy').scrollSpy();
+
+                    $('input#input_text, textarea#subject').characterCounter();
+                    $('input#input_text, textarea#message').characterCounter();
+
+                    $('#textarea1').val('New Text');
+                    $('#textarea1').trigger('autoresize');
+                    
+                    // Show sideNav
+                    $('.button-collapse').sideNav('show');
+                    // Hide sideNav
+                    $('.button-collapse').sideNav('hide');
+                    });
+            </script>
+
             <!-- Aesthetics -->
             <br></br>
             <br></br>
