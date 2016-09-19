@@ -417,57 +417,48 @@
             <div class="row container">
                 <form id ="foo" class="col s12">
 
-                  <div class="row">
+                    <!-- Name Section -->
+                    <div class="row">
                     <div class="input-field col s12 m6 l6">
                       <i class="material-icons prefix">assignment_ind</i>
                         <input id="name" type="text" class="validate">
                         <label for="name">Name</label>
                     </div>
+
+                    <!-- Email Section -->
                     <div class="input-field col s12 m6 l6">
                       <i class="material-icons prefix">email</i>
                       <input id="email" type="text" class="validate">
                       <label for="email">Email</label>
                     </div>
-                  </div>
+                    </div>
 
-                  <div class="row">
+                    <!-- Subject Section -->
+                    <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">assignment</i>
                       <textarea id="subject" type="text" class="materialize-textarea"></textarea>
                       <label for="subject">Subject</label>
                     </div>
-                  </div>
+                    </div>
 
-                  <div class="row">
+                    <!-- Message Section -->
+                    <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">chat</i>
                       <textarea id="message" text="text" class="materialize-textarea"></textarea>
                       <label for="message">Message</label>
                     </div>
-                  </div>
+                    </div>
 
-                  <!-- File Upload Skeleton -->
-                  <!-- <div class="row">
-                    <form action="#">
-                        <div class="file-field input-field col s12">
-                          <div class="btn waves-effect waves-light red lighten-1 btn z-depth-1">
-                            <span><i class="fa fa-file-text-o"></i></span>
-                            <input type="file" multiple>
-                          </div>
-                          <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
-                          </div>
-                        </div>
-                    </form>
-                  </div> -->
-
-                  <div class="row">
+                    <!-- Button -->
+                    <div class="row">
                     <div class="col l2 m12 s12">
                         <div id="success"></div>
                         <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
                     </div>
                     <div class="col l10 m0 s0"></div>
-                  </div>
+                    </div>
  
                 </form>
             </div>
