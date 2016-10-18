@@ -183,10 +183,16 @@
         }
 
         /* Initialize list class to be invisible for ScrollFire Effect */
-        #staggered-About-Me li, #staggered-Mobile-About-Me li, #staggered-Skills li, #staggered-Mobile-Skills li, 
-        #staggered-Contact-Me li, #staggered-Mobile-Contact-Me li, #staggered-Contact-Form li, #staggered-Mobile-Contact-Form li
+        #staggered-About-Me li, #staggered-Mobile-About-Me li, #staggered-Skills li, #staggered-Mobile-Skills li, #staggered-Courses li, 
+        #staggered-Mobile-Courses li, #staggered-Contact-Me li, #staggered-Mobile-Contact-Me li, #staggered-Contact-Form li, 
+        #staggered-Mobile-Contact-Form li
         {
           opacity: 0;
+        }
+
+        .h2
+        {
+            text-align: left;
         }
 
         </style>
@@ -306,6 +312,7 @@
                           <li><a href="#welcome">Welcome</a></li>
                           <li><a href="#aboutme">About Me</a></li>
                           <li><a href="#skills">Skills</a></li>
+                          <li><a href="#courses">Coursework</a></li>
                           <li><a href="#contactme">Contact Me</a></li>
                       </ul>
                   </div>
@@ -332,6 +339,16 @@
                     } },
 
                      {selector: '#staggered-Mobile-Skills', offset: 185, callback: function(el) {
+                    Materialize.showStaggeredList($(el));
+                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                    } },
+
+                    {selector: '#staggered-Courses', offset: 450, callback: function(el) {
+                    Materialize.showStaggeredList($(el));
+                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                    } },
+
+                    {selector: '#staggered-Mobile-Courses', offset: 185, callback: function(el) {
                     Materialize.showStaggeredList($(el));
                     $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
                     } },
@@ -383,7 +400,7 @@
                 <div class="col s2"></div>
                 <div class="col s8">
                     <div style="text-align: center;">
-                        <div style="display: inline-block; text-align: justify">
+                        <div style="display: inline-block; text-align: justify;">
 
                             <h2 class = "MyHeader section scrollspy" id="aboutme" style="position: relative;">About Me</h2>
                             
@@ -444,7 +461,7 @@
                 <div class="col s2"></div>
                 <div class="col s8">
                     <div style="text-align: center;">
-                        <div style="display: inline-block; text-align: justify">
+                        <div style="display: inline-block; text-align: justify;">
                             
                             <h2 class = "MyHeader section scrollspy" id="skills" style="position: relative;">Skills</h2>
 
@@ -488,12 +505,159 @@
             <br></br>
             <div class="container divider"></div>
 
+            <!-- Courses Text -->
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <div style="text-align: center;">
+                        <div style="display: inline-block; text-align: justify;">
+                            
+                            <h2 class = "MyHeader section scrollspy left-align" id="courses" style="position: relative;">Coursework</h2>
+
+                            <!-- Hide on Mobile -->
+                            <div class="hide-on-med-and-down">
+                            <ul id ="staggered-Courses">
+                                <li> 
+                                    <table class="highlight responsive-table">
+                                        <thead>
+                                          <tr>
+                                              <th data-field="id">Course</th>
+                                              <th data-field="name">Course Name</th>
+                                              <th data-field="price">Description</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>CS 1</td>
+                                            <td>Computer Science Seminar</td>
+                                            <td>Applications of Computer Science</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 31</td>
+                                            <td>Introduction to C++ I</td>
+                                            <td>Syntax, Structure, Pointers, Abstraction, and Algorithms</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 32</td>
+                                            <td>Introduction to C++ II</td>
+                                            <td>Data Structures, Sorrting Algorithms, and Time Complexity</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 33</td>
+                                            <td>Computer Organization</td>
+                                            <td>Machine-level Programming, Program Optimization, Parallelism, Synchronization, and Linking</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 35L</td>
+                                            <td>Software Construction Laboratory</td>
+                                            <td>Scripting, Change Management, Low-Level Construction and Debugging, Systems Programming, Security, Parallelism</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS M51A &nbsp &nbsp &nbsp &nbsp &nbsp</td>
+                                            <td>Logic Design of Digital Systems</td>
+                                            <td>Gate Implementation, MSI Components, Sequential Circuits, Machine Language, Input/output, Boolean Algebra, Karnaugh maps</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Math 32B</td>
+                                            <td>Multivariable Calculus</td>
+                                            <td>Integration in Two Variables, Change of Variables, Vector Fields, Line Integrals, Conservative Vector Fields, Surface Integrals</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Math 33A</td>
+                                            <td>Linear Algebra and Applications</td>
+                                            <td>Matrices, Matrix Multiplication, Subspaces, Determinants, Orthogonality, Eigenvalues, Eigenvectors, Diagonalization, Quadratic Forms</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Math 61</td>
+                                            <td>Discrete Mathematical Structures</td>
+                                            <td>Induction, Sets, Functions, Relations, Permutations, Pigeonhole, Recurrence Relations, Shortest-path Algorithm, Binary and Decision Trees</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                            </div>
+
+                            <!-- Hide on Desktop -->
+                            <div class="hide-on-large-only">
+                            <ul id ="staggered-Mobile-Courses">
+                                <li>
+                                    <table class="highlight responsive-table">
+                                        <thead>
+                                          <tr>
+                                              <th data-field="id">Course</th>
+                                              <th data-field="name">Course Name</th>
+                                              <th data-field="price">Description</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>CS 1</td>
+                                            <td>Computer Science Seminar</td>
+                                            <td>Applications of Computer Science</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 31</td>
+                                            <td>Introduction to C++ I</td>
+                                            <td>Syntax, Structure, Pointers, Abstraction, and Algorithms</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 32</td>
+                                            <td>Introduction to C++ II</td>
+                                            <td>Data Structures, Sorrting Algorithms, and Time Complexity</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 33</td>
+                                            <td>Computer Organization</td>
+                                            <td>Machine-level Programming, Program Optimization, Parallelism, Synchronization, and Linking</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS 35L</td>
+                                            <td>Software Construction Laboratory</td>
+                                            <td>Scripting, Change Management, Low-Level Construction and Debugging, Systems Programming, Security, Parallelism</td>
+                                          </tr>
+                                          <tr>
+                                            <td>CS M51A &nbsp &nbsp &nbsp &nbsp &nbsp</td>
+                                            <td>Logic Design of Digital Systems</td>
+                                            <td>Gate Implementation, MSI Components, Sequential Circuits, Machine Language, Input/output, Boolean Algebra, Karnaugh maps</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Math 32B</td>
+                                            <td>Multivariable Calculus</td>
+                                            <td>Integration in Two Variables, Change of Variables, Vector Fields, Line Integrals, Conservative Vector Fields, Surface Integrals</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Math 33A</td>
+                                            <td>Linear Algebra and Applications</td>
+                                            <td>Matrices, Matrix Multiplication, Subspaces, Determinants, Orthogonality, Eigenvalues, Eigenvectors, Diagonalization, Quadratic Forms</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Math 61</td>
+                                            <td>Discrete Mathematical Structures</td>
+                                            <td>Induction, Sets, Functions, Relations, Permutations, Pigeonhole, Recurrence Relations, Shortest-path Algorithm, Binary and Decision Trees</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s1"></div>
+            </div>
+
+            <!-- Divider -->
+            <br></br>
+            <div class="container divider"></div>
+
             <!-- Contact Me Text -->
             <div class="row">
                 <div class="col s2"></div>
                 <div class="col s8">
                     <div style="text-align: left;">
-                        <div style="display: inline-block; text-align: justify">
+                        <div style="display: inline-block; text-align: justify;">
                             <h2 class = "MyHeader section scrollspy" id="contactme" style="position: relative;">Contact Me</h2>
                             
                             <!-- Hide on Mobile -->
