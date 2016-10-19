@@ -708,6 +708,8 @@
             <ul id ="staggered-Mobile-Contact-Form">
                 <form id ="foo" class="col s12">
 
+                    <!-- Vertical Phone Contact Me Form -->
+                    <div class="hide-on-med-only">
                     <div class="row">
 
                         <!-- Name Section -->
@@ -760,15 +762,91 @@
                     <div class="row">
 
                         <li>
-                        <div class="col l2 m12 s12">
+                        <div class="col s12">
                             <div id="success"></div>
                             <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
                         </div>
-                        <div class="col l10 m0 s0"></div>
                         </li>
 
                     </div>
- 
+                    </div>
+
+                    <!-- Horizontal Phone Contact Me Form -->
+                    <div class="hide-on-small-only">
+                    <div class="row">
+                        <div class="col m1"></div>
+
+                        <div class="col m10">
+                        <!-- Name Section -->
+                        <li>
+                        <div class="input-field col s12 m6 l6">
+                          <i class="material-icons prefix">assignment_ind</i>
+                            <input id="name" type="text">
+                            <label for="name">Name</label>
+                        </div>
+                        </li>
+
+                        <!-- Email Section -->
+                        <li>
+                        <div class="input-field col s12 m6 l6">
+                          <i class="material-icons prefix">email</i>
+                          <input id="email" type="text">
+                          <label for="email">Email</label>
+                        </div>
+                        </li>
+
+                        </div>
+
+                        <div class="col m1"></div>
+                    </div>
+
+                    <!-- Subject Section -->
+                    <div class="row">
+                        <div class="col m1"></div>
+
+                        <div class="col m10">
+                        <li>
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">assignment</i>
+                          <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
+                          <label for="subject">Subject</label>
+                        </div>
+                        </li>
+                        </div>
+
+                        <div class="col m1"></div>
+                    </div>
+
+                    <!-- Message Section -->
+                    <div class="row">
+                        <div class="col m1"></div>
+
+                        <div class="col m10">
+                        <li>
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">chat</i>
+                          <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
+                          <label for="message">Message</label>
+                        </div>
+                        </li>
+                        </div>
+
+                        <div class="col m1"></div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="row">
+
+                        <li>
+                        <div class="col m12">
+                            <div id="success"></div>
+                            <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
+                        </div>
+                        </li>
+
+                    </div>
+
+                    </div>
                 </form>
             </ul>
             
