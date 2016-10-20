@@ -191,88 +191,88 @@
 
         <!-- Parallax Effect -->
         <div class="parallax-window" data-parallax="scroll" data-image-src="image library/cropped images/Urban Expressways Offset.jpg"></div>
+        
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+        <!-- Dynamic Parallax -->
+        <script>
+            jQuery(window).trigger('resize').trigger('scroll');
 
-            <!-- Dynamic Parallax -->
-            <script>
-                jQuery(window).trigger('resize').trigger('scroll');
+            // Show sideNav
+            $('.button-collapse').sideNav('show');
+            // Hide sideNav
+            $('.button-collapse').sideNav('hide');
+        </script>
 
-                // Show sideNav
-                $('.button-collapse').sideNav('show');
-                // Hide sideNav
-                $('.button-collapse').sideNav('hide');
-            </script>
+        <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
+        <script>
+            $(document).ready(function()
+            {
+                $('.toc-wrapper').pushpin({offset: 520});
+                $('.scrollspy').scrollSpy();
 
-            <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
-            <script>
-                $(document).ready(function()
-                {
-                    $('.toc-wrapper').pushpin({offset: 520});
-                    $('.scrollspy').scrollSpy();
+                $('input#input_text, textarea#subject').characterCounter();
+                $('input#input_text, textarea#message').characterCounter();
 
-                    $('input#input_text, textarea#subject').characterCounter();
-                    $('input#input_text, textarea#message').characterCounter();
+                $('#textarea1').val('New Text');
+                $('#textarea1').trigger('autoresize');
+                
+                $(".button-collapse").sideNav();
 
-                    $('#textarea1').val('New Text');
-                    $('#textarea1').trigger('autoresize');
-                    
-                    $(".button-collapse").sideNav();
+            });
+        </script>
 
-                });
-            </script>
+        <!-- Icons -->
+        <div class="container">
+            <div class="row">
 
-            <!-- Icons -->
-            <div class="container">
-                <div class="row">
+                <!-- Professional Icon -->
+                <div class="col s12 m12 l4">
+                <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="small material-icons">work</i></h2>
 
-                    <!-- Professional Icon -->
-                    <div class="col s12 m12 l4">
-                    <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="small material-icons">work</i></h2>
-
-                        <!--Professional Buttons -->
-                        <div class="row center">
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="Resume" data-delay="100" href="image library/Resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="Github" data-delay="100" href="https://www.github.com/nwtsai" target="_blank"><i class="fa fa-github"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="LinkedIn" data-delay="100" href="https://www.linkedin.com/in/nwtsai" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-                    </div>
-
-                    <!-- Empty Column -->
-                    <div class="col s12 m12 l4"></div>
-
-                    <!-- Social Media Icon -->
-                    <div class="col s12 m12 l4">
-                    <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="small material-icons">group</i></h2>
-
-                        <!-- Social Media Buttons -->
-                        <div class="row center">
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="(805) 452-8162" data-delay="100" href="tel:+1-805-452-8162"><i class="fa fa-phone"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="nwtsai@gmail.com" data-delay="100" href = "mailto:nwtsai@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                            <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="Google+" data-delay="100" href="https://plus.google.com/109838269397873701810" target="_blank"><i class="fa fa-google"></i></a>
-                        </div>
-
-                    </div>
+                    <!--Professional Buttons -->
+                    <div class="row center">
+                        <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="Resume" data-delay="100" href="image library/Resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
+                        <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="Github" data-delay="100" href="https://www.github.com/nwtsai" target="_blank"><i class="fa fa-github"></i></a>
+                        <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="LinkedIn" data-delay="100" href="https://www.linkedin.com/in/nwtsai" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
 
                 </div>
-            </div>
+                </div>
 
-            <br></br>
+                <!-- Empty Column -->
+                <div class="col s12 m12 l4"></div>
+
+                <!-- Social Media Icon -->
+                <div class="col s12 m12 l4">
+                <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="small material-icons">group</i></h2>
+
+                    <!-- Social Media Buttons -->
+                    <div class="row center">
+                        <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="(805) 452-8162" data-delay="100" href="tel:+1-805-452-8162"><i class="fa fa-phone"></i></a>
+                        <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="nwtsai@gmail.com" data-delay="100" href = "mailto:nwtsai@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a class="btn waves-effect waves-light blue btn-large z-depth-2 tooltipped" data-position="bottom" data-tooltip="Google+" data-delay="100" href="https://plus.google.com/109838269397873701810" target="_blank"><i class="fa fa-google"></i></a>
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br></br>
 
     </body>
 </html>

@@ -247,416 +247,417 @@
         <!-- Parallax Effect -->
         <div class="parallax-window section scrollspy" id="projects" data-parallax="scroll" data-image-src="image library/full images/Foggy Ocean.jpg"></div>
 
-            <!-- Dynamic Parallax -->
-            <script>
-                jQuery(window).trigger('resize').trigger('scroll');
+        <!-- Dynamic Parallax -->
+        <script>
+            jQuery(window).trigger('resize').trigger('scroll');
 
-                // Show sideNav
-                $('.button-collapse').sideNav('show');
-                // Hide sideNav
-                $('.button-collapse').sideNav('hide');
-            </script>
+            // Show sideNav
+            $('.button-collapse').sideNav('show');
+            // Hide sideNav
+            $('.button-collapse').sideNav('hide');
+        </script>
 
-            <!-- Dynamic Scrollspy -->
-            <script>
-                $(document).ready(function()
-                {
-                    $('.toc-wrapper').pushpin({offset: 520});
-                    $('.scrollspy').scrollSpy();
+        <!-- Dynamic Scrollspy -->
+        <script>
+            $(document).ready(function()
+            {
+                $('.toc-wrapper').pushpin({offset: 520});
+                $('.scrollspy').scrollSpy();
 
-                    $(".button-collapse").sideNav();
-                });
-            </script>
+                $(".button-collapse").sideNav();
+            });
+        </script>
 
-            <!-- Table of Contents -->
-            <div class="row">
-                <div class="col s1 offset-s11 hide-on-med-and-down">
-                  <div class="toc-wrapper">
-                      <ul class="section table-of-contents">
-                          <li><a href="#projects">Projects</a></li>
-                          <li><a href="#frackman">Frackman</a></li>
-                          <li><a href="#blackjack">Blackjack</a></li>
-                          <li><a href="#website">Website</a></li>
-                      </ul>
-                  </div>
-                </div>
+        <!-- Table of Contents -->
+        <div class="row">
+            <div class="col s1 offset-s11 hide-on-med-and-down">
+              <div class="toc-wrapper">
+                  <ul class="section table-of-contents">
+                      <li><a href="#projects">Projects</a></li>
+                      <li><a href="#frackman">Frackman</a></li>
+                      <li><a href="#blackjack">Blackjack</a></li>
+                      <li><a href="#website">Website</a></li>
+                  </ul>
+              </div>
             </div>
+        </div>
 
-            <!-- Scrollfire Implementation -->
-            <script type="text/javascript">
-            var options = 
-                [
-                    {selector: '#staggered-FrackmanDescrip', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+        <!-- Scrollfire Implementation -->
+        <script type="text/javascript">
+        var options = 
+            [
+                {selector: '#staggered-FrackmanDescrip', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-FrackmanDesign', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-FrackmanDesign', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-FrackmanCode', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-FrackmanCode', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-BlackjackDescrip', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-BlackjackDescrip', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-BlackjackDesign', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-BlackjackDesign', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-BlackjackCode', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-BlackjackCode', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-WebsiteDescrip', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-WebsiteDescrip', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-WebsiteDesign', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                {selector: '#staggered-WebsiteDesign', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
 
-                    {selector: '#staggered-WebsiteCode', callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } }
-                ];
-                Materialize.scrollFire(options);
-            </script>
+                {selector: '#staggered-WebsiteCode', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } }
+            ];
+            Materialize.scrollFire(options);
+        </script>
 
-            <div class="hide-on-med-and-down">
-                <br></br>
-            </div>
+        <div class="hide-on-med-and-down">
+            <br></br>
+        </div>
 
-            <!-- Frackman Frame -->
-            <div class="row">
-                <div class="col l7 m12 s12">
-                    <div class="container">
-                        <h2 class= "MyHeader section scrollspy" id = "frackman" style="position: relative;">Frackman</h2>
+        <!-- Frackman Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+                    <h2 class= "MyHeader section scrollspy" id = "frackman" style="position: relative;">Frackman</h2>
 
-                        <!-- Frackman Tabs Section -->
-                        <div class="hide-on-med-and-down">
-                            <br></br>
+                    <!-- Frackman Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+
+                          <!-- Desktop Frackman Description Tab -->
+                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
+                            <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
+                            href="#Description">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#Design">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#Code">Code</a></li>
+                            <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li>
+                          </ul>
+
+                          <!-- Mobile Frackman Description Tab -->
+                          <ul class="tabs hide-on-large-only" style="position: relative;">
+                            <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
+                            href="#Description">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#Design">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#Code">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li> -->
+                          </ul>
+
                         </div>
-                        <div class="row">
-                            <div class="col s12">
 
-                              <!-- Desktop Frackman Description Tab -->
-                              <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                                <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
-                                href="#Description">Description</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#Design">Design</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#Code">Code</a></li>
-                                <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li>
-                              </ul>
-
-                              <!-- Mobile Frackman Description Tab -->
-                              <ul class="tabs hide-on-large-only" style="position: relative;">
-                                <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
-                                href="#Description">Description</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#Design">Design</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#Code">Code</a></li>
-                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li> -->
-                              </ul>
-
-                            </div>
-
-                            <!-- Frackman Tabs Content -->
-                            <div id="Description" style="color: #03a9f4;" class="col s12">
-                                <ul id="staggered-FrackmanDescrip">
-                                <li>
-                                <p class="MyBody" style="position: relative;">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
-                                <p class="MyBody" style="position: relative;">‣ The Regular Protesters (in dark blue) only follow the player when you, the Frackman (holding a pickaxe), are in their line of sight.</p>
-                                <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters (in overalls) calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
-                                <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
-                                </li>
-                                </ul>
-                            </div>
-                            <div id="Design" class="col s12">
-                                <ul id="staggered-FrackmanDesign">
-                                <li>
-                                <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                                <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
-                                <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
-                                <p class="MyBody" style="position: relative;">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the grid</p>
-                                </li>
-                                </ul>
-                            </div>
-                            <div id="Code" class="col s12">
+                        <!-- Frackman Tabs Content -->
+                        <div id="Description" style="color: #03a9f4;" class="col s12">
+                            <ul id="staggered-FrackmanDescrip">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
+                            <p class="MyBody" style="position: relative;">‣ The Regular Protesters (in dark blue) only follow the player when you, the Frackman (holding a pickaxe), are in their line of sight.</p>
+                            <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters (in overalls) calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
+                            <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="Design" class="col s12">
+                            <ul id="staggered-FrackmanDesign">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                            <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
+                            <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
+                            <p class="MyBody" style="position: relative;">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the grid</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="Code" class="col s12">
+                            <br></br>
+                            <ul id="staggered-FrackmanCode">
+                            <li>
+                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Frackman" target="_blank">Source Code 
+                            &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
+                            </li>
+                            </ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <p>
                                 <br></br>
-                                <ul id="staggered-FrackmanCode">
-                                <li>
-                                <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Frackman" target="_blank">Source Code &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
-                                </li>
-                                </ul>
                                 <br></br>
-                                <div class="hide-on-med-and-down">
-                                    <p>
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                    </p>
-                                </div>
+                                <br></br>
+                                <br></br>
+                                </p>
                             </div>
-                            <div id="Demo" class="col s12"></div>
                         </div>
-
-                    </div>
-                </div>
-
-                <!-- Materialboxed Frackman Desktop Image -->
-                <div class="col l4 m12 s12 hide-on-med-and-down">
-                    <img class="materialboxed" src="image library/full images/Frackman.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 50px; right: 9.5%; max-height: 815px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
-                </div>
-
-                <div class="hide-on-large-only">
-                    <!-- Frackman Mobile Vertical Image -->
-                    <div class="col l4 m12 s12 hide-on-med-only">
-                        <img class="center" src="image library/full images/Frackman.jpg" style="width: 320px; height: 320px;">
+                        <div id="Demo" class="col s12"></div>
                     </div>
 
-                    <!-- Frackman Mobile Horizontal Image -->
-                    <div class="col l4 m12 s12 hide-on-small-only">
-                        <img class="center" src="image library/full images/Frackman.jpg" style="width: 550px; height: 550px;">
-                    </div>
                 </div>
-
             </div>
 
-            <!-- Divider -->
-            <div class ="hide-on-med-and-down">
-                <br></br>
-                <div class="divider"></div>
-                <br></br>
+            <!-- Materialboxed Frackman Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <img class="materialboxed" src="image library/full images/Frackman.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 50px; right: 9.5%; max-height: 815px;" data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
             </div>
 
-            <!-- Blackjack Frame -->
-            <div class="row">
-                <div class="col l7 m12 s12">
-                    <div class="container">
-
-                        <div class="hide-on-large-only">
-                            <br></br>
-                            <br></br>
-                            <div class="divider"></div>
-                        </div>
-
-                        <h2 class= "MyHeader section scrollspy" id="blackjack" style="position: relative;">Blackjack</h2>
-
-                        <!-- Blackjack Tabs Section -->
-                        <div class="hide-on-med-and-down">
-                            <br></br>
-                        </div>
-                        <div class="row">
-                            <div class="col s12">
-
-                              <!-- Desktop Blackjack Description Tab -->
-                              <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                                <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
-                                href="#BJDescription">Description</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
-                                <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li>
-                              </ul>
-
-                              <!-- Mobile Blackjack Description Tab -->
-                              <ul class="tabs hide-on-large-only" style="position: relative;">
-                                <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
-                                href="#BJDescription">Description</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
-                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
-                              </ul>
-
-                            </div>
-
-                            <!-- Blackjack Tabs Content -->
-                            <div id="BJDescription" class="col s12">
-                                <ul id="staggered-BlackjackDescrip">
-                                <li>
-                                <p class="MyBody" style="position: relative;">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
-                                <p class="MyBody" style="position: relative;">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is more advantageous.</p>
-                                <p class="MyBody" style="position: relative;">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
-                                <p class="MyBody" style="position: relative;">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
-                                </li>
-                                </ul>
-                            </div>
-                            <div id="BJDesign" class="col s12">
-                                <ul id="staggered-BlackjackDesign">
-                                <li>
-                                <p class="MyBody" style="position: relative;">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
-                                <p class="MyBody" style="position: relative;">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
-                                <p class="MyBody" style="position: relative;">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
-                                <p class="MyBody" style="position: relative;">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
-                                </li>
-                                </ul>
-                            </div>
-                            <div id="BJCode" class="col s12">
-                                <br></br>
-                                <ul id="staggered-BlackjackCode">
-                                <li>
-                                <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Blackjack/tree/master/Blackjack" target="_blank">Source Code &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
-                                </li>
-                                </ul>
-                                <br></br>
-                                <div class="hide-on-med-and-down">
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                </div>
-                            </div>
-                            <div id="BJDemo" class="col s12"></div>
-                        </div>
-
-                    </div>
+            <div class="hide-on-large-only">
+                <!-- Frackman Mobile Vertical Image -->
+                <div class="col l4 m12 s12 hide-on-med-only">
+                    <img class="center" src="image library/full images/Frackman.jpg" style="width: 320px; height: 320px;">
                 </div>
 
-                <!-- Materialboxed Blackjack Desktop Image -->
-                <div class="col l4 m12 s12 hide-on-med-and-down">
-                    <img class="materialboxed responsive-img" src="image library/full images/Blackjack.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 60px; max-height: 815px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
+                <!-- Frackman Mobile Horizontal Image -->
+                <div class="col l4 m12 s12 hide-on-small-only">
+                    <img class="center" src="image library/full images/Frackman.jpg" style="width: 550px; height: 550px;">
                 </div>
-
-                <div class="hide-on-large-only">
-                    <!-- Blackjack Mobile Vertical Image -->
-                    <div class="col l4 m12 s12 hide-on-med-only">
-                        <img class="center" src="image library/full images/Blackjack.jpg" style="width: 320px; height: 320px;">
-                    </div>
-
-                    <!-- Blackjack Mobile Horizontal Image -->
-                    <div class="col l4 m12 s12 hide-on-small-only">
-                        <img class="center" src="image library/full images/Blackjack.jpg" style="width: 550px; height: 550px;">
-                    </div>
-                </div>
-
             </div>
 
-            <!-- Divider -->
-            <div class ="hide-on-med-and-down">
-                <br></br>
-                <br></br>
-                <div class="divider"></div>
-                <br></br>
+        </div>
+
+        <!-- Divider -->
+        <div class ="hide-on-med-and-down">
+            <br></br>
+            <div class="divider"></div>
+            <br></br>
+        </div>
+
+        <!-- Blackjack Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+
+                    <div class="hide-on-large-only">
+                        <br></br>
+                        <br></br>
+                        <div class="divider"></div>
+                    </div>
+
+                    <h2 class= "MyHeader section scrollspy" id="blackjack" style="position: relative;">Blackjack</h2>
+
+                    <!-- Blackjack Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+
+                          <!-- Desktop Blackjack Description Tab -->
+                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
+                            href="#BJDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
+                            <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li>
+                          </ul>
+
+                          <!-- Mobile Blackjack Description Tab -->
+                          <ul class="tabs hide-on-large-only" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
+                            href="#BJDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
+                          </ul>
+
+                        </div>
+
+                        <!-- Blackjack Tabs Content -->
+                        <div id="BJDescription" class="col s12">
+                            <ul id="staggered-BlackjackDescrip">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
+                            <p class="MyBody" style="position: relative;">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is more advantageous.</p>
+                            <p class="MyBody" style="position: relative;">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
+                            <p class="MyBody" style="position: relative;">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="BJDesign" class="col s12">
+                            <ul id="staggered-BlackjackDesign">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
+                            <p class="MyBody" style="position: relative;">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
+                            <p class="MyBody" style="position: relative;">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
+                            <p class="MyBody" style="position: relative;">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="BJCode" class="col s12">
+                            <br></br>
+                            <ul id="staggered-BlackjackCode">
+                            <li>
+                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Blackjack/tree/master/Blackjack" target="_blank">Source Code &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
+                            </li>
+                            </ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                            </div>
+                        </div>
+                        <div id="BJDemo" class="col s12"></div>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Website Frame -->
-            <div class="row">
-                <div class="col l7 m12 s12">
-                    <div class="container">
-
-                        <div class="hide-on-large-only">
-                            <br></br>
-                            <br></br>
-                            <div class="divider"></div>
-                        </div>
-
-                        <h2 class= "MyHeader section scrollspy" id="website" style="position: relative;">Website</h2>
-
-                        <!-- Website Tabs Section -->
-                        <div class="hide-on-med-and-down">
-                            <br></br>
-                        </div>
-
-                        <div class="row">
-                            <div class="col s12">
-
-                              <!-- Desktop Website Description Tab -->
-                              <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                                <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
-                                href="#WebDescription">Description</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
-                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li>-->
-                              </ul>
-
-                              <!-- Mobile Website Summary Tab -->
-                              <ul class="tabs hide-on-large-only" style="position: relative;">
-                                <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
-                                href="#WebDescription">Description</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                                <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
-                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li> -->
-                              </ul>
-
-                            </div>
-
-                            <!-- Website Tabs Content -->
-                            <div id="WebDescription" class="col s12">
-                                <ul id="staggered-WebsiteDescrip">
-                                <li>
-                                <p class="MyBody" style="position: relative;">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
-                                <p class="MyBody" style="position: relative;">‣ The Home page consists of important professional links such as my resume, Github, and LinkedIn, along with contact information such as my phone number, email, and Google+.</p>
-                                <p class="MyBody" style="position: relative;">‣ The About Me page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
-                                <p class="MyBody" style="position: relative;">‣ The Projects page showcases my coding endeavors. Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
-                                </li>
-                                </ul>
-                            </div>
-                            <div id="WebDesign" class="col s12">
-                                <ul id="staggered-WebsiteDesign">
-                                <li>
-                                <p class="MyBody" style="position: relative;">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
-                                <p class="MyBody" style="position: relative;">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
-                                <p class="MyBody" style="position: relative;">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
-                                <p class="MyBody" style="position: relative;">‣ Implemented parallax effects, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
-                                </li>
-                                </ul>
-                            </div>
-                            <div id="WebCode" class="col s12">
-                                <br></br>
-                                <ul id="staggered-WebsiteCode">
-                                <li>
-                                <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">Source Code &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
-                                </li>
-                                </ul>
-                                <br></br>
-                                <div class="hide-on-med-and-down">
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
-                                </div>
-                            </div>
-                            <!-- <div id="WebDemo" class="col s12"></div> -->
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Materialboxed Website Desktop Image -->
-                <div class="col l4 m12 s12 hide-on-med-and-down">
-                    <img class="materialboxed responsive-img" src="image library/full images/Website.png" style="width: 520px; height: 520px; position: absolute; margin-top: 60px; max-height: 815px; right: 9.5%;" data-caption="The navigation bar shown is the mobile friendly version of the website's Home page. It pops out from the left to display all the website pages.">
-                </div>
-
-                <div class="hide-on-large-only">
-                    <!-- Website Mobile Vertical Image -->
-                    <div class="col l4 m12 s12 hide-on-med-only">
-                        <img class="center" src="image library/full images/Website.png" style="width: 320px; height: 320px;">
-                    </div>
-
-                    <!-- Website Mobile Horizontal Image -->
-                    <div class="col l4 m12 s12 hide-on-small-only">
-                        <img class="center" src="image library/full images/Website.png" style="width: 550px; height: 550px;">
-                    </div>
-                </div>
-
+            <!-- Materialboxed Blackjack Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <img class="materialboxed responsive-img" src="image library/full images/Blackjack.jpg" style="width: 520px; height: 520px; position: absolute; margin-top: 60px; max-height: 815px; right: 9.5%;" data-caption="The player can get dealt a card or stand. A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
             </div>
 
-            <!-- Aesthetic -->
-            <br></br>         
+            <div class="hide-on-large-only">
+                <!-- Blackjack Mobile Vertical Image -->
+                <div class="col l4 m12 s12 hide-on-med-only">
+                    <img class="center" src="image library/full images/Blackjack.jpg" style="width: 320px; height: 320px;">
+                </div>
 
-            <!-- Future Project Tabs Go Here -->
+                <!-- Blackjack Mobile Horizontal Image -->
+                <div class="col l4 m12 s12 hide-on-small-only">
+                    <img class="center" src="image library/full images/Blackjack.jpg" style="width: 550px; height: 550px;">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class ="hide-on-med-and-down">
+            <br></br>
+            <br></br>
+            <div class="divider"></div>
+            <br></br>
+        </div>
+
+        <!-- Website Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+
+                    <div class="hide-on-large-only">
+                        <br></br>
+                        <br></br>
+                        <div class="divider"></div>
+                    </div>
+
+                    <h2 class= "MyHeader section scrollspy" id="website" style="position: relative;">Website</h2>
+
+                    <!-- Website Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+
+                          <!-- Desktop Website Description Tab -->
+                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
+                            href="#WebDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li>-->
+                          </ul>
+
+                          <!-- Mobile Website Summary Tab -->
+                          <ul class="tabs hide-on-large-only" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
+                            href="#WebDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li> -->
+                          </ul>
+
+                        </div>
+
+                        <!-- Website Tabs Content -->
+                        <div id="WebDescription" class="col s12">
+                            <ul id="staggered-WebsiteDescrip">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
+                            <p class="MyBody" style="position: relative;">‣ The Home page consists of important professional links such as my resume, Github, and LinkedIn, along with contact information such as my phone number, email, and Google+.</p>
+                            <p class="MyBody" style="position: relative;">‣ The About Me page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
+                            <p class="MyBody" style="position: relative;">‣ The Projects page showcases my coding endeavors. Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="WebDesign" class="col s12">
+                            <ul id="staggered-WebsiteDesign">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
+                            <p class="MyBody" style="position: relative;">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
+                            <p class="MyBody" style="position: relative;">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
+                            <p class="MyBody" style="position: relative;">‣ Implemented parallax effects, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="WebCode" class="col s12">
+                            <br></br>
+                            <ul id="staggered-WebsiteCode">
+                            <li>
+                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">Source Code &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
+                            </li>
+                            </ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                            </div>
+                        </div>
+                        <!-- <div id="WebDemo" class="col s12"></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Materialboxed Website Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <img class="materialboxed responsive-img" src="image library/full images/Website.png" style="width: 520px; height: 520px; position: absolute; margin-top: 60px; max-height: 815px; right: 9.5%;" data-caption="The navigation bar shown is the mobile friendly version of the website's Home page. It pops out from the left to display all the website pages.">
+            </div>
+
+            <div class="hide-on-large-only">
+                <!-- Website Mobile Vertical Image -->
+                <div class="col l4 m12 s12 hide-on-med-only">
+                    <img class="center" src="image library/full images/Website.png" style="width: 320px; height: 320px;">
+                </div>
+
+                <!-- Website Mobile Horizontal Image -->
+                <div class="col l4 m12 s12 hide-on-small-only">
+                    <img class="center" src="image library/full images/Website.png" style="width: 550px; height: 550px;">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Aesthetic -->
+        <br></br>         
+
+        <!-- Future Project Tabs Go Here -->
 
     </body>
 </html>

@@ -280,599 +280,599 @@
         <!-- Parallax Effect -->
         <div class="parallax-window section scrollspy" id="welcome" data-parallax="scroll" data-image-src="image library/cropped images/GGB.jpg"></div>
 
-            <!-- Dynamic Parallax -->
-            <script>
-                jQuery(window).trigger('resize').trigger('scroll');
+        <!-- Dynamic Parallax -->
+        <script>
+            jQuery(window).trigger('resize').trigger('scroll');
 
-                // Show sideNav
-                $('.button-collapse').sideNav('show');
-                // Hide sideNav
-                $('.button-collapse').sideNav('hide');
-            </script>
+            // Show sideNav
+            $('.button-collapse').sideNav('show');
+            // Hide sideNav
+            $('.button-collapse').sideNav('hide');
+        </script>
 
-            <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
-            <script>
-                $(document).ready(function()
-                {
-                    $('.toc-wrapper').pushpin({offset: 520});
-                    $('.scrollspy').scrollSpy();
+        <!-- Dynamic Scrollspy and Character Count and Auto Resize -->
+        <script>
+            $(document).ready(function()
+            {
+                $('.toc-wrapper').pushpin({offset: 520});
+                $('.scrollspy').scrollSpy();
 
-                    $('input#input_text, textarea#subject').characterCounter();
-                    $('input#input_text, textarea#message').characterCounter();
+                $('input#input_text, textarea#subject').characterCounter();
+                $('input#input_text, textarea#message').characterCounter();
 
-                    $('#textarea1').val('New Text');
-                    $('#textarea1').trigger('autoresize');
+                $('#textarea1').val('New Text');
+                $('#textarea1').trigger('autoresize');
 
-                    $(".button-collapse").sideNav();
-                });
-            </script>
+                $(".button-collapse").sideNav();
+            });
+        </script>
 
-            <!-- Table of Contents -->
-            <div class="row">
-                <div class="col s1 offset-s11 hide-on-med-and-down">
-                  <div class="toc-wrapper">
-                      <ul class="section table-of-contents">
-                          <li><a href="#welcome">Welcome</a></li>
-                          <li><a href="#aboutme">About Me</a></li>
-                          <li><a href="#skills">Skills</a></li>
-                          <li><a href="#courses">Coursework</a></li>
-                          <li><a href="#contactme">Contact Me</a></li>
-                      </ul>
-                  </div>
+        <!-- Table of Contents -->
+        <div class="row">
+            <div class="col s1 offset-s11 hide-on-med-and-down">
+              <div class="toc-wrapper">
+                  <ul class="section table-of-contents">
+                      <li><a href="#welcome">Welcome</a></li>
+                      <li><a href="#aboutme">About Me</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#courses">Coursework</a></li>
+                      <li><a href="#contactme">Contact Me</a></li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+
+        <!-- Scrollfire Implementation -->
+        <script type="text/javascript">
+        var options = 
+            [
+                {selector: '#staggered-About-Me', offset: 450, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Mobile-About-Me', offset: 185, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Skills', offset: 450, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                 {selector: '#staggered-Mobile-Skills', offset: 185, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Courses', offset: 450, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Mobile-Courses', offset: 185, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Contact-Me', offset: 400, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Mobile-Contact-Me', offset: 185, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Contact-Form', offset: 450, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Mobile-Contact-Form', offset: 185, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } }
+            ];
+            Materialize.scrollFire(options);
+        </script>
+
+        <!-- Portrait -->
+        <br></br>
+        <div class="portrait">
+            <img src="image library/cropped images/Portrait Circle.jpg" class="circle responsive-img hoverable" style="height: 260px;" align = "middle">
+        </div>
+        <br></br>
+
+        <!-- Social Buttons -->
+        <div class="portrait">
+            <a class="btn waves-effect waves-light red btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Facebook" data-delay="100" href="http://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a> &nbsp
+            <a class="btn waves-effect waves-light red lighten-1 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Instagram" data-delay="100" href="http://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a> &nbsp
+            <a class="btn waves-effect waves-light red lighten-2 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Soundcloud" data-delay="100" href="http://www.soundcloud.com/nwtsai" target="_blank"><i class="fa fa-soundcloud"></i></a>
+        </div>
+
+        <!-- Divider -->
+        <br></br>
+        <br></br>
+        <div class="container divider"></div>
+
+        <!-- About Me Text -->
+        <div class="row">
+            <div class="col l2 m1 s0"></div>
+            <div class="col l8 m10 s12">
+                <div style="text-align: center;">
+                    <div style="display: inline-block; text-align: justify;">
+
+                        <h2 class = "MyHeader section scrollspy" id="aboutme" style="position: relative;">About Me</h2>
+                        
+                        <!-- Hide on Mobile -->
+                        <div class="hide-on-med-and-down">
+                        <ul id ="staggered-About-Me">
+                            <li>
+                                <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
+                                studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
+                                end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website
+                                </a>, I discovered a keen interest in web development.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
+                                clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
+                                Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
+                                where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <!-- Hide on Desktop -->
+                        <div class="hide-on-large-only">
+                        <ul id ="staggered-Mobile-About-Me">
+                            <li>
+                                <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
+                                studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
+                                end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website
+                                </a>, I discovered a keen interest in web development.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
+                                clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
+                                Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
+                                where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                            </li>
+                        </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+            <div class="col l2 m1 s0"></div>
+        </div>
 
-            <!-- Scrollfire Implementation -->
-            <script type="text/javascript">
-            var options = 
-                [
-                    {selector: '#staggered-About-Me', offset: 450, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+        <!-- Divider -->
+        <br></br>
+        <div class="container divider"></div>
 
-                    {selector: '#staggered-Mobile-About-Me', offset: 185, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+        <!-- Skills Text -->
+        <div class="row">
+            <div class="col l2 m1 s0"></div>
+            <div class="col l8 m10 s12">
+                <div style="text-align: center;">
+                    <div style="display: inline-block; text-align: justify;">
+                        
+                        <h2 class = "MyHeader section scrollspy" id="skills" style="position: relative;">Skills</h2>
 
-                    {selector: '#staggered-Skills', offset: 450, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                        <!-- Hide on Mobile -->
+                        <div class="hide-on-med-and-down">
+                        <ul id ="staggered-Skills">
+                            <li>
+                                <p class="MyBody" style="position: relative;">Throughout the years, I've picked up a variety of programming languages. I've developed a deep understanding of C++ and Java. I've also dabbled in C and Javascript, and completed an online Python course via Coursera. In addition to these programming languages, I am also well-versed in markup languages such as HTML and CSS.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">I am also familiar with a multitude of object-oriented programming concepts, such as abstraction, encapsulation, and polymorphism as a result of inheritance; furthermore, I have considerable experience with applications of data structures, efficiencies of sorting algorithms, and the Big O notation of nested loops and algorithms.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">In order to apply these programming concepts, I utilize IDE's such as Microsoft Visual Studio, XCode, and Eclipse. I also have experience with Salesforce, a cloud-based customer relationship management software, as well as Solidworks, a computer-aided design platform.</p>
+                            </li>
+                        </ul>
+                        </div>
 
-                     {selector: '#staggered-Mobile-Skills', offset: 185, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
+                        <!-- Hide on Desktop -->
+                        <div class="hide-on-large-only">
+                        <ul id ="staggered-Mobile-Skills">
+                            <li>
+                                <p class="MyBody" style="position: relative;">Throughout the years, I've picked up a variety of programming languages. I've developed a deep understanding of C++ and Java. I've also dabbled in C and Javascript, and completed an online Python course via Coursera. In addition to these programming languages, I am also well-versed in markup languages such as HTML and CSS.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">I am also familiar with a multitude of object-oriented programming concepts, such as abstraction, encapsulation, and polymorphism as a result of inheritance; furthermore, I have considerable experience with applications of data structures, efficiencies of sorting algorithms, and the Big O notation of nested loops and algorithms.</p>
+                            </li>
+                            <li>
+                                <p class="MyBody" style="position: relative;">In order to apply these programming concepts, I utilize IDE's such as Microsoft Visual Studio, XCode, and Eclipse. I also have experience with Salesforce, a cloud-based customer relationship management software, as well as Solidworks, a computer-aided design platform.</p>
+                            </li>
+                        </ul>
+                        </div>
 
-                    {selector: '#staggered-Courses', offset: 450, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
-
-                    {selector: '#staggered-Mobile-Courses', offset: 185, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
-
-                    {selector: '#staggered-Contact-Me', offset: 400, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
-
-                    {selector: '#staggered-Mobile-Contact-Me', offset: 185, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
-
-                    {selector: '#staggered-Contact-Form', offset: 450, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } },
-
-                    {selector: '#staggered-Mobile-Contact-Form', offset: 185, callback: function(el) {
-                    Materialize.showStaggeredList($(el));
-                    $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                    } }
-                ];
-                Materialize.scrollFire(options);
-            </script>
-
-            <!-- Portrait -->
-            <br></br>
-            <div class="portrait">
-                <img src="image library/cropped images/Portrait Circle.jpg" class="circle responsive-img hoverable" style="height: 260px;" align = "middle">
+                    </div>
+                </div>
             </div>
-            <br></br>
+            <div class="col l2 m1 s0"></div>
+        </div>
 
-            <!-- Social Buttons -->
-            <div class="portrait">
-                <a class="btn waves-effect waves-light red btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Facebook" data-delay="100" href="http://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a> &nbsp
-                <a class="btn waves-effect waves-light red lighten-1 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Instagram" data-delay="100" href="http://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a> &nbsp
-                <a class="btn waves-effect waves-light red lighten-2 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Soundcloud" data-delay="100" href="http://www.soundcloud.com/nwtsai" target="_blank"><i class="fa fa-soundcloud"></i></a>
+        <!-- Divider -->
+        <br></br>
+        <div class="container divider"></div>
+
+        <!-- Courses Text -->
+        <div class="row hide-on-med-and-down">
+            <div class="col l2 m1 s0"></div>
+            <div class="col l8 m10 s12">
+                <div style="text-align: center;">
+                    <div style="display: inline-block; text-align: justify;">
+                        
+                        <h2 class = "MyHeader section scrollspy left-align" id="courses" style="position: relative;">Coursework</h2>
+
+                        <!-- Hide on Mobile -->
+                        <div class="hide-on-med-and-down">
+                        <ul id ="staggered-Courses">
+                            <li> 
+                                <table class="highlight responsive-table">
+                                    <thead>
+                                      <tr>
+                                          <th data-field="Title">Course</th>
+                                          <th data-field="Name">Course Name</th>
+                                          <th data-field="CDescrip">Description</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>CS 31</td>
+                                        <td>Introduction to C++ I</td>
+                                        <td>Syntax, Structure, Pointers, Structs, Classes, Sorting, Recursion Algorithms</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 32</td>
+                                        <td>Introduction to C++ II</td>
+                                        <td>Data Abstraction, Inheritance, Polymorphism, Algorithmic Efficiency, Trees, Hash Tables, Heaps, Time Complexity</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 33</td>
+                                        <td>Computer Organization</td>
+                                        <td>Machine-level Programming, Program Optimization, Parallelism, Synchronization, Linking</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS 35L</td>
+                                        <td>Software Construction Laboratory</td>
+                                        <td>Scripting, Change Management, Low-Level Construction and Debugging, Systems Programming, Security, Parallelism</td>
+                                      </tr>
+                                      <tr>
+                                        <td>CS M51A</td>
+                                        <td>Logic Design of Digital Systems</td>
+                                        <td>Gate Implementation, MSI Components, Sequential Circuits, Machine Language, Input/Output, Boolean Algebra, Karnaugh Maps</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Math 32B</td>
+                                        <td>Multivariable Calculus</td>
+                                        <td>Integration in Two Variables, Change of Variables, Vector Fields, Line Integrals, Conservative Vector Fields, Surface Integrals</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Math 33A</td>
+                                        <td>Linear Algebra and Applications</td>
+                                        <td>Matrices, Matrix Multiplication, Subspaces, Determinants, Orthogonality, Eigenvalues, Eigenvectors, Diagonalization, Quadratic Forms</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Math 33B</td>
+                                        <td>Differential Equations</td>
+                                        <td>Direction Fields, Separable Equations, Existence and Uniqueness, Second Order Differential Equations, Harmonic Motion, Exponential of a Matrix</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Math 61</td>
+                                        <td>Discrete Mathematical Structures</td>
+                                        <td>Induction, Sets, Functions, Relations, Permutations, Pigeonhole, Recurrence Relations, Shortest-Path Algorithm, Binary and Decision Trees</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+            <div class="col l2 m1 s0"></div>
+        </div>
 
-            <!-- Divider -->
-            <br></br>
+        <!-- Divider -->
+        <div class="hide-on-med-and-down">
             <br></br>
             <div class="container divider"></div>
+        </div>
 
-            <!-- About Me Text -->
-            <div class="row">
-                <div class="col l2 m1 s0"></div>
-                <div class="col l8 m10 s12">
-                    <div style="text-align: center;">
-                        <div style="display: inline-block; text-align: justify;">
-
-                            <h2 class = "MyHeader section scrollspy" id="aboutme" style="position: relative;">About Me</h2>
-                            
-                            <!-- Hide on Mobile -->
-                            <div class="hide-on-med-and-down">
-                            <ul id ="staggered-About-Me">
-                                <li>
-                                    <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
-                                    studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
-                                    end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website
-                                    </a>, I discovered a keen interest in web development.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
-                                    clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
-                                    Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
-                                    where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
-                                </li>
-                            </ul>
-                            </div>
-
-                            <!-- Hide on Desktop -->
-                            <div class="hide-on-large-only">
-                            <ul id ="staggered-Mobile-About-Me">
-                                <li>
-                                    <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
-                                    studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
-                                    end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website
-                                    </a>, I discovered a keen interest in web development.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
-                                    clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
-                                    Engineering Fraternity. I also expanded my horizons and joined <a class href="https://www.youtube.com/c/FoundationsChoreography" target="_blank">Foundations Choreography</a>,
-                                    where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
-                                </li>
-                            </ul>
-                            </div>
-
+        <!-- Contact Me Text -->
+        <div class="row">
+            <div class="col l2 m1 s0"></div>
+            <div class="col l8 m10 s12">
+                <div style="text-align: left;">
+                    <div style="display: inline-block; text-align: justify;">
+                        <h2 class = "MyHeader section scrollspy" id="contactme" style="position: relative;">Contact Me</h2>
+                        
+                        <!-- Hide on Mobile -->
+                        <div class="hide-on-med-and-down">
+                        <ul id="staggered-Contact-Me">
+                            <li>
+                                <p class="MyBody" style="position: relative;">If you would like to contact me, please fill out this form and I will get back to you as soon as possible!</p>
+                            </li>
+                        </ul>
                         </div>
+
+                        <!-- Hide on Desktop -->
+                        <div class="hide-on-large-only">
+                        <ul id="staggered-Mobile-Contact-Me">
+                            <li>
+                                <p class="MyBody" style="position: relative;">If you would like to contact me, please fill out this form and I will get back to you as soon as possible!</p>
+                            </li>
+                        </ul>   
+                        </div>                         
+
                     </div>
                 </div>
-                <div class="col l2 m1 s0"></div>
             </div>
+            <div class="col l2 m1 s0"></div>
+        </div>
 
-            <!-- Divider -->
-            <br></br>
-            <div class="container divider"></div>
+        <!-- Contact Me Form, Hide on Mobile-->
+        <div class="hide-on-med-and-down">
+        <div class="row container">
 
-            <!-- Skills Text -->
-            <div class="row">
-                <div class="col l2 m1 s0"></div>
-                <div class="col l8 m10 s12">
-                    <div style="text-align: center;">
-                        <div style="display: inline-block; text-align: justify;">
-                            
-                            <h2 class = "MyHeader section scrollspy" id="skills" style="position: relative;">Skills</h2>
+        <ul id ="staggered-Contact-Form">
+            <form id ="foo" class="col s12">
 
-                            <!-- Hide on Mobile -->
-                            <div class="hide-on-med-and-down">
-                            <ul id ="staggered-Skills">
-                                <li>
-                                    <p class="MyBody" style="position: relative;">Throughout the years, I've picked up a variety of programming languages. I've developed a deep understanding of C++ and Java. I've also dabbled in C and Javascript, and completed an online Python course via Coursera. In addition to these programming languages, I am also well-versed in markup languages such as HTML and CSS.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">I am also familiar with a multitude of object-oriented programming concepts, such as abstraction, encapsulation, and polymorphism as a result of inheritance; furthermore, I have considerable experience with applications of data structures, efficiencies of sorting algorithms, and the Big O notation of nested loops and algorithms.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">In order to apply these programming concepts, I utilize IDE's such as Microsoft Visual Studio, XCode, and Eclipse. I also have experience with Salesforce, a cloud-based customer relationship management software, as well as Solidworks, a computer-aided design platform.</p>
-                                </li>
-                            </ul>
-                            </div>
+                <div class="row">
 
-                            <!-- Hide on Desktop -->
-                            <div class="hide-on-large-only">
-                            <ul id ="staggered-Mobile-Skills">
-                                <li>
-                                    <p class="MyBody" style="position: relative;">Throughout the years, I've picked up a variety of programming languages. I've developed a deep understanding of C++ and Java. I've also dabbled in C and Javascript, and completed an online Python course via Coursera. In addition to these programming languages, I am also well-versed in markup languages such as HTML and CSS.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">I am also familiar with a multitude of object-oriented programming concepts, such as abstraction, encapsulation, and polymorphism as a result of inheritance; furthermore, I have considerable experience with applications of data structures, efficiencies of sorting algorithms, and the Big O notation of nested loops and algorithms.</p>
-                                </li>
-                                <li>
-                                    <p class="MyBody" style="position: relative;">In order to apply these programming concepts, I utilize IDE's such as Microsoft Visual Studio, XCode, and Eclipse. I also have experience with Salesforce, a cloud-based customer relationship management software, as well as Solidworks, a computer-aided design platform.</p>
-                                </li>
-                            </ul>
-                            </div>
-
-                        </div>
+                    <!-- Name Section -->
+                    <li>
+                    <div class="input-field col s12 m6 l6">
+                      <i class="material-icons prefix">assignment_ind</i>
+                        <input id="name" type="text">
+                        <label for="name">Name</label>
                     </div>
+                    </li>
+
+                    <!-- Email Section -->
+                    <li>
+                    <div class="input-field col s12 m6 l6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="text">
+                      <label for="email">Email</label>
+                    </div>
+                    </li>
+
                 </div>
-                <div class="col l2 m1 s0"></div>
-            </div>
 
-            <!-- Divider -->
-            <br></br>
-            <div class="container divider"></div>
+                <!-- Subject Section -->
+                <div class="row">
 
-            <!-- Courses Text -->
-            <div class="row hide-on-med-and-down">
-                <div class="col l2 m1 s0"></div>
-                <div class="col l8 m10 s12">
-                    <div style="text-align: center;">
-                        <div style="display: inline-block; text-align: justify;">
-                            
-                            <h2 class = "MyHeader section scrollspy left-align" id="courses" style="position: relative;">Coursework</h2>
-
-                            <!-- Hide on Mobile -->
-                            <div class="hide-on-med-and-down">
-                            <ul id ="staggered-Courses">
-                                <li> 
-                                    <table class="highlight responsive-table">
-                                        <thead>
-                                          <tr>
-                                              <th data-field="Title">Course</th>
-                                              <th data-field="Name">Course Name</th>
-                                              <th data-field="CDescrip">Description</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td>CS 31</td>
-                                            <td>Introduction to C++ I</td>
-                                            <td>Syntax, Structure, Pointers, Structs, Classes, Sorting, Recursion Algorithms</td>
-                                          </tr>
-                                          <tr>
-                                            <td>CS 32</td>
-                                            <td>Introduction to C++ II</td>
-                                            <td>Data Abstraction, Inheritance, Polymorphism, Algorithmic Efficiency, Trees, Hash Tables, Heaps, Time Complexity</td>
-                                          </tr>
-                                          <tr>
-                                            <td>CS 33</td>
-                                            <td>Computer Organization</td>
-                                            <td>Machine-level Programming, Program Optimization, Parallelism, Synchronization, Linking</td>
-                                          </tr>
-                                          <tr>
-                                            <td>CS 35L</td>
-                                            <td>Software Construction Laboratory</td>
-                                            <td>Scripting, Change Management, Low-Level Construction and Debugging, Systems Programming, Security, Parallelism</td>
-                                          </tr>
-                                          <tr>
-                                            <td>CS M51A</td>
-                                            <td>Logic Design of Digital Systems</td>
-                                            <td>Gate Implementation, MSI Components, Sequential Circuits, Machine Language, Input/Output, Boolean Algebra, Karnaugh Maps</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Math 32B</td>
-                                            <td>Multivariable Calculus</td>
-                                            <td>Integration in Two Variables, Change of Variables, Vector Fields, Line Integrals, Conservative Vector Fields, Surface Integrals</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Math 33A</td>
-                                            <td>Linear Algebra and Applications</td>
-                                            <td>Matrices, Matrix Multiplication, Subspaces, Determinants, Orthogonality, Eigenvalues, Eigenvectors, Diagonalization, Quadratic Forms</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Math 33B</td>
-                                            <td>Differential Equations</td>
-                                            <td>Direction Fields, Separable Equations, Existence and Uniqueness, Second Order Differential Equations, Harmonic Motion, Exponential of a Matrix</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Math 61</td>
-                                            <td>Discrete Mathematical Structures</td>
-                                            <td>Induction, Sets, Functions, Relations, Permutations, Pigeonhole, Recurrence Relations, Shortest-Path Algorithm, Binary and Decision Trees</td>
-                                          </tr>
-                                        </tbody>
-                                    </table>
-                                </li>
-                            </ul>
-                            </div>
-
-                        </div>
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">assignment</i>
+                      <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
+                      <label for="subject">Subject</label>
                     </div>
+                    </li>
+
                 </div>
-                <div class="col l2 m1 s0"></div>
-            </div>
 
-            <!-- Divider -->
-            <div class="hide-on-med-and-down">
-                <br></br>
-                <div class="container divider"></div>
-            </div>
+                <!-- Message Section -->
+                <div class="row">
 
-            <!-- Contact Me Text -->
-            <div class="row">
-                <div class="col l2 m1 s0"></div>
-                <div class="col l8 m10 s12">
-                    <div style="text-align: left;">
-                        <div style="display: inline-block; text-align: justify;">
-                            <h2 class = "MyHeader section scrollspy" id="contactme" style="position: relative;">Contact Me</h2>
-                            
-                            <!-- Hide on Mobile -->
-                            <div class="hide-on-med-and-down">
-                            <ul id="staggered-Contact-Me">
-                                <li>
-                                    <p class="MyBody" style="position: relative;">If you would like to contact me, please fill out this form and I will get back to you as soon as possible!</p>
-                                </li>
-                            </ul>
-                            </div>
-
-                            <!-- Hide on Desktop -->
-                            <div class="hide-on-large-only">
-                            <ul id="staggered-Mobile-Contact-Me">
-                                <li>
-                                    <p class="MyBody" style="position: relative;">If you would like to contact me, please fill out this form and I will get back to you as soon as possible!</p>
-                                </li>
-                            </ul>   
-                            </div>                         
-
-                        </div>
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">chat</i>
+                      <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
+                      <label for="message">Message</label>
                     </div>
+                    </li>
+
                 </div>
-                <div class="col l2 m1 s0"></div>
-            </div>
 
-            <!-- Contact Me Form, Hide on Mobile-->
-            <div class="hide-on-med-and-down">
-            <div class="row container">
+                <!-- Button -->
+                <div class="row">
 
-            <ul id ="staggered-Contact-Form">
-                <form id ="foo" class="col s12">
+                    <li>
+                    <div class="col l2 m12 s12">
+                        <div id="success"></div>
+                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
+                    </div>
+                    <div class="col l10 m0 s0"></div>
+                    </li>
 
-                    <div class="row">
+                </div>
 
-                        <!-- Name Section -->
-                        <li>
-                        <div class="input-field col s12 m6 l6">
-                          <i class="material-icons prefix">assignment_ind</i>
-                            <input id="name" type="text">
-                            <label for="name">Name</label>
-                        </div>
-                        </li>
+            </form>
+        </ul>
 
-                        <!-- Email Section -->
-                        <li>
-                        <div class="input-field col s12 m6 l6">
-                          <i class="material-icons prefix">email</i>
-                          <input id="email" type="text">
-                          <label for="email">Email</label>
-                        </div>
-                        </li>
+        </div>
+        </div>
+
+        <!-- Contact Me Form, Hide on Desktop -->
+        <div class="hide-on-large-only">
+        <div class="row">
+           
+        <ul id ="staggered-Mobile-Contact-Form">
+            <form id ="foo" class="col s12">
+
+                <!-- Vertical Phone Contact Me Form -->
+                <div class="hide-on-med-only">
+                <div class="row">
+
+                    <!-- Name Section -->
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">assignment_ind</i>
+                        <input id="name" type="text">
+                        <label for="name">Name</label>
+                    </div>
+                    </li>
+
+                    <!-- Email Section -->
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="text">
+                      <label for="email">Email</label>
+                    </div>
+                    </li>
+
+                </div>
+
+                <!-- Subject Section -->
+                <div class="row">
+
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">assignment</i>
+                      <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
+                      <label for="subject">Subject</label>
+                    </div>
+                    </li>
+
+                </div>
+
+                <!-- Message Section -->
+                <div class="row">
+
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">chat</i>
+                      <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                    </li>
+
+                </div>
+
+                <!-- Button -->
+                <div class="row">
+
+                    <li>
+                    <div class="col s12 center-align">
+                        <div id="success"></div>
+                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
+                    </div>
+                    </li>
+
+                </div>
+                </div>
+
+                <!-- Horizontal Phone Contact Me Form -->
+                <div class="hide-on-small-only">
+                <div class="row">
+                    <div class="col m1"></div>
+
+                    <div class="col m10">
+                    <!-- Name Section -->
+                    <li>
+                    <div class="input-field col s12 m6 l6">
+                      <i class="material-icons prefix">assignment_ind</i>
+                        <input id="name" type="text">
+                        <label for="name">Name</label>
+                    </div>
+                    </li>
+
+                    <!-- Email Section -->
+                    <li>
+                    <div class="input-field col s12 m6 l6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="text">
+                      <label for="email">Email</label>
+                    </div>
+                    </li>
 
                     </div>
 
-                    <!-- Subject Section -->
-                    <div class="row">
+                    <div class="col m1"></div>
+                </div>
 
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">assignment</i>
-                          <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
-                          <label for="subject">Subject</label>
-                        </div>
-                        </li>
+                <!-- Subject Section -->
+                <div class="row">
+                    <div class="col m1"></div>
 
+                    <div class="col m10">
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">assignment</i>
+                      <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
+                      <label for="subject">Subject</label>
+                    </div>
+                    </li>
                     </div>
 
-                    <!-- Message Section -->
-                    <div class="row">
+                    <div class="col m1"></div>
+                </div>
 
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">chat</i>
-                          <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
-                          <label for="message">Message</label>
-                        </div>
-                        </li>
+                <!-- Message Section -->
+                <div class="row">
+                    <div class="col m1"></div>
 
+                    <div class="col m10">
+                    <li>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">chat</i>
+                      <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                    </li>
                     </div>
 
-                    <!-- Button -->
-                    <div class="row">
+                    <div class="col m1"></div>
+                </div>
 
-                        <li>
-                        <div class="col l2 m12 s12">
-                            <div id="success"></div>
-                            <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
-                        </div>
-                        <div class="col l10 m0 s0"></div>
-                        </li>
+                <!-- Button -->
+                <div class="row">
 
+                    <li>
+                    <div class="col m1"></div>
+                    <div class="col m10">
+                        <div id="success"></div>
+                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
                     </div>
- 
-                </form>
-            </ul>
+                    <div class="col m1"></div>
+                    </li>
 
-            </div>
-            </div>
+                </div>
 
-            <!-- Contact Me Form, Hide on Desktop -->
-            <div class="hide-on-large-only">
-            <div class="row">
-               
-            <ul id ="staggered-Mobile-Contact-Form">
-                <form id ="foo" class="col s12">
+                </div>
+            </form>
+        </ul>
+        
+        </div>
+        </div>
 
-                    <!-- Vertical Phone Contact Me Form -->
-                    <div class="hide-on-med-only">
-                    <div class="row">
+        <br></br>
 
-                        <!-- Name Section -->
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">assignment_ind</i>
-                            <input id="name" type="text">
-                            <label for="name">Name</label>
-                        </div>
-                        </li>
-
-                        <!-- Email Section -->
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">email</i>
-                          <input id="email" type="text">
-                          <label for="email">Email</label>
-                        </div>
-                        </li>
-
-                    </div>
-
-                    <!-- Subject Section -->
-                    <div class="row">
-
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">assignment</i>
-                          <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
-                          <label for="subject">Subject</label>
-                        </div>
-                        </li>
-
-                    </div>
-
-                    <!-- Message Section -->
-                    <div class="row">
-
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">chat</i>
-                          <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
-                          <label for="message">Message</label>
-                        </div>
-                        </li>
-
-                    </div>
-
-                    <!-- Button -->
-                    <div class="row">
-
-                        <li>
-                        <div class="col s12 center-align">
-                            <div id="success"></div>
-                            <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
-                        </div>
-                        </li>
-
-                    </div>
-                    </div>
-
-                    <!-- Horizontal Phone Contact Me Form -->
-                    <div class="hide-on-small-only">
-                    <div class="row">
-                        <div class="col m1"></div>
-
-                        <div class="col m10">
-                        <!-- Name Section -->
-                        <li>
-                        <div class="input-field col s12 m6 l6">
-                          <i class="material-icons prefix">assignment_ind</i>
-                            <input id="name" type="text">
-                            <label for="name">Name</label>
-                        </div>
-                        </li>
-
-                        <!-- Email Section -->
-                        <li>
-                        <div class="input-field col s12 m6 l6">
-                          <i class="material-icons prefix">email</i>
-                          <input id="email" type="text">
-                          <label for="email">Email</label>
-                        </div>
-                        </li>
-
-                        </div>
-
-                        <div class="col m1"></div>
-                    </div>
-
-                    <!-- Subject Section -->
-                    <div class="row">
-                        <div class="col m1"></div>
-
-                        <div class="col m10">
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">assignment</i>
-                          <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
-                          <label for="subject">Subject</label>
-                        </div>
-                        </li>
-                        </div>
-
-                        <div class="col m1"></div>
-                    </div>
-
-                    <!-- Message Section -->
-                    <div class="row">
-                        <div class="col m1"></div>
-
-                        <div class="col m10">
-                        <li>
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">chat</i>
-                          <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
-                          <label for="message">Message</label>
-                        </div>
-                        </li>
-                        </div>
-
-                        <div class="col m1"></div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="row">
-
-                        <li>
-                        <div class="col m1"></div>
-                        <div class="col m10">
-                            <div id="success"></div>
-                            <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn waves-effect waves-light red lighten-1 btn z-depth-1">Submit<i class="material-icons right">send</i></a>
-                        </div>
-                        <div class="col m1"></div>
-                        </li>
-
-                    </div>
-
-                    </div>
-                </form>
-            </ul>
-            
-            </div>
-            </div>
-
-            <br></br>
-
-            <!-- Contact Form - sent to a Google Sheet -->
-            <!-- <form id='foo'>
-              <p>
-                <label>Name</label>
-                <input id='name' name='name' type='text'>
-              </p><p>
-                <label>Email Address</label>
-                <input id='email' name='email' type='email'>
-              </p><p>
-                <label>Phone Number</label>
-                <input id='phone' name='phone' type='tel'>
-              </p><p>
-                <label>Message</label>
-                <textarea id='message' name='message' rows='5'></textarea>
-              </p>
-                <div id='success'></div>
-                <button type='submit'>Send</button>
-            </form> -->
+        <!-- Contact Form - sent to a Google Sheet -->
+        <!-- <form id='foo'>
+          <p>
+            <label>Name</label>
+            <input id='name' name='name' type='text'>
+          </p><p>
+            <label>Email Address</label>
+            <input id='email' name='email' type='email'>
+          </p><p>
+            <label>Phone Number</label>
+            <input id='phone' name='phone' type='tel'>
+          </p><p>
+            <label>Message</label>
+            <textarea id='message' name='message' rows='5'></textarea>
+          </p>
+            <div id='success'></div>
+            <button type='submit'>Send</button>
+        </form> -->
 
     </body>
 </html>
