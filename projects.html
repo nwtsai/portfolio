@@ -141,13 +141,14 @@
         }
 
         /* Initialize list class to be visible for Description Tab */
-        #staggered-FrackmanDescrip li, #staggered-BlackjackDescrip li, #staggered-WebsiteDescrip li
+        #staggered-FrackmanDescrip li, #staggered-BlackjackDescrip li, #staggered-WebsiteDescrip li, #staggered-PocketChangeDescrip li
         {
           opacity: 1;
         }
 
         /* Initialize list class to be invisible for all other tabs */
-        #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-WebsiteDesign li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-WebsiteCode li
+        #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-WebsiteDesign li, #staggered-PocketChangeDesign li, 
+        #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-WebsiteCode li,  #staggered-PocketChangeCode li
         {
           opacity: 0; 
         }
@@ -259,6 +260,7 @@
               <div class="toc-wrapper">
                   <ul class="section table-of-contents">
                       <li><a href="#projects">Projects</a></li>
+                      <li><a href="#pocket-change">P.C.</a></li>
                       <li><a href="#frackman">Frackman</a></li>
                       <li><a href="#blackjack">Blackjack</a></li>
                       <li><a href="#website">Website</a></li>
@@ -271,6 +273,21 @@
         <script type="text/javascript">
         var options = 
             [
+                {selector: '#staggered-PocketChangeDescrip', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-PocketChangeDesign', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-PocketChangeCode', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
                 {selector: '#staggered-FrackmanDescrip', callback: function(el) {
                 Materialize.showStaggeredList($(el));
                 $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
@@ -323,6 +340,119 @@
             <br></br>
         </div>
 
+        <!-- Pocket Change Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+
+                    <div class="hide-on-large-only">
+                        <br></br>
+                        <br></br>
+                        <div class="divider"></div>
+                    </div>
+
+                    <h2 class= "MyHeader section scrollspy" id="pocket-change" style="position: relative;">Pocket Change</h2>
+
+                    <!-- Pocket Change Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+
+                          <!-- Desktop Pocket Change Description Tab -->
+                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
+                            href="#PCDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
+                            <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>
+                          </ul>
+
+                          <!-- Mobile Pocket Change Description Tab -->
+                          <ul class="tabs hide-on-large-only" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
+                            href="#PCDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li> -->
+                          </ul>
+
+                        </div>
+
+                        <!-- Pocket Change Tabs Content -->
+                        <div id="PCDescription" class="col s12">
+                            <ul id="staggered-PocketChangeDescrip">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ An IOS app that helps users manage their personal budget by logging how much, when, and why money was spent.</p>
+                            <p class="MyBody" style="position: relative;">‣ The app logs their day-to-day transactions to help create healthy spending habits and maintain monetary awareness.</p>
+                            <p class="MyBody" style="position: relative;">‣ Budgets can be personalized for each occasion, such as 'Eating Out' or 'Mall Budget' or 'Vegas Trip'.</p>
+                            <p class="MyBody" style="position: relative;">‣ Color-coded transaction history is accessible at all times and may be deleted with a push of a button.</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="PCDesign" class="col s12">
+                            <ul id="staggered-PocketChangeDesign">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ Programmed with Swift 3 on XCode, using the Model View Controller (MVC) pattern to organize and streamline application processes</p>
+                            <p class="MyBody" style="position: relative;">‣ Designed with dynamic, reactive buttons that disable when an input results in a negative balance or if the input is not a number</p>
+                            <p class="MyBody" style="position: relative;">‣ Developed code that takes into account the user's varying input values and displays helpful comments to aid their app navigation</p>
+                            <p class="MyBody" style="position: relative;">‣ Constructed storyboard navigation screens with aesthetic, original buttons and icons to create a sleek user interface</p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="PCCode" class="col s12">
+                            <br></br>
+                            <ul id="staggered-PocketChangeCode">
+                            <li>
+                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/Pocket-Change" target="_blank">Source Code &nbsp &nbsp<i class="fa fa-pied-piper" aria-hidden="true"></i></a></p>
+                            </li>
+                            </ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                            </div>
+                        </div>
+                        <div id="PCDemo" class="col s12"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Materialboxed Pocket Change Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <img class="materialboxed responsive-img" src="image library/full images/Pocket-Change-Bordered.png" style="margin-top: 60px; max-height: 815px;" 
+                data-caption="Users can log their daily spendings and view the color-coded transaction history">
+            </div>
+
+            <div class="hide-on-large-only">
+                <!-- Pocket Change Mobile Vertical Image -->
+                <div class="col l4 m12 s12 hide-on-med-only">
+                    <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 320px; height: 320px;">
+                </div>
+
+                <!-- Pocket Change Mobile Horizontal Image -->
+                <div class="col l4 m12 s12 hide-on-small-only">
+                    <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 520px; height: 520px;">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class ="hide-on-med-and-down row">
+            <div class="col l1"></div>
+            <div class="col l10">
+                <br></br>
+                <br></br>
+                <div class="divider"></div>
+                <br></br>
+            </div>
+            <div class="col l1"></div>
+        </div>
+
         <!-- Frackman Frame -->
         <div class="row">
             <div class="col l7 m12 s12">
@@ -339,25 +469,25 @@
                           <!-- Desktop Frackman Description Tab -->
                           <ul class="tabs hide-on-med-and-down" style="position: relative;">
                             <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
-                            href="#Description">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#Design">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#Code">Code</a></li>
-                            <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li>
+                            href="#FDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
+                            <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li>
                           </ul>
 
                           <!-- Mobile Frackman Description Tab -->
                           <ul class="tabs hide-on-large-only" style="position: relative;">
                             <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
-                            href="#Description">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#Design">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#Code">Code</a></li>
-                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#Demo">Demo</a></li> -->
+                            href="#FDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
                           </ul>
 
                         </div>
 
                         <!-- Frackman Tabs Content -->
-                        <div id="Description" style="color: #03a9f4;" class="col s12">
+                        <div id="FDescription" style="color: #03a9f4;" class="col s12">
                             <ul id="staggered-FrackmanDescrip">
                             <li>
                             <p class="MyBody" style="position: relative;">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
@@ -367,7 +497,7 @@
                             </li>
                             </ul>
                         </div>
-                        <div id="Design" class="col s12">
+                        <div id="FDesign" class="col s12">
                             <ul id="staggered-FrackmanDesign">
                             <li>
                             <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
@@ -377,7 +507,7 @@
                             </li>
                             </ul>
                         </div>
-                        <div id="Code" class="col s12">
+                        <div id="FCode" class="col s12">
                             <br></br>
                             <ul id="staggered-FrackmanCode">
                             <li>
@@ -395,7 +525,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div id="Demo" class="col s12"></div>
+                        <div id="FDemo" class="col s12"></div>
                     </div>
 
                 </div>
