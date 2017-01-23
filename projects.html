@@ -122,27 +122,15 @@
         <script>
             $(document).ready(function()
             {
-                $('.toc-wrapper').pushpin({offset: 520});
+                $('#toc').pushpin({
+                    top: 500,
+                    offset: 50
+                });
                 $('.scrollspy').scrollSpy();
 
                 $(".button-collapse").sideNav();
             });
         </script>
-
-        <!-- Table of Contents -->
-        <div class="row">
-            <div class="col s1 offset-s11 hide-on-med-and-down">
-              <div class="toc-wrapper">
-                  <ul class="section table-of-contents">
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#pocket-change">IOS App</a></li>
-                      <li><a href="#frackman">Frackman</a></li>
-                      <li><a href="#blackjack">Blackjack</a></li>
-                      <li><a href="#website">Website</a></li>
-                  </ul>
-              </div>
-            </div>
-        </div>
 
         <!-- Scrollfire Implementation -->
         <script type="text/javascript">
@@ -211,14 +199,15 @@
             Materialize.scrollFire(options);
         </script>
 
-        <div class="hide-on-med-and-down">
-            <br></br>
-        </div>
-
-        <!-- Pocket Change Frame -->
+        <!-- Table of Contents and Pocket Change Frame -->
         <div class="row">
             <div class="col l7 m12 s12">
                 <div class="container">
+
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+
                     <h2 class= "MyHeader section scrollspy" id="pocket-change" style="position: relative;">Pocket Change</h2>
 
                     <!-- Pocket Change Tabs Section -->
@@ -285,9 +274,10 @@
 
                 </div>
             </div>
-
-            <!-- Materialboxed Pocket Change Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
+                <div class="hide-on-med-and-down">
+                    <br></br>
+                </div>
                 <img class="materialboxed responsive-img" src="image library/full images/Pocket-Change-Bordered.png" style="margin-top: 60px; max-height: 800px;" 
                 data-caption="Users can log their daily spendings and view their color-coded transaction history">
             </div>
@@ -303,7 +293,17 @@
                     <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 520px; height: 520px;">
                 </div>
             </div>
-
+            <div class="col s1 hide-on-med-and-down">
+              <div class="toc-wrapper">
+                  <ul class="section table-of-contents" id="toc">
+                      <li><a href="#projects">Projects</a></li>
+                      <li><a href="#pocket-change">IOS App</a></li>
+                      <li><a href="#frackman">Frackman</a></li>
+                      <li><a href="#blackjack">Blackjack</a></li>
+                      <li><a href="#website">Website</a></li>
+                  </ul>
+              </div>
+            </div>
         </div>
 
         <!-- Divider -->
