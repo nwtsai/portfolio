@@ -1,0 +1,165 @@
+/* Parallax Top Settings*/
+.parallax-window
+{
+    width: 100%;
+    min-height: 470px;
+    background: transparent;
+    position: relative;
+}
+
+/* Typewriter Effect */
+.element
+{
+    font-size: 53px;
+    font-weight: thin;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: "Oswald";
+    letter-spacing: 5px;
+    background: transparent;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 17%;
+}
+
+/* Custom Header Format */
+.MyHeader
+{
+    font-size: 60px;
+    font-family: "Dosis";
+    color: #e53935;
+    text-align: center;
+}
+
+/* Custom Body Format */
+.MyBody
+{
+    font-size: 19px;
+    font-family: "Open Sans";
+    color: black;
+    position: relative;
+}
+
+/* Custom Frame Space */
+.frame
+{
+    height: 100%; /*can be anything*/
+    width: 100%; /*can be anything*/
+    position: relative;
+}
+
+@media only screen and (min-width: 668px)
+{
+    .element
+    {
+        font-size: 53px;
+        font-weight: thin;
+        color: #ffffff;
+        font-weight: 100;
+        font-family: "Oswald";
+        letter-spacing: 5px;
+        background: transparent;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 11%;
+    }
+}
+
+@media only screen and (min-width: 415px)
+{
+    .MyHeader
+    {
+        font-size: 60px;
+        font-family: "Dosis";
+        color: #e53935;
+        text-align: left;
+    }
+}
+
+.materialboxed
+{
+    height: 357px;
+    left: 12%;
+    position: absolute;
+    margin-top: 43px;
+    max-height: 850px;
+}
+
+.portrait
+{
+    text-align: center;
+}
+
+.container .row {margin:20px;text-align:center;}
+.container .row img {margin:0 20px;}
+
+/* Class for when element is above threshold */
+.pin-top
+{
+    position: relative;
+}
+
+/* Class for when element is below threshold */
+.pin-bottom
+{
+    position: relative;
+}
+
+/* Class for when element is pinned */
+.pinned
+{
+    position: fixed !important;
+}
+
+/* INPUT FIELD */
+/* label color */
+.input-field label 
+{
+  color: #505050;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label 
+{
+  color: #ef5350;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus 
+{
+  border-bottom: 1px solid #ef5350;
+  box-shadow: 0 1px 0 0 #ef5350;
+}
+/* valid color */
+.input-field input[type=text].valid 
+{
+  border-bottom: 1px solid #505050;
+  box-shadow: 0 1px 0 0 #505050;
+}
+/* invalid color */
+.input-field input[type=text].invalid 
+{
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active 
+{
+  color: #ef5350;
+}
+
+/* Initialize list class to be invisible for ScrollFire Effect */
+#staggered-About-Me li, #staggered-Mobile-About-Me li, 
+#staggered-Experience li, #staggered-Mobile-Experience li, 
+#staggered-Skills li, #staggered-Mobile-Skills li, 
+#staggered-Courses li, #staggered-Mobile-Courses li, 
+#staggered-Contact-Me li, #staggered-Mobile-Contact-Me li, 
+#staggered-Contact-Form li, #staggered-Mobile-Contact-Form li
+{
+  opacity: 0;
+}
+
+.h2
+{
+    text-align: left;
+}

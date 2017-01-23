@@ -33,173 +33,7 @@
         <link href="effects/materialize/css/ab_materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
         <!-- Fonts and Styles -->
-        <style>
-
-        /* Parallax Top Settings*/
-        .parallax-window
-        {
-            width: 100%;
-            min-height: 470px;
-            background: transparent;
-            position: relative;
-        }
-
-        /* Typewriter Effect */
-        .element
-        {
-            font-size: 53px;
-            font-weight: thin;
-            color: #ffffff;
-            font-weight: 100;
-            font-family: "Oswald";
-            letter-spacing: 5px;
-            background: transparent;
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            top: 17%;
-        }
-
-        /* Custom Header Format */
-        .MyHeader
-        {
-            font-size: 60px;
-            font-family: "Dosis";
-            color: #e53935;
-            text-align: center;
-        }
-
-        /* Custom Body Format */
-        .MyBody
-        {
-            font-size: 19px;
-            font-family: "Open Sans";
-            color: black;
-            position: relative;
-        }
-
-        /* Custom Frame Space */
-        .frame
-        {
-            height: 100%; /*can be anything*/
-            width: 100%; /*can be anything*/
-            position: relative;
-        }
-
-        @media only screen and (min-width: 668px)
-        {
-            .element
-            {
-                font-size: 53px;
-                font-weight: thin;
-                color: #ffffff;
-                font-weight: 100;
-                font-family: "Oswald";
-                letter-spacing: 5px;
-                background: transparent;
-                position: absolute;
-                text-align: center;
-                width: 100%;
-                top: 11%;
-            }
-        }
-
-        @media only screen and (min-width: 415px)
-        {
-            .MyHeader
-            {
-                font-size: 60px;
-                font-family: "Dosis";
-                color: #e53935;
-                text-align: left;
-            }
-        }
-
-        .materialboxed
-        {
-            height: 357px;
-            left: 12%;
-            position: absolute;
-            margin-top: 43px;
-            max-height: 850px;
-        }
-
-        .portrait
-        {
-            text-align: center;
-        }
-
-        .container .row {margin:20px;text-align:center;}
-        .container .row img {margin:0 20px;}
-
-        /* Class for when element is above threshold */
-        .pin-top
-        {
-            position: relative;
-        }
-
-        /* Class for when element is below threshold */
-        .pin-bottom
-        {
-            position: relative;
-        }
-
-        /* Class for when element is pinned */
-        .pinned
-        {
-            position: fixed !important;
-        }
-
-        /* INPUT FIELD */
-        /* label color */
-        .input-field label 
-        {
-          color: #505050;
-        }
-        /* label focus color */
-        .input-field input[type=text]:focus + label 
-        {
-          color: #ef5350;
-        }
-        /* label underline focus color */
-        .input-field input[type=text]:focus 
-        {
-          border-bottom: 1px solid #ef5350;
-          box-shadow: 0 1px 0 0 #ef5350;
-        }
-        /* valid color */
-        .input-field input[type=text].valid 
-        {
-          border-bottom: 1px solid #505050;
-          box-shadow: 0 1px 0 0 #505050;
-        }
-        /* invalid color */
-        .input-field input[type=text].invalid 
-        {
-          border-bottom: 1px solid #000;
-          box-shadow: 0 1px 0 0 #000;
-        }
-        /* icon prefix focus color */
-        .input-field .prefix.active 
-        {
-          color: #ef5350;
-        }
-
-        /* Initialize list class to be invisible for ScrollFire Effect */
-        #staggered-About-Me li, #staggered-Mobile-About-Me li, #staggered-Skills li, #staggered-Mobile-Skills li, #staggered-Courses li, 
-        #staggered-Mobile-Courses li, #staggered-Contact-Me li, #staggered-Mobile-Contact-Me li, #staggered-Contact-Form li, 
-        #staggered-Mobile-Contact-Form li
-        {
-          opacity: 0;
-        }
-
-        .h2
-        {
-            text-align: left;
-        }
-
-        </style>
-    </head>
+        <link href="css/about.css" type="text/css" rel="stylesheet" />
 
     <!-- Body -->
     <body>
@@ -294,7 +128,11 @@
         <script>
             $(document).ready(function()
             {
-                $('.toc-wrapper').pushpin({offset: 520});
+                $('#toc').pushpin({
+                    top: 500,
+                    offset: 50
+                });
+
                 $('.scrollspy').scrollSpy();
 
                 $('input#input_text, textarea#subject').characterCounter();
@@ -307,21 +145,6 @@
             });
         </script>
 
-        <!-- Table of Contents -->
-        <div class="row">
-            <div class="col s1 offset-s11 hide-on-med-and-down">
-              <div class="toc-wrapper">
-                  <ul class="section table-of-contents">
-                      <li><a href="#welcome">Welcome</a></li>
-                      <li><a href="#aboutme">About</a></li>
-                      <li><a href="#skills">Skills</a></li>
-                      <li><a href="#courses">Courses</a></li>
-                      <li><a href="#contactme">Contact</a></li>
-                  </ul>
-              </div>
-            </div>
-        </div>
-
         <!-- Scrollfire Implementation -->
         <script type="text/javascript">
         var options = 
@@ -332,6 +155,16 @@
                 } },
 
                 {selector: '#staggered-Mobile-About-Me', offset: 185, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Experience', offset: 450, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Mobile-Experience', offset: 185, callback: function(el) {
                 Materialize.showStaggeredList($(el));
                 $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
                 } },
@@ -379,22 +212,39 @@
             Materialize.scrollFire(options);
         </script>
 
-        <!-- Portrait -->
-        <br></br>
-        <div class="portrait">
-            <img src="image library/cropped images/Portrait Circle.jpg" class="circle responsive-img hoverable" style="height: 260px;" align = "middle">
-        </div>
-        <br></br>
+        <!-- Table of Contents -->
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <!-- Portrait -->
+                <br></br>
+                <div class="portrait">
+                    <img src="image library/cropped images/Portrait Circle.jpg" class="circle responsive-img hoverable" style="height: 260px;" align = "middle">
+                </div>
+                <br></br>
 
-        <!-- Social Buttons -->
-        <div class="portrait">
-            <a class="btn waves-effect waves-light red btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Facebook" data-delay="100" href="http://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a> &nbsp
-            <a class="btn waves-effect waves-light red lighten-1 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Instagram" data-delay="100" href="http://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a> &nbsp
-            <a class="btn waves-effect waves-light red lighten-2 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Soundcloud" data-delay="100" href="http://www.soundcloud.com/nwtsai" target="_blank"><i class="fa fa-soundcloud"></i></a>
+                <!-- Social Buttons -->
+                <div class="portrait">
+                    <a class="btn waves-effect waves-light red btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Facebook" data-delay="100" href="http://www.facebook.com/nwtsai3" target="_blank"><i class="fa fa-facebook"></i></a> &nbsp
+                    <a class="btn waves-effect waves-light red lighten-1 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Instagram" data-delay="100" href="http://www.instagram.com/nathantsai" target="_blank"><i class="fa fa-instagram"></i></a> &nbsp
+                    <a class="btn waves-effect waves-light red lighten-2 btn-floating btn-large z-depth-1 tooltipped" data-position="down" data-tooltip="Soundcloud" data-delay="100" href="http://www.soundcloud.com/nwtsai" target="_blank"><i class="fa fa-soundcloud"></i></a>
+                </div>
+            </div>
+            <div class="col s1">
+              <div class="toc-wrapper hide-on-med-and-down" id="toc" style="position: relative;">
+                  <ul class="section table-of-contents">
+                      <li><a href="#welcome">Welcome</a></li>
+                      <li><a href="#aboutme">About</a></li>
+                      <li><a href="#experience">Experience</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#courses">Courses</a></li>
+                      <li><a href="#contactme">Contact</a></li>
+                  </ul>
+              </div>
+            </div>            
         </div>
 
         <!-- Divider -->
-        <br></br>
         <br></br>
         <div class="container divider"></div>
 
@@ -402,7 +252,7 @@
         <div class="row">
             <div class="col l2 m1 s0"></div>
             <div class="col l8 m10 s12">
-                <div style="text-align: center;">
+                <div style="text-align: left;">
                     <div style="display: inline-block; text-align: justify;">
 
                         <h2 class = "MyHeader section scrollspy" id="aboutme" style="position: relative;">About Me</h2>
@@ -411,19 +261,13 @@
                         <div class="hide-on-med-and-down">
                         <ul id ="staggered-About-Me">
                             <li>
-                                <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
-                                studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                                <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
                             </li>
                             <li>
-                                <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
-                                end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website
-                                </a>, I discovered a keen interest in web development.</p>
+                                <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website</a>, I discovered a keen interest in web development.</p>
                             </li>
                             <li>
-                                <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
-                                clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
-                                Engineering Fraternity. I also expanded my horizons and joined <a class href="http://foundationschoreography.com" target="_blank">Foundations Choreography</a>,
-                                where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                                <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional Engineering Fraternity. I also expanded my horizons and joined <a class href="http://foundationschoreography.com" target="_blank">Foundations Choreography</a>, where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
                             </li>
                         </ul>
                         </div>
@@ -432,19 +276,94 @@
                         <div class="hide-on-large-only">
                         <ul id ="staggered-Mobile-About-Me">
                             <li>
-                                <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore
-                                studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
+                                <p class="MyBody" style="position: relative;">My name is Nathan Tsai, and I am a motivated individual with a passion for programming. I am currently a sophomore studying Computer Science and Engineering at <a class href="http://www.ucla.edu" target="_blank">UCLA</a>.</p>
                             </li>
                             <li>
-                                <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back
-                                end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website
-                                </a>, I discovered a keen interest in web development.</p>
+                                <p class="MyBody" style="position: relative;">Discovering passions is my passion. In order to do this, I constantly expose myself to both the front end and back end aspects of programming. For example, as a result of constructing and designing this <a class href="https://github.com/nwtsai/nwtsai.github.io" target="_blank">website</a>, I discovered a keen interest in web development.</p>
                             </li>
                             <li>
-                                <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus
-                                clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional
-                                Engineering Fraternity. I also expanded my horizons and joined <a class href="http://foundationschoreography.com" target="_blank">Foundations Choreography</a>,
-                                where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                                <p class="MyBody" style="position: relative;">Aside from programming, I enjoy volunteering, hiking, and playing the piano, as well as getting involved in on-campus clubs and organizations. I became a member of <a class href="http://www.thetataubruins.org" target="_blank">Theta Tau</a>, the nation's oldest and largest Professional Engineering Fraternity. I also expanded my horizons and joined <a class href="http://foundationschoreography.com" target="_blank">Foundations Choreography</a>, where I <a class href="https://www.youtube.com/watch?v=BnH-A2ZOTFg#t=3m3s" target="_blank">performed</a> on stage and discovered a passion for hip-hop dancing.</p>
+                            </li>
+                        </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col l2 m1 s0"></div>
+        </div>
+
+        <!-- Divider -->
+        <br></br>
+        <div class="container divider"></div>
+
+        <!-- Experience Text -->
+        <div class="row">
+            <div class="col l2 m1 s0"></div>
+            <div class="col l8 m10 s12">
+                <div style="text-align: left;">
+                    <div style="">
+
+                        <h2 class = "MyHeader section scrollspy" id="experience" style="position: relative;">Experience</h2>
+                        
+                        <!-- Hide on Mobile -->
+                        <div class="hide-on-med-and-down">
+                        <ul id ="staggered-Experience">
+                            <li>
+                                <ul class="collapsible collection" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><span class="badge">Jan 2017 – Present</span><i class="material-icons">filter_drama</i>Web Developer – The Daily Bruin</div>
+                                        <div class="collapsible-body" style="padding-left: 2em">
+                                            <p>
+                                                ‣ Design, develop, and maintain the online edition of UCLA's premier source of campus news, <a class href="https://dailybruin.com" target="_blank">The Daily Bruin</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                            </li>
+                            <li>
+                                    <li>
+                                        <div class="collapsible-header"><span class="badge">Jul 2015 – Sep 2015</span><i class="material-icons">call</i>Customer Care Intern – Citrix Systems</div>
+                                        <div class="collapsible-body" style="padding-left: 2em">
+                                            <p>
+                                                ‣ Managed a wide workforce of customer care agents with the <a class href="https://www.salesforce.com" target="_blank">Salesforce</a> platform <br>                   
+                                                ‣ Created daily and weekly analytical reports that improved the productivity of the department <br>        
+                                                ‣ Evaluated calls and assessed the effectiveness of the agents’ customer service <br>     
+                                                ‣ Developed training techniques to achieve higher customer satisfaction
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <!-- Hide on Desktop -->
+                        <div class="hide-on-large-only">
+                        <ul id ="staggered-Mobile-Experience">
+                            <li>
+                                <ul class="collapsible collection" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><span class="badge">Jan 2017 – Present</span><i class="material-icons">filter_drama</i>Web Developer – The Daily Bruin</div>
+                                        <div class="collapsible-body" style="padding-left: 2em">
+                                            <p>
+                                                ‣ Design, develop, and maintain the online edition of UCLA's premier source of campus news, <a class href="https://dailybruin.com" target="_blank">The Daily Bruin</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                            </li>
+                            <li>
+                                    <li>
+                                        <div class="collapsible-header"><span class="badge">Jul 2015 – Sep 2015</span><i class="material-icons">call</i>Customer Care Intern – Citrix Systems</div>
+                                        <div class="collapsible-body" style="padding-left: 2em">
+                                            <p>
+                                                ‣ Managed a wide workforce of customer care agents with the <a class href="https://www.salesforce.com" target="_blank">Salesforce</a> platform <br>                   
+                                                ‣ Created daily and weekly analytical reports that improved the productivity of the department <br>        
+                                                ‣ Evaluated calls and assessed the effectiveness of the agents’ customer service <br>     
+                                                ‣ Developed training techniques to achieve higher customer satisfaction
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         </div>
@@ -463,7 +382,7 @@
         <div class="row">
             <div class="col l2 m1 s0"></div>
             <div class="col l8 m10 s12">
-                <div style="text-align: center;">
+                <div style="text-align: left;">
                     <div style="display: inline-block; text-align: justify;">
                         
                         <h2 class = "MyHeader section scrollspy" id="skills" style="position: relative;">Skills</h2>
@@ -550,9 +469,24 @@
                                     <td>Scripting, Change Management, Low-Level Construction and Debugging, Systems Programming, Security, Multithreaded Parallelism</td>
                                   </tr>
                                   <tr>
+                                    <td>CS 174A</td>
+                                    <td>Computer Graphics</td>
+                                    <td>WebGL, User/System Event Handling, Viewports, Points, Coordinate Systems, Transformations, Projections, Lighting, Texture Mapping, Blending</td>
+                                  </tr>
+                                  <tr>
                                     <td>CS M51A</td>
                                     <td>Logic Design of Digital Systems</td>
                                     <td>Gate Implementation, MSI Components, Sequential Circuits, Machine Language, Input/Output, Boolean Algebra, Karnaugh Maps</td>
+                                  </tr>
+                                  <tr>
+                                    <td>CS M152A</td>
+                                    <td>Digital Design Laboratory</td>
+                                    <td>Design complex circuits with Verilog, Test code on FPGA's, Bit Manipulation, Register Application</td>
+                                  </tr>
+                                  <tr>
+                                    <td>CS M117</td>
+                                    <td>Computer Networks: Physical Layer</td>
+                                    <td>Signal Modulation (AM, FM), Wireless Channels, LAN, Ad-Hoc Networks, BT Pan</td>
                                   </tr>
                                   <tr>
                                     <td>Math 32A</td>
