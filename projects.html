@@ -47,11 +47,20 @@
 
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
+                    <!-- Dropdown Structure -->
+                    <div class="ddown">
+                        <ul id="projectsDropdown" class="dropdown-content">
+                          <li><a href="#pocket-change"><i class="small material-icons">stay_current_portrait</i></a></li>
+                          <li><a href="#frackman"><i class="small material-icons">games</i></a></li>
+                          <li><a href="#website"><i class="small material-icons">tab</i></a></li>
+                        </ul>
+                    </div>
+
                     <!-- Navigation Buttons -->
                     <ul class="right hide-on-med-and-down">
                         <li><a href="index.html"><font face = "Ubuntu">Home</font></a></li>
                         <li><a href="about.html"><font face = "Ubuntu">About Me</font></a></li>
-                        <li class="active"><a href="projects.html"><font face = "Ubuntu">Projects</font></a></li>
+                        <li class="active"><a class="dropdown-button" href="projects.html" data-activates="projectsDropdown"><font face = "Ubuntu">Projects</font><i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
 
                     <!-- Mobile Navigation Buttons -->
@@ -129,6 +138,8 @@
                 $('.scrollspy').scrollSpy({scrollOffset: 135});
 
                 $(".button-collapse").sideNav();
+
+                $(".dropdown-button").dropdown();
             });
         </script>
 
@@ -200,7 +211,7 @@
         </script>
 
         <!-- Table of Contents and Pocket Change Frame -->
-        <div class="row">
+        <div class="row" id="mobile_icon">
             <div class="col l7 m12 s12">
                 <div class="container">
 
@@ -307,7 +318,7 @@
         </div>
 
         <!-- Divider -->
-        <div class ="hide-on-med-and-down row">
+        <div class ="hide-on-med-and-down row" id="video_games_icon">
             <div class="col l1"></div>
             <div class="col l10">
                 <br></br>
@@ -537,7 +548,7 @@
         </div>
 
         <!-- Divider -->
-        <div class ="hide-on-med-and-down row">
+        <div class ="hide-on-med-and-down row" id="website_icon">
             <div class="col l1"></div>
             <div class="col l10">
                 <br></br>

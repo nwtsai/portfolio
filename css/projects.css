@@ -1,123 +1,123 @@
 /* Parallax Settings*/
-        .parallax-window
-        {
-            width: 100%;
-            min-height: 470px;
-            background: transparent;
-            position: relative;
-        }
+.parallax-window
+{
+    width: 100%;
+    min-height: 470px;
+    background: transparent;
+    position: relative;
+}
 
-        /* Custom Header Format */
-        .MyHeader
-        {
-            font-size: 60px;
-            font-family: "Dosis";
-            color: #03a9f4;
-            text-align: center;
-        }
+/* Custom Header Format */
+.MyHeader
+{
+    font-size: 60px;
+    font-family: "Dosis";
+    color: #03a9f4;
+    text-align: center;
+}
 
-        /* Custom Body Format */
-        .MyBody
-        {
-            font-size: 19px;
-            font-family: "Open Sans";
-            color: black;
-        }
+/* Custom Body Format */
+.MyBody
+{
+    font-size: 19px;
+    font-family: "Open Sans";
+    color: black;
+}
 
-        /* Typewriter Effect */
-        .element
-        {
-            font-size: 53px;
-            font-weight: thin;
-            color: #ffffff;
-            font-family: "Oswald";
-            letter-spacing: 5px;
-            background: transparent;
-            position: absolute;
-            top: 17%;
-            width: 100%;
-            text-align: center;
-        }
+/* Typewriter Effect */
+.element
+{
+    font-size: 53px;
+    font-weight: thin;
+    color: #ffffff;
+    font-family: "Oswald";
+    letter-spacing: 5px;
+    background: transparent;
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+}
 
-        @media only screen and (min-width: 668px)
-        {
-            .element
-            {
-                font-size: 53px;
-                font-weight: thin;
-                color: #ffffff;
-                font-family: "Oswald";
-                letter-spacing: 5px;
-                background: transparent;
-                position: absolute;
-                right: 35%;
-                top: 11%;
-            }
-        }
+@media only screen and (min-width: 668px)
+{
+    .element
+    {
+        font-size: 53px;
+        font-weight: thin;
+        color: #ffffff;
+        font-family: "Oswald";
+        letter-spacing: 5px;
+        background: transparent;
+        position: absolute;
+        right: 35%;
+        top: 11%;
+    }
+}
 
-        @media only screen and (min-width: 415px)
-        {
-            .MyHeader
-            {
-                font-size: 60px;
-                font-family: "Dosis";
-                color: #03a9f4;
-                text-align: left;
-            }
-        }
+@media only screen and (min-width: 415px)
+{
+    .MyHeader
+    {
+        font-size: 60px;
+        font-family: "Dosis";
+        color: #03a9f4;
+        text-align: left;
+    }
+}
 
-        .materialboxed
-        {
-            height: 520px;
-            width: 520px;
-            // right: 9.5%;
-            // position: absolute;
-        }
+.materialboxed
+{
+    height: 520px;
+    width: 520px;
+    // right: 9.5%;
+    // position: absolute;
+}
 
-        /* Class for when element is above threshold */
-        .pin-top
-        {
-            position: relative;
-        }
+/* Class for when element is above threshold */
+.pin-top
+{
+    position: relative;
+}
 
-        /* Class for when element is below threshold */
-        .pin-bottom
-        {
-            position: relative;
-        }
+/* Class for when element is below threshold */
+.pin-bottom
+{
+    position: relative;
+}
 
-        /* Class for when element is pinned */
-        .pinned
-        {
-            position: fixed !important;
-        }
+/* Class for when element is pinned */
+.pinned
+{
+    position: fixed !important;
+}
 
-        .tabs .indicator
-        {
-            background-color: #03a9f4;
-        }
+.tabs .indicator
+{
+    background-color: #03a9f4;
+}
 
-        .CodeButton
-        {
-            font-family: "Ubuntu";
-            text-align: center;
-        }
+.CodeButton
+{
+    font-family: "Ubuntu";
+    text-align: center;
+}
 
-        img.center 
-        {
-            display: block;
-            margin: 0 auto;
-        }
+img.center 
+{
+    display: block;
+    margin: 0 auto;
+}
 
-        /* Initialize list class to be visible for Description Tab */
-        #staggered-FrackmanDescrip li, #staggered-BlackjackDescrip li, #staggered-WebsiteDescrip li, #staggered-PocketChangeDescrip li
-        {
-          opacity: 1;
-        }
+/* Initialize list class to be visible for Description Tab */
+#staggered-FrackmanDescrip li, #staggered-BlackjackDescrip li, #staggered-WebsiteDescrip li, #staggered-PocketChangeDescrip li
+{
+  opacity: 1;
+}
 
-        /* Initialize list class to be invisible for all other tabs */
-        #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-WebsiteDesign li, #staggered-PocketChangeDesign li, 
-        #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-WebsiteCode li,  #staggered-PocketChangeCode li
-        {
-          opacity: 0; 
-        }
+/* Initialize list class to be invisible for all other tabs */
+#staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-WebsiteDesign li, #staggered-PocketChangeDesign li, 
+#staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-WebsiteCode li,  #staggered-PocketChangeCode li
+{
+  opacity: 0; 
+}
