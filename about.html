@@ -57,8 +57,8 @@
                     <div class="ddown">
                         <ul id="projectsDropdown" class="dropdown-content">
                           <li><a href="projects.html#mobile_icon"><font face = "Ubuntu">Apps</font><i class="small material-icons right">stay_current_portrait</i></a></li>
-                          <li><a href="projects.html#video_games_icon"><font face = "Ubuntu">Games</font><i class="small material-icons right">games</i></a></li>
-                          <li><a href="projects.html#website_icon"><font face = "Ubuntu">Web</font><i class="small material-icons right">tab</i></a></li>
+                          <li><a href="projects.html#video_games_icon"><font face = "Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
+                          <li><a href="projects.html#website_icon"><font face = "Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
                         </ul>
                     </div>
 
@@ -178,6 +178,16 @@
                 $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
                 } },
 
+                {selector: '#staggered-Education', offset: 450, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-Mobile-Education', offset: 150, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
                 {selector: '#staggered-Skills', offset: 450, callback: function(el) {
                 Materialize.showStaggeredList($(el));
                 $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
@@ -250,6 +260,7 @@
                       <li><a href="#welcome">Welcome</a></li>
                       <li><a href="#aboutme">About Me</a></li>
                       <li><a href="#experience">Experience</a></li>
+                      <li><a href="#education">Education</a></li>
                       <li><a href="#skills">Skills</a></li>
                       <li><a href="#courses">Courses</a></li>
                       <li><a href="#contactme">Contact</a></li>
@@ -400,6 +411,89 @@
                                         </div>
                                     </li>
                                 </ul>
+                            </li>
+                        </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col l2 m1 s0"></div>
+        </div>
+
+        <!-- Divider -->
+        <br></br>
+        <div class="container divider"></div>
+
+        <!-- Education Text -->
+        <div class="row">
+            <div class="col l2 m1 s0"></div>
+            <div class="col l8 m10 s12">
+                <div style="text-align: left;">
+                    <div style="">
+
+                        <h2 class = "MyHeader section scrollspy" id="education" style="position: relative;">Education</h2>
+                        
+                        <!-- Hide on Mobile Only -->
+                        <div class="hide-on-med-and-down">
+                        <ul id ="staggered-Education">
+                            <li>
+                                <ul class="collapsible collection" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><span class="badge">Sep 2015 – Present</span><i class="material-icons">school</i>University of California, Los Angeles&nbsp |&nbsp Computer Science</div>
+                                        <div class="collapsible-body" style="padding-left: 1.83em">
+                                            <blockquote>                                                
+                                                &nbspJoined <a class href="http://thetataubruins.org" target="blank">Theta Tau</a>, UCLA's professional co-ed engineering fraternity, which strives for excellence in professionalism, service, and brotherhood <br>
+                                                &nbspHosted <a class href="http://www.ideahacks.la/" target="blank">IDEAHacks</a> (hardware hackathon), community service events to support charities, and professional development workshops <br>
+                                                &nbspPerformed on a <a class href="http://foundationschoreography.com" target="_blank">Foundations</a> team, where I learned the fundamentals of hip hop and explored its culture <br>
+                                                &nbspParticipated in an <a class href="https://www.recreation.ucla.edu/competitivesports" target="_blank">Intramural</a> basketball league, where I compete against other UCLA students on a weekly basis
+                                            </blockquote>
+                                        </div>
+                                    </li>
+                            </li>
+                            <li>
+                                    <li>
+                                        <div class="collapsible-header"><span class="badge">Aug 2011 – Jun 2015</span><i class="material-icons">settings</i>Dos Pueblos High School&nbsp |&nbsp DPHS</div>
+                                        <div class="collapsible-body" style="padding-left: 1.83em">
+                                            <blockquote>
+                                                &nbspQualified for the <a class href="http://www.firstinspires.org/robotics/frc/" target="_blank">First Robotics Competition</a> (FRC) national championships by winning two state-wide competitions <br>
+                                                &nbspJoined <a class href="http://dpengineering.org/" target="_blank">DPEA</a>, a competitive, hands-on program designed to mentor hand-picked students in the multidisciplinary fields of engineering <br >
+                                                &nbspOrganized events for the Asian Student Alliance (ASA) including fundraisers, cultural celebration events, and club trips
+                                            </blockquote>
+                                        </div>
+                                    </li>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <!-- Hide on Desktop -->
+                        <div class="hide-on-large-only">
+                        <ul id ="staggered-Mobile-Education">
+                            <li>
+                                <ul class="collapsible collection" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><span class=""></span><i class="material-icons">school</i>University of California, Los Angeles&nbsp |&nbsp Computer Science</div>
+                                        <div class="collapsible-body" style="padding-left: 1.83em">
+                                            <blockquote>                                                
+                                                &nbspJoined <a class href="http://thetataubruins.org" target="blank">Theta Tau</a>, UCLA's professional co-ed engineering fraternity, which strives for excellence in professionalism, service, and brotherhood <br>
+                                                &nbspHosted <a class href="http://www.ideahacks.la/" target="blank">IDEAHacks</a> (hardware hackathon), community service events to support charities, and professional development workshops <br>
+                                                &nbspPerformed on a <a class href="http://foundationschoreography.com" target="_blank">Foundations</a> team, where I learned the fundamentals of hip hop and explored its culture <br>
+                                                &nbspParticipated in an <a class href="https://www.recreation.ucla.edu/competitivesports" target="_blank">Intramural</a> basketball league, where I compete against other UCLA students on a weekly basis
+                                            </blockquote>
+                                        </div>
+                                    </li>
+                            </li>
+                            <li>
+                                    <li>
+                                        <div class="collapsible-header"><span class=""></span><i class="material-icons">settings</i>Dos Pueblos High School&nbsp |&nbsp DPHS</div>
+                                        <div class="collapsible-body" style="padding-left: 1.83em">
+                                            <blockquote>
+                                                &nbspQualified for the <a class href="http://www.firstinspires.org/robotics/frc/" target="_blank">First Robotics Competition</a> (FRC) national championships by winning two state-wide competitions <br>
+                                                &nbspJoined <a class href="http://dpengineering.org/" target="_blank">DPEA</a>, a competitive, hands-on program designed to mentor hand-picked students in the multidisciplinary fields of engineering <br >
+                                                &nbspOrganized events for the Asian Student Alliance (ASA) including fundraisers, cultural celebration events, and club trips
+                                            </blockquote>
+                                        </div>
+                                    </li>
                             </li>
                         </ul>
                         </div>
