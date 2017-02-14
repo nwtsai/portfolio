@@ -52,7 +52,7 @@
                         <ul id="projectsDropdown" class="dropdown-content">
                           <li><a href="#pocket-change"><font face = "Ubuntu">Apps</font><i class="small material-icons right">stay_current_portrait</i></a></li>
                           <li><a href="#frackman"><font face = "Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
-                          <li><a href="#earthquake"><font face = "Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
+                          <li><a href="#skyscrapers"><font face = "Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
                         </ul>
                     </div>
 
@@ -192,6 +192,21 @@
                 $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
                 } },
 
+                {selector: '#staggered-SkyscraperDescrip', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-SkyscraperDesign', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
+                {selector: '#staggered-SkyscraperCode', callback: function(el) {
+                Materialize.showStaggeredList($(el));
+                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+                } },
+
                 {selector: '#staggered-EarthquakeDescrip', callback: function(el) {
                 Materialize.showStaggeredList($(el));
                 $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
@@ -326,6 +341,7 @@
                       <li><a href="#pocket-change">iOS App</a></li>
                       <li><a href="#frackman">Frackman</a></li>
                       <li><a href="#blackjack">Blackjack</a></li>
+                      <li><a href="#skyscrapers">Skyscrapers</a></li>
                       <li><a href="#earthquake">DataQuake</a></li>
                       <li><a href="#website">Portfolio</a></li>
                   </ul>
@@ -564,6 +580,119 @@
 
         <!-- Divider -->
         <div class ="hide-on-med-and-down row" id="Web">
+            <div class="col l1"></div>
+            <div class="col l10">
+                <br></br>
+                <br></br>
+                <div class="divider"></div>
+                <br></br>
+            </div>
+            <div class="col l1"></div>
+        </div>
+
+        <!-- LA Skyscrapers Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+
+                    <div class="hide-on-large-only">
+                        <br></br>
+                        <br></br>
+                        <div class="divider"></div>
+                    </div>
+
+                    <h2 class= "MyHeader section scrollspy" id="skyscrapers" style="position: relative;">LA Skyscrapers</h2>
+
+                    <!-- LA Skyscrapers Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+
+                          <!-- Desktop LA Skyscrapers Description Tab -->
+                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
+                            href="#SkyscraperDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li>-->
+                          </ul>
+
+                          <!-- Mobile LA Skyscrapers Summary Tab -->
+                          <ul class="tabs hide-on-large-only" style="position: relative;">
+                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
+                            href="#SkyscraperDescription">Description</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
+                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
+                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li> -->
+                          </ul>
+
+                        </div>
+
+                        <!-- LA Skyscrapers Tabs Content -->
+                        <div id="SkyscraperDescription" class="col s12">
+                            <ul id="staggered-SkyscraperDescrip">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ <a href="https://nwtsai.github.io/LA_Skyscrapers/" target="_blank">LA Skyscrapers</a> is a dynamic, interactive, and visual representation of the 35 tallest buildings in Los Angeles. </p>
+                            <p class="MyBody" style="position: relative;">‣ A navigation system allows the viewer to fly around in 3D space. Further interactive features include resetting the year counter, showing or hiding the controls, and rotating the view. </p>
+                            <p class="MyBody" style="position: relative;">‣ Each color-coded bar grows at a speed depending on its actual construction time. A year label counts from 1926 to 2017. </p>
+                            <p class="MyBody" style="position: relative;">‣ All data, including each building's relative height, start and end years of construction, and name, can be found <a href="https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Los_Angeles" target="_blank">here</a>. </p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="SkyscraperDesign" class="col s12">
+                            <ul id="staggered-SkyscraperDesign">
+                            <li>
+                            <p class="MyBody" style="position: relative;">‣ Generated a growing rectangular prism by updating the top four vertices during every frame until the correct relative height is reached </p>
+                            <p class="MyBody" style="position: relative;">‣ Designed a navigation system that moves the camera relative to the 3D graph. Movement includes translating left, right, up, down, forwards, backwards, and rotating the heading </p>
+                            <p class="MyBody" style="position: relative;">‣ Constructed dynamic elements including the year counter, controls, and bars, which change depending on the current year </p>
+                            <p class="MyBody" style="position: relative;">‣ Developed functionality for resetting the year counter (r) and hiding the controls (h) </p>
+                            </li>
+                            </ul>
+                        </div>
+                        <div id="SkyscraperCode" class="col s12">
+                            <br></br>
+                            <ul id="staggered-SkyscraperCode">
+                            <li>
+                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/LA_Skyscrapers" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            </li>
+                            </ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                            </div>
+                        </div>
+                        <!-- <div id="SkyscraperDemo" class="col s12"></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Materialboxed LA Skyscrapers Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <img class="materialboxed responsive-img" src="image library/full images/Skyscrapers.png" style="margin-top: 60px; max-height: 800px;" data-caption="The map visualizes the data gathered; the larger the red circle is, the higher the magnitude of the earthquake.">
+            </div>
+
+            <div class="hide-on-large-only">
+                <!-- LA Skyscrapers Mobile Vertical Image -->
+                <div class="col l4 m12 s12 hide-on-med-only">
+                    <img class="center" src="image library/full images/Skyscrapers.png" style="width: 320px; height: 320px;">
+                </div>
+
+                <!-- LA Skyscrapers Mobile Horizontal Image -->
+                <div class="col l4 m12 s12 hide-on-small-only">
+                    <img class="center" src="image library/full images/Skyscrapers.png" style="width: 520px; height: 520px;">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class ="hide-on-med-and-down row">
             <div class="col l1"></div>
             <div class="col l10">
                 <br></br>
