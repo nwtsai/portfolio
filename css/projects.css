@@ -111,14 +111,14 @@ img.center
 
 /* Initialize list class to be visible for Description Tab */
 #staggered-PocketChangeDescrip li, #staggered-CampusCowDescrip li, #staggered-FrackmanDescrip li, #staggered-BlackjackDescrip li, 
-#staggered-EarthquakeDescrip li, #staggered-SkyscraperDescrip li,  #staggered-WebsiteDescrip li
+#staggered-MarkitplaceDescrip li, #staggered-EarthquakeDescrip li, #staggered-SkyscraperDescrip li,  #staggered-WebsiteDescrip li
 {
   opacity: 1;
 }
 
 /* Initialize list class to be invisible for all other tabs */
-#staggered-PocketChangeDesign li, #staggered-CampusCowDesign li, #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-EarthquakeDesign li, #staggered-SkyscraperDesign li, #staggered-WebsiteDesign li
-#staggered-PocketChangeCode li, #staggered-CampusCowCode li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-EarthquakeCode li, #staggered-SkyscraperCode li, #staggered-WebsiteCode li
+#staggered-PocketChangeDesign li, #staggered-CampusCowDesign li, #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-MarkitplaceDesign li #staggered-EarthquakeDesign li, #staggered-SkyscraperDesign li, #staggered-WebsiteDesign li
+#staggered-PocketChangeCode li, #staggered-CampusCowCode li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-MarkitplaceCode li, #staggered-EarthquakeCode li, #staggered-SkyscraperCode li, #staggered-WebsiteCode li
 {
   opacity: 0; 
 }
