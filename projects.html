@@ -270,6 +270,14 @@
             Materialize.scrollFire(options);
         </script>
 
+        <script>
+            $(document).ready(function()
+            {
+                $('.carousel').carousel();
+                $('.carousel.carousel-slider').carousel({fullWidth: true});
+            });
+        </script>
+
         <!-- Table of Contents and Pocket Change Frame -->
         <div class="row" id="Apps">
             <div class="col l7 m12 s12">
@@ -291,7 +299,7 @@
                             href="#PCDescription">Description</a></li>
                             <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
                             <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
-                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li> -->
+                            <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile Pocket Change Description Tab -->
@@ -300,7 +308,7 @@
                             href="#PCDescription">Description</a></li>
                             <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
                             <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
-                            <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li> -->
+                            <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
                           </ul>
 
                         </div>
@@ -340,36 +348,63 @@
                                 <br></br>
                             </div>
                         </div>
-                        <!-- <div id="PCDemo" class="col s12"></div> -->
+                        <!--<div id="PCDemo" class="col s12"></div>-->
                     </div>
 
                 </div>
             </div>
-            <div class="col l4 m12 s12 hide-on-med-and-down">
+
+            <!--<div class="col l4 m12 s12 hide-on-med-and-down">
                 <div class="hide-on-med-and-down">
                     <br></br>
                 </div>
                 <img class="materialboxed responsive-img" src="image library/full images/Pocket-Change-Bordered.png" style="margin-top: 60px; max-height: 800px;" 
                 data-caption="Users can log their daily spendings and view their transaction history on bar graphs over various time intervals.">
             </div>
-
             <div class="hide-on-large-only">
-                <!-- Pocket Change Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
                     <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 320px; height: 320px;">
                 </div>
-
-                <!-- Pocket Change Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
                     <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 520px; height: 520px;">
                 </div>
+            </div>-->
+
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <div class="carousel" style="height: 600px;">
+                    <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/AI1XpSu.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/Um9GGPG.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/XvlLNAy.png"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://i.imgur.com/SpD5mU6.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img src="https://i.imgur.com/MORRDR7.jpg"></a>
+                    <a class="carousel-item" href="#six!"><img src="https://i.imgur.com/WzapKJJ.png"></a>
+                    <a class="carousel-item" href="#seven!"><img src="https://i.imgur.com/nUnKxzp.jpg"></a>
+                    <a class="carousel-item" href="#eight!"><img src="https://i.imgur.com/xU8B3eQ.png"></a>
+                    <a class="carousel-item" href="#nine!"><img src="https://i.imgur.com/1cCDaJq.png"></a>
+                </div>
             </div>
+
+            <div class="col l4 m12 s12 hide-on-large-only">
+                <div class="carousel" style="height: 500px;">
+                    <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/AI1XpSu.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/Um9GGPG.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/XvlLNAy.png"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://i.imgur.com/SpD5mU6.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img src="https://i.imgur.com/MORRDR7.jpg"></a>
+                    <a class="carousel-item" href="#six!"><img src="https://i.imgur.com/WzapKJJ.png"></a>
+                    <a class="carousel-item" href="#seven!"><img src="https://i.imgur.com/nUnKxzp.jpg"></a>
+                    <a class="carousel-item" href="#eight!"><img src="https://i.imgur.com/xU8B3eQ.png"></a>
+                    <a class="carousel-item" href="#nine!"><img src="https://i.imgur.com/1cCDaJq.png"></a>
+                </div>
+            </div>
+
+            <!-- Table of Contents -->
             <div class="col s1 hide-on-med-and-down">
               <div class="toc-wrapper">
                   <ul class="section table-of-contents" id="toc">
                       <li><a href="#projects">Projects</a></li>
-                      <li><a href="#pocket-change">iOS</a></li>
-                      <li><a href="#campus-cow">Android</a></li>
+                      <li><a href="#pocket-change">P.C.</a></li>
+                      <li><a href="#campus-cow">C.C.</a></li>
                       <li><a href="#markitplace">MarkItPlace</a></li>
                       <li><a href="#earthquake">DataQuake</a></li>
                       <li><a href="#skyscrapers">Skyscrapers</a></li>
@@ -476,22 +511,34 @@
                 </div>
             </div>
 
-            <!-- Materialboxed Campus Cow Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <div class="carousel" style="height: 600px;">
+                    <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/95xnUaI.png"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/Ebi4rGr.png"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/BqZfVDF.png"></a>
+                </div>
+            </div>
+
+            <div class="col l4 m12 s12 hide-on-large-only">
+                <div class="carousel" style="height: 500px;">
+                    <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/95xnUaI.png"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/Ebi4rGr.png"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/BqZfVDF.png"></a>
+                </div>
+            </div>
+
+            <!-- Materialboxed Campus Cow Desktop Image 
             <div class="col l4 m12 s12 hide-on-med-and-down">
                 <img class="materialboxed responsive-img" src="image library/full images/CampusCow.jpg" style="margin-top: 60px; max-height: 800px;" data-caption="The lobby screen updates dynamically as players join the server, and the marker positions and colors update every time the location of a player changes">
             </div>
-
             <div class="hide-on-large-only">
-                <!-- Campus Cow Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
                     <img class="center" src="image library/full images/CampusCow.jpg" style="width: 320px; height: 320px;">
                 </div>
-
-                <!-- Campus Cow Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
                     <img class="center" src="image library/full images/CampusCow.jpg" style="width: 520px; height: 520px;">
                 </div>
-            </div>
+            </div>-->
 
         </div>
 
@@ -595,12 +642,9 @@
             </div>
 
             <div class="hide-on-large-only">
-                <!-- Markitplace Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
                     <img class="center" src="image library/full images/Markitplace.png" style="width: 320px; height: 320px;">
                 </div>
-
-                <!-- Markitplace Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
                     <img class="center" src="image library/full images/Markitplace.png" style="width: 520px; height: 520px;">
                 </div>
