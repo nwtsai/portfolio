@@ -40,7 +40,7 @@ h2 {
 
 /* Mobile Only */
 .name {
-    font-size: 35px;
+    font-size: 25px;
     color: var(--darkgrey);
     font-family: "Open Sans";
     font-weight: 600;
@@ -48,12 +48,12 @@ h2 {
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--darkgrey);
 }
 
-.developer {
-    font-size: 25px;
+.software-engineer {
+    font-size: 17px;
     color: var(--orange);
     font-family: "Open Sans";
     letter-spacing: -1px;
@@ -69,9 +69,11 @@ h2 {
     .name {
         font-size: 50px;
         top: 9vh;
+        padding-bottom: 20px;
     }
 
-    .developer {
+    .software-engineer {
+        font-size: 25px;
         top: 20vh;
     }
 }
@@ -79,9 +81,11 @@ h2 {
     .name {
         font-size: 50px;
         top: 18vh;
+        padding-bottom: 20px;
     }
 
-    .developer {
+    .software-engineer {
+        font-size: 30px;
         top: 29vh;
     }
 }
@@ -91,9 +95,11 @@ h2 {
     .name {
         font-size: 65px;
         top: 18vh;
+        padding-bottom: 20px;
     }
 
-    .developer {
+    .software-engineer {
+        font-size: 30px;
         top: 29vh;
     }
 }
