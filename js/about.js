@@ -17,6 +17,5 @@ $(document).ready(function() {
 		  vh: 75.25
 		}
 	];
-
 	var vhFix = new VHChromeFix(options);
 });
