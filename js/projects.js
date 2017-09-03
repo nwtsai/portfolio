@@ -14,6 +14,10 @@ $(document).ready(function() {
 		{
 		  selector: '.full-screen',
 		  vh: 83.75
+		},
+		{
+			selector: '.projects',
+			vh: 30
 		}
 	];
 	var vhFix = new VHChromeFix(options);
