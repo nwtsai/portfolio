@@ -40,8 +40,8 @@ h2 {
 
 /* Mobile Only */
 .name {
-    font-size: 25px;
-    color: var(--darkgrey);
+    font-size: 30px;
+    color: var(--orange);
     font-family: "Open Sans";
     font-weight: 600;
     position: absolute;
@@ -49,8 +49,9 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--darkgrey);
     letter-spacing: -1px;
+    border-bottom: 1px solid var(--orange);
+    z-index: 1000;
 }
 
 .software-engineer {
@@ -69,9 +70,11 @@ h2 {
 @media only screen and (min-width: 555px) {
     .name {
         font-size: 50px;
+        color: var(--darkgrey);
         top: 9vh;
         padding-bottom: 20px;
         letter-spacing: 0px;
+        border-bottom: 1px solid var(--darkgrey);
     }
 
     .software-engineer {
@@ -82,9 +85,11 @@ h2 {
 @media only screen and (min-width: 993px) {
     .name {
         font-size: 50px;
+        color: var(--darkgrey);
         top: 18vh;
         padding-bottom: 20px;
         letter-spacing: 0px;
+        border-bottom: 1px solid var(--darkgrey);
     }
 
     .software-engineer {
@@ -97,9 +102,11 @@ h2 {
 @media only screen and (min-width: 1335px) {
     .name {
         font-size: 65px;
+        color: var(--darkgrey);
         top: 18vh;
         padding-bottom: 20px;
         letter-spacing: 0px;
+        border-bottom: 1px solid var(--darkgrey);
     }
 
     .software-engineer {
