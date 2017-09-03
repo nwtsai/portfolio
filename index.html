@@ -27,24 +27,7 @@
 
         <!-- Fonts and Styles -->
         <link href="css/index.css" type="text/css" rel="stylesheet"/>
-
-        <!--  Javascript Resources -->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-        <script src="effects/materialize/js/materialize.js"></script>
     </head>
-
-    <!-- Scripts -->
-    <!-- Initializing Hamburger Icon -->
-    <script>
-        $(document).ready(function() {   
-            $(".button-collapse").sideNav();
-        });
-
-        // Show sideNav
-        $('.button-collapse').sideNav('show');
-        // Hide sideNav
-        $('.button-collapse').sideNav('hide');
-    </script>
 
     <!-- Body -->
     <body class="valign-wrapper">
@@ -54,14 +37,15 @@
             <nav role="navigation">
                 <div class="nav-wrapper">
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                
                 <!-- Dropdown Structure -->
-                    <div class="ddown">
-                        <ul id="projectsDropdown" class="dropdown-content">
-                          <li><a href="projects.html#Apps"><font face="Ubuntu">Apps</font><i class="small material-icons right">stay_primary_portrait</i></a></li>
-                          <li><a href="projects.html#Web"><font face="Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
-                          <li><a href="projects.html#Games"><font face="Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
-                        </ul>
-                    </div>
+                <div class="ddown">
+                    <ul id="projectsDropdown" class="dropdown-content">
+                      <li><a href="projects.html#Apps"><font face="Ubuntu">Apps</font><i class="small material-icons right">stay_primary_portrait</i></a></li>
+                      <li><a href="projects.html#Web"><font face="Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
+                      <li><a href="projects.html#Games"><font face="Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
+                    </ul>
+                </div>
 
                 <!-- Navigation Buttons -->
                 <ul class="right hide-on-med-and-down">
@@ -125,4 +109,9 @@
             </div>
         </div>
     </body>
+
+    <!--  Javascript Resources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="effects/materialize/js/materialize.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 </html>

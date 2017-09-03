@@ -28,6 +28,32 @@ nav ul li:hover {
     background-color: var(--teal) !important;
 }
 
+/* Initial Fullscreen Content */
+.full-screen {
+    height: 83.75vh;
+}
+
+/* Mobile Only */
+.projects {
+    font-size: 65px;
+    color: var(--darkgrey);
+    font-family: "Open Sans";
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--darkgrey);
+    margin-top: 35vh;
+    display: inline-block;
+}
+
+.jff {
+    font-size: 28px;
+    color: var(--orange);
+    font-family: "Open Sans";
+    letter-spacing: -1px;
+    font-weight: 0;
+    margin-top: 0px;
+}
+
 /* Tabs */
 .tabs {
     background-color: var(--lightgrey);

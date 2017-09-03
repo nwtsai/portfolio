@@ -40,7 +40,7 @@ h2 {
 
 /* Mobile Only */
 .name {
-    font-size: 45px;
+    font-size: 35px;
     color: var(--darkgrey);
     font-family: "Open Sans";
     font-weight: 600;
@@ -53,7 +53,7 @@ h2 {
 }
 
 .developer {
-    font-size: 28px;
+    font-size: 25px;
     color: var(--orange);
     font-family: "Open Sans";
     letter-spacing: -1px;
@@ -65,7 +65,7 @@ h2 {
 }
 
 /* Tablets Only */
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 555px) {
     .name {
         font-size: 50px;
         top: 9vh;
