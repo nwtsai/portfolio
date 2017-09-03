@@ -11,4 +11,12 @@ $(document).ready(function() {
     $('#textarea1').val('New Text');
     $('#textarea1').trigger('autoresize');
     $(".button-collapse").sideNav();
+    var options = [
+		{
+		  selector: '.full-screen',
+		  vh: 75.25
+		}
+	];
+
+	var vhFix = new VHChromeFix(options);
 });
