@@ -10,15 +10,4 @@ $(document).ready(function() {
     $('.carousel').carousel();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
     $(".button-collapse").sideNav();
-    var options = [
-		{
-		  	selector: '.full-screen',
-		  	vh: 83.75
-		},
-		{
-			selector: 'body',
-			vh: 100
-		}
-	];
-	var vhFix = new VHChromeFix(options);
 });
