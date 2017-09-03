@@ -13,10 +13,10 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"/>
 
         <!-- Pinned Tab Image -->
-        <link rel="mask-icon" href="image library/pinned tab image/PP.svg" color="blue"/>
+        <link rel="mask-icon" href="images/pinned tab image/PP.svg" color="blue"/>
 
         <!-- Favicon Image -->
-        <link rel="icon" href="image library/pinned tab image/PP.png"/>
+        <link rel="icon" href="images/pinned tab image/PP.png"/>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -28,255 +28,204 @@
 
         <!-- Fonts and Styles -->
         <link href="css/projects.css" type="text/css" rel="stylesheet" />
-      
-    </head>
-
-    <!-- Body -->
-    <body>
 
         <!--  Javascript Resources -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
         <script src="effects/materialize/js/materialize.js"></script>
-        <script src="effects/parallax.js/parallax.js"></script>
-        <script src="effects/typewriter/js/typed.js"></script>
+    </head>
+
+    <!-- Scripts -->
+    <script>
+        jQuery(window).trigger('resize').trigger('scroll');
+
+        // Show sideNav
+        $('.button-collapse').sideNav('show');
+        // Hide sideNav
+        $('.button-collapse').sideNav('hide');
+    </script>
+
+    <!-- Dynamic Scrollspy -->
+    <script>
+        $(document).ready(function()
+        {
+            $('#toc').pushpin({
+                offset: 50
+            });
+            $('.scrollspy').scrollSpy({scrollOffset: 135});
+
+            $(".button-collapse").sideNav();
+
+            $(".dropdown-button").dropdown();
+        });
+    </script>
+
+    <!-- Scrollfire Implementation -->
+    <script type="text/javascript">
+    var options = 
+        [
+            {selector: '#staggered-PocketChangeDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-PocketChangeDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-PocketChangeCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-CampusCowDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-CampusCowDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-CampusCowCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-MarkitplaceDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-MarkitplaceDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-MarkitplaceCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-EarthquakeDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-EarthquakeDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-EarthquakeCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-SkyscraperDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-SkyscraperDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-SkyscraperCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-WebsiteDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-WebsiteDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-WebsiteCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-FrackmanDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-FrackmanDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-FrackmanCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-BlackjackDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-BlackjackDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-BlackjackCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } }
+        ];
+        Materialize.scrollFire(options);
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel();
+            $('.carousel.carousel-slider').carousel({fullWidth: true});
+        });
+    </script>
+
+    <!-- Body -->
+    <body>
 
         <!-- Navigation Bar -->
         <div class = "navbar-fixed">
-            <nav class="blue darken-3" role="navigation">
-                <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"></a>
-
+            <nav role="navigation">
+                <div class="nav-wrapper">
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-
                     <!-- Dropdown Structure -->
                     <div class="ddown">
                         <ul id="projectsDropdown" class="dropdown-content">
-                          <li><a href="#pocket-change"><font face = "Ubuntu">Apps</font><i class="small material-icons right">stay_current_portrait</i></a></li>
-                          <li><a href="#markitplace"><font face = "Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
-                          <li><a href="#frackman"><font face = "Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
+                          <li><a href="#pocket-change"><font face="Ubuntu">Apps</font><i class="small material-icons right">stay_current_portrait</i></a></li>
+                          <li><a href="#markitplace"><font face="Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
+                          <li><a href="#frackman"><font face="Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
                         </ul>
                     </div>
 
                     <!-- Navigation Buttons -->
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html"><font face = "Ubuntu">Home</font></a></li>
-                        <li><a href="about.html"><font face = "Ubuntu">About Me</font></a></li>
-                        <li><a class="dropdown-button" href="projects.html" data-activates="projectsDropdown"><font face = "Ubuntu">Projects</font><i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="index.html"><font face="Ubuntu">Home</font></a></li>
+                        <li><a href="about.html"><font face="Ubuntu">About Me</font></a></li>
+                        <li><a class="dropdown-button" href="projects.html" data-activates="projectsDropdown"><font face="Ubuntu">Projects</font><i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
 
                     <!-- Mobile Navigation Buttons -->
-                    <ul class="side-nav" id = "mobile-demo">
+                    <ul class="side-nav" id="mobile-demo">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="projects.html">Projects</a></li>
                     </ul>
-
                 </div>
             </nav>
         </div>
-
-        <!-- TypeWriter Effect -->
-        <span class = "element">
-            <script>
-                $(function(){
-                    $(".element").typed({
-                        strings: ["Projects"],
-                        typeSpeed: 125,
-                        // time before typing starts
-                        startDelay: 3500,
-                        // backspacing speed
-                        backSpeed: 0,
-                        // shuffle the strings
-                        shuffle: false,
-                        // time before backspacing
-                        backDelay: 0,
-                        // loop
-                        loop: false,
-                        // false = infinite
-                        loopCount: false,
-                        // show cursor
-                        showCursor: false,
-                        // character for cursor
-                        cursorChar: "Tsai",
-                        // attribute to type (null == text)
-                        attr: null,
-                        // either html or text
-                        contentType: 'html',
-                        // call when done callback function
-                        callback: function() {},
-                        // starting callback function before each string
-                        preStringTyped: function() {},
-                        //callback for every typed string
-                        onStringTyped: function() {},
-                        // callback for reset
-                        resetCallback: function() {}
-                        });
-                    });
-            </script>
-        </span>
-
-        <!-- Parallax Effect -->
-        <div class="parallax-window section scrollspy" id="projects" data-parallax="scroll" data-image-src="image library/full images/Foggy Ocean.jpg"></div>
-
-        <!-- Dynamic Parallax -->
-        <script>
-            jQuery(window).trigger('resize').trigger('scroll');
-
-            // Show sideNav
-            $('.button-collapse').sideNav('show');
-            // Hide sideNav
-            $('.button-collapse').sideNav('hide');
-        </script>
-
-        <!-- Dynamic Scrollspy -->
-        <script>
-            $(document).ready(function()
-            {
-                $('#toc').pushpin({
-                    top: 515,
-                    offset: 50
-                });
-                $('.scrollspy').scrollSpy({scrollOffset: 135});
-
-                $(".button-collapse").sideNav();
-
-                $(".dropdown-button").dropdown();
-            });
-        </script>
-
-        <!-- Scrollfire Implementation -->
-        <script type="text/javascript">
-        var options = 
-            [
-                {selector: '#staggered-PocketChangeDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-PocketChangeDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-PocketChangeCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-CampusCowDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-CampusCowDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-CampusCowCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-MarkitplaceDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-MarkitplaceDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-MarkitplaceCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-EarthquakeDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-EarthquakeDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-EarthquakeCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-SkyscraperDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-SkyscraperDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-SkyscraperCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-WebsiteDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-WebsiteDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-WebsiteCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-FrackmanDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-FrackmanDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-FrackmanCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-BlackjackDescrip', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-BlackjackDesign', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } },
-
-                {selector: '#staggered-BlackjackCode', callback: function(el) {
-                Materialize.showStaggeredList($(el));
-                $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-                } }
-            ];
-            Materialize.scrollFire(options);
-        </script>
-
-        <script>
-            $(document).ready(function()
-            {
-                $('.carousel').carousel();
-                $('.carousel.carousel-slider').carousel({fullWidth: true});
-            });
-        </script>
 
         <!-- Table of Contents and Pocket Change Frame -->
         <div class="row" id="Apps">
@@ -287,27 +236,27 @@
                         <br></br>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id="pocket-change" style="position: relative;">Pocket Change</h2>
+                    <h2 class="MyHeader section scrollspy" id="pocket-change">Pocket Change</h2>
 
                     <!-- Pocket Change Tabs Section -->
                     <div class="row">
                         <div class="col s12">
 
                           <!-- Desktop Pocket Change Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
                             href="#PCDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
                             <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile Pocket Change Description Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
                             href="#PCDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
                             <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
                           </ul>
 
@@ -317,20 +266,20 @@
                         <div id="PCDescription" class="col s12">
                             <ul id="staggered-PocketChangeDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ An iOS app that helps users manage their personal finances by visualizing how much, when, where, and why money was spent.</p>
-                            <p class="MyBody" style="position: relative;">‣ The amount spent per week is displayed on an animated bar graph, and the total amount spent per budget is portrayed with a reactive pie chart. </p>
-                            <p class="MyBody" style="position: relative;">‣ Transactions place markers on an interactive map, allowing a user to view where they spend money. Tapping on a history item will animate the map and display the location of the specified transaction. </p>
-                            <p class="MyBody" style="position: relative;">‣ Color-coded transactions and timestamps are accessible at all times and may be deleted or renamed with a single swipe. </p>
+                            <p class="MyBody">‣ An iOS app that helps users manage their personal finances by visualizing how much, when, where, and why money was spent.</p>
+                            <p class="MyBody">‣ The amount spent per week is displayed on an animated bar graph, and the total amount spent per budget is portrayed with a reactive pie chart. </p>
+                            <p class="MyBody">‣ Transactions place markers on an interactive map, allowing a user to view where they spend money. Tapping on a history item will animate the map and display the location of the specified transaction. </p>
+                            <p class="MyBody">‣ Color-coded transactions and timestamps are accessible at all times and may be deleted or renamed with a single swipe. </p>
                             </li>
                             </ul>
                         </div>
                         <div id="PCDesign" class="col s12">
                             <ul id="staggered-PocketChangeDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Programmed with Swift 3 on XCode, using the Model View Controller (MVC) pattern to organize and streamline application processes </p>
-                            <p class="MyBody" style="position: relative;">‣ Designed dynamic buttons and textfields by implementing regular expressions that disable potentially invalid input </p>
-                            <p class="MyBody" style="position: relative;">‣ Developed code that controls a dynamic, scaleable bar graph which represents the total amount spent over a customizable time interval, and integrated the Google Maps SDK to plot location markers </p>
-                            <p class="MyBody" style="position: relative;">‣ Utilized the dictionary data structure which maps dates to the amount spent, providing constant lookup efficiency when fetching graph data </p>
+                            <p class="MyBody">‣ Programmed with Swift 3 on XCode, using the Model View Controller (MVC) pattern to organize and streamline application processes </p>
+                            <p class="MyBody">‣ Designed dynamic buttons and textfields by implementing regular expressions that disable potentially invalid input </p>
+                            <p class="MyBody">‣ Developed code that controls a dynamic, scaleable bar graph which represents the total amount spent over a customizable time interval, and integrated the Google Maps SDK to plot location markers </p>
+                            <p class="MyBody">‣ Utilized the dictionary data structure which maps dates to the amount spent, providing constant lookup efficiency when fetching graph data </p>
                             </li>
                             </ul>
                         </div>
@@ -338,7 +287,7 @@
                             <br></br>
                             <ul id="staggered-PocketChangeCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/PocketChange" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/PocketChange" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -358,15 +307,15 @@
                 <div class="hide-on-med-and-down">
                     <br></br>
                 </div>
-                <img class="materialboxed responsive-img" src="image library/full images/Pocket-Change-Bordered.png" style="margin-top: 60px; max-height: 800px;" 
+                <img class="materialboxed responsive-img" src="images/full images/Pocket-Change-Bordered.png" style="margin-top: 60px; max-height: 800px;" 
                 data-caption="Users can log their daily spendings and view their transaction history on bar graphs over various time intervals.">
             </div>
             <div class="hide-on-large-only">
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/Pocket-Change-Bordered.png" style="width: 320px; height: 320px;">
                 </div>
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/Pocket-Change-Bordered.png" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/Pocket-Change-Bordered.png" style="width: 520px; height: 520px;">
                 </div>
             </div>-->
 
@@ -402,7 +351,6 @@
             <div class="col s1 hide-on-med-and-down">
               <div class="toc-wrapper">
                   <ul class="section table-of-contents" id="toc">
-                      <li><a href="#projects">Projects</a></li>
                       <li><a href="#pocket-change">P.C.</a></li>
                       <li><a href="#campus-cow">C.C.</a></li>
                       <li><a href="#markitplace">MarkItPlace</a></li>
@@ -439,7 +387,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class="MyHeader section scrollspy" id="campus-cow" style="position: relative;">Campus Cow</h2>
+                    <h2 class="MyHeader section scrollspy" id="campus-cow">Campus Cow</h2>
 
                     <!-- Campus Cow Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -450,20 +398,20 @@
                         <div class="col s12">
 
                           <!-- Desktop Campus Cow Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" 
                             href="#CampusCowDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#CampusCowDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile Campus Cow Summary Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" 
                             href="#CampusCowDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#CampusCowDemo">Demo</a></li> -->
                           </ul>
 
@@ -473,20 +421,20 @@
                         <div id="CampusCowDescription" class="col s12">
                             <ul id="staggered-CampusCowDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Campus Cow is a location-based, multiplayer, Android application, inspired by the flash game <a href="http://findtheinvisiblecow.com/" target="_blank">Find the Invisible Cow</a>. </p>
-                            <p class="MyBody" style="position: relative;">‣ Each player can choose to be a cowboy or a cow. There can only be one cow. The first cowboy to find the cow wins the game. </p>
-                            <p class="MyBody" style="position: relative;">‣ To win, a cowboy must be within 50m of the cow. The color of each player's geomarker tells the player how close they are to the cow. </p>
-                            <p class="MyBody" style="position: relative;">‣ Red, orange, and yellow correspond to a cowboy being within 200m, 400m, and 600m of the cow's current location. A blue marker means that the cowboy is farther than 600m from the cow. </p>
+                            <p class="MyBody">‣ Campus Cow is a location-based, multiplayer, Android application, inspired by the flash game <a href="http://findtheinvisiblecow.com/" target="_blank">Find the Invisible Cow</a>. </p>
+                            <p class="MyBody">‣ Each player can choose to be a cowboy or a cow. There can only be one cow. The first cowboy to find the cow wins the game. </p>
+                            <p class="MyBody">‣ To win, a cowboy must be within 50m of the cow. The color of each player's geomarker tells the player how close they are to the cow. </p>
+                            <p class="MyBody">‣ Red, orange, and yellow correspond to a cowboy being within 200m, 400m, and 600m of the cow's current location. A blue marker means that the cowboy is farther than 600m from the cow. </p>
                             </li>
                             </ul>
                         </div>
                         <div id="CampusCowDesign" class="col s12">
                             <ul id="staggered-CampusCowDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Designed a client with Java that sends each device's current location to the server while simultaneously parsing JSON Objects that hold the locations/ID of each player, storing the data into HashMaps </p>
-                            <p class="MyBody" style="position: relative;">‣ Created a server with Python and Flask that updates and stores all player data in custom dictionaries and returns a JSON Array to the client </p>
-                            <p class="MyBody" style="position: relative;">‣ Integrated the Google Maps SDK with the application to give the user visual feedback regarding how far they are from the cow </p>
-                            <p class="MyBody" style="position: relative;">‣ Constructed an algorithm that calculates the distance between each player and the cow and notifies all devices when a cowboy wins </p>
+                            <p class="MyBody">‣ Designed a client with Java that sends each device's current location to the server while simultaneously parsing JSON Objects that hold the locations/ID of each player, storing the data into HashMaps </p>
+                            <p class="MyBody">‣ Created a server with Python and Flask that updates and stores all player data in custom dictionaries and returns a JSON Array to the client </p>
+                            <p class="MyBody">‣ Integrated the Google Maps SDK with the application to give the user visual feedback regarding how far they are from the cow </p>
+                            <p class="MyBody">‣ Constructed an algorithm that calculates the distance between each player and the cow and notifies all devices when a cowboy wins </p>
                             </li>
                             </ul>
                         </div>
@@ -494,7 +442,7 @@
                             <br></br>
                             <ul id="staggered-CampusCowCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/CampusCow" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/CampusCow" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -529,14 +477,14 @@
 
             <!-- Materialboxed Campus Cow Desktop Image 
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/CampusCow.jpg" style="margin-top: 60px; max-height: 800px;" data-caption="The lobby screen updates dynamically as players join the server, and the marker positions and colors update every time the location of a player changes">
+                <img class="materialboxed responsive-img" src="images/full images/CampusCow.jpg" style="margin-top: 60px; max-height: 800px;" data-caption="The lobby screen updates dynamically as players join the server, and the marker positions and colors update every time the location of a player changes">
             </div>
             <div class="hide-on-large-only">
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/CampusCow.jpg" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/CampusCow.jpg" style="width: 320px; height: 320px;">
                 </div>
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/CampusCow.jpg" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/CampusCow.jpg" style="width: 520px; height: 520px;">
                 </div>
             </div>-->
 
@@ -565,7 +513,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id="markitplace" style="position: relative;">MarkItPlace</h2>
+                    <h2 class= "MyHeader section scrollspy" id="markitplace">MarkItPlace</h2>
 
                     <!-- Markitplace Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -576,20 +524,20 @@
                         <div class="col s12">
 
                           <!-- Desktop Markitplace Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" 
                             href="#MarkitplaceDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#MarkitplaceDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile Markitplace Summary Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" 
                             href="#MarkitplaceDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#MarkitplaceDemo">Demo</a></li> -->
                           </ul>
 
@@ -599,20 +547,20 @@
                         <div id="MarkitplaceDescription" class="col s12">
                             <ul id="staggered-MarkitplaceDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ <a href="https://nwtsai.github.io/Markitplace" target="blank">Markitplace</a> was created to replace Facebook groups (<a href="https://www.facebook.com/groups/UCLAofficalfreeandforsale/" target="blank">Free & For Sale</a>), which lack useful filters, fail to accomodate for a student's schedule, and provide no information regarding where and when each seller will be available. </p>
-                            <p class="MyBody" style="position: relative;">‣ Users looking to buy items can utilize a map and view current listings, simultaneously applying 3 layers of filtering to narrow down their search. </p>
-                            <p class="MyBody" style="position: relative;">‣ Filters include: Category (Furniture, Technology), Price Range (Under $10, $10-$25), and Key Words (Used, Desk). </p>
-                            <p class="MyBody" style="position: relative;">‣ Users looking to sell items are able to tailor to their class schedule and provide various locations and times to display their marker on the map. </p>
+                            <p class="MyBody">‣ <a href="https://nwtsai.github.io/Markitplace" target="blank">Markitplace</a> was created to replace Facebook groups (<a href="https://www.facebook.com/groups/UCLAofficalfreeandforsale/" target="blank">Free & For Sale</a>), which lack useful filters, fail to accomodate for a student's schedule, and provide no information regarding where and when each seller will be available. </p>
+                            <p class="MyBody">‣ Users looking to buy items can utilize a map and view current listings, simultaneously applying 3 layers of filtering to narrow down their search. </p>
+                            <p class="MyBody">‣ Filters include: Category (Furniture, Technology), Price Range (Under $10, $10-$25), and Key Words (Used, Desk). </p>
+                            <p class="MyBody">‣ Users looking to sell items are able to tailor to their class schedule and provide various locations and times to display their marker on the map. </p>
                             </li>
                             </ul>
                         </div>
                         <div id="MarkitplaceDesign" class="col s12">
                             <ul id="staggered-MarkitplaceDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Designed a back end server that stores all user data and a front end JavaScript application that utilizes the Facebook, Mapbox, and Google Services APIs </p>
-                            <p class="MyBody" style="position: relative;">‣ Developed a filtering algorithm that takes into account 3 categories, resulting in only displaying markers that fit the constraints chosen by the user </p>
-                            <p class="MyBody" style="position: relative;">‣ Constructed a personalized user interface that displays a user's name and picture in the status bar while linking their profile in each marker they place on the map </p>
-                            <p class="MyBody" style="position: relative;">‣ Reduced load time by taking advantage of already loaded elements; switching between the map and the listings page does not refresh the page but rather saves the current state of the page and efficiently provides the layout of another </p>
+                            <p class="MyBody">‣ Designed a back end server that stores all user data and a front end JavaScript application that utilizes the Facebook, Mapbox, and Google Services APIs </p>
+                            <p class="MyBody">‣ Developed a filtering algorithm that takes into account 3 categories, resulting in only displaying markers that fit the constraints chosen by the user </p>
+                            <p class="MyBody">‣ Constructed a personalized user interface that displays a user's name and picture in the status bar while linking their profile in each marker they place on the map </p>
+                            <p class="MyBody">‣ Reduced load time by taking advantage of already loaded elements; switching between the map and the listings page does not refresh the page but rather saves the current state of the page and efficiently provides the layout of another </p>
                             </li>
                             </ul>
                         </div>
@@ -620,7 +568,7 @@
                             <br></br>
                             <ul id="staggered-MarkitplaceCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/MarkItPlace" target="blank">Source Code<i class="material-icons right">public</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/MarkItPlace" target="blank">Source Code<i class="material-icons right">public</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -638,15 +586,15 @@
 
             <!-- Materialboxed Markitplace Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/Markitplace.png" style="margin-top: 60px; max-height: 800px;" data-caption="Users who link their account with Facebook can find, list, and mark items. Each marker represents an item on sale; users can filter items by category, price range, and key words.">
+                <img class="materialboxed responsive-img" src="images/full images/Markitplace.png" style="margin-top: 60px; max-height: 800px;" data-caption="Users who link their account with Facebook can find, list, and mark items. Each marker represents an item on sale; users can filter items by category, price range, and key words.">
             </div>
 
             <div class="hide-on-large-only">
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/Markitplace.png" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/Markitplace.png" style="width: 320px; height: 320px;">
                 </div>
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/Markitplace.png" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/Markitplace.png" style="width: 520px; height: 520px;">
                 </div>
             </div>
 
@@ -675,7 +623,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id="earthquake" style="position: relative;">DataQuake</h2>
+                    <h2 class= "MyHeader section scrollspy" id="earthquake">DataQuake</h2>
 
                     <!-- Earthquake Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -686,20 +634,20 @@
                         <div class="col s12">
 
                           <!-- Desktop Earthquake Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" 
                             href="#EarthquakeDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#EarthquakeDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile Earthquake Summary Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" 
                             href="#EarthquakeDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#EarthquakeDemo">Demo</a></li> -->
                           </ul>
 
@@ -709,20 +657,20 @@
                         <div id="EarthquakeDescription" class="col s12">
                             <ul id="staggered-EarthquakeDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ The purpose of <a href="https://nwtsai.github.io/DataQuake/index.html" target="_blank">DataQuake</a> is to display pertinent information regarding all recent earthquakes within the past day, week, and month.</p>
-                            <p class="MyBody" style="position: relative;">‣ A map is dynamically populated with red circles that indicate the location and magnitude of an earthquake. </p>
-                            <p class="MyBody" style="position: relative;">‣ The search bar allows users to search for a location or a magnitude range, which updates the map with the filtered results </p>
-                            <p class="MyBody" style="position: relative;">‣ All data is updated in real time, and all information gathered is provided by the <a href="https://www.usgs.gov/products/data-and-tools/real-time-data/earthquakes" target="_blank">United States Geology Survey</a> (USGS).</p>
+                            <p class="MyBody">‣ The purpose of <a href="https://nwtsai.github.io/DataQuake/index.html" target="_blank">DataQuake</a> is to display pertinent information regarding all recent earthquakes within the past day, week, and month.</p>
+                            <p class="MyBody">‣ A map is dynamically populated with red circles that indicate the location and magnitude of an earthquake. </p>
+                            <p class="MyBody">‣ The search bar allows users to search for a location or a magnitude range, which updates the map with the filtered results </p>
+                            <p class="MyBody">‣ All data is updated in real time, and all information gathered is provided by the <a href="https://www.usgs.gov/products/data-and-tools/real-time-data/earthquakes" target="_blank">United States Geology Survey</a> (USGS).</p>
                             </li>
                             </ul>
                         </div>
                         <div id="EarthquakeDesign" class="col s12">
                             <ul id="staggered-EarthquakeDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Sifts through heaps of information by gathering data automatically via an API call to the USGS database </p>
-                            <p class="MyBody" style="position: relative;">‣ Visualizes the data by integrating Google Maps with a dynamically drawn circle for every earthquake that happens around the globe </p>
-                            <p class="MyBody" style="position: relative;">‣ Developed an algorithm that dynamically formats and styles the gathered data using javascript, regardless of the size of the data </p>
-                            <p class="MyBody" style="position: relative;">‣ Utilized jQuery calls to modify HTML structures and classes when the user clicks on buttons in order to create an integrated user interface </p>
+                            <p class="MyBody">‣ Sifts through heaps of information by gathering data automatically via an API call to the USGS database </p>
+                            <p class="MyBody">‣ Visualizes the data by integrating Google Maps with a dynamically drawn circle for every earthquake that happens around the globe </p>
+                            <p class="MyBody">‣ Developed an algorithm that dynamically formats and styles the gathered data using javascript, regardless of the size of the data </p>
+                            <p class="MyBody">‣ Utilized jQuery calls to modify HTML structures and classes when the user clicks on buttons in order to create an integrated user interface </p>
                             </li>
                             </ul>
                         </div>
@@ -730,7 +678,7 @@
                             <br></br>
                             <ul id="staggered-EarthquakeCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/DataQuake" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/DataQuake" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -748,18 +696,18 @@
 
             <!-- Materialboxed Earthquake Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/EarthquakeData.jpg" style="margin-top: 60px; max-height: 800px;" data-caption="The map visualizes the data gathered; the larger the red circle is, the higher the magnitude of the earthquake.">
+                <img class="materialboxed responsive-img" src="images/full images/EarthquakeData.jpg" style="margin-top: 60px; max-height: 800px;" data-caption="The map visualizes the data gathered; the larger the red circle is, the higher the magnitude of the earthquake.">
             </div>
 
             <div class="hide-on-large-only">
                 <!-- Earthquake Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/EarthquakeData.jpg" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/EarthquakeData.jpg" style="width: 320px; height: 320px;">
                 </div>
 
                 <!-- Earthquake Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/EarthquakeData.jpg" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/EarthquakeData.jpg" style="width: 520px; height: 520px;">
                 </div>
             </div>
 
@@ -788,7 +736,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id="skyscrapers" style="position: relative;">LA Skyscrapers</h2>
+                    <h2 class= "MyHeader section scrollspy" id="skyscrapers">LA Skyscrapers</h2>
 
                     <!-- LA Skyscrapers Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -799,20 +747,20 @@
                         <div class="col s12">
 
                           <!-- Desktop LA Skyscrapers Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
                             href="#SkyscraperDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile LA Skyscrapers Summary Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
                             href="#SkyscraperDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li> -->
                           </ul>
 
@@ -822,20 +770,20 @@
                         <div id="SkyscraperDescription" class="col s12">
                             <ul id="staggered-SkyscraperDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ <a href="https://nwtsai.github.io/LA_Skyscrapers/" target="_blank">LA Skyscrapers</a> is a dynamic, interactive, and visual representation of the 35 tallest buildings in Los Angeles. </p>
-                            <p class="MyBody" style="position: relative;">‣ A navigation system allows the viewer to fly around in 3D space. Further interactive features include resetting the year counter, showing or hiding the controls, and rotating the view. </p>
-                            <p class="MyBody" style="position: relative;">‣ Each color-coded bar grows at a speed depending on its actual construction time. A year label counts from 1926 to 2017. </p>
-                            <p class="MyBody" style="position: relative;">‣ All data, including each building's relative height, start and end years of construction, and name, can be found <a href="https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Los_Angeles" target="_blank">here</a>. </p>
+                            <p class="MyBody">‣ <a href="https://nwtsai.github.io/LA_Skyscrapers/" target="_blank">LA Skyscrapers</a> is a dynamic, interactive, and visual representation of the 35 tallest buildings in Los Angeles. </p>
+                            <p class="MyBody">‣ A navigation system allows the viewer to fly around in 3D space. Further interactive features include resetting the year counter, showing or hiding the controls, and rotating the view. </p>
+                            <p class="MyBody">‣ Each color-coded bar grows at a speed depending on its actual construction time. A year label counts from 1926 to 2017. </p>
+                            <p class="MyBody">‣ All data, including each building's relative height, start and end years of construction, and name, can be found <a href="https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Los_Angeles" target="_blank">here</a>. </p>
                             </li>
                             </ul>
                         </div>
                         <div id="SkyscraperDesign" class="col s12">
                             <ul id="staggered-SkyscraperDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Generated a growing rectangular prism by updating the top four vertices during every frame until the correct relative height is reached </p>
-                            <p class="MyBody" style="position: relative;">‣ Designed a navigation system that moves the camera relative to the 3D graph. Movement includes translating left, right, up, down, forwards, backwards, and rotating the heading </p>
-                            <p class="MyBody" style="position: relative;">‣ Constructed dynamic elements including the year counter, controls, and bars, which change depending on the current year </p>
-                            <p class="MyBody" style="position: relative;">‣ Developed functionality for resetting the year counter (r) and hiding the controls (h) </p>
+                            <p class="MyBody">‣ Generated a growing rectangular prism by updating the top four vertices during every frame until the correct relative height is reached </p>
+                            <p class="MyBody">‣ Designed a navigation system that moves the camera relative to the 3D graph. Movement includes translating left, right, up, down, forwards, backwards, and rotating the heading </p>
+                            <p class="MyBody">‣ Constructed dynamic elements including the year counter, controls, and bars, which change depending on the current year </p>
+                            <p class="MyBody">‣ Developed functionality for resetting the year counter (r) and hiding the controls (h) </p>
                             </li>
                             </ul>
                         </div>
@@ -843,7 +791,7 @@
                             <br></br>
                             <ul id="staggered-SkyscraperCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/LASkyscrapers" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/LASkyscrapers" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -861,18 +809,18 @@
 
             <!-- Materialboxed LA Skyscrapers Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/Skyscrapers.png" style="margin-top: 60px; max-height: 800px;" data-caption="The 3D bar graph is color-coded based each building's relative year of completion.">
+                <img class="materialboxed responsive-img" src="images/full images/Skyscrapers.png" style="margin-top: 60px; max-height: 800px;" data-caption="The 3D bar graph is color-coded based each building's relative year of completion.">
             </div>
 
             <div class="hide-on-large-only">
                 <!-- LA Skyscrapers Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/Skyscrapers.png" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/Skyscrapers.png" style="width: 320px; height: 320px;">
                 </div>
 
                 <!-- LA Skyscrapers Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/Skyscrapers.png" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/Skyscrapers.png" style="width: 520px; height: 520px;">
                 </div>
             </div>
 
@@ -901,7 +849,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id="website" style="position: relative;">Portfolio</h2>
+                    <h2 class= "MyHeader section scrollspy" id="website">Portfolio</h2>
 
                     <!-- Website Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -912,20 +860,20 @@
                         <div class="col s12">
 
                           <!-- Desktop Website Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
                             href="#WebDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li>-->
                           </ul>
 
                           <!-- Mobile Website Summary Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
                             href="#WebDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li> -->
                           </ul>
 
@@ -935,20 +883,20 @@
                         <div id="WebDescription" class="col s12">
                             <ul id="staggered-WebsiteDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
-                            <p class="MyBody" style="position: relative;">‣ The Home page consists of important professional links such as my resume, Github, and LinkedIn, along with contact information such as my phone number, email, and Google+.</p>
-                            <p class="MyBody" style="position: relative;">‣ The About Me page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
-                            <p class="MyBody" style="position: relative;">‣ The Projects page showcases my coding endeavors. Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
+                            <p class="MyBody">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
+                            <p class="MyBody">‣ The Home page consists of important professional links such as my resume, Github, and LinkedIn, along with contact information such as my phone number, email, and Google+.</p>
+                            <p class="MyBody">‣ The About Me page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
+                            <p class="MyBody">‣ The Projects page showcases my coding endeavors. Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
                             </li>
                             </ul>
                         </div>
                         <div id="WebDesign" class="col s12">
                             <ul id="staggered-WebsiteDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
-                            <p class="MyBody" style="position: relative;">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
-                            <p class="MyBody" style="position: relative;">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
-                            <p class="MyBody" style="position: relative;">‣ Implemented parallax effects, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
+                            <p class="MyBody">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
+                            <p class="MyBody">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
+                            <p class="MyBody">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
+                            <p class="MyBody">‣ Implemented parallax effects, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
                             </li>
                             </ul>
                         </div>
@@ -956,7 +904,7 @@
                             <br></br>
                             <ul id="staggered-WebsiteCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/Portfolio" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/Portfolio" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -976,18 +924,18 @@
 
             <!-- Materialboxed Website Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/Mobile About Me.png" style="margin-top: 60px; max-height: 800px;" data-caption="The navigation bar shown is the mobile friendly version of the website's Home page. It pops out from the left to display all the webpages.">
+                <img class="materialboxed responsive-img" src="images/full images/Mobile About Me.png" style="margin-top: 60px; max-height: 800px;" data-caption="The navigation bar shown is the mobile friendly version of the website's Home page. It pops out from the left to display all the webpages.">
             </div>
 
             <div class="hide-on-large-only">
                 <!-- Website Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/Mobile About Me.png" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/Mobile About Me.png" style="width: 320px; height: 320px;">
                 </div>
 
                 <!-- Website Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/Mobile About Me.png" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/Mobile About Me.png" style="width: 520px; height: 520px;">
                 </div>
             </div>
 
@@ -1016,7 +964,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id = "frackman" style="position: relative;">Frackman</h2>
+                    <h2 class= "MyHeader section scrollspy" id = "frackman">Frackman</h2>
 
                     <!-- Frackman Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -1026,20 +974,20 @@
                         <div class="col s12">
 
                           <!-- Desktop Frackman Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
                             href="#FDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
                           </ul>
 
                           <!-- Mobile Frackman Description Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a class="active" style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
                             href="#FDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
                           </ul>
 
@@ -1049,20 +997,20 @@
                         <div id="FDescription" style="color: #03a9f4;" class="col s12">
                             <ul id="staggered-FrackmanDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
-                            <p class="MyBody" style="position: relative;">‣ The Regular Protesters (in dark blue) only follow the player when you, the Frackman (holding a pickaxe), are in their line of sight.</p>
-                            <p class="MyBody" style="position: relative;">‣ The Hardcore Protesters (in overalls) calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
-                            <p class="MyBody" style="position: relative;">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
+                            <p class="MyBody">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
+                            <p class="MyBody">‣ The Regular Protesters (in dark blue) only follow the player when you, the Frackman (holding a pickaxe), are in their line of sight.</p>
+                            <p class="MyBody">‣ The Hardcore Protesters (in overalls) calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
+                            <p class="MyBody">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
                             </li>
                             </ul>
                         </div>
                         <div id="FDesign" class="col s12">
                             <ul id="staggered-FrackmanDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                            <p class="MyBody" style="position: relative;">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
-                            <p class="MyBody" style="position: relative;">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
-                            <p class="MyBody" style="position: relative;">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the grid</p>
+                            <p class="MyBody">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                            <p class="MyBody">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
+                            <p class="MyBody">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
+                            <p class="MyBody">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the grid</p>
                             </li>
                             </ul>
                         </div>
@@ -1070,7 +1018,7 @@
                             <br></br>
                             <ul id="staggered-FrackmanCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Frackman" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Frackman" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -1091,19 +1039,19 @@
 
             <!-- Materialboxed Frackman Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/Frackman.jpg" style="margin-top: 50px; max-height: 800px;" 
+                <img class="materialboxed responsive-img" src="images/full images/Frackman.jpg" style="margin-top: 50px; max-height: 800px;" 
                 data-caption="The Frackman (player) is about to find an Oil Barrel, but a Protester is honing in on the Frackman's location.">
             </div>
 
             <div class="hide-on-large-only">
                 <!-- Frackman Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/Frackman.jpg" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/Frackman.jpg" style="width: 320px; height: 320px;">
                 </div>
 
                 <!-- Frackman Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/Frackman.jpg" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/Frackman.jpg" style="width: 520px; height: 520px;">
                 </div>
             </div>
 
@@ -1131,7 +1079,7 @@
                         <div class="divider"></div>
                     </div>
 
-                    <h2 class= "MyHeader section scrollspy" id="blackjack" style="position: relative;">Blackjack</h2>
+                    <h2 class= "MyHeader section scrollspy" id="blackjack">Blackjack</h2>
 
                     <!-- Blackjack Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -1141,20 +1089,20 @@
                         <div class="col s12">
 
                           <!-- Desktop Blackjack Description Tab -->
-                          <ul class="tabs hide-on-med-and-down" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
+                          <ul class="tabs hide-on-med-and-down">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
                             href="#BJDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
                           </ul>
 
                           <!-- Mobile Blackjack Description Tab -->
-                          <ul class="tabs hide-on-large-only" style="position: relative;">
-                            <li class="tab col s3"><a style = "color: #03a9f4;" class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
+                          <ul class="tabs hide-on-large-only">
+                            <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
                             href="#BJDescription">Description</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
-                            <li class="tab col s3"><a style = "color: #03a9f4;" onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
+                            <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
                             <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
                           </ul>
 
@@ -1164,20 +1112,20 @@
                         <div id="BJDescription" class="col s12">
                             <ul id="staggered-BlackjackDescrip">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
-                            <p class="MyBody" style="position: relative;">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is more advantageous.</p>
-                            <p class="MyBody" style="position: relative;">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
-                            <p class="MyBody" style="position: relative;">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
+                            <p class="MyBody">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
+                            <p class="MyBody">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is more advantageous.</p>
+                            <p class="MyBody">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
+                            <p class="MyBody">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
                             </li>
                             </ul>
                         </div>
                         <div id="BJDesign" class="col s12">
                             <ul id="staggered-BlackjackDesign">
                             <li>
-                            <p class="MyBody" style="position: relative;">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
-                            <p class="MyBody" style="position: relative;">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
-                            <p class="MyBody" style="position: relative;">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
-                            <p class="MyBody" style="position: relative;">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
+                            <p class="MyBody">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
+                            <p class="MyBody">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
+                            <p class="MyBody">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
+                            <p class="MyBody">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
                             </li>
                             </ul>
                         </div>
@@ -1185,7 +1133,7 @@
                             <br></br>
                             <ul id="staggered-BlackjackCode">
                             <li>
-                            <p class="CodeButton" style="position: relative;"><a class="light-blue waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Blackjack" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
+                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Blackjack" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
                             </li>
                             </ul>
                             <br></br>
@@ -1204,19 +1152,19 @@
 
             <!-- Materialboxed Blackjack Desktop Image -->
             <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="image library/full images/Blackjack.jpg" style="margin-top: 60px; max-height: 800px;" 
+                <img class="materialboxed responsive-img" src="images/full images/Blackjack.jpg" style="margin-top: 60px; max-height: 800px;" 
                 data-caption="A good player would stand with a score of 20. However, if the AI's hidden card is also a face card, then the result is a draw.">
             </div>
 
             <div class="hide-on-large-only">
                 <!-- Blackjack Mobile Vertical Image -->
                 <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="image library/full images/Blackjack.jpg" style="width: 320px; height: 320px;">
+                    <img class="center" src="images/full images/Blackjack.jpg" style="width: 320px; height: 320px;">
                 </div>
 
                 <!-- Blackjack Mobile Horizontal Image -->
                 <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="image library/full images/Blackjack.jpg" style="width: 520px; height: 520px;">
+                    <img class="center" src="images/full images/Blackjack.jpg" style="width: 520px; height: 520px;">
                 </div>
             </div>
 

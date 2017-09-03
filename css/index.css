@@ -1,82 +1,99 @@
-/* Parallax Settings*/
-.parallax-window
-{
-    width: 100%;
-    min-height: 450px;
-    background: transparent;
+/* Variables */
+:root {
+    --orange: #ef8233;
+    --darkgrey: #726363;
+    --teal: #5ecacd;
+    --lightgrey: #f5f5f5;
+}
+
+/* Body */
+body {
+    background-color: var(--lightgrey);
+    height: 100vh;
+}
+
+/* Nav and Dropdown */
+nav {
+    box-shadow: none !important;
+    background-color: var(--teal) !important;
     position: absolute;
     top: 0px;
 }
 
-.element
-{
-    font-size: 53px;
-    color: #ffffff;
-    font-family: "Oswald";
-    font-weight: thin;
-    letter-spacing: 5px;
-    background: transparent;
-    position: absolute;
-    top: 17%;
-    width: 100%;
-    text-align: center;
+nav ul li:hover {
+    background-color: var(--darkgrey) !important;
 }
 
-/* Typewriter Effect */
-@media only screen and (min-width: 668px)
-{
-    .element
-    {
-        font-size: 53px;
-        color: #ffffff;
-        font-family: "Oswald";
-        font-weight: thin;
-        letter-spacing: 5px;
-        background: transparent;
-        position: absolute;
-        right: 23%;
-        top: 11%;
+.dropdown-content {
+    background-color: var(--teal) !important;
+}
+
+/* Row of Buttons */
+h2 {
+    color: var(--darkgrey);
+}
+
+.row a {
+    color: var(--lightgrey);
+    background-color: var(--darkgrey) !important;
+}
+
+/* Mobile Only */
+.name {
+    font-size: 45px;
+    color: var(--darkgrey);
+    font-family: "Open Sans";
+    font-weight: 600;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--darkgrey);
+}
+
+.developer {
+    font-size: 28px;
+    color: var(--orange);
+    font-family: "Open Sans";
+    letter-spacing: -1px;
+    font-weight: 0;
+    position: absolute;
+    left: 50%;
+    top: 17.85vh;
+    transform: translateX(-50%);
+}
+
+/* Tablets Only */
+@media only screen and (min-width: 751px) {
+    .name {
+        font-size: 50px;
+        top: 9vh;
     }
 
-    .parallax-window
-    {
-        width: 100%;
-        min-height: 470px;
-        background: transparent;
-        position: absolute;
-        top: 64px;
+    .developer {
+        top: 20vh;
+    }
+}
+@media only screen and (min-width: 993px) {
+    .name {
+        font-size: 50px;
+        top: 18vh;
+    }
+
+    .developer {
+        top: 29vh;
     }
 }
 
-/* Cursor Settings
-.typed-cursor
-{
-    font-size: 60px;
-    font-family: "Ubuntu";
-    opacity: 1;
-    -webkit-animation: blink infinite infinite;
-    -moz-animation: blink infinite infinite;
-    animation: blink infinite infinite;
-    position: absolute;
-    top: 64px;
-    color: #ffffff;
-    background: transparent;
+/* Desktop Only */
+@media only screen and (min-width: 1335px) {
+    .name {
+        font-size: 65px;
+        top: 18vh;
+    }
+
+    .developer {
+        top: 29vh;
+    }
 }
-@keyframes blink
-{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink
-{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink
-{
-0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}*/

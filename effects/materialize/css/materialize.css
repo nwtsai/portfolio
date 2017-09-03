@@ -2704,7 +2704,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ee6e73;
+  border-left: 5px solid #ef8233;
 }
 
 i {
@@ -4964,7 +4964,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-floating {
@@ -5721,8 +5721,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #ef8233;
+  box-shadow: 0 1px 0 0 #ef8233;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5738,7 +5738,7 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color: #ef8233;
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
@@ -5766,8 +5766,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-  border-bottom: 1px solid #4CAF50;
-  box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #ef8233;
+  box-shadow: 0 1px 0 0 #ef8233;
 }
 
 input:not([type]).valid + label:after,
@@ -5797,7 +5797,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
   content: attr(data-success);
-  color: #4CAF50;
+  color: #ef8233;
   opacity: 1;
 }
 
@@ -5826,8 +5826,8 @@ input[type=search].invalid,
 input[type=search]:focus.invalid,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea:focus.invalid {
-  border-bottom: 1px solid #F44336;
-  box-shadow: 0 1px 0 0 #F44336;
+  border-bottom: 1px solid #ef5350;
+  box-shadow: 0 1px 0 0 #ef5350;
 }
 
 input:not([type]).invalid + label:after,
@@ -5857,7 +5857,7 @@ input[type=search]:focus.invalid + label:after,
 textarea.materialize-textarea.invalid + label:after,
 textarea.materialize-textarea:focus.invalid + label:after {
   content: attr(data-error);
-  color: #F44336;
+  color: #ef5350;
   opacity: 1;
 }
 
@@ -6784,7 +6784,7 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a {
   display: inline-block;
   font-weight: 300;
-  color: #606060;
+  color: #606060 ;
   padding-left: 20px;
   height: 1.5rem;
   line-height: 1.5rem;
@@ -6795,13 +6795,13 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 19px;
-  border-left: 1px solid #03a9f4;
+  border-left: 1px solid #ef8233;
 }
 
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 18px;
-  border-left: 3px solid #03a9f4;
+  border-left: 3px solid #ef8233;
 }
 
 .side-nav {

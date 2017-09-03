@@ -1,110 +1,98 @@
-/* Parallax Settings*/
-.parallax-window
-{
-    width: 100%;
-    min-height: 450px;
-    background: transparent;
+/* Variables */
+:root {
+    --orange: #ef8233;
+    --darkgrey: #726363;
+    --teal: #5ecacd;
+    --lightgrey: #f5f5f5;
+}
+
+/* Body */
+body {
+    background-color: var(--lightgrey);
+    height: 100vh;
+}
+
+/* Nav and Dropdown */
+nav {
+    box-shadow: none !important;
+    background-color: var(--teal) !important;
+    position: absolute;
+    top: 0px;
+}
+
+nav ul li:hover {
+    background-color: var(--darkgrey) !important;
+}
+
+.dropdown-content {
+    background-color: var(--teal) !important;
+}
+
+/* Tabs */
+.tabs {
+    background-color: var(--lightgrey);
+}
+
+/* Custom Header Format For Each Section */
+.MyHeader {
+    font-size: 60px;
+    font-family: "Dosis";
+    color: var(--orange);
+    text-align: center;
     position: relative;
 }
 
-/* Custom Header Format */
-.MyHeader
-{
-    font-size: 60px;
-    font-family: "Dosis";
-    color: #03a9f4;
-    text-align: center;
-}
-
 /* Custom Body Format */
-.MyBody
-{
+.MyBody {
     font-size: 19px;
     font-family: "Open Sans";
-    color: black;
+    color: var(--darkgrey);
+    position: relative;
 }
 
-/* Typewriter Effect */
-.element
-{
-    font-size: 53px;
-    font-weight: thin;
-    color: #ffffff;
-    font-family: "Oswald";
-    letter-spacing: 5px;
-    background: transparent;
-    position: absolute;
-    top: 17%;
-    width: 100%;
-    text-align: center;
-}
-
-@media only screen and (min-width: 668px)
-{
-    .element
-    {
-        font-size: 53px;
-        font-weight: thin;
-        color: #ffffff;
-        font-family: "Oswald";
-        letter-spacing: 5px;
-        background: transparent;
-        position: absolute;
-        right: 35%;
-        top: 11%;
-    }
-}
-
-@media only screen and (min-width: 415px)
-{
-    .MyHeader
-    {
-        font-size: 60px;
-        font-family: "Dosis";
-        color: #03a9f4;
-        text-align: left;
-    }
-}
-
-.materialboxed
-{
+/* Materialboxed Screenshots */
+.materialboxed {
     height: 520px;
     width: 520px;
-    // right: 9.5%;
-    // position: absolute;
 }
 
 /* Class for when element is above threshold */
-.pin-top
-{
+.pin-top {
     position: relative;
 }
 
 /* Class for when element is below threshold */
-.pin-bottom
-{
+.pin-bottom {
     position: relative;
 }
 
 /* Class for when element is pinned */
-.pinned
-{
+.pinned {
     position: fixed !important;
 }
 
-.tabs .indicator
-{
-    background-color: #03a9f4;
+.tabs .indicator {
+    background-color: var(--orange);
+}
+.tab a {
+    color: var(--darkgrey) !important;
+}
+.tab .active {
+    color: var(--orange) !important;
+    font-weight: bold;
 }
 
-.CodeButton
-{
+.CodeButton {
     font-family: "Ubuntu";
     text-align: center;
 }
 
-img.center 
-{
+.CodeButton a {
+    background-color: var(--orange);
+    color: var(--lightgrey);
+}
+
+img.center {
     display: block;
     margin: 0 auto;
 }
@@ -121,4 +109,11 @@ img.center
 #staggered-PocketChangeCode li, #staggered-CampusCowCode li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-MarkitplaceCode li, #staggered-EarthquakeCode li, #staggered-SkyscraperCode li, #staggered-WebsiteCode li
 {
   opacity: 0; 
+}
+
+/* Desktop Only */
+@media only screen and (min-width: 415px) {
+    .MyHeader {
+        text-align: left;
+    }
 }

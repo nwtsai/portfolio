@@ -1,166 +1,168 @@
-/* Parallax Top Settings*/
-.parallax-window
-{
-    width: 100%;
-    min-height: 450px;
-    background: transparent;
-    position: relative;
+/* Variables */
+:root {
+    --orange: #ef8233;
+    --darkgrey: #726363;
+    --teal: #5ecacd;
+    --lightgrey: #f5f5f5;
 }
 
-/* Typewriter Effect */
-.element
-{
-    font-size: 53px;
-    font-weight: thin;
-    color: #ffffff;
-    font-weight: 100;
-    font-family: "Oswald";
-    letter-spacing: 5px;
-    background: transparent;
+/* Body */
+body {
+    background-color: var(--lightgrey);
+    height: 100vh;
+}
+
+/* Nav and Dropdown */
+nav {
+    box-shadow: none !important;
+    background-color: var(--teal) !important;
     position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 17%;
+    top: 0px;
 }
 
-/* Custom Header Format */
-.MyHeader
-{
+nav ul li:hover {
+    background-color: var(--darkgrey) !important;
+}
+
+.dropdown-content {
+    background-color: var(--teal) !important;
+}
+
+/* Initial Fullscreen Content */
+.full-screen {
+    height: 67.95vh;
+}
+
+/* Portrait */
+.portrait {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+/* Social Media Buttons */
+.social-media-btns a {
+    color: var(--lightgrey);
+    background-color: var(--orange) !important;
+    margin-top: 25px;
+}
+
+/* Custom Header Format For Each Section */
+.MyHeader {
     font-size: 60px;
     font-family: "Dosis";
-    color: #e53935;
+    color: var(--orange);
     text-align: center;
+    position: relative;
 }
 
 /* Custom Body Format */
-.MyBody
-{
+.MyBody {
     font-size: 19px;
     font-family: "Open Sans";
-    color: black;
+    color: var(--darkgrey);
     position: relative;
 }
 
-/* Custom Frame Space */
-.frame
-{
-    height: 100%; /*can be anything*/
-    width: 100%; /*can be anything*/
+/* Collapsible Format */
+.collapsible-body {
+    padding-left: 1.83em;
+}
+.collapsible-header, .collapsible-body, .collapsible-header i, .badge, .collapsible-body blockquote {
+    color: var(--darkgrey);
+}
+
+/* Table of Contents */
+#toc {
     position: relative;
 }
-
-@media only screen and (min-width: 668px)
-{
-    .element
-    {
-        font-size: 53px;
-        font-weight: thin;
-        color: #ffffff;
-        font-weight: 100;
-        font-family: "Oswald";
-        letter-spacing: 5px;
-        background: transparent;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: 11%;
-    }
-}
-
-@media only screen and (min-width: 415px)
-{
-    .MyHeader
-    {
-        font-size: 60px;
-        font-family: "Dosis";
-        color: #e53935;
-        text-align: left;
-    }
-}
-
-.materialboxed
-{
-    height: 357px;
-    left: 12%;
-    position: absolute;
-    margin-top: 43px;
-    max-height: 850px;
-}
-
-.portrait
-{
-    text-align: center;
-}
-
-.container .row {margin:20px;text-align:center;}
-.container .row img {margin:0 20px;}
 
 /* Class for when element is above threshold */
-.pin-top
-{
+.pin-top {
     position: relative;
 }
 
 /* Class for when element is below threshold */
-.pin-bottom
-{
+.pin-bottom {
     position: relative;
 }
 
 /* Class for when element is pinned */
-.pinned
-{
+.pinned {
     position: fixed !important;
 }
 
-/* INPUT FIELD */
-/* label color */
-.input-field label 
-{
-  color: #505050;
+/* Coursework Table Format */
+tbody, thead {
+    color: var(--darkgrey);
 }
-/* label focus color */
-.input-field input[type=text]:focus + label 
-{
-  color: #ef5350;
+
+/* INPUT FIELDS */
+
+/* Label Color */
+input[type="text"] + label {
+    pointer-events: none;
+    * {
+        pointer-events: all;
+    }
 }
-/* label underline focus color */
-.input-field input[type=text]:focus 
-{
-  border-bottom: 1px solid #ef5350;
-  box-shadow: 0 1px 0 0 #ef5350;
+.input-field label {
+    color: var(--darkgrey);
 }
-/* valid color */
-.input-field input[type=text].valid 
-{
-  border-bottom: 1px solid #505050;
-  box-shadow: 0 1px 0 0 #505050;
+
+/* Label Focus Color */
+.input-field input[type=text]:focus + label {
+    color: var(--orange);
 }
-/* invalid color */
-.input-field input[type=text].invalid 
-{
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
+
+/* Label Underline Focus Color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid var(--orange);
+    box-shadow: 0 1px 0 0 var(--orange);
 }
-/* icon prefix focus color */
-.input-field .prefix.active 
-{
-  color: #ef5350;
+
+/* Valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid var(--orange);
+    box-shadow: 0 1px 0 0 var(--orange);
+}
+
+/* Invalid Color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* Icon Prefix Focus Color */
+.input-field .prefix.active {
+    color: var(--orange);
+}
+.prefix {
+    color: var(--darkgrey);
+}
+
+.character-counter {
+    color: var(--darkgrey);
 }
 
 /* Initialize list class to be invisible for ScrollFire Effect */
-#staggered-About-Me li, #staggered-Mobile-About-Me li, 
 #staggered-Experience li, #staggered-Mobile-Experience li, 
 #staggered-Education li, #staggered-Mobile-Education li,
-#staggered-Skills li, #staggered-Mobile-Skills li, 
-#staggered-Courses li, #staggered-Mobile-Courses li, 
-#staggered-Contact-Me li, #staggered-Mobile-Contact-Me li, 
-#staggered-Contact-Form li, #staggered-Mobile-Contact-Form li
-{
+#staggered-Contact-Form li, #staggered-Mobile-Contact-Form li {
   opacity: 0;
 }
 
-.h2
-{
+.h2 {
     text-align: left;
+}
+
+.submit-btn {
+    background-color: var(--orange);
+    color: var(--lightgrey);
+}
+
+/* Desktop */
+@media only screen and (min-width: 415px) {
+    .MyHeader {
+        text-align: left;
+    }
 }
