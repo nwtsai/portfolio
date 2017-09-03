@@ -30,13 +30,13 @@ nav ul li:hover {
 
 /* Initial Fullscreen Content */
 .full-screen {
-    height: 67.95vh;
+    height: 78vh;
 }
 
 /* Portrait */
 .portrait {
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 /* Social Media Buttons */
@@ -164,5 +164,11 @@ input[type="text"] + label {
 @media only screen and (min-width: 415px) {
     .MyHeader {
         text-align: left;
+    }
+    .full-screen {
+        height: 67.95vh;
+    }
+    .portrait {
+        margin-top: 25vh;
     }
 }
