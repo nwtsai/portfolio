@@ -12,8 +12,12 @@ $(document).ready(function() {
     $(".button-collapse").sideNav();
     var options = [
 		{
-		  selector: '.full-screen',
-		  vh: 83.75
+		  	selector: '.full-screen',
+		  	vh: 83.75
+		},
+		{
+			selector: 'body',
+			vh: 100
 		}
 	];
 	var vhFix = new VHChromeFix(options);
