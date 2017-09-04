@@ -30,7 +30,6 @@ nav ul li:hover {
 
 /* Initial Fullscreen Content */
 .full-screen {
-    /*height: 83.9vh;*/
     height: 93.25vh;
 }
 
@@ -44,7 +43,7 @@ nav ul li:hover {
     border-bottom: 1px solid var(--darkgrey);
     margin-top: 30vh;
     display: inline-block;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
 }
 
 .jff {
