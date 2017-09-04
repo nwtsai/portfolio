@@ -30,20 +30,42 @@ nav ul li:hover {
 
 /* Initial Fullscreen Content */
 .full-screen {
-    height: 75.25vh;
+    height: 91vh;
 }
 
-/* Portrait */
-.portrait {
-    text-align: center;
-    margin-top: 15vh;
+/* Mobile Only */
+.about-me {
+    font-size: 65px;
+    color: var(--darkgrey);
+    font-family: "Open Sans";
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--darkgrey);
+    margin-top: 35vh;
+    display: inline-block;
+    letter-spacing: 0px;
+}
+
+.jff {
+    font-size: 28px;
+    color: var(--orange);
+    font-family: "Open Sans";
+    letter-spacing: -1px;
+    font-weight: 0;
+    margin-top: -5px;
 }
 
 /* Social Media Buttons */
+.social-media-btns {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .social-media-btns a {
     color: var(--lightgrey);
     background-color: var(--orange) !important;
-    margin-top: 25px;
+}
+.not-last {
+    margin-right: 17px;
 }
 
 /* Custom Header Format For Each Section */
@@ -168,11 +190,5 @@ input[type="text"] + label {
 @media only screen and (min-width: 415px) {
     .MyHeader {
         text-align: left;
-    }
-    .full-screen {
-        height: 67.95vh;
-    }
-    .portrait {
-        margin-top: 25vh;
     }
 }
