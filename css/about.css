@@ -55,14 +55,19 @@ nav ul li:hover {
     margin-top: -5px;
 }
 
-/* Social Media Buttons */
-.social-media-btns {
+/* Footer */
+.footer {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: var(--orange);
+    opacity: 0.9;
 }
-.social-media-btns a {
+.footer a {
     color: var(--lightgrey);
     background-color: var(--orange) !important;
+    opacity: 0.9;
 }
 .not-last {
     margin-right: 17px;
@@ -198,5 +203,8 @@ input[type="text"] + label {
     }
     .MyHeader {
         text-align: left;
+    }
+    .footer {
+        font-size: 20px;
     }
 }
