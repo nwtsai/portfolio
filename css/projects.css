@@ -77,6 +77,10 @@ nav ul li:hover {
     position: relative;
 }
 
+a {
+    color: var(--teal);
+}
+
 /* Materialboxed Screenshots */
 .materialboxed {
     height: 520px;
@@ -105,7 +109,7 @@ nav ul li:hover {
     color: var(--darkgrey) !important;
 }
 .tab .active {
-    color: var(--orange) !important;
+    color: var(--darkgrey) !important;
     font-weight: bold;
 }
 

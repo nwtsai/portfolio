@@ -63,6 +63,10 @@ nav ul li:hover {
     position: relative;
 }
 
+a {
+    color: var(--teal);
+}
+
 /* Collapsible Format */
 .collapsible-body {
     padding-left: 1.83em;
