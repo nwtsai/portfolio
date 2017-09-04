@@ -77,7 +77,7 @@ nav ul li:hover {
 .MyHeader {
     font-size: 60px;
     font-family: "Dosis";
-    color: var(--orange);
+    color: var(--darkgrey);
     text-align: center;
     position: relative;
 }
@@ -91,14 +91,17 @@ nav ul li:hover {
 }
 
 a {
-    color: var(--teal);
+    color: var(--orange);
 }
 
 /* Collapsible Format */
 .collapsible-body {
     padding-left: 1.83em;
 }
-.collapsible-header, .collapsible-body, .collapsible-header i, .badge, .collapsible-body blockquote {
+.collapsible-header i {
+    color: var(--orange);
+}
+.collapsible-header, .collapsible-body, .badge, .collapsible-body blockquote {
     color: var(--darkgrey);
 }
 
@@ -125,6 +128,9 @@ a {
 /* Coursework Table Format */
 tbody, thead {
     color: var(--darkgrey);
+}
+thead {
+    color: var(--orange);
 }
 
 /* INPUT FIELDS */

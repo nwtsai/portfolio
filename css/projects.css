@@ -82,7 +82,7 @@ nav ul li:hover {
 .MyHeader {
     font-size: 60px;
     font-family: "Dosis";
-    color: var(--orange);
+    color: var(--darkgrey);
     text-align: center;
     position: relative;
 }
@@ -124,10 +124,10 @@ a {
     background-color: var(--orange);
 }
 .tab a {
-    color: var(--darkgrey) !important;
+    color: var(--orange) !important;
 }
 .tab .active {
-    color: var(--darkgrey) !important;
+    color: var(--orange) !important;
     font-weight: bold;
 }
 
