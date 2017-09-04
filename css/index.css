@@ -38,8 +38,8 @@ nav ul li:hover {
 
 /* Portrait */
 .portrait {
-    text-align: center;
     margin-top: 10vh;
+    text-align: center;
 }
 
 .btns {
@@ -67,7 +67,7 @@ nav ul li:hover {
 
 /* Desktop Only */
 @media only screen and (min-width: 415px) {
-    .portait {
+    .portrait {
         margin-top: 17vh;
     }
     .name {
@@ -77,52 +77,3 @@ nav ul li:hover {
         font-size: 25px;
     }
 }
-
-/* Tablets Only */
-/*@media only screen and (min-width: 555px) {
-    .name {
-        font-size: 50px;
-        color: var(--darkgrey);
-        top: 9vh;
-        padding-bottom: 20px;
-        letter-spacing: 0px;
-        border-bottom: 1px solid var(--darkgrey);
-    }
-
-    .software-engineer {
-        font-size: 25px;
-        top: 20vh;
-    }
-}
-@media only screen and (min-width: 993px) {
-    .name {
-        font-size: 50px;
-        color: var(--darkgrey);
-        top: 18vh;
-        padding-bottom: 20px;
-        letter-spacing: 0px;
-        border-bottom: 1px solid var(--darkgrey);
-    }
-
-    .software-engineer {
-        font-size: 30px;
-        top: 29vh;
-    }
-}*/
-
-/* Desktop Only */
-/*@media only screen and (min-width: 1335px) {
-    .name {
-        font-size: 65px;
-        color: var(--darkgrey);
-        top: 18vh;
-        padding-bottom: 20px;
-        letter-spacing: 0px;
-        border-bottom: 1px solid var(--darkgrey);
-    }
-
-    .software-engineer {
-        font-size: 30px;
-        top: 29vh;
-    }
-}*/
