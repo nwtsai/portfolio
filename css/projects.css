@@ -30,7 +30,8 @@ nav ul li:hover {
 
 /* Initial Fullscreen Content */
 .full-screen {
-    height: 83.9vh;
+    /*height: 83.9vh;*/
+    height: 93.25vh;
 }
 
 /* Mobile Only */

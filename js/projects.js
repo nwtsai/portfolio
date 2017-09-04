@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#toc').pushpin({
         offset: 50
     });
-    $('.scrollspy').scrollSpy({scrollOffset: 135});
+    $('.scrollspy').scrollSpy({scrollOffset: 111});
     $(".dropdown-button").dropdown();
     $('.carousel').carousel();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
