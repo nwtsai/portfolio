@@ -2704,7 +2704,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ef8233;
+  border-left: 5px solid #f08c43;
 }
 
 i {
@@ -5721,8 +5721,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #ef8233;
-  box-shadow: 0 1px 0 0 #ef8233;
+  border-bottom: 1px solid #f08c43;
+  box-shadow: 0 1px 0 0 #f08c43;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5738,7 +5738,7 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #ef8233;
+  color: #f08c43;
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
@@ -5766,8 +5766,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-  border-bottom: 1px solid #ef8233;
-  box-shadow: 0 1px 0 0 #ef8233;
+  border-bottom: 1px solid #f08c43;
+  box-shadow: 0 1px 0 0 #f08c43;
 }
 
 input:not([type]).valid + label:after,
@@ -5797,7 +5797,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
   content: attr(data-success);
-  color: #ef8233;
+  color: #f08c43;
   opacity: 1;
 }
 
@@ -6795,13 +6795,13 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 19px;
-  border-left: 1px solid #ef8233;
+  border-left: 1px solid #f08c43;
 }
 
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 18px;
-  border-left: 3px solid #ef8233;
+  border-left: 3px solid #f08c43;
 }
 
 .side-nav {

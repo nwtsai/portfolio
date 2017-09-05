@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --orange: #ef8233;
+    --orange: #f08c43;
     --darkgrey: #726363;
     --teal: #5ecacd;
     --lightgrey: #f5f5f5;
@@ -62,12 +62,13 @@ nav ul li:hover {
     font-size: 16px;
     font-family: "Open Sans";
     color: var(--orange);
-    opacity: 0.9;
+}
+.footer i {
+    font-size: 20px;
 }
 .footer a {
     color: var(--lightgrey);
     background-color: var(--orange) !important;
-    opacity: 0.9;
 }
 .not-last {
     margin-right: 17px;
