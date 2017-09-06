@@ -4,10 +4,14 @@ $('.button-collapse').sideNav('hide');
 $(document).ready(function() {
     $('html, body').hide();
     if(window.location.hash) {
+        var extraOffset = 18;
+        console.log(window.location.hash)
+        if(window.location.hash == "#Apps")
+            extraOffset = 62;
         setTimeout(function() {
             $('html, body').scrollTop(0).show();
             $('html, body').stop().animate({
-                scrollTop: $(window.location.hash).offset().top
+                scrollTop: $(window.location.hash).offset().top - extraOffset
             }, 1250, 'easeInOutExpo');
         }, 200);
     }
