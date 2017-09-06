@@ -146,6 +146,9 @@ input[type="text"] + label {
 .input-field label {
     color: var(--darkgrey);
 }
+.input-field label.active {
+    color: var(--orange);
+}
 
 /* Label Focus Color */
 .input-field input[type=text]:focus + label {
