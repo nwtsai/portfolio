@@ -2,6 +2,18 @@ jQuery(window).trigger('resize').trigger('scroll');
 $('.button-collapse').sideNav('show');
 $('.button-collapse').sideNav('hide');
 $(document).ready(function() {
+    $('html, body').hide();
+    if(window.location.hash) {
+        setTimeout(function() {
+            $('html, body').scrollTop(0).show();
+            $('html, body').stop().animate({
+                scrollTop: $(window.location.hash).offset().top
+            }, 1250, 'easeInOutExpo');
+        }, 200);
+    }
+    else {
+        $('html, body').show();
+    }
     $('#toc').pushpin({
         offset: 50
     });
