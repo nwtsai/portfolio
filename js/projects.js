@@ -11,4 +11,11 @@ $(document).ready(function() {
     $('.carousel.carousel-slider').carousel({fullWidth: true});
     $(".button-collapse").sideNav();
     $('.tabs').tabs({swipeable: true});
+    $('a.page-scroll').bind('click', function(event) {
+	    var $anchor = $(this);
+	    $('html, body').stop().animate({
+	        scrollTop: ($($anchor.attr('href')).offset().top - 110)
+	    }, 1250, 'easeInOutExpo');
+	    event.preventDefault();
+	});
 });
