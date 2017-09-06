@@ -5,7 +5,6 @@ $(document).ready(function() {
     $('html, body').hide();
     if(window.location.hash) {
         var extraOffset = 18;
-        console.log(window.location.hash)
         if(window.location.hash == "#Apps")
             extraOffset = 62;
         setTimeout(function() {
