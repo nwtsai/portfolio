@@ -32,7 +32,8 @@ nav ul li:hover {
     color: var(--lightgrey);
     background-color: var(--orange) !important;
 }
-.not-last {
+.middle-icon {
+    margin-left: 17px;
     margin-right: 17px;
 }
 

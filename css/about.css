@@ -45,7 +45,6 @@ nav ul li:hover {
     display: inline-block;
     letter-spacing: -1px;
 }
-
 .jff {
     font-size: 24px;
     color: var(--orange);
@@ -53,6 +52,10 @@ nav ul li:hover {
     letter-spacing: -1px;
     font-weight: 0;
     margin-top: -5px;
+}
+#arrow-down {
+    font-size: 85px;
+    margin-top: 13%;
 }
 
 /* Footer */
@@ -63,15 +66,15 @@ nav ul li:hover {
     font-family: "Open Sans";
     color: var(--orange);
 }
+.footer i {
+    font-size: 20px;
+}
 .footer a {
     color: var(--lightgrey);
     background-color: var(--orange) !important;
 }
-.footer i {
-    font-size: 20px;
-}
-.not-last {
-    margin-right: 17px;
+.footer a + a {
+    margin-left: 17px;
 }
 
 /* Custom Header Format For Each Section */
