@@ -23,8 +23,6 @@ $(document).ready(function() {
     });
     $('.scrollspy').scrollSpy({scrollOffset: 111});
     $(".dropdown-button").dropdown();
-    $('.carousel').carousel();
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
     $(".button-collapse").sideNav();
     $('.tabs').tabs({swipeable: true});
     $('a.page-scroll').bind('click', function(event) {
@@ -34,4 +32,8 @@ $(document).ready(function() {
 	    }, 1250, 'easeInOutExpo');
 	    event.preventDefault();
 	});
+    setTimeout(function() {
+        $('.carousel').carousel();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+    }, 500);
 });
