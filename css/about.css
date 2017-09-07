@@ -54,8 +54,11 @@ nav ul li:hover {
     margin-top: -5px;
 }
 #arrow-down {
+    position: absolute;
+    bottom: 20px;
     font-size: 85px;
-    margin-top: 13%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.25, 1);
 }
 
 /* Footer */
