@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <!-- Head -->
     <head>
         <!-- Resources -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -38,8 +36,7 @@
 
     <!-- Scrollfire Implementation -->
     <script type="text/javascript">
-    var options = 
-        [
+        var options = [
             {selector: '#staggered-PocketChangeDescrip', callback: function(el) {
             Materialize.showStaggeredList($(el));
             $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
@@ -66,6 +63,21 @@
             } },
 
             {selector: '#staggered-CampusCowCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-LimbyDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-LimbyDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-LimbyCode', callback: function(el) {
             Materialize.showStaggeredList($(el));
             $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
             } },
@@ -163,9 +175,7 @@
         Materialize.scrollFire(options);
     </script>
 
-    <!-- Body -->
     <body class="scrollspy" id="projects">
-
         <!-- Navigation Bar -->
         <div class="navbar-fixed">
             <nav role="navigation">
@@ -200,7 +210,7 @@
 
         <div class="full-screen center-align">
             <h2 class="projects">Projects</h2>
-            <p class="jff">Always Learning</p>
+            <p class="jff">Bold Endeavors</p>
         </div>
         <a class="page-scroll hide-on-med-and-down" href="#pocket-change"><i id="arrow-down" class="material-icons">keyboard_arrow_down</i></a>
 
@@ -228,50 +238,42 @@
                         <div class="col s12">
                             <!-- Desktop Pocket Change Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
-                              href="#PCDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
-                              <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" href="#PCDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
+                                <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
                             </ul>   
                             <!-- Mobile Pocket Change Description Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" 
-                              href="#PCDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
-                              <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-PocketChangeDescrip')" href="#PCDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeDesign')" href="#PCDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-PocketChangeCode')" href="#PCCode">Code</a></li>
+                                <!--<li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#PCDemo">Demo</a></li>-->
                             </ul>
                         </div>
 
                         <!-- Pocket Change Tabs Content -->
                         <div id="PCDescription" class="col s12">
-                            <ul id="staggered-PocketChangeDescrip">
-                            <li>
-                            <p class="MyBody">‣ An iOS app that helps users manage their personal finances by visualizing how much, when, where, and why money was spent.</p>
-                            <p class="MyBody">‣ The amount spent per week is displayed on an animated bar graph, and the total amount spent per budget is portrayed with a reactive pie chart. </p>
-                            <p class="MyBody">‣ Transactions place markers on an interactive map, allowing a user to view where they spend money. Tapping on a history item will animate the map and display the location of the specified transaction. </p>
-                            <p class="MyBody">‣ Color-coded transactions and timestamps are accessible at all times and may be deleted or renamed with a single swipe. </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-PocketChangeDescrip"><li>
+                                <p class="MyBody">‣ An iOS app that helps users manage their personal finances by visualizing how much, when, where, and why money was spent.</p>
+                                <p class="MyBody">‣ The amount spent per week is displayed on an animated bar graph, and the total amount spent per budget is portrayed with a reactive pie chart. </p>
+                                <p class="MyBody">‣ Transactions place markers on an interactive map, allowing a user to view where they spend money. Tapping on a history item will animate the map and display the location of the specified transaction. </p>
+                                <p class="MyBody">‣ Color-coded transactions and timestamps are accessible at all times and may be deleted or renamed with a single swipe. </p>
+                            </li></ul>
                         </div>
                         <div id="PCDesign" class="col s12">
-                            <ul id="staggered-PocketChangeDesign">
-                            <li>
-                            <p class="MyBody">‣ Programmed with Swift 3 on XCode, using the Model View Controller (MVC) pattern to organize and streamline application processes </p>
-                            <p class="MyBody">‣ Designed dynamic buttons and textfields by implementing regular expressions that disable potentially invalid input </p>
-                            <p class="MyBody">‣ Developed code that controls a dynamic, scaleable bar graph which represents the total amount spent over a customizable time interval, and integrated the Google Maps SDK to plot location markers </p>
-                            <p class="MyBody">‣ Utilized the dictionary data structure which maps dates to the amount spent, providing constant lookup efficiency when fetching graph data </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-PocketChangeDesign"><li>
+                                <p class="MyBody">‣ Programmed with Swift 3 on XCode, using the Model View Controller (MVC) pattern to organize and streamline application processes </p>
+                                <p class="MyBody">‣ Designed dynamic buttons and textfields by implementing regular expressions that disable potentially invalid input </p>
+                                <p class="MyBody">‣ Developed code that controls a dynamic, scaleable bar graph which represents the total amount spent over a customizable time interval, and integrated the Google Maps SDK to plot location markers </p>
+                                <p class="MyBody">‣ Utilized the dictionary data structure which maps dates to the amount spent, providing constant lookup efficiency when fetching graph data </p>
+                            </li></ul>
                         </div>
                         <div id="PCCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-PocketChangeCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/PocketChange" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-PocketChangeCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/PocketChange" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
@@ -284,22 +286,6 @@
 
                 </div>
             </div>
-
-            <!--<div class="col l4 m12 s12 hide-on-med-and-down">
-                <div class="hide-on-med-and-down">
-                    <br></br>
-                </div>
-                <img class="materialboxed responsive-img" src="images/full images/Pocket-Change-Bordered.png" style="margin-top: 60px; max-height: 800px;" 
-                data-caption="Users can log their daily spendings and view their transaction history on bar graphs over various time intervals.">
-            </div>
-            <div class="hide-on-large-only">
-                <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="images/full images/Pocket-Change-Bordered.png" style="width: 320px; height: 320px;">
-                </div>
-                <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="images/full images/Pocket-Change-Bordered.png" style="width: 520px; height: 520px;">
-                </div>
-            </div>-->
 
             <div class="col l4 m12 s12 hide-on-med-and-down">
                 <div class="carousel" style="height: 600px;">
@@ -336,6 +322,7 @@
                         <li><a class="page-scroll" href="#projects">Projects</a></li>
                         <li><a class="page-scroll" href="#pocket-change">P.C.</a></li>
                         <li><a class="page-scroll" href="#campus-cow">C.C.</a></li>
+                        <li><a class="page-scroll" href="#limby">LIMBY</a></li>
                         <li><a class="page-scroll" href="#markitplace">MarkItPlace</a></li>
                         <li><a class="page-scroll" href="#earthquake">DataQuake</a></li>
                         <li><a class="page-scroll" href="#skyscrapers">Skyscrapers</a></li>
@@ -376,50 +363,42 @@
                         <div class="col s12">
                             <!-- Desktop Campus Cow Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" 
-                              href="#CampusCowDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#CampusCowDemo">Demo</a></li>-->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" href="#CampusCowDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#CampusCowDemo">Demo</a></li>-->
                             </ul>   
                             <!-- Mobile Campus Cow Summary Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" 
-                              href="#CampusCowDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#CampusCowDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-CampusCowDescrip')" href="#CampusCowDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowDesign')" href="#CampusCowDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-CampusCowCode')" href="#CampusCowCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#CampusCowDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Campus Cow Tabs Content -->
                         <div id="CampusCowDescription" class="col s12">
-                            <ul id="staggered-CampusCowDescrip">
-                            <li>
-                            <p class="MyBody">‣ Campus Cow is a location-based, multiplayer, Android application, inspired by the flash game <a href="http://findtheinvisiblecow.com/" target="_blank">Find the Invisible Cow</a>. </p>
-                            <p class="MyBody">‣ Each player can choose to be a cowboy or a cow. There can only be one cow. The first cowboy to find the cow wins the game. </p>
-                            <p class="MyBody">‣ To win, a cowboy must be within 50m of the cow. The color of each player's geomarker tells the player how close they are to the cow. </p>
-                            <p class="MyBody">‣ Red, orange, and yellow correspond to a cowboy being within 200m, 400m, and 600m of the cow's current location. A blue marker means that the cowboy is farther than 600m from the cow. </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-CampusCowDescrip"><li>
+                                <p class="MyBody">‣ Campus Cow is a location-based, multiplayer, Android application, inspired by the flash game <a href="http://findtheinvisiblecow.com/" target="_blank">Find the Invisible Cow</a>. </p>
+                                <p class="MyBody">‣ Each player can choose to be a cowboy or a cow. There can only be one cow. The first cowboy to find the cow wins the game. </p>
+                                <p class="MyBody">‣ To win, a cowboy must be within 50m of the cow. The color of each player's geomarker tells the player how close they are to the cow. </p>
+                                <p class="MyBody">‣ Red, orange, and yellow correspond to a cowboy being within 200m, 400m, and 600m of the cow's current location. A blue marker means that the cowboy is farther than 600m from the cow. </p>
+                            </li></ul>
                         </div>
                         <div id="CampusCowDesign" class="col s12">
-                            <ul id="staggered-CampusCowDesign">
-                            <li>
-                            <p class="MyBody">‣ Designed a client with Java that sends each device's current location to the server while simultaneously parsing JSON Objects that hold the locations/ID of each player, storing the data into HashMaps </p>
-                            <p class="MyBody">‣ Created a server with Python and Flask that updates and stores all player data in custom dictionaries and returns a JSON Array to the client </p>
-                            <p class="MyBody">‣ Integrated the Google Maps SDK with the application to give the user visual feedback regarding how far they are from the cow </p>
-                            <p class="MyBody">‣ Constructed an algorithm that calculates the distance between each player and the cow and notifies all devices when a cowboy wins </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-CampusCowDesign"><li>
+                                <p class="MyBody">‣ Designed a client with Java that sends each device's current location to the server while simultaneously parsing JSON Objects that hold the locations/ID of each player, storing the data into HashMaps </p>
+                                <p class="MyBody">‣ Created a server with Python and Flask that updates and stores all player data in custom dictionaries and returns a JSON Array to the client </p>
+                                <p class="MyBody">‣ Integrated the Google Maps SDK with the application to give the user visual feedback regarding how far they are from the cow </p>
+                                <p class="MyBody">‣ Constructed an algorithm that calculates the distance between each player and the cow and notifies all devices when a cowboy wins </p>
+                            </li></ul>
                         </div>
                         <div id="CampusCowCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-CampusCowCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/CampusCow" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-CampusCowCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/CampusCow" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
@@ -449,20 +428,101 @@
                     <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/BqZfVDF.png"></a>
                 </div>
             </div>
+        </div>
 
-            <!-- Materialboxed Campus Cow Desktop Image 
-            <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="images/full images/CampusCow.jpg" style="margin-top: 60px; max-height: 800px;" data-caption="The lobby screen updates dynamically as players join the server, and the marker positions and colors update every time the location of a player changes">
+        <!-- Divider -->
+        <div class="row hide-on-med-and-down">
+            <div class="col l1"></div>
+            <div class="col l10">
+                <br></br>
+                <div class="divider"></div>
             </div>
-            <div class="hide-on-large-only">
-                <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="images/full images/CampusCow.jpg" style="width: 320px; height: 320px;">
-                </div>
-                <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="images/full images/CampusCow.jpg" style="width: 520px; height: 520px;">
-                </div>
-            </div>-->
+            <div class="col l1"></div>
+        </div>
+        <div class="row container hide-on-large-only">
+            <br></br>
+            <div class="divider"></div>
+        </div>
 
+        <!-- LIMBY Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+                    <h2 class="MyHeader section scrollspy" id="limby">LIMBY</h2>
+
+                    <!-- LIMBY Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <!-- Desktop LIMBY Description Tab -->
+                            <ul class="tabs hide-on-med-and-down">
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-LimbyDescrip')" href="#LimbyDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-LimbyDesign')" href="#LimbyDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-LimbyCode')" href="#LimbyCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#LimbyDemo">Demo</a></li>-->
+                            </ul>   
+                            <!-- Mobile LIMBY Summary Tab -->
+                            <ul class="tabs hide-on-large-only">
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-LimbyDescrip')" href="#LimbyDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-LimbyDesign')" href="#LimbyDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-LimbyCode')" href="#LimbyCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#LimbyDemo">Demo</a></li> -->
+                            </ul>
+                        </div>
+
+                        <!-- LIMBY Tabs Content -->
+                        <div id="LimbyDescription" class="col s12">
+                            <ul id="staggered-LimbyDescrip"><li>
+                                <p class="MyBody">‣ LIMBY is an iOS application that monitors the health of birds by graphing and analyzing live bird weights. </p>
+                                <p class="MyBody">‣ LIMBY receives bird weight data over Wi-Fi from a smart-perch that periodically measures bird weights. </p>
+                                <p class="MyBody">‣ A user can view live bird weight data and its pre-computed average by the minute, day, week, month, and year. </p>
+                                <p class="MyBody">‣ The login screen allows a user to view all associated smart-perches on multiple devices. </p>
+                            </li></ul>
+                        </div>
+                        <div id="LimbyDesign" class="col s12">
+                            <ul id="staggered-LimbyDesign"><li>
+                                <p class="MyBody">‣ Implemented a pre-processing algorithm that reduces noisy data by filtering out points that do not represent actual bird weights </p>
+                                <p class="MyBody">‣ Worked with the Particle API to query live data from its servers and allow users to view all devices under their Particle account from any device </p>
+                                <p class="MyBody">‣ Designed an algorithm that pre-computes the average of the data points over a specified range that only includes real bird weight data </p>
+                                <p class="MyBody">‣ Designed unit tests before developing each feature, ensuring that each iteration contains robust, accurate, and error-free code </p>
+                            </li></ul>
+                        </div>
+                        <div id="LimbyCode" class="col s12">
+                            <br></br>
+                            <ul id="staggered-LimbyCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/LIMBY" target="_blank">Source Code<i class="material-icons right">stay_primary_portrait</i></a></p>
+                            </li></ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                            </div>
+                        </div>
+                        <!-- <div id="LimbyDemo" class="col s12"></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <div class="carousel" style="height: 600px;">
+                    <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/zz9EgwN.png"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/M4xGJcO.png"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/b7xVtK9.png"></a>
+                </div>
+            </div>
+
+            <div class="col l4 m12 s12 hide-on-large-only">
+                <div class="carousel" style="height: 500px;">
+                    <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/zz9EgwN.png"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/M4xGJcO.png"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/b7xVtK9.png"></a>
+                </div>
+            </div>
         </div>
 
         <!-- Divider -->
@@ -494,50 +554,42 @@
                         <div class="col s12">
                             <!-- Desktop Markitplace Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" 
-                              href="#MarkitplaceDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#MarkitplaceDemo">Demo</a></li>-->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" href="#MarkitplaceDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#MarkitplaceDemo">Demo</a></li>-->
                             </ul>   
                             <!-- Mobile Markitplace Summary Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" 
-                              href="#MarkitplaceDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#MarkitplaceDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDescrip')" href="#MarkitplaceDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceDesign')" href="#MarkitplaceDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-MarkitplaceCode')" href="#MarkitplaceCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#MarkitplaceDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Markitplace Tabs Content -->
                         <div id="MarkitplaceDescription" class="col s12">
-                            <ul id="staggered-MarkitplaceDescrip">
-                            <li>
-                            <p class="MyBody">‣ <a href="https://nwtsai.github.io/Markitplace" target="blank">Markitplace</a> was created to replace Facebook groups (<a href="https://www.facebook.com/groups/UCLAofficalfreeandforsale/" target="blank">Free & For Sale</a>), which lack useful filters, fail to accomodate for a student's schedule, and provide no information regarding where and when each seller will be available. </p>
-                            <p class="MyBody">‣ Users looking to buy items can utilize a map and view current listings, simultaneously applying 3 layers of filtering to narrow down their search. </p>
-                            <p class="MyBody">‣ Filters include: Category (Furniture, Technology), Price Range (Under $10, $10-$25), and Key Words (Used, Desk). </p>
-                            <p class="MyBody">‣ Users looking to sell items are able to tailor to their class schedule and provide various locations and times to display their marker on the map. </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-MarkitplaceDescrip"><li>
+                                <p class="MyBody">‣ <a href="https://nwtsai.github.io/Markitplace" target="blank">Markitplace</a> was created to replace Facebook groups (<a href="https://www.facebook.com/groups/UCLAofficalfreeandforsale/" target="blank">Free & For Sale</a>), which lack useful filters, fail to accomodate for a student's schedule, and provide no information regarding where and when each seller will be available. </p>
+                                <p class="MyBody">‣ Users looking to buy items can utilize a map and view current listings, simultaneously applying 3 layers of filtering to narrow down their search. </p>
+                                <p class="MyBody">‣ Filters include: Category (Furniture, Technology), Price Range (Under $10, $10-$25), and Key Words (Used, Desk). </p>
+                                <p class="MyBody">‣ Users looking to sell items are able to tailor to their class schedule and provide various locations and times to display their marker on the map. </p>
+                            </li></ul>
                         </div>
                         <div id="MarkitplaceDesign" class="col s12">
-                            <ul id="staggered-MarkitplaceDesign">
-                            <li>
-                            <p class="MyBody">‣ Designed a back end server that stores all user data and a front end JavaScript application that utilizes the Facebook, Mapbox, and Google Services APIs </p>
-                            <p class="MyBody">‣ Developed a filtering algorithm that takes into account 3 categories, resulting in only displaying markers that fit the constraints chosen by the user </p>
-                            <p class="MyBody">‣ Constructed a personalized user interface that displays a user's name and picture in the status bar while linking their profile in each marker they place on the map </p>
-                            <p class="MyBody">‣ Reduced load time by taking advantage of already loaded elements; switching between the map and the listings page does not refresh the page but rather saves the current state of the page and efficiently provides the layout of another </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-MarkitplaceDesign"><li>
+                                <p class="MyBody">‣ Designed a back end server that stores all user data and a front end JavaScript application that utilizes the Facebook, Mapbox, and Google Services APIs </p>
+                                <p class="MyBody">‣ Developed a filtering algorithm that takes into account 3 categories, resulting in only displaying markers that fit the constraints chosen by the user </p>
+                                <p class="MyBody">‣ Constructed a personalized user interface that displays a user's name and picture in the status bar while linking their profile in each marker they place on the map </p>
+                                <p class="MyBody">‣ Reduced load time by taking advantage of already loaded elements; switching between the map and the listings page does not refresh the page but rather saves the current state of the page and efficiently provides the layout of another </p>
+                            </li></ul>
                         </div>
                         <div id="MarkitplaceCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-MarkitplaceCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/MarkItPlace" target="blank">Source Code<i class="material-icons right">public</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-MarkitplaceCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/MarkItPlace" target="blank">Source Code<i class="material-icons right">public</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
@@ -596,50 +648,42 @@
                         <div class="col s12">
                             <!-- Desktop Earthquake Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" 
-                              href="#EarthquakeDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#EarthquakeDemo">Demo</a></li>-->
-                            </ul>   
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" href="#EarthquakeDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#EarthquakeDemo">Demo</a></li>-->
+                            </ul> 
                             <!-- Mobile Earthquake Summary Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" 
-                              href="#EarthquakeDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#EarthquakeDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-EarthquakeDescrip')" href="#EarthquakeDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeDesign')" href="#EarthquakeDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-EarthquakeCode')" href="#EarthquakeCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#EarthquakeDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Earthquake Tabs Content -->
                         <div id="EarthquakeDescription" class="col s12">
-                            <ul id="staggered-EarthquakeDescrip">
-                            <li>
-                            <p class="MyBody">‣ The purpose of <a href="https://nwtsai.github.io/DataQuake/index.html" target="_blank">DataQuake</a> is to display pertinent information regarding all recent earthquakes within the past day, week, and month.</p>
-                            <p class="MyBody">‣ A map is dynamically populated with red circles that indicate the location and magnitude of an earthquake. </p>
-                            <p class="MyBody">‣ The search bar allows users to search for a location or a magnitude range, which updates the map with the filtered results </p>
-                            <p class="MyBody">‣ All data is updated in real time, and all information gathered is provided by the <a href="https://www.usgs.gov/products/data-and-tools/real-time-data/earthquakes" target="_blank">United States Geology Survey</a> (USGS).</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-EarthquakeDescrip"><li>
+                                <p class="MyBody">‣ The purpose of <a href="https://nwtsai.github.io/DataQuake/index.html" target="_blank">DataQuake</a> is to display pertinent information regarding all recent earthquakes within the past day, week, and month.</p>
+                                <p class="MyBody">‣ A map is dynamically populated with red circles that indicate the location and magnitude of an earthquake. </p>
+                                <p class="MyBody">‣ The search bar allows users to search for a location or a magnitude range, which updates the map with the filtered results </p>
+                                <p class="MyBody">‣ All data is updated in real time, and all information gathered is provided by the <a href="https://www.usgs.gov/products/data-and-tools/real-time-data/earthquakes" target="_blank">United States Geology Survey</a> (USGS).</p>
+                            </li></ul>
                         </div>
                         <div id="EarthquakeDesign" class="col s12">
-                            <ul id="staggered-EarthquakeDesign">
-                            <li>
-                            <p class="MyBody">‣ Sifts through heaps of information by gathering data automatically via an API call to the USGS database </p>
-                            <p class="MyBody">‣ Visualizes the data by integrating Google Maps with a dynamically drawn circle for every earthquake that happens around the globe </p>
-                            <p class="MyBody">‣ Developed an algorithm that dynamically formats and styles the gathered data using javascript, regardless of the size of the data </p>
-                            <p class="MyBody">‣ Utilized jQuery calls to modify HTML structures and classes when the user clicks on buttons in order to create an integrated user interface </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-EarthquakeDesign"><li>
+                                <p class="MyBody">‣ Sifts through heaps of information by gathering data automatically via an API call to the USGS database </p>
+                                <p class="MyBody">‣ Visualizes the data by integrating Google Maps with a dynamically drawn circle for every earthquake that happens around the globe </p>
+                                <p class="MyBody">‣ Developed an algorithm that dynamically formats and styles the gathered data using javascript, regardless of the size of the data </p>
+                                <p class="MyBody">‣ Utilized jQuery calls to modify HTML structures and classes when the user clicks on buttons in order to create an integrated user interface </p>
+                            </li></ul>
                         </div>
                         <div id="EarthquakeCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-EarthquakeCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/DataQuake" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-EarthquakeCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/DataQuake" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
@@ -702,51 +746,42 @@
                         <div class="col s12">
                             <!-- Desktop LA Skyscrapers Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
-                              href="#SkyscraperDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li>-->
-                            </ul>   
-
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" href="#SkyscraperDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li>-->
+                            </ul>
                             <!-- Mobile LA Skyscrapers Summary Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" 
-                              href="#SkyscraperDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-SkyscraperDescrip')" href="#SkyscraperDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperDesign')" href="#SkyscraperDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-SkyscraperCode')" href="#SkyscraperCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#SkyscraperDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- LA Skyscrapers Tabs Content -->
                         <div id="SkyscraperDescription" class="col s12">
-                            <ul id="staggered-SkyscraperDescrip">
-                            <li>
-                            <p class="MyBody">‣ <a href="https://nwtsai.github.io/LASkyscrapers/" target="_blank">LA Skyscrapers</a> is a dynamic, interactive, and visual representation of the 35 tallest buildings in Los Angeles. </p>
-                            <p class="MyBody">‣ A navigation system allows the viewer to fly around in 3D space. Further interactive features include resetting the year counter, showing or hiding the controls, and rotating the view. </p>
-                            <p class="MyBody">‣ Each color-coded bar grows at a speed depending on its actual construction time. A year label counts from 1926 to 2017. </p>
-                            <p class="MyBody">‣ All data, including each building's relative height, start and end years of construction, and name, can be found <a href="https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Los_Angeles" target="_blank">here</a>. </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-SkyscraperDescrip"><li>
+                                <p class="MyBody">‣ <a href="https://nwtsai.github.io/LASkyscrapers/" target="_blank">LA Skyscrapers</a> is a dynamic, interactive, and visual representation of the 35 tallest buildings in Los Angeles. </p>
+                                <p class="MyBody">‣ A navigation system allows the viewer to fly around in 3D space. Further interactive features include resetting the year counter, showing or hiding the controls, and rotating the view. </p>
+                                <p class="MyBody">‣ Each color-coded bar grows at a speed depending on its actual construction time. A year label counts from 1926 to 2017. </p>
+                                <p class="MyBody">‣ All data, including each building's relative height, start and end years of construction, and name, can be found <a href="https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Los_Angeles" target="_blank">here</a>. </p>
+                            </li></ul>
                         </div>
                         <div id="SkyscraperDesign" class="col s12">
-                            <ul id="staggered-SkyscraperDesign">
-                            <li>
-                            <p class="MyBody">‣ Generated a growing rectangular prism by updating the top four vertices during every frame until the correct relative height is reached </p>
-                            <p class="MyBody">‣ Designed a navigation system that moves the camera relative to the 3D graph. Movement includes translating left, right, up, down, forwards, backwards, and rotating the heading </p>
-                            <p class="MyBody">‣ Constructed dynamic elements including the year counter, controls, and bars, which change depending on the current year </p>
-                            <p class="MyBody">‣ Developed functionality for resetting the year counter (r) and hiding the controls (h) </p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-SkyscraperDesign"><li>
+                                <p class="MyBody">‣ Generated a growing rectangular prism by updating the top four vertices during every frame until the correct relative height is reached </p>
+                                <p class="MyBody">‣ Designed a navigation system that moves the camera relative to the 3D graph. Movement includes translating left, right, up, down, forwards, backwards, and rotating the heading </p>
+                                <p class="MyBody">‣ Constructed dynamic elements including the year counter, controls, and bars, which change depending on the current year </p>
+                                <p class="MyBody">‣ Developed functionality for resetting the year counter (r) and hiding the controls (h) </p>
+                            </li></ul>
                         </div>
                         <div id="SkyscraperCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-SkyscraperCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/LASkyscrapers" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-SkyscraperCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/LASkyscrapers" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
@@ -808,50 +843,42 @@
                         <div class="col s12">
                             <!-- Desktop Website Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
-                              href="#WebDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li>-->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" href="#WebDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li>-->
                             </ul>   
                             <!-- Mobile Website Summary Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" 
-                              href="#WebDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" href="#WebDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Website Tabs Content -->
                         <div id="WebDescription" class="col s12">
-                            <ul id="staggered-WebsiteDescrip">
-                            <li>
-                            <p class="MyBody">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
-                            <p class="MyBody">‣ The Home page consists of important professional links such as my resume, Github, and LinkedIn, along with contact information such as my phone number, email, and Google+.</p>
-                            <p class="MyBody">‣ The About Me page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
-                            <p class="MyBody">‣ The Projects page showcases my coding endeavors. Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-WebsiteDescrip"><li>
+                                <p class="MyBody">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
+                                <p class="MyBody">‣ The Home page consists of important professional links such as my resume, Github, and LinkedIn, along with contact information such as my phone number, email, and Google+.</p>
+                                <p class="MyBody">‣ The About Me page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
+                                <p class="MyBody">‣ The Projects page showcases my coding endeavors. Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
+                            </li></ul>
                         </div>
                         <div id="WebDesign" class="col s12">
-                            <ul id="staggered-WebsiteDesign">
-                            <li>
-                            <p class="MyBody">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
-                            <p class="MyBody">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
-                            <p class="MyBody">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
-                            <p class="MyBody">‣ Implemented parallax lib, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-WebsiteDesign"><li>
+                                <p class="MyBody">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
+                                <p class="MyBody">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
+                                <p class="MyBody">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
+                                <p class="MyBody">‣ Implemented parallax lib, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
+                            </li></ul>
                         </div>
                         <div id="WebCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-WebsiteCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/Portfolio" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-WebsiteCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/Portfolio" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
@@ -914,50 +941,42 @@
                         <div class="col s12">
                             <!-- Desktop Frackman Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
-                              href="#FDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" href="#FDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
                             </ul>
                             <!-- Mobile Frackman Description Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" 
-                              href="#FDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-FrackmanDescrip')" href="#FDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanDesign')" href="#FDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-FrackmanCode')" href="#FCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#FDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Frackman Tabs Content -->
                         <div id="FDescription" style="color: #03a9f4;" class="col s12">
-                            <ul id="staggered-FrackmanDescrip">
-                            <li>
-                            <p class="MyBody">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
-                            <p class="MyBody">‣ The Regular Protesters (in dark blue) only follow the player when you, the Frackman (holding a pickaxe), are in their line of sight.</p>
-                            <p class="MyBody">‣ The Hardcore Protesters (in overalls) calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
-                            <p class="MyBody">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-FrackmanDescrip"><li>
+                                <p class="MyBody">‣ The object of the game is to find all hidden Oil Barrel objects and proceed to the next level without getting caught by the AI, also known as the Protesters.</p>
+                                <p class="MyBody">‣ The Regular Protesters (in dark blue) only follow the player when you, the Frackman (holding a pickaxe), are in their line of sight.</p>
+                                <p class="MyBody">‣ The Hardcore Protesters (in overalls) calculate your current location during every tick of the game and derive the shortest possible path towards you.</p>
+                                <p class="MyBody">‣ Everytime a Protester comes close to your location, you will lose health. Once your health drops to 0%, you lose the game.</p>
+                            </li></ul>
                         </div>
                         <div id="FDesign" class="col s12">
-                            <ul id="staggered-FrackmanDesign">
-                            <li>
-                            <p class="MyBody">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
-                            <p class="MyBody">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
-                            <p class="MyBody">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
-                            <p class="MyBody">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the grid</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-FrackmanDesign"><li>
+                                <p class="MyBody">‣ Implemented the game using C++, exhibiting concepts such as polymorphism, inheritance, and encapsulation</p>
+                                <p class="MyBody">‣ Designed a method for the AI to follow the location of the player on the grid with a recursive, queue-based algorithm that performs a breadth-first search</p>
+                                <p class="MyBody">‣ Devised a hierarchy of game objects to distinguish the different objects and store them in a single array under a universal superclass to prevent code duplication</p>
+                                <p class="MyBody">‣ Developed an algorithm to raise the difficulty of each level by periodically increasing the number of Oil Barrels, Protesters, and Boulders on the grid</p>
+                            </li></ul>
                         </div>
                         <div id="FCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-FrackmanCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Frackman" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-FrackmanCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Frackman" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <p>
@@ -1022,50 +1041,42 @@
                         <div class="col s12">
                             <!-- Desktop Blackjack Description Tab -->
                             <ul class="tabs hide-on-med-and-down">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
-                              href="#BJDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" href="#BJDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
                             </ul>
                             <!-- Mobile Blackjack Description Tab -->
                             <ul class="tabs hide-on-large-only">
-                              <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" 
-                              href="#BJDescription">Description</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
-                              <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
-                              <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BlackjackDescrip')" href="#BJDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackDesign')" href="#BJDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BlackjackCode')" href="#BJCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BJDemo">Demo</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Blackjack Tabs Content -->
                         <div id="BJDescription" class="col s12">
-                            <ul id="staggered-BlackjackDescrip">
-                            <li>
-                            <p class="MyBody">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
-                            <p class="MyBody">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is more advantageous.</p>
-                            <p class="MyBody">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
-                            <p class="MyBody">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-BlackjackDescrip"><li>
+                                <p class="MyBody">‣ The object of the game is to beat the dealer (AI) by getting a count as close to 21 as possible, without going over 21.</p>
+                                <p class="MyBody">‣ Face cards are worth 10, and the numbered cards are worth their pip value. The ace is worth 1 or 11, depending on which is more advantageous.</p>
+                                <p class="MyBody">‣ The player can stand by not asking for another card, or hit by asking for another card dealt from the deck.</p>
+                                <p class="MyBody">‣ Once the player stands, the winner of the round is determined by who has the highest count under 21. If only the player busts (count over 21), then the dealer wins, and vice versa. Otherwise, it's a draw.</p>
+                            </li></ul>
                         </div>
                         <div id="BJDesign" class="col s12">
-                            <ul id="staggered-BlackjackDesign">
-                            <li>
-                            <p class="MyBody">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
-                            <p class="MyBody">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
-                            <p class="MyBody">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
-                            <p class="MyBody">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-BlackjackDesign"><li>
+                                <p class="MyBody">‣ Programmed a virtual card game with Java by implementing an aesthetic interface and interactive graphics</p>
+                                <p class="MyBody">‣ Constructed a decision tree that guides the AI and teaches it how to make smart decisions based on intuitive game logic</p>
+                                <p class="MyBody">‣ Developed code that takes into account the varying values of the Ace card, assigning the card a value when it is advantageous for the player or the AI</p>
+                                <p class="MyBody">‣ Implemented counters for undealt cards, total games won, and total games played. Once a card is dealt, the same card will not appear unless the player chooses to reset the deck by pressing the Restart button</p>
+                            </li></ul>
                         </div>
                         <div id="BJCode" class="col s12">
                             <br></br>
-                            <ul id="staggered-BlackjackCode">
-                            <li>
-                            <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Blackjack" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
-                            </li>
-                            </ul>
+                            <ul id="staggered-BlackjackCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/Blackjack" target="_blank">Source Code<i class="material-icons right">videogame_asset</i></a></p>
+                            </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
                                 <br></br>
