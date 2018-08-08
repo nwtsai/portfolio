@@ -1,7 +1,7 @@
 /*!
- * Materialize v0.97.7 (http://materializecss.com)
+ * Materialize v0.97.7 (https://materializecss.com)
  * Copyright 2014-2015 Materialize
- * MIT License (http://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -5160,11 +5160,11 @@ button.btn-floating {
 
 /*!
  * Waves v0.6.0
- * http://fian.my.id/Waves
+ * https://fian.my.id/Waves
  *
  * Copyright 2014 Alfiana E. Sibuea and other contributors
  * Released under the MIT license
- * http://github.com/fians/Waves/blob/master/LICENSE
+ * https://github.com/fians/Waves/blob/master/LICENSE
  */
 .waves-effect {
   position: relative;
@@ -7028,11 +7028,11 @@ input[type=range]:focus::-ms-fill-upper {
 /*
     @license
     Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+    This code may only be used under the BSD style license found at https://polymer.github.io/LICENSE.txt
+    The complete set of authors may be found at https://polymer.github.io/AUTHORS.txt
+    The complete set of contributors may be found at https://polymer.github.io/CONTRIBUTORS.txt
     Code distributed by Google as part of the polymer project is also
-    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+    subject to an additional IP rights grant found at https://polymer.github.io/PATENTS.txt
  */
 /**************************/
 /* STYLES FOR THE SPINNER */
@@ -7125,7 +7125,7 @@ input[type=range]:focus::-ms-fill-upper {
  * We write out each animation in full (instead of separating animation-name,
  * animation-duration, etc.) because under the polyfill, Safari does not recognize those
  * specific properties properly, treats them as -webkit-animation, and overrides the
- * other animation rules. See http://github.com/Polymer/platform/issues/53.
+ * other animation rules. See https://github.com/Polymer/platform/issues/53.
  */
 .active .spinner-layer.spinner-blue {
   /* durations: 4 * ARCTIME */
@@ -7762,7 +7762,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*!
  * Default mobile-first, responsive styling for pickadate.js
- * Demo: http://amsul.github.io/pickadate.js
+ * Demo: https://amsul.github.io/pickadate.js
  */
 /**
  * Note: the root picker element should *NOT* be styled more than what's here.
