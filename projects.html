@@ -91,6 +91,21 @@
             $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
             } },
 
+            {selector: '#staggered-BrainLesionDescrip', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-BrainLesionDesign', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
+            {selector: '#staggered-BrainLesionCode', callback: function(el) {
+            Materialize.showStaggeredList($(el));
+            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+            } },
+
             {selector: '#staggered-MarkitplaceDescrip', callback: function(el) {
             Materialize.showStaggeredList($(el));
             $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
@@ -195,6 +210,7 @@
                     <div class="ddown">
                         <ul id="projectsDropdown" class="dropdown-content">
                             <li><a class="page-scroll" href="#pocket-change"><font face="Ubuntu">Apps</font><i class="small material-icons right">stay_current_portrait</i></a></li>
+                            <li><a class="page-scroll" href="#brain-lesion"><font face="Ubuntu">Models</font><i class="small material-icons right">timeline</i></a></li>
                             <li><a class="page-scroll" href="#markitplace"><font face="Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
                             <li><a class="page-scroll" href="#frackman"><font face="Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
                         </ul>
@@ -329,9 +345,10 @@
                 <div class="toc-wrapper">
                     <ul class="section table-of-contents" id="toc">
                         <li><a class="page-scroll" href="#projects">Projects</a></li>
-                        <li><a class="page-scroll" href="#pocket-change">P.C.</a></li>
-                        <li><a class="page-scroll" href="#campus-cow">C.C.</a></li>
+                        <li><a class="page-scroll" href="#pocket-change">Pocket Change</a></li>
+                        <li><a class="page-scroll" href="#campus-cow">Campus Cow</a></li>
                         <li><a class="page-scroll" href="#limby">LIMBY</a></li>
+                        <li><a class="page-scroll" href="#brain-lesion">Brain Lesion</a></li>
                         <li><a class="page-scroll" href="#markitplace">MarkItPlace</a></li>
                         <li><a class="page-scroll" href="#earthquake">DataQuake</a></li>
                         <li><a class="page-scroll" href="#skyscrapers">Skyscrapers</a></li>
@@ -535,6 +552,103 @@
         </div>
 
         <!-- Divider -->
+        <div class="row hide-on-med-and-down" id="Models">
+            <div class="col l1"></div>
+            <div class="col l10">
+                <br></br>
+                <div class="divider"></div>
+            </div>
+            <div class="col l1"></div>
+        </div>
+        <div class="row container hide-on-large-only">
+            <br></br>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Brain Lesion Segmentation Frame -->
+        <div class="row">
+            <div class="col l7 m12 s12">
+                <div class="container">
+                    <h2 class="MyHeader section scrollspy" id="brain-lesion">Brain Lesion Segmentation</h2>
+
+                    <!-- Brain Lesion Segmentation Tabs Section -->
+                    <div class="hide-on-med-and-down">
+                        <br></br>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <!-- Desktop Brain Lesion Segmentation Description Tab -->
+                            <ul class="tabs hide-on-med-and-down">
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BrainLesionDescrip')" href="#BLDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BrainLesionDesign')" href="#BLDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BrainLesionCode')" href="#BLCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BLDemo">Demo</a></li> -->
+                            </ul>
+                            <!-- Mobile Brain Lesion Segmentation Description Tab -->
+                            <ul class="tabs hide-on-large-only">
+                                <li class="tab col s3"><a class="active" onclick="Materialize.showStaggeredList('#staggered-BrainLesionDescrip')" href="#BLDescription">Description</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BrainLesionDesign')" href="#BLDesign">Design</a></li>
+                                <li class="tab col s3"><a onclick="Materialize.showStaggeredList('#staggered-BrainLesionCode')" href="#BLCode">Code</a></li>
+                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#BLDemo">Demo</a></li> -->
+                            </ul>
+                        </div>
+
+                        <!-- Brain Lesion Segmentation Tabs Content -->
+                        <div id="BLDescription" style="color: #03a9f4;" class="col s12">
+                            <ul id="staggered-BrainLesionDescrip"><li>
+                                <p class="MyBody">‣ Brain lesions are any abnormal brain tissues that appear as bright spots on the brain in MRI scans. </p>
+                                <p class="MyBody">‣ I created a conditional adversarial network model that identifies, analyzes, and isolates brain lesions from MRI scans. </p>
+                                <p class="MyBody">‣ The goal of this model is to increase doctors' diagnosis accuracies relating to identifying unhealthy brain tissues. </p>
+                                <p class="MyBody">‣ This increases the likelihood of successfully identifying and treating brain abnormalities while preventing unnecessary brain surgeries. </p>
+                            </li></ul>
+                        </div>
+                        <div id="BLDesign" class="col s12">
+                            <ul id="staggered-BrainLesionDesign"><li>
+                                <p class="MyBody">‣ Modified the <a href="https://github.com/affinelayer/pix2pix-tensorflow/blob/master/pix2pix.py" target="_blank">pix2pix</a> tensorflow model designed for mapping generic input images to output images </p>
+                                <p class="MyBody">‣ Split the data set with k-fold validation so that all combinations of different training and testing image sets are considered </p>
+                                <p class="MyBody">‣ Trained and tested the model in order to output a SSIM (structural similarity image metric) value for each model's guess </p>
+                                <p class="MyBody">‣ Tuned hyperparameters such as the epoch count of the model in order to find the optimal value that avoids underfitting and overfitting </p>
+                            </li></ul>
+                        </div>
+                        <div id="BLCode" class="col s12">
+                            <br></br>
+                            <ul id="staggered-BrainLesionCode"><li>
+                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://www.github.com/nwtsai/BrainLesionSegmentation" target="_blank">Source Code<i class="material-icons right">timeline</i></a></p>
+                            </li></ul>
+                            <br></br>
+                            <div class="hide-on-med-and-down">
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                            </div>
+                        </div>
+                        <!-- <div id="BLDemo" class="col s12"></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Materialboxed Brain Lesion Segmentation Desktop Image -->
+            <div class="col l4 m12 s12 hide-on-med-and-down">
+                <img class="materialboxed responsive-img" src="images/full images/BrainLesion.png" style="margin-top: 50px; max-height: 800px;" 
+                data-caption="Given an actual MRI scan of the brain (1st column), the model's guess (2nd column) is compared to the actual lesion (3rd column).">
+            </div>
+
+            <div class="hide-on-large-only">
+                <!-- Brain Lesion Segmentation Mobile Vertical Image -->
+                <div class="col l4 m12 s12 hide-on-med-only">
+                    <img class="center" src="images/full images/BrainLesion.png" style="width: 320px; height: 320px;">
+                </div>
+
+                <!-- Brain Lesion Segmentation Mobile Horizontal Image -->
+                <div class="col l4 m12 s12 hide-on-small-only">
+                    <img class="center" src="images/full images/BrainLesion.png" style="width: 520px; height: 520px;">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
         <div class="row hide-on-med-and-down" id="Web">
             <div class="col l1"></div>
             <div class="col l10">
@@ -552,7 +666,7 @@
         <div class="row">
             <div class="col l7 m12 s12">
                 <div class="container">
-                    <h2 class= "MyHeader section scrollspy" id="markitplace">MarkItPlace</h2>
+                    <h2 class="MyHeader section scrollspy" id="markitplace">MarkItPlace</h2>
 
                     <!-- Markitplace Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -591,7 +705,7 @@
                                 <p class="MyBody">‣ Designed a back end server that stores all user data and a front end JavaScript application that utilizes the Facebook, Mapbox, and Google Services APIs </p>
                                 <p class="MyBody">‣ Developed a filtering algorithm that takes into account 3 categories, resulting in only displaying markers that fit the constraints chosen by the user </p>
                                 <p class="MyBody">‣ Constructed a personalized user interface that displays a user's name and picture in the status bar while linking their profile in each marker they place on the map </p>
-                                <p class="MyBody">‣ Reduced load time by taking advantage of already loaded elements; switching between the map and the listings page does not refresh the page but rather saves the current state of the page and efficiently provides the layout of another </p>
+                                <p class="MyBody">‣ Reduced load time by taking advantage of already loaded elements by saving the current state of the page while providing the layout of another </p>
                             </li></ul>
                         </div>
                         <div id="MarkitplaceCode" class="col s12">
@@ -646,7 +760,7 @@
         <div class="row">
             <div class="col l7 m12 s12">
                 <div class="container">
-                    <h2 class= "MyHeader section scrollspy" id="earthquake">DataQuake</h2>
+                    <h2 class="MyHeader section scrollspy" id="earthquake">DataQuake</h2>
 
                     <!-- Earthquake Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -841,7 +955,7 @@
         <div class="row">
             <div class="col l7 m12 s12">
                 <div class="container">
-                    <h2 class= "MyHeader section scrollspy" id="website">Portfolio</h2>
+                    <h2 class="MyHeader section scrollspy" id="website">Portfolio</h2>
 
                     <!-- Website Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -940,7 +1054,7 @@
         <div class="row">
             <div class="col l7 m12 s12">
                 <div class="container">
-                    <h2 class= "MyHeader section scrollspy" id="frackman">Frackman</h2>
+                    <h2 class="MyHeader section scrollspy" id="frackman">Frackman</h2>
 
                     <!-- Frackman Tabs Section -->
                     <div class="hide-on-med-and-down">
@@ -988,12 +1102,9 @@
                             </li></ul>
                             <br></br>
                             <div class="hide-on-med-and-down">
-                                <p>
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <br></br>
-                                </p>
                             </div>
                         </div>
                         <!-- <div id="FDemo" class="col s12"></div> -->
@@ -1040,7 +1151,7 @@
         <div class="row">
             <div class="col l7 m12 s12">
                 <div class="container">
-                    <h2 class= "MyHeader section scrollspy" id="blackjack">Blackjack</h2>
+                    <h2 class="MyHeader section scrollspy" id="blackjack">Blackjack</h2>
 
                     <!-- Blackjack Tabs Section -->
                     <div class="hide-on-med-and-down">
