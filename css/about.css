@@ -68,7 +68,7 @@ nav ul li:hover {
 }
 
 .dropdown-content {
-    background-color: var(--secondary) !important;
+    background-color: var(--primary) !important;
 }
 
 /* Initial Fullscreen Content */
@@ -178,16 +178,16 @@ blockquote {
     padding-left: 20px;
 }
 .table-of-contents a:hover {
-  color: var(--tertiary);
+  color: var(--secondary);
   font-weight: 600;
   padding-left: 19px;
-  border-left: 1px solid var(--tertiary);
+  border-left: 1px solid var(--secondary);
 }
 .table-of-contents a.active {
-  color: var(--tertiary);
+  color: var(--secondary);
   font-weight: 700;
   padding-left: 17px;
-  border-left: 3px solid var(--tertiary);
+  border-left: 3px solid var(--secondary);
 }
 #toc {
     position: relative;
