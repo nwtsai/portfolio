@@ -144,21 +144,6 @@
             $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
             } },
 
-            {selector: '#staggered-WebsiteDescrip', callback: function(el) {
-            Materialize.showStaggeredList($(el));
-            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-            } },
-
-            {selector: '#staggered-WebsiteDesign', callback: function(el) {
-            Materialize.showStaggeredList($(el));
-            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-            } },
-
-            {selector: '#staggered-WebsiteCode', callback: function(el) {
-            Materialize.showStaggeredList($(el));
-            $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
-            } },
-
             {selector: '#staggered-FrackmanDescrip', callback: function(el) {
             Materialize.showStaggeredList($(el));
             $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
@@ -203,7 +188,7 @@
                     <div class="ddown">
                         <ul id="projectsDropdown" class="dropdown-content">
                             <li><a class="page-scroll" href="#pocket-change"><span class="MyNav">Apps</span><i class="small material-icons right">stay_current_portrait</i></a></li>
-                            <li><a class="page-scroll" href="#brain-lesion"><span class="MyNav">Models</span><i class="small material-icons right">timeline</i></a></li>
+                            <li><a class="page-scroll" href="#brain-lesion"><span class="MyNav">Models</span><i class="small material-icons right">insert_chart</i></a></li>
                             <li><a class="page-scroll" href="#markitplace"><span class="MyNav">Web</span><i class="small material-icons right">public</i></a></li>
                             <li><a class="page-scroll" href="#frackman"><span class="MyNav">Games</span><i class="small material-icons right">videogame_asset</i></a></li>
                         </ul>
@@ -228,7 +213,7 @@
 
         <div class="full-screen center-align">
             <h2 class="projects">Projects</h2>
-            <p class="jff">MY IMPACT</p>
+            <p class="jff">THE IMPACT</p>
         </div>
         <a class="page-scroll hide-on-med-and-down" href="#pocket-change"><i id="arrow-down" class="material-icons">keyboard_arrow_down</i></a>
 
@@ -345,7 +330,6 @@
                         <li><a class="MyBody page-scroll" href="#markitplace">MarkItPlace</a></li>
                         <li><a class="MyBody page-scroll" href="#earthquake">DataQuake</a></li>
                         <li><a class="MyBody page-scroll" href="#skyscrapers">Skyscrapers</a></li>
-                        <li><a class="MyBody page-scroll" href="#website">Portfolio</a></li>
                         <li><a class="MyBody page-scroll" href="#frackman">Frackman</a></li>
                         <li><a class="MyBody page-scroll" href="#blackjack">Blackjack</a></li>
                      </ul>
@@ -908,99 +892,6 @@
 
         <!-- Divider -->
         <div class="row hide-on-med-and-down">
-            <div class="col l1"></div>
-            <div class="col l10">
-                <br></br>
-                <div class="divider"></div>
-            </div>
-            <div class="col l1"></div>
-        </div>
-        <div class="row container hide-on-large-only">
-            <br></br>
-            <div class="divider"></div>
-        </div>
-
-        <!-- Website Frame -->
-        <div class="row">
-            <div class="col l7 m12 s12">
-                <div class="container">
-                    <h2 class="MyHeader section scrollspy" id="website">Portfolio</h2>
-
-                    <!-- Website Tabs Section -->
-                    <div class="row">
-                        <div class="col s12">
-                            <!-- Desktop Website Description Tab -->
-                            <ul class="tabs hide-on-med-and-down">
-                                <li class="tab col s3"><a class="MyTab active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" href="#WebDescription">Description</a></li>
-                                <li class="tab col s3"><a class="MyTab" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                                <li class="tab col s3"><a class="MyTab" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
-                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li>-->
-                            </ul>   
-                            <!-- Mobile Website Summary Tab -->
-                            <ul class="tabs hide-on-large-only">
-                                <li class="tab col s3"><a class="MyTab active" onclick="Materialize.showStaggeredList('#staggered-WebsiteDescrip')" href="#WebDescription">Description</a></li>
-                                <li class="tab col s3"><a class="MyTab" onclick="Materialize.showStaggeredList('#staggered-WebsiteDesign')" href="#WebDesign">Design</a></li>
-                                <li class="tab col s3"><a class="MyTab" onclick="Materialize.showStaggeredList('#staggered-WebsiteCode')" href="#WebCode">Code</a></li>
-                                <!-- <li class="tab col s3 disabled"><a style = "color: rgba(1,66,96,0.4);" href="#WebDemo">Demo</a></li> -->
-                            </ul>
-                        </div>
-
-                        <!-- Website Tabs Content -->
-                        <div id="WebDescription" class="col s12">
-                            <ul id="staggered-WebsiteDescrip"><li>
-                                <p class="MyBlock">‣ This website was created to display both my professional skills and personal interests. There are three main pages listed in the navigation bar.</p>
-                                <p class="MyBlock">‣ The Home page consists of important professional links such as my Resume, Github, and LinkedIn.</p>
-                                <p class="MyBlock">‣ The About page details my programming skills, academic and extra-curricular organizations, and personal hobbies and interests.</p>
-                                <p class="MyBlock">‣ Each project has a Description tab that summarizes the project, a Design tab that documents the architectural aspects of my work, and a link to the source code.</p>
-                            </li></ul>
-                        </div>
-                        <div id="WebDesign" class="col s12">
-                            <ul id="staggered-WebsiteDesign"><li>
-                                <p class="MyBlock">‣ Combined both static and dynamic features to create an aesthetic and interactive webpage using HTML, CSS, and Javascript</p>
-                                <p class="MyBlock">‣ Developed a scrolling function that animates the text based on the location of the window and highlights the current section in a table of contents</p>
-                                <p class="MyBlock">‣ Created alternative code for varying screen sizes that dynamically alters the layout of the screen, ensuring that the website is both tablet and mobile friendly</p>
-                                <p class="MyBlock">‣ Implemented parallax lib, typing animations, hover zoom capabilities, and button animations to enhance the navigation experience</p>
-                            </li></ul>
-                        </div>
-                        <div id="WebCode" class="col s12">
-                            <br></br>
-                            <ul id="staggered-WebsiteCode"><li>
-                                <p class="CodeButton"><a class="waves-effect waves-light btn-large z-depth-1 btn" href="https://github.com/nwtsai/Portfolio" target="_blank">Source Code<i class="material-icons right">public</i></a></p>
-                            </li></ul>
-                            <br></br>
-                            <div class="hide-on-med-and-down">
-                                <br></br>
-                                <br></br>
-                                <br></br>
-                            </div>
-                        </div>
-                        <!-- <div id="WebDemo" class="col s12"></div> -->
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Materialboxed Website Desktop Image -->
-            <div class="col l4 m12 s12 hide-on-med-and-down">
-                <img class="materialboxed responsive-img" src="images/full images/Projects.png" style="margin-top: 60px; max-height: 800px;" data-caption="Sharing my passion with ya'll.">
-            </div>
-
-            <div class="hide-on-large-only">
-                <!-- Website Mobile Vertical Image -->
-                <div class="col l4 m12 s12 hide-on-med-only">
-                    <img class="center" src="images/full images/Projects.png" style="width: 320px; height: 320px;">
-                </div>
-
-                <!-- Website Mobile Horizontal Image -->
-                <div class="col l4 m12 s12 hide-on-small-only">
-                    <img class="center" src="images/full images/Projects.png" style="width: 520px; height: 520px;">
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Divider -->
-        <div class="row hide-on-med-and-down" id="Games">
             <div class="col l1"></div>
             <div class="col l10">
                 <br></br>

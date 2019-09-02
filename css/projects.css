@@ -24,17 +24,26 @@
     --background: #f5f5f5;
     */
 
-    /* Honey Mist */
+    /* Honey Mist 
     --primary: #33527F;
     --secondary: #7A9D96;
     --tertiary: #DCAE1D;
     --toc: grey;
     --background: #f5f5f5;
+    */
 
-    /* 70s */
+    /* 70s 
     --primary: #252523;
     --secondary: #a39274;
     --tertiary: #DCAE1D;
+    --toc: grey;
+    --background: #f5f5f5;
+    */
+
+    /* Brown */
+    --primary: #3a4660;
+    --secondary: #845007;
+    --tertiary: #c9af98;
     --toc: grey;
     --background: #f5f5f5;
 }
@@ -48,7 +57,7 @@ body {
 /* Nav and Dropdown */
 nav {
     box-shadow: none !important;
-    background-color: var(--secondary) !important;
+    background-color: var(--primary) !important;
     position: absolute;
     top: 0px;
 }
@@ -58,7 +67,7 @@ nav ul li:hover {
 }
 
 .dropdown-content {
-    background-color: var(--secondary) !important;
+    background-color: var(--primary) !important;
 }
 
 /* Initial Fullscreen Content */
@@ -169,16 +178,16 @@ a {
     padding-left: 20px;
 }
 .table-of-contents a:hover {
-  color: var(--tertiary);
+  color: var(--secondary);
   font-weight: 600;
   padding-left: 19px;
-  border-left: 1px solid var(--tertiary);
+  border-left: 1px solid var(--secondary);
 }
 .table-of-contents a.active {
-  color: var(--tertiary);
+  color: var(--secondary);
   font-weight: 700;
   padding-left: 17px;
-  border-left: 3px solid var(--tertiary);
+  border-left: 3px solid var(--secondary);
 }
 #toc {
     position: relative;
@@ -200,13 +209,13 @@ a {
 }
 
 .tabs .indicator {
-    background-color: var(--tertiary);
+    background-color: var(--secondary);
 }
 .tab a {
-    color: var(--secondary) !important;
+    color: var(--tertiary) !important;
 }
 .tab .active {
-    color: var(--tertiary) !important;
+    color: var(--secondary) !important;
     font-weight: bold;
 }
 
@@ -227,14 +236,13 @@ img.center {
 
 /* Initialize list class to be visible for Description Tab */
 #staggered-PocketChangeDescrip li, #staggered-CampusCowDescrip li, #staggered-LimbyDescrip li, #staggered-FrackmanDescrip li, 
-#staggered-BlackjackDescrip li, #staggered-MarkitplaceDescrip li, #staggered-EarthquakeDescrip li, #staggered-SkyscraperDescrip li,  
-#staggered-WebsiteDescrip li {
+#staggered-BlackjackDescrip li, #staggered-MarkitplaceDescrip li, #staggered-EarthquakeDescrip li, #staggered-SkyscraperDescrip li {
   opacity: 1;
 }
 
 /* Initialize list class to be invisible for all other tabs */
-#staggered-PocketChangeDesign li, #staggered-CampusCowDesign li, #staggered-LimbyDesign li, #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-MarkitplaceDesign li #staggered-EarthquakeDesign li, #staggered-SkyscraperDesign li, #staggered-WebsiteDesign li
-#staggered-PocketChangeCode li, #staggered-CampusCowCode li, #staggered-LimbyCode li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-MarkitplaceCode li, #staggered-EarthquakeCode li, #staggered-SkyscraperCode li, #staggered-WebsiteCode li {
+#staggered-PocketChangeDesign li, #staggered-CampusCowDesign li, #staggered-LimbyDesign li, #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-MarkitplaceDesign li #staggered-EarthquakeDesign li, #staggered-SkyscraperDesign li,
+#staggered-PocketChangeCode li, #staggered-CampusCowCode li, #staggered-LimbyCode li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-MarkitplaceCode li, #staggered-EarthquakeCode li, #staggered-SkyscraperCode li {
   opacity: 0; 
 }
 

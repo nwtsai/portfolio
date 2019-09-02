@@ -169,7 +169,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid var(--tertiary);
+  border-left: 5px solid var(--secondary);
 }
 
 /* Table of Contents */
