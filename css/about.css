@@ -32,7 +32,7 @@
     --background: #f5f5f5;
     */
 
-    /* Honey Buckwheat
+    /* 70s 
     --primary: #252523;
     --secondary: #a39274;
     --tertiary: #DCAE1D;
@@ -46,7 +46,6 @@
     --tertiary: #c9af98;
     --toc: grey;
     --background: #f5f5f5;
-
 }
 
 /* Body */
@@ -167,9 +166,9 @@ a {
     color: var(--primary);
 }
 blockquote {
-  margin: 20px 0;
-  padding-left: 1.5rem;
-  border-left: 5px solid var(--secondary);
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid var(--secondary);
 }
 
 /* Table of Contents */
@@ -178,16 +177,16 @@ blockquote {
     padding-left: 20px;
 }
 .table-of-contents a:hover {
-  color: var(--secondary);
-  font-weight: 600;
-  padding-left: 19px;
-  border-left: 1px solid var(--secondary);
+    color: var(--secondary);
+    font-weight: 600;
+    padding-left: 19px;
+    border-left: 1px solid var(--secondary);
 }
 .table-of-contents a.active {
-  color: var(--secondary);
-  font-weight: 700;
-  padding-left: 17px;
-  border-left: 3px solid var(--secondary);
+    color: var(--secondary);
+    font-weight: 700;
+    padding-left: 17px;
+    border-left: 3px solid var(--secondary);
 }
 #toc {
     position: relative;

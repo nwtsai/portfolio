@@ -178,16 +178,16 @@ a {
     padding-left: 20px;
 }
 .table-of-contents a:hover {
-  color: var(--secondary);
-  font-weight: 600;
-  padding-left: 19px;
-  border-left: 1px solid var(--secondary);
+    color: var(--secondary);
+    font-weight: 600;
+    padding-left: 19px;
+    border-left: 1px solid var(--secondary);
 }
 .table-of-contents a.active {
-  color: var(--secondary);
-  font-weight: 700;
-  padding-left: 17px;
-  border-left: 3px solid var(--secondary);
+    color: var(--secondary);
+    font-weight: 700;
+    padding-left: 17px;
+    border-left: 3px solid var(--secondary);
 }
 #toc {
     position: relative;
@@ -237,13 +237,13 @@ img.center {
 /* Initialize list class to be visible for Description Tab */
 #staggered-PocketChangeDescrip li, #staggered-CampusCowDescrip li, #staggered-LimbyDescrip li, #staggered-FrackmanDescrip li, 
 #staggered-BlackjackDescrip li, #staggered-MarkitplaceDescrip li, #staggered-EarthquakeDescrip li, #staggered-SkyscraperDescrip li {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Initialize list class to be invisible for all other tabs */
 #staggered-PocketChangeDesign li, #staggered-CampusCowDesign li, #staggered-LimbyDesign li, #staggered-FrackmanDesign li, #staggered-BlackjackDesign li, #staggered-MarkitplaceDesign li #staggered-EarthquakeDesign li, #staggered-SkyscraperDesign li,
 #staggered-PocketChangeCode li, #staggered-CampusCowCode li, #staggered-LimbyCode li, #staggered-FrackmanCode li, #staggered-BlackjackCode li, #staggered-MarkitplaceCode li, #staggered-EarthquakeCode li, #staggered-SkyscraperCode li {
-  opacity: 0; 
+    opacity: 0; 
 }
 
 /* Desktop Only */
