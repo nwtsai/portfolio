@@ -17,10 +17,18 @@
     --subtitle: PlantinStd;
     --normal: "Open Sans";
 
-    /* Colors */
-    --secondary: #f08c43;
+    /* Old MarkItPlace Colors
     --primary: #726363;
-    --nav: #5ecacd;
+    --secondary: #f08c43;
+    --tertiary: #5ecacd;
+    --background: #f5f5f5;
+    */
+
+    /* Honey Mist */
+    --primary: #33527F;
+    --secondary: #7A9D96;
+    --tertiary: #DCAE1D;
+    --toc: grey;
     --background: #f5f5f5;
 }
 
@@ -33,17 +41,17 @@ body {
 /* Nav and Dropdown */
 nav {
     box-shadow: none !important;
-    background-color: var(--nav) !important;
+    background-color: var(--secondary) !important;
     position: absolute;
     top: 0px;
 }
 
 nav ul li:hover {
-    background-color: var(--primary) !important;
+    background-color: var(--tertiary) !important;
 }
 
 .dropdown-content {
-    background-color: var(--nav) !important;
+    background-color: var(--secondary) !important;
 }
 
 /* Initial Fullscreen Content */
@@ -91,7 +99,7 @@ nav ul li:hover {
 }
 .footer a {
     color: var(--background);
-    background-color: var(--secondary) !important;
+    background-color: var(--tertiary) !important;
 }
 .footer a + a {
     margin-left: 17px;
@@ -124,11 +132,11 @@ nav ul li:hover {
     margin-left: 7px;
     padding: 5px 10px 5px 11px !important;
     color: var(--background) !important;
-    background-color: var(--secondary) !important;
+    background-color: var(--tertiary) !important;
 }
 
 a {
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 /* Collapsible Format */
@@ -141,8 +149,29 @@ a {
 .collapsible-header, .collapsible-body, .badge, .collapsible-body blockquote {
     color: var(--primary);
 }
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid var(--tertiary);
+}
 
 /* Table of Contents */
+.table-of-contents a {
+    color: var(--toc);
+    padding-left: 20px;
+}
+.table-of-contents a:hover {
+  color: var(--tertiary);
+  font-weight: 600;
+  padding-left: 19px;
+  border-left: 1px solid var(--tertiary);
+}
+.table-of-contents a.active {
+  color: var(--tertiary);
+  font-weight: 700;
+  padding-left: 17px;
+  border-left: 3px solid var(--tertiary);
+}
 #toc {
     position: relative;
 }
@@ -162,14 +191,6 @@ a {
     position: fixed !important;
 }
 
-/* Coursework Table Format */
-tbody, thead {
-    color: var(--primary);
-}
-thead {
-    color: var(--secondary);
-}
-
 /* INPUT FIELDS */
 
 /* Label Color */
@@ -183,24 +204,28 @@ input[type="text"] + label {
     color: var(--primary);
 }
 .input-field label.active {
-    color: var(--secondary);
+    color: var(--tertiary);
+}
+.input-field input[type=text].active {
+    border-bottom: 1px solid var(--tertiary);
+    box-shadow: 0 1px 0 0 var(--tertiary);
 }
 
 /* Label Focus Color */
 .input-field input[type=text]:focus + label {
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 /* Label Underline Focus Color */
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid var(--secondary);
-    box-shadow: 0 1px 0 0 var(--secondary);
+    border-bottom: 1px solid var(--tertiary);
+    box-shadow: 0 1px 0 0 var(--tertiary);
 }
 
 /* Valid color */
 .input-field input[type=text].valid {
-    border-bottom: 1px solid var(--secondary);
-    box-shadow: 0 1px 0 0 var(--secondary);
+    border-bottom: 1px solid var(--tertiary);
+    box-shadow: 0 1px 0 0 var(--tertiary);
 }
 
 /* Invalid Color */
@@ -211,12 +236,32 @@ input[type="text"] + label {
 
 /* Icon Prefix Focus Color */
 .input-field .prefix.active {
-    color: var(--secondary);
+    color: var(--tertiary);
+}
+.input-field .prefix.valid {
+    color: var(--tertiary);
 }
 .prefix {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
+/* Text Area Colors */
+textarea.materialize-textarea.active {
+    border-bottom: 1px solid var(--tertiary);
+    box-shadow: 0 1px 0 0 var(--tertiary);
+}
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid var(--tertiary);
+    box-shadow: 0 1px 0 0 var(--tertiary);
+}
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: var(--tertiary);
+}
+textarea.materialize-textarea:focus.valid + label:after {
+    content: attr(data-success);
+    color: var(--tertiary);
+    opacity: 1;
+}
 .character-counter {
     color: var(--primary);
 }
@@ -233,7 +278,7 @@ input[type="text"] + label {
 }
 
 .submit-btn {
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
     color: var(--background);
 }
 
