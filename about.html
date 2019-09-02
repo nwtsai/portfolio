@@ -16,13 +16,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="lib/font awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Antic" />
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" />
 
         <!-- Pinned Tab Image -->
         <link rel="mask-icon" href="images/pinned tab image/square.svg" />
@@ -99,25 +93,25 @@
                     <!-- Dropdown Structure -->
                     <div class="ddown">
                         <ul id="projectsDropdown" class="dropdown-content">
-                          <li><a href="projects.html#Apps"><font face="Ubuntu">Apps</font><i class="small material-icons right">stay_current_portrait</i></a></li>
-                          <li><a href="projects.html#Models"><font face="Ubuntu">Models</font><i class="small material-icons right">timeline</i></a></li>
-                          <li><a href="projects.html#Web"><font face="Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
-                          <li><a href="projects.html#Games"><font face="Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
+                          <li><a href="projects.html#Apps"><span class="MyNav">Apps</span><i class="small material-icons right">stay_current_portrait</i></a></li>
+                          <li><a href="projects.html#Models"><span class="MyNav">Models</span><i class="small material-icons right">timeline</i></a></li>
+                          <li><a href="projects.html#Web"><span class="MyNav">Web</span><i class="small material-icons right">public</i></a></li>
+                          <li><a href="projects.html#Games"><span class="MyNav">Games</span><i class="small material-icons right">videogame_asset</i></a></li>
                         </ul>
                     </div>
 
                     <!-- Navigation Buttons -->
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html"><font face="Ubuntu">Home</font></a></li>
-                        <li><a href="about.html"><font face="Ubuntu">About</font></a></li>
-                        <li><a class="dropdown-button" href="projects.html" data-activates="projectsDropdown"><font face = "Ubuntu">Projects</font><i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="MyNav" href="index.html">Home</a></li>
+                        <li><a class="MyNav" href="about.html">About</a></li>
+                        <li><a class="MyNav dropdown-button" href="projects.html" data-activates="projectsDropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
 
                     <!-- Mobile Navigation Buttons -->
                     <ul class="side-nav" id = "mobile-demo">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
+                        <li><a class="MyNav" href="index.html">Home</a></li>
+                        <li><a class="MyNav" href="about.html">About</a></li>
+                        <li><a class="MyNav" href="projects.html">Projects</a></li>
                     </ul>
                 </div>
             </nav>
@@ -125,25 +119,9 @@
 
         <div class="full-screen center-align">
             <h2 class="about-me">About</h2>
-            <p class="jff">My Journey</p>
+            <p class="jff">MY JOURNEY</p>
         </div>
         <a class="page-scroll hide-on-med-and-down" href="#experience"><i id="arrow-down" class="material-icons">keyboard_arrow_down</i></a>
-
-        <!-- Table of Contents -->
-        <div class="row">
-            <div class="col s1"></div>
-            <div class="col s10"></div>
-            <div class="col s1">
-                <div class="toc-wrapper hide-on-med-and-down" id="toc">
-                    <ul class="section table-of-contents">
-                        <li><a class="page-scroll" href="#aboutme">About</a></li>
-                        <li><a class="page-scroll" href="#experience">Experience</a></li>
-                        <li><a class="page-scroll" href="#education">Education</a></li>
-                        <li><a class="page-scroll" href="#contactme">Contact</a></li>
-                    </ul>
-                </div>
-            </div>            
-        </div>
 
         <!-- Divider -->
         <div class="hide-on-med-and-down row">
@@ -169,9 +147,14 @@
                     <li>
                         <ul class="collapsible collection" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header"><span class="badge">Aug 2019 – Present</span><i class="material-icons">directions_car</i>Backend Engineer&nbsp |&nbsp Turo</div>
+                                <div class="MyBody collapsible-header">
+                                    <i class="material-icons">directions_car</i>
+                                    Backend Engineer
+                                    <span class="MyBadge new badge" data-badge-caption="">Turo</span>
+                                    <span class="badge">Aug 2019 – Present</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         &nbsp Putting the world's 1.5B cars to better use and fundamentally changing the economics of car ownership <br>
                                         &nbsp Visit our <a href="https://turo.com/" target="blank">website</a> for more information
                                     </blockquote>
@@ -180,9 +163,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class="badge">Jun 2018 – Sep 2018</span><i class="material-icons">equalizer</i>Software Engineer Intern&nbsp |&nbsp Qualtrics</div>
+                                <div class="MyBody collapsible-header">
+                                    <i class="material-icons">equalizer</i>
+                                    Software Engineer Intern
+                                    <span class="MyBadge new badge" data-badge-caption="">Qualtrics</span>
+                                    <span class="badge">Jun 2018 – Sep 2018</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         &nbsp Summer internship at <a href="https://www.qualtrics.com/" target="blank">Qualtrics</a> working on the CX team <br>
                                         &nbsp Deployed Angular modules for customizable data visualization widgets into production <br>
                                         &nbsp Constructed a generic template generator that dynamically fetches customer-facing data <br>
@@ -194,9 +182,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class="badge">Apr 2017 – Jun 2018</span><i class="material-icons">security</i>Software Engineer Intern&nbsp |&nbsp Novacoast</div>
+                                <div class="MyBody collapsible-header">
+                                    <i class="material-icons">security</i>
+                                    Software Engineer Intern
+                                    <span class="MyBadge new badge" data-badge-caption="">Novacoast</span>
+                                    <span class="badge">Apr 2017 – Jun 2018</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         &nbsp Built a REST API with Go that queries 2,500+ customer contracts stored in MongoDB <br>
                                         &nbsp Automated customer acquisition processes by integrating with Box and DocuSign APIs <br>
                                         &nbsp Deployed Docker containers to facilitate communication between server and client code <br>
@@ -207,9 +200,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class="badge">Sept 2016 – Apr 2017</span><i class="material-icons">filter_drama</i>Web Developer&nbsp |&nbsp The Daily Bruin</div>
+                                <div class="MyBody collapsible-header">
+                                    <i class="material-icons">filter_drama</i>
+                                    Web Developer
+                                    <span class="MyBadge new badge" data-badge-caption="">Daily Bruin</span>
+                                    <span class="badge">Sept 2016 – Apr 2017</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         &nbsp Transformed research and journalism into informative pages viewed by thousands/day featured on <a href="https://dailybruin.com" target="_blank">The Daily Bruin</a> <br>
                                         &nbsp Designed interactive map elements to allow users to virtually explore UCLA’s campus <br>
                                         &nbsp Implemented lazy loading techniques to dynamically call APIs when data is requested <br>
@@ -220,9 +218,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class="badge">Sept 2015 – Sept 2016</span><i class="material-icons">stay_primary_portrait</i>Mobile Developer&nbsp |&nbsp BuildUCLA</div>
+                                <div class="MyBody collapsible-header">
+                                    <i class="material-icons">stay_primary_portrait</i>
+                                    Mobile Developer
+                                    <span class="MyBadge new badge" data-badge-caption="">BuildUCLA</span>
+                                    <span class="badge">Sept 2015 – Sept 2016</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         &nbsp Designed the official <a href="https://itunes.apple.com/us/app/ucla-library-system/id1146323952?mt=8" target="blank">UCLA Library App</a> that provides users with real-time catalog data <br>
                                         &nbsp Technologies: Swift 3, Alamofire, GoogleMaps SDK, Google Analytics, CocoaPods 
                                     </blockquote>
@@ -231,9 +234,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class="badge">Jun 2015 – Sep 2015</span><i class="material-icons">call</i>Customer Care Intern&nbsp |&nbsp Citrix Systems</div>
+                                <div class="MyBody collapsible-header">
+                                    <i class="material-icons">call</i>
+                                    Customer Care Intern
+                                    <span class="MyBadge new badge" data-badge-caption="">Citrix</span>
+                                    <span class="badge">Jun 2015 – Sep 2015</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         &nbsp Managed a wide workforce of customer care agents with the <a href="https://www.salesforce.com" target="_blank">Salesforce</a> platform <br>
                                         &nbsp Created daily and weekly analytical reports that improved the productivity of the department <br>        
                                         &nbsp Evaluated calls and assessed the effectiveness of the agents’ customer service <br>     
@@ -252,9 +260,14 @@
                     <li>
                         <ul class="collapsible collection" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">directions_car</i>Backend Engineer&nbsp |&nbsp Turo</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">directions_car</i>
+                                    Backend Engineer
+                                    <span class="MyBadge new badge" data-badge-caption="">Turo</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         Putting the world's 1.5B cars to better use and fundamentally changing the economics of car ownership <br>
                                         Visit our <a href="https://turo.com/" target="blank">website</a> for more information
                                     </blockquote>
@@ -263,9 +276,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">equalizer</i>Software Engineer Intern&nbsp |&nbsp Qualtrics</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">equalizer</i>
+                                    Software Engineer Intern
+                                    <span class="MyBadge new badge" data-badge-caption="">Qualtrics</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         Summer internship at <a href="https://www.qualtrics.com/" target="blank">Qualtrics</a> working on the CX team <br>
                                         Deployed Angular modules for customizable data visualization widgets into production <br>
                                         Constructed a generic template generator that dynamically fetches customer-facing data <br>
@@ -277,9 +295,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">security</i>Software Engineer Intern&nbsp |&nbsp Novacoast</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">security</i>
+                                    Software Engineer Intern
+                                    <span class="MyBadge new badge" data-badge-caption="">Novacoast</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         Built a REST API with Go that queries 2,500+ customer contracts stored in MongoDB <br>
                                         Automated customer acquisition processes by integrating with Box and DocuSign APIs <br>
                                         Deployed Docker containers to facilitate communication between server and client code <br>
@@ -290,9 +313,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">filter_drama</i>Web Developer&nbsp |&nbsp The Daily Bruin</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">filter_drama</i>
+                                    Web Developer
+                                    <span class="MyBadge new badge" data-badge-caption="">Daily Bruin</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         Transformed research and journalism into informative pages viewed by thousands/day featured on <a href="https://dailybruin.com" target="_blank">The Daily Bruin</a> <br>
                                         Designed interactive map elements to allow users to virtually explore UCLA’s campus <br>
                                         Implemented lazy loading techniques to dynamically call APIs when data is requested <br>
@@ -303,9 +331,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">stay_primary_portrait</i>Mobile Developer&nbsp |&nbsp BuildUCLA</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">stay_primary_portrait</i>
+                                    Mobile Developer
+                                    <span class="MyBadge new badge" data-badge-caption="">BuildUCLA</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         Designed the official <a href="https://itunes.apple.com/us/app/ucla-library-system/id1146323952?mt=8" target="blank">UCLA Library App</a> that provides users with real-time catalog data <br>
                                         Technologies: Swift 3, Alamofire, GoogleMaps SDK, Google Analytics, CocoaPods 
                                     </blockquote>
@@ -314,9 +347,14 @@
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">call</i>Customer Care Intern&nbsp |&nbsp Citrix Systems</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">call</i>
+                                    Customer Care Intern
+                                    <span class="MyBadge new badge" data-badge-caption="">Citrix</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
+                                    <blockquote class="MyBody">
                                         Managed a wide workforce of customer care agents with the <a href="https://www.salesforce.com" target="_blank">Salesforce</a> platform <br>
                                         Created daily and weekly analytical reports that improved the productivity of the department <br>        
                                         Evaluated calls and assessed the effectiveness of the agents’ customer service <br>     
@@ -330,6 +368,22 @@
                 </div>
             </div>
             <div class="col l1 m1 s0"></div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10"></div>
+            <div class="col s1">
+                <div class="toc-wrapper hide-on-med-and-down" id="toc">
+                    <ul class="section table-of-contents">
+                        <li><a class="MyBody page-scroll" href="#aboutme">About</a></li>
+                        <li><a class="MyBody page-scroll" href="#experience">Experience</a></li>
+                        <li><a class="MyBody page-scroll" href="#education">Education</a></li>
+                        <li><a class="MyBody page-scroll" href="#contactme">Contact</a></li>
+                    </ul>
+                </div>
+            </div>            
         </div>
 
         <!-- Divider -->
@@ -357,27 +411,35 @@
                     <li>
                         <ul class="collapsible collection" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header"><span class="badge">Sep 2015 – Jun 2019</span><i class="material-icons">school</i>University of California, Los Angeles&nbsp |&nbsp Computer Science</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class="badge">Sep 2015 – Jun 2019</span>
+                                    <i class="material-icons">school</i>
+                                    Computer Science
+                                    <span class="MyBadge new badge" data-badge-caption="">UCLA</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>           
-                                        &nbspGPA: <b>3.64</b> <br>                                
+                                    <blockquote class="MyBody">           
+                                        &nbsp<b>GPA: 3.64</b> <br>                                
                                         &nbspJoined <a href="https://thetataubruins.org" target="blank">Theta Tau</a>, UCLA's professional co-ed engineering fraternity, which strives for excellence in professionalism, service, and brotherhood <br>
                                         &nbspAttended <a href="https://lahacks.com" target="blank">LA Hacks</a>, an annual 36 hour hackathon, creating a <a href="https://nwtsai.github.io/MarkItPlace/" target="blank">web application</a> from scratch with a team of 3 other UCLA students<br>
-                                        &nbspHosted <a href="https://www.ideahacks.la/" target="blank">IDEAHacks</a> (hardware hackathon), community service events to support charities, and professional development workshops <br>
-                                        &nbspPerformed on a <a href="https://foundationschoreography.com" target="_blank">Foundations</a> team, where I learned the fundamentals of hip hop and explored its culture <br>
-                                        &nbspParticipated in an <a href="https://www.recreation.ucla.edu/competitivesports" target="_blank">Intramural</a> basketball league, where I compete against other UCLA students on a weekly basis
+                                        &nbspHosted <a href="https://www.ideahacks.la/" target="blank">IDEAHacks</a> (hardware hackathon), community service events to support charities, and professional development workshops
                                     </blockquote>
                                 </div>
                             </li>
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class="badge">Aug 2011 – Jun 2015</span><i class="material-icons">settings</i>Dos Pueblos High School&nbsp |&nbsp Engineering</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class="badge">Aug 2011 – Jun 2015</span>
+                                    <i class="material-icons">import_contacts</i>
+                                    Engineering Academy
+                                    <span class="MyBadge new badge" data-badge-caption="">DPHS</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
-                                        &nbspGPA: <b>4.76</b> <br>  
+                                    <blockquote class="MyBody">
+                                        &nbsp<b>GPA: 4.76</b> <br>
+                                        &nbspAccepted into <a href="https://dpengineering.org/" target="_blank">DPEA</a>, a competitive, hands-on program designed to mentor hand-picked students in the multidisciplinary fields of engineering <br>
                                         &nbspQualified for the <a href="https://www.firstinspires.org/robotics/frc/" target="_blank">First Robotics Competition</a> (FRC) national championships by winning two state-wide competitions <br>
-                                        &nbspAccepted into <a href="https://dpengineering.org/" target="_blank">DPEA</a>, a competitive, hands-on program designed to mentor hand-picked students in the multidisciplinary fields of engineering <br >
                                         &nbspOrganized events for the Asian Student Alliance (ASA) including fundraisers, cultural celebration events, and club trips
                                     </blockquote>
                                 </div>
@@ -392,27 +454,35 @@
                     <li>
                         <ul class="collapsible collection" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">school</i>UCLA&nbsp |&nbsp Computer Science</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">school</i>
+                                    Computer Science
+                                    <span class="MyBadge new badge" data-badge-caption="">UCLA</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>      
-                                        GPA: <b>3.64</b> <br>                                          
+                                    <blockquote class="MyBody">      
+                                        <b>GPA: 3.64</b> <br>                                          
                                         Joined <a href="https://thetataubruins.org" target="blank">Theta Tau</a>, UCLA's professional co-ed engineering fraternity, which strives for excellence in professionalism, service, and brotherhood <br>
                                         Attended <a href="https://lahacks.com" target="blank">LA Hacks</a>, an annual 36 hour hackathon, creating a <a href="https://nwtsai.github.io/MarkItPlace/" target="blank">web application</a> from scratch with a team of 3 other UCLA students<br>
-                                        Hosted <a href="https://www.ideahacks.la/" target="blank">IDEAHacks</a> (hardware hackathon), community service events to support charities, and professional development workshops <br>
-                                        Performed on a <a href="https://foundationschoreography.com" target="_blank">Foundations</a> team, where I learned the fundamentals of hip hop and explored its culture <br>
-                                        Participated in an <a href="https://www.recreation.ucla.edu/competitivesports" target="_blank">Intramural</a> basketball league, where I compete against other UCLA students on a weekly basis
+                                        Hosted <a href="https://www.ideahacks.la/" target="blank">IDEAHacks</a> (hardware hackathon), community service events to support charities, and professional development workshops
                                     </blockquote>
                                 </div>
                             </li>
                     </li>
                     <li>
                             <li>
-                                <div class="collapsible-header"><span class=""></span><i class="material-icons">settings</i>Dos Pueblos High School&nbsp |&nbsp Engineering</div>
+                                <div class="MyBody collapsible-header">
+                                    <span class=""></span>
+                                    <i class="material-icons">import_contacts</i>
+                                    Engineering Academy
+                                    <span class="MyBadge new badge" data-badge-caption="">DPHS</span>
+                                </div>
                                 <div class="collapsible-body">
-                                    <blockquote>
-                                        GPA: <b>4.76</b> <br>
+                                    <blockquote class="MyBody">
+                                        <b>GPA: 4.76</b> <br>
+                                        Accepted into <a href="https://dpengineering.org/" target="_blank">DPEA</a>, a competitive, hands-on program designed to mentor hand-picked students in the multidisciplinary fields of engineering <br>
                                         Qualified for the <a href="https://www.firstinspires.org/robotics/frc/" target="_blank">First Robotics Competition</a> (FRC) national championships by winning two state-wide competitions <br>
-                                        Accepted into <a href="https://dpengineering.org/" target="_blank">DPEA</a>, a competitive, hands-on program designed to mentor hand-picked students in the multidisciplinary fields of engineering <br >
                                         Organized events for the Asian Student Alliance (ASA) including fundraisers, cultural celebration events, and club trips
                                     </blockquote>
                                 </div>
@@ -442,8 +512,7 @@
             <div class="col l1 m1 s0"></div>
             <div class="col l10 m10 s12">
                 <div style="display: inline-block; text-align: justify;">
-                    <h2 class = "MyHeader section scrollspy" id="contactme">Contact Me</h2>
-                    <p class="MyBody">If you would like to contact me, please fill out this form and I will get back to you as soon as possible!</p>
+                    <h2 class = "MyHeader section scrollspy" id="contactme">Contact</h2>
                 </div>
             </div>
             <div class="col l1 m1 s0"></div>
@@ -464,7 +533,7 @@
                             <div class="input-field col s12 m6 l6">
                               <i class="material-icons prefix">assignment_ind</i>
                                 <input id="name" type="text">
-                                <label for="name">Name</label>
+                                <label class="MyBody" for="name">Name</label>
                             </div>
                             </li>
 
@@ -473,7 +542,7 @@
                             <div class="input-field col s12 m6 l6">
                               <i class="material-icons prefix">email</i>
                               <input id="email" type="text">
-                              <label for="email">Email</label>
+                              <label class="MyBody" for="email">Email</label>
                             </div>
                             </li>
 
@@ -486,7 +555,7 @@
                             <div class="input-field col s12">
                               <i class="material-icons prefix">assignment</i>
                               <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
-                              <label for="subject">Subject</label>
+                              <label class="MyBody" for="subject">Subject</label>
                             </div>
                             </li>
 
@@ -499,7 +568,7 @@
                             <div class="input-field col s12">
                               <i class="material-icons prefix">chat</i>
                               <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
-                              <label for="message">Message</label>
+                              <label class="MyBody" for="message">Message</label>
                             </div>
                             </li>
 
@@ -511,7 +580,7 @@
                             <li>
                             <div class="col l2 m12 s12">
                                 <div id="success"></div>
-                                <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn submit-btn waves-effect waves-light z-depth-1">Submit<i class="material-icons right">send</i></a>
+                                <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="MyBody btn submit-btn waves-effect waves-light z-depth-1">Submit<i class="material-icons right">send</i></a>
                             </div>
                             <div class="col l10 m0 s0"></div>
                             </li>
@@ -541,7 +610,7 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">assignment_ind</i>
                         <input id="name" type="text">
-                        <label for="name">Name</label>
+                        <label class="MyBody" for="name">Name</label>
                     </div>
                     </li>
 
@@ -550,7 +619,7 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">email</i>
                       <input id="email" type="text">
-                      <label for="email">Email</label>
+                      <label class="MyBody" for="email">Email</label>
                     </div>
                     </li>
 
@@ -563,7 +632,7 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">assignment</i>
                       <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
-                      <label for="subject">Subject</label>
+                      <label class="MyBody" for="subject">Subject</label>
                     </div>
                     </li>
 
@@ -576,7 +645,7 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">chat</i>
                       <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
-                      <label for="message">Message</label>
+                      <label class="MyBody" for="message">Message</label>
                     </div>
                     </li>
 
@@ -588,7 +657,7 @@
                     <li>
                     <div class="col s12 center-align">
                         <div id="success"></div>
-                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn submit-btn waves-effect waves-light z-depth-1">Submit<i class="material-icons right">send</i></a>
+                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="MyBody btn submit-btn waves-effect waves-light z-depth-1">Submit<i class="material-icons right">send</i></a>
                     </div>
                     </li>
 
@@ -606,7 +675,7 @@
                     <div class="input-field col s12 m6 l6">
                       <i class="material-icons prefix">assignment_ind</i>
                         <input id="name" type="text">
-                        <label for="name">Name</label>
+                        <label class="MyBody" for="name">Name</label>
                     </div>
                     </li>
 
@@ -615,7 +684,7 @@
                     <div class="input-field col s12 m6 l6">
                       <i class="material-icons prefix">email</i>
                       <input id="email" type="text">
-                      <label for="email">Email</label>
+                      <label class="MyBody" for="email">Email</label>
                     </div>
                     </li>
 
@@ -633,7 +702,7 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">assignment</i>
                       <textarea id="subject" type="text" length="100" class="materialize-textarea"></textarea>
-                      <label for="subject">Subject</label>
+                      <label class="MyBody" for="subject">Subject</label>
                     </div>
                     </li>
                     </div>
@@ -650,7 +719,7 @@
                     <div class="input-field col s12">
                       <i class="material-icons prefix">chat</i>
                       <textarea id="message" text="text" length="300" class="materialize-textarea"></textarea>
-                      <label for="message">Message</label>
+                      <label class="MyBody" for="message">Message</label>
                     </div>
                     </li>
                     </div>
@@ -665,7 +734,7 @@
                     <div class="col m1"></div>
                     <div class="col m10">
                         <div id="success"></div>
-                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="btn submit-btn waves-effect waves-light z-depth-1">Submit<i class="material-icons right">send</i></a>
+                        <a onclick="Materialize.toast('Your message has been sent.', 4000)" type="submit" class="MyBody btn submit-btn waves-effect waves-light z-depth-1">Submit<i class="material-icons right">send</i></a>
                     </div>
                     <div class="col m1"></div>
                     </li>

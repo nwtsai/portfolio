@@ -1,36 +1,63 @@
+/* Fonts */
+@font-face {
+    font-family: FreightDisplay;
+    src: url("../lib/fonts/FreightDispPro-Black.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: PlantinStd;
+    src: url("../lib/fonts/PlantinStd-BoldCondensed.otf") format("opentype");
+    font-weight: bold;
+}
+
 /* Variables */
 :root {
-    --orange: #f08c43;
-    --darkgrey: #726363;
-    --teal: #5ecacd;
-    --lightgrey: #f5f5f5;
+    /* Fonts */
+    --title: FreightDisplay;
+    --subtitle: PlantinStd;
+    --normal: "Open Sans";
+
+    /* Colors */
+    --secondary: #f08c43;
+    --primary: #726363;
+    --nav: #5ecacd;
+    --background: #f5f5f5;
 }
 
 /* Body */
 body {
-    background-color: var(--lightgrey);
+    background-color: var(--background);
     height: 100vh;
 }
 
 /* Nav and Dropdown */
 nav {
     box-shadow: none !important;
-    background-color: var(--teal) !important;
+    background-color: var(--nav) !important;
     position: absolute;
     top: 0px;
 }
 
 nav ul li:hover {
-    background-color: var(--darkgrey) !important;
+    background-color: var(--primary) !important;
+}
+
+.MyNav {
+    font-size: 14.5px;
+    font-family: var(--normal);
+    font-weight: medium;
+    color: var(--background);
+    text-align: left;
+    position: relative;
 }
 
 .dropdown-content {
-    background-color: var(--teal) !important;
+    background-color: var(--nav) !important;
 }
 
 .row a {
-    color: var(--lightgrey);
-    background-color: var(--orange) !important;
+    color: var(--background);
+    background-color: var(--secondary) !important;
 }
 .middle-icon {
     margin-left: 17px;
@@ -50,31 +77,34 @@ nav ul li:hover {
 /* Mobile Only */
 .name {
     font-size: 38px;
-    color: var(--darkgrey);
-    font-family: "Open Sans";
+    color: var(--primary);
+    font-family: var(--title);
     font-weight: 600;
     letter-spacing: -1px;
     margin-top: 40px;
+    display: inline-block;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 15px;
 }
 
 .software-engineer {
     font-size: 21px;
-    color: var(--darkgrey);
-    font-family: "Open Sans";
-    letter-spacing: -1px;
+    color: var(--secondary);
+    font-family: var(--subtitle);
+    letter-spacing: 1px;
     font-weight: 0;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 /* Desktop Only */
 @media only screen and (min-width: 415px) {
     .portrait {
-        margin-top: 17vh;
+        margin-top: 18vh;
     }
     .name {
-        font-size: 50px;
+        font-size: 75px;
     }
     .software-engineer {
-        font-size: 25px;
+        font-size: 27px;
     }
 }

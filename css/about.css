@@ -1,57 +1,74 @@
+/* Fonts */
+@font-face {
+    font-family: FreightDisplay;
+    src: url("../lib/fonts/FreightDispPro-Black.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: PlantinStd;
+    src: url("../lib/fonts/PlantinStd-BoldCondensed.otf") format("opentype");
+    font-weight: bold;
+}
+
 /* Variables */
 :root {
-    --orange: #f08c43;
-    --darkgrey: #726363;
-    --teal: #5ecacd;
-    --lightgrey: #f5f5f5;
+    /* Fonts */
+    --title: FreightDisplay;
+    --subtitle: PlantinStd;
+    --normal: "Open Sans";
+
+    /* Colors */
+    --secondary: #f08c43;
+    --primary: #726363;
+    --nav: #5ecacd;
+    --background: #f5f5f5;
 }
 
 /* Body */
 body {
-    background-color: var(--lightgrey);
+    background-color: var(--background);
     height: 100vh;
 }
 
 /* Nav and Dropdown */
 nav {
     box-shadow: none !important;
-    background-color: var(--teal) !important;
+    background-color: var(--nav) !important;
     position: absolute;
     top: 0px;
 }
 
 nav ul li:hover {
-    background-color: var(--darkgrey) !important;
+    background-color: var(--primary) !important;
 }
 
 .dropdown-content {
-    background-color: var(--teal) !important;
+    background-color: var(--nav) !important;
 }
 
 /* Initial Fullscreen Content */
 .full-screen {
-    height: 92vh;
+    height: calc(100vh - 64px);
 }
 
 /* Mobile Only */
 .about-me {
     font-size: 45px;
-    color: var(--darkgrey);
-    font-family: "Open Sans";
+    color: var(--primary);
+    font-family: var(--title);
     font-weight: 600;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--darkgrey);
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--primary);
     margin-top: 30vh;
     display: inline-block;
-    letter-spacing: -1px;
 }
 .jff {
     font-size: 24px;
-    color: var(--orange);
-    font-family: "Open Sans";
-    letter-spacing: -1px;
+    color: var(--secondary);
+    font-family: var(--subtitle);
+    letter-spacing: 1px;
     font-weight: 0;
-    margin-top: -5px;
+    margin-top: 0px;
 }
 #arrow-down {
     position: absolute;
@@ -66,39 +83,52 @@ nav ul li:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-    font-family: "Open Sans";
-    color: var(--orange);
+    font-family: var(--normal);
+    color: var(--secondary);
 }
 .footer i {
     font-size: 20px;
 }
 .footer a {
-    color: var(--lightgrey);
-    background-color: var(--orange) !important;
+    color: var(--background);
+    background-color: var(--secondary) !important;
 }
 .footer a + a {
     margin-left: 17px;
 }
 
-/* Custom Header Format For Each Section */
+.MyNav {
+    font-size: 14.5px;
+    font-family: var(--normal);
+    font-weight: medium;
+    color: var(--background);
+    text-align: left;
+    position: relative;
+}
 .MyHeader {
     font-size: 60px;
-    font-family: "Dosis";
-    color: var(--darkgrey);
+    font-family: var(--title);
+    color: var(--primary);
     text-align: center;
     position: relative;
 }
-
-/* Custom Body Format */
 .MyBody {
-    font-size: 19px;
-    font-family: "Open Sans";
-    color: var(--darkgrey);
+    font-size: 14.5px;
+    font-family: var(--normal);
+    color: var(--primary);
     position: relative;
+}
+.MyBadge {
+    position: relative !important;
+    right: 0px !important;
+    margin-left: 7px;
+    padding: 5px 10px 5px 11px !important;
+    color: var(--background) !important;
+    background-color: var(--secondary) !important;
 }
 
 a {
-    color: var(--orange);
+    color: var(--secondary);
 }
 
 /* Collapsible Format */
@@ -106,10 +136,10 @@ a {
     padding-left: 1.83em;
 }
 .collapsible-header i {
-    color: var(--orange);
+    color: var(--secondary);
 }
 .collapsible-header, .collapsible-body, .badge, .collapsible-body blockquote {
-    color: var(--darkgrey);
+    color: var(--primary);
 }
 
 /* Table of Contents */
@@ -134,10 +164,10 @@ a {
 
 /* Coursework Table Format */
 tbody, thead {
-    color: var(--darkgrey);
+    color: var(--primary);
 }
 thead {
-    color: var(--orange);
+    color: var(--secondary);
 }
 
 /* INPUT FIELDS */
@@ -150,27 +180,27 @@ input[type="text"] + label {
     }
 }
 .input-field label {
-    color: var(--darkgrey);
+    color: var(--primary);
 }
 .input-field label.active {
-    color: var(--orange);
+    color: var(--secondary);
 }
 
 /* Label Focus Color */
 .input-field input[type=text]:focus + label {
-    color: var(--orange);
+    color: var(--secondary);
 }
 
 /* Label Underline Focus Color */
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid var(--orange);
-    box-shadow: 0 1px 0 0 var(--orange);
+    border-bottom: 1px solid var(--secondary);
+    box-shadow: 0 1px 0 0 var(--secondary);
 }
 
 /* Valid color */
 .input-field input[type=text].valid {
-    border-bottom: 1px solid var(--orange);
-    box-shadow: 0 1px 0 0 var(--orange);
+    border-bottom: 1px solid var(--secondary);
+    box-shadow: 0 1px 0 0 var(--secondary);
 }
 
 /* Invalid Color */
@@ -181,14 +211,14 @@ input[type="text"] + label {
 
 /* Icon Prefix Focus Color */
 .input-field .prefix.active {
-    color: var(--orange);
+    color: var(--secondary);
 }
 .prefix {
-    color: var(--darkgrey);
+    color: var(--primary);
 }
 
 .character-counter {
-    color: var(--darkgrey);
+    color: var(--primary);
 }
 
 /* Initialize list class to be invisible for ScrollFire Effect */
@@ -203,19 +233,18 @@ input[type="text"] + label {
 }
 
 .submit-btn {
-    background-color: var(--orange);
-    color: var(--lightgrey);
+    background-color: var(--secondary);
+    color: var(--background);
 }
 
 /* Desktop */
 @media only screen and (min-width: 415px) {
     .about-me {
-        font-size: 65px;
+        font-size: 75px;
         margin-top: 35vh;
-        letter-spacing: 0px;
     }
     .jff {
-        font-size: 28px;
+        font-size: 27px;
     }
     .MyHeader {
         text-align: left;

@@ -16,10 +16,7 @@
         <!-- Resources -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="lib/font awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pontano+Sans" />
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" />
 
         <!-- Pinned Tab Image -->
         <link rel="mask-icon" href="images/pinned tab image/square.svg" />
@@ -46,31 +43,31 @@
         <div class = "navbar-fixed">
             <nav role="navigation">
                 <div class="nav-wrapper">
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                
-                <!-- Dropdown Structure -->
-                <div class="ddown">
-                    <ul id="projectsDropdown" class="dropdown-content">
-                      <li><a href="projects.html#Apps"><font face="Ubuntu">Apps</font><i class="small material-icons right">stay_primary_portrait</i></a></li>
-                      <li><a href="projects.html#Models"><font face="Ubuntu">Models</font><i class="small material-icons right">timeline</i></a></li>
-                      <li><a href="projects.html#Web"><font face="Ubuntu">Web</font><i class="small material-icons right">public</i></a></li>
-                      <li><a href="projects.html#Games"><font face="Ubuntu">Games</font><i class="small material-icons right">videogame_asset</i></a></li>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    
+                    <!-- Dropdown Structure -->
+                    <div class="ddown">
+                        <ul id="projectsDropdown" class="dropdown-content">
+                          <li><a href="projects.html#Apps"><span class="MyNav">Apps</span><i class="small material-icons right">stay_current_portrait</i></a></li>
+                          <li><a href="projects.html#Models"><span class="MyNav">Models</span><i class="small material-icons right">timeline</i></a></li>
+                          <li><a href="projects.html#Web"><span class="MyNav">Web</span><i class="small material-icons right">public</i></a></li>
+                          <li><a href="projects.html#Games"><span class="MyNav">Games</span><i class="small material-icons right">videogame_asset</i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="MyNav" href="index.html">Home</a></li>
+                        <li><a class="MyNav" href="about.html">About</a></li>
+                        <li><a class="MyNav dropdown-button" href="projects.html" data-activates="projectsDropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
-                </div>
 
-                <!-- Navigation Buttons -->
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html"><font face="Ubuntu">Home</font></a></li>
-                    <li><a href="about.html"><font face="Ubuntu">About</font></a></li>
-                    <li><a class="dropdown-button" href="projects.html" data-activates="projectsDropdown"><font face="Ubuntu">Projects</font><i class="material-icons right">arrow_drop_down</i></a></li>
-                </ul>
-
-                <!-- Mobile Navigation Buttons -->
-                <ul class="right side-nav" id="mobile-demo">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
+                    <!-- Mobile Navigation Buttons -->
+                    <ul class="side-nav" id = "mobile-demo">
+                        <li><a class="MyNav" href="index.html">Home</a></li>
+                        <li><a class="MyNav" href="about.html">About</a></li>
+                        <li><a class="MyNav" href="projects.html">Projects</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -87,8 +84,10 @@
             </div>
 
             <!-- Name and Position -->
-            <h2 class="name">Nathan Tsai</h2>
-            <p class="software-engineer">Software Engineer</p>
+            <div class="center-align">
+                <h2 class="name">Nathan Tsai</h2>
+                <p class="software-engineer">SOFTWARE ENGINEER</p>
+            </div>
 
             <!-- Professional Buttons -->
             <div class="row btns">
