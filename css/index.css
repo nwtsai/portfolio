@@ -24,10 +24,19 @@
     --background: #f5f5f5;
     */
 
-    /* Honey Mist */
+    /* Honey Mist 
     --primary: #33527F;
     --secondary: #7A9D96;
     --tertiary: #DCAE1D;
+    --toc: grey;
+    --background: #f5f5f5;
+    */
+
+    /* 70s */
+    --primary: #252523;
+    --secondary: #a39274;
+    --tertiary: #DCAE1D;
+    --toc: grey;
     --background: #f5f5f5;
 }
 
