@@ -173,14 +173,19 @@ a {
 }
 
 /* Table of Contents */
+.toc-wrapper {
+    top: 55px !important;
+    left: calc(100vw - 120px) !important;
+    z-index: 500 !important;
+}
 .table-of-contents a {
     color: var(--toc);
     padding-left: 20px;
 }
 .table-of-contents a:hover {
     color: var(--secondary);
-    font-weight: 600;
-    padding-left: 19px;
+    font-weight: 500;
+    padding-left: 17px;
     border-left: 1px solid var(--secondary);
 }
 .table-of-contents a.active {
