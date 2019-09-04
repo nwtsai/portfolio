@@ -44,6 +44,7 @@
     --primary: #3a4660;
     --secondary: #845007;
     --tertiary: #c9af98;
+    --body: #2c1d0e;
     --toc: grey;
     --background: #f5f5f5;
 }
@@ -163,7 +164,7 @@ a {
     color: var(--secondary);
 }
 .collapsible-header, .collapsible-body, .badge, .collapsible-body blockquote {
-    color: var(--primary);
+    color: var(--body);
 }
 blockquote {
     margin: 20px 0;
@@ -222,7 +223,7 @@ input[type="text"] + label {
     }
 }
 .input-field label {
-    color: var(--primary);
+    color: var(--body);
 }
 .input-field label.active {
     color: var(--tertiary);
@@ -284,7 +285,7 @@ textarea.materialize-textarea:focus.valid + label:after {
     opacity: 1;
 }
 .character-counter {
-    color: var(--primary);
+    color: var(--body);
 }
 
 /* Initialize list class to be invisible for ScrollFire Effect */
