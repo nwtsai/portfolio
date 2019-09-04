@@ -123,7 +123,7 @@ nav ul li:hover {
 /* Desktop Only */
 @media only screen and (min-width: 415px) {
     .portrait {
-        margin-top: 18vh;
+        margin-top: 14vh;
     }
     .name {
         font-size: 75px;
