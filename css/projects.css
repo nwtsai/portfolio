@@ -103,6 +103,10 @@ nav ul li:hover {
     transform: translateX(-50%) scale(1.25, 1);
 }
 
+.section {
+    padding-bottom: 0px;
+}
+
 /* Footer */
 .footer {
     margin-top: 10px;
@@ -162,6 +166,23 @@ nav ul li:hover {
     color: var(--body);
     position: relative;
 }
+.MyBadge {
+    position: relative !important;
+    right: 0px !important;
+    margin-right: 15px;
+    padding: 5px 10px 5px 11px !important;
+    color: var(--background) !important;
+    background-color: var(--tertiary) !important;
+}
+
+.collection {
+    border: none;
+    margin: 0px 0px 20px 0px;
+}
+.collection-item {
+    background-color: var(--background) !important;
+    padding: 10px 0px !important;
+}
 
 a {
     color: var(--tertiary);
@@ -218,7 +239,7 @@ a {
     background-color: var(--secondary);
 }
 .tab a {
-    color: var(--tertiary) !important;
+    color: var(--secondary) !important;
 }
 .tab .active {
     color: var(--secondary) !important;
