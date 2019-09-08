@@ -76,7 +76,6 @@ nav ul li:hover {
     height: calc(100vh - 64px);
 }
 
-/* Mobile Only */
 .projects {
     font-size: 45px;
     color: var(--primary);
@@ -140,7 +139,7 @@ nav ul li:hover {
     position: relative;
 }
 .MyHeader {
-    font-size: 60px;
+    font-size: 45px;
     font-family: var(--title);
     color: var(--primary);
     text-align: center;
@@ -283,6 +282,7 @@ img.center {
         font-size: 27px;
     }
     .MyHeader {
+        font-size: 60px;
         text-align: left;
     }
     .footer {
