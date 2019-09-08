@@ -181,6 +181,7 @@ nav ul li:hover {
 .collection-item {
     background-color: var(--background) !important;
     padding: 10px 0px !important;
+    text-align: center !important;
 }
 
 a {
@@ -284,6 +285,11 @@ img.center {
     .MyHeader {
         font-size: 60px;
         text-align: left;
+    }
+    .collection-item {
+        background-color: var(--background) !important;
+        padding: 10px 0px !important;
+        text-align: left !important;
     }
     .footer {
         font-size: 20px;

@@ -156,6 +156,9 @@ a {
 }
 
 /* Collapsible Format */
+.collapsible:last-child {
+    border-bottom: none;
+}
 .collapsible-body {
     padding-left: 1.83em;
 }
