@@ -40,10 +40,20 @@
     --background: #f5f5f5;
     */
 
-    /* Brown */
+    /* Brown
     --primary: #3a4660;
     --secondary: #845007;
     --tertiary: #c9af98;
+    --body: #2c1d0e;
+    --toc: grey;
+    --background: #f5f5f5;
+    */
+
+    /* Denim */
+    --primary: #4c586f;
+    --secondary: #3e3e3b;
+    --tertiary: #a2aab0;
+    --quaternary: #c9af98;
     --body: #2c1d0e;
     --toc: grey;
     --background: #f5f5f5;
@@ -78,17 +88,17 @@ nav ul li:hover {
 
 .about-me {
     font-size: 45px;
-    color: var(--primary);
+    color: var(--secondary);
     font-family: var(--title);
     font-weight: 600;
     padding-bottom: 15px;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--secondary);
     margin-top: 30vh;
     display: inline-block;
 }
 .jff {
     font-size: 24px;
-    color: var(--secondary);
+    color: var(--quaternary);
     font-family: var(--subtitle);
     letter-spacing: 1px;
     font-weight: 0;
@@ -96,6 +106,7 @@ nav ul li:hover {
 }
 #arrow-down {
     position: absolute;
+    color: var(--tertiary);
     bottom: 20px;
     font-size: 85px;
     left: 50%;
@@ -115,7 +126,7 @@ nav ul li:hover {
 }
 .footer a {
     color: var(--background);
-    background-color: var(--tertiary) !important;
+    background-color: var(--quaternary) !important;
 }
 .footer a + a {
     margin-left: 17px;
@@ -132,14 +143,14 @@ nav ul li:hover {
 .MyHeader {
     font-size: 45px;
     font-family: var(--title);
-    color: var(--primary);
+    color: var(--secondary);
     text-align: center;
     position: relative;
 }
 .MyBody {
     font-size: 14.5px;
     font-family: var(--normal);
-    color: var(--primary);
+    color: var(--secondary);
     position: relative;
 }
 .MyBadge {
@@ -148,11 +159,11 @@ nav ul li:hover {
     margin-left: 7px;
     padding: 5px 10px 5px 11px !important;
     color: var(--background) !important;
-    background-color: var(--tertiary) !important;
+    background-color: var(--quaternary) !important;
 }
 
 a {
-    color: var(--tertiary);
+    color: var(--quaternary);
 }
 
 /* Collapsible Format */
@@ -163,7 +174,7 @@ a {
     padding-left: 1.83em;
 }
 .collapsible-header i {
-    color: var(--secondary);
+    color: var(--primary);
 }
 .collapsible-header, .collapsible-body, .badge, .collapsible-body blockquote {
     color: var(--body);
@@ -171,7 +182,7 @@ a {
 blockquote {
     margin: 20px 0;
     padding-left: 1.5rem;
-    border-left: 5px solid var(--secondary);
+    border-left: 5px solid var(--primary);
 }
 
 /* Table of Contents */
@@ -266,7 +277,7 @@ input[type="text"] + label {
     color: var(--tertiary);
 }
 .prefix {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 /* Text Area Colors */
@@ -302,7 +313,7 @@ textarea.materialize-textarea:focus.valid + label:after {
 }
 
 .submit-btn {
-    background-color: var(--tertiary);
+    background-color: var(--quaternary);
     color: var(--background);
 }
 

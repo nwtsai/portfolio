@@ -40,10 +40,20 @@
     --background: #f5f5f5;
     */
 
-    /* Brown */
+    /* Brown
     --primary: #3a4660;
     --secondary: #845007;
     --tertiary: #c9af98;
+    --body: #2c1d0e;
+    --toc: grey;
+    --background: #f5f5f5;
+    */
+
+    /* Denim */
+    --primary: #4c586f;
+    --secondary: #3e3e3b;
+    --tertiary: #a2aab0;
+    --quaternary: #c9af98;
     --body: #2c1d0e;
     --toc: grey;
     --background: #f5f5f5;
@@ -101,19 +111,19 @@ nav ul li:hover {
 
 .name {
     font-size: 38px;
-    color: var(--primary);
+    color: var(--secondary);
     font-family: var(--title);
     font-weight: 600;
     letter-spacing: -1px;
     margin-top: 40px;
     display: inline-block;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--secondary);
     padding-bottom: 15px;
 }
 
 .software-engineer {
     font-size: 21px;
-    color: var(--secondary);
+    color: var(--quaternary);
     font-family: var(--subtitle);
     letter-spacing: 1px;
     font-weight: 0;
