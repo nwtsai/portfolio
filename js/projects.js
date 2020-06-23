@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('#toc').pushpin({
         offset: 50
     });
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy').scrollSpy({scrollOffset: 111});
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('.tabs').tabs({swipeable: true});
