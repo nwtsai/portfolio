@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#toc').pushpin({
         offset: 50
     });
-    $('.scrollspy').scrollSpy({scrollOffset: 90});
+    $('.scrollspy').scrollSpy();
     $('input#input_text, textarea#subject').characterCounter();
     $('input#input_text, textarea#message').characterCounter();
     $('#textarea1').val('New Text');

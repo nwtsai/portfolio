@@ -184,6 +184,9 @@ nav ul li:hover {
     color: var(--background) !important;
     background-color: var(--quaternary) !important;
 }
+#apps, #models, #web, #games {
+    margin-top: 46px;
+}
 
 .collection {
     border: none;
